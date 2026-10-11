@@ -1,0 +1,10 @@
+# Preserve vendored byte checksums across Git checkouts, including Windows.
+* -text
+.agents/skills/** -text
+docs/public/evidence/correctness/** -text
+docs/public/evidence/streaming/** -text
+docs/public/evidence/platform/** -text
+
+docs/public/evidence/production/** -text
+
+docs/public/evidence/iceberg/** -text

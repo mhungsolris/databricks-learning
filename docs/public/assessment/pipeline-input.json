@@ -1,0 +1,158 @@
+{
+  "contract": {
+    "money": "integer USD cents",
+    "timezone": "UTC",
+    "freshnessMinutes": 15,
+    "mutableHistoryHours": 72,
+    "sourceGuarantees": [
+      "Source event identity is scoped to source_system and app_id",
+      "revision strictly orders state mutations; equal revision disagreement is invalid",
+      "updated_at changes for every mutation; timestamp ties possible",
+      "API pages may retry; complete snapshot explicitly declared by export manifest"
+    ],
+    "note": "Synthetic assessment requirements; no vendor API guarantees asserted"
+  },
+  "deliveries": [
+    {
+      "source_system": "adjust",
+      "app_id": "game-X",
+      "event_id": "P701",
+      "revision": 1,
+      "revenue": 0,
+      "event_time": "2026-09-01T23:58:00Z",
+      "updated_at": "2026-09-01T23:58:00Z",
+      "arrival": "2026-09-02T00:03:00Z",
+      "platform": "google",
+      "account_id": "acct-X",
+      "campaign_id": "G7",
+      "currency": "USD",
+      "channel": "callback"
+    },
+    {
+      "source_system": "adjust",
+      "app_id": "game-X",
+      "event_id": "P701",
+      "revision": 1,
+      "revenue": 0,
+      "event_time": "2026-09-01T23:58:00Z",
+      "updated_at": "2026-09-01T23:58:00Z",
+      "arrival": "2026-09-02T00:04:00Z",
+      "platform": "google",
+      "account_id": "acct-X",
+      "campaign_id": "G7",
+      "currency": "USD",
+      "channel": "callback"
+    },
+    {
+      "source_system": "adjust",
+      "app_id": "game-X",
+      "event_id": "P701",
+      "revision": 2,
+      "revenue": 175,
+      "event_time": "2026-09-01T23:58:00Z",
+      "updated_at": "2026-09-02T08:00:00Z",
+      "arrival": "2026-09-02T08:03:00Z",
+      "platform": "google",
+      "account_id": "acct-X",
+      "campaign_id": "G7",
+      "currency": "USD",
+      "channel": "file"
+    },
+    {
+      "source_system": "adjust",
+      "app_id": "game-X",
+      "event_id": "P701",
+      "revision": 3,
+      "revenue": 185,
+      "event_time": "2026-09-01T23:58:00Z",
+      "updated_at": "2026-09-03T08:00:00Z",
+      "arrival": "2026-09-03T08:03:00Z",
+      "platform": "google",
+      "account_id": "acct-X",
+      "campaign_id": "G7",
+      "currency": "USD",
+      "channel": "file"
+    },
+    {
+      "source_system": "adjust",
+      "app_id": "game-Y",
+      "event_id": "P701",
+      "revision": 1,
+      "revenue": 65,
+      "event_time": "2026-09-01T12:00:00Z",
+      "updated_at": "2026-09-01T12:01:00Z",
+      "arrival": "2026-09-01T12:03:00Z",
+      "platform": "meta",
+      "account_id": "acct-Y",
+      "campaign_id": "M8",
+      "currency": "USD",
+      "channel": "callback"
+    },
+    {
+      "source_system": "adjust",
+      "app_id": "game-X",
+      "event_id": "P702",
+      "revision": 1,
+      "revenue": 35,
+      "event_time": "2026-09-01T11:00:00Z",
+      "updated_at": "2026-09-01T11:01:00Z",
+      "arrival": "2026-09-01T11:03:00Z",
+      "platform": "unknown",
+      "account_id": "acct-X",
+      "campaign_id": null,
+      "currency": "USD",
+      "channel": "callback"
+    }
+  ],
+  "costs": [
+    {
+      "date": "2026-09-01",
+      "platform": "google",
+      "account_id": "acct-X",
+      "app_id": "game-X",
+      "campaign_id": "G7",
+      "currency": "USD",
+      "cost": 70
+    },
+    {
+      "date": "2026-09-01",
+      "platform": "meta",
+      "account_id": "acct-Y",
+      "app_id": "game-Y",
+      "campaign_id": "M8",
+      "currency": "USD",
+      "cost": 25
+    },
+    {
+      "date": "2026-09-01",
+      "platform": "tiktok",
+      "account_id": "acct-X",
+      "app_id": "game-X",
+      "campaign_id": "T9",
+      "currency": "USD",
+      "cost": 15
+    },
+    {
+      "date": "2026-09-01",
+      "platform": "unity",
+      "account_id": "acct-X",
+      "app_id": "game-X",
+      "campaign_id": "U9",
+      "currency": "USD",
+      "cost": 10
+    }
+  ],
+  "apiEvents": [
+    "Page2 retried after timeout with unchanged contents",
+    "A record with timestamp equal to committed upper bound appears on next read",
+    "Crash after target commit before cursor save",
+    "Incomplete page excludes one existing key; export later declares complete snapshot"
+  ],
+  "backfill": {
+    "startInclusive": "2026-01-01",
+    "endExclusive": "2026-04-01",
+    "failureAfterDays": 37,
+    "liveScope": "2026-09-03 and later",
+    "request": "Rebuild incorrect revenue logic without stopping current pipeline"
+  }
+}

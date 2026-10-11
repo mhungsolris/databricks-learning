@@ -1,0 +1,19 @@
+{
+  "rows": [
+    [
+      "A",
+      "VN",
+      300
+    ],
+    [
+      "B",
+      "US",
+      50
+    ]
+  ],
+  "jobsBeforeAction": [],
+  "jobsAfterExplain": [],
+  "jobsAfterAction": [
+    0
+  ]
+}

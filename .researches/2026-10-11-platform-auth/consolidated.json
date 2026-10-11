@@ -1,0 +1,48 @@
+{
+  "format": "thematic",
+  "query": "Supported OAuth, Jobs references and serverless operating model",
+  "results": [
+    {
+      "title": "serverless-overview",
+      "url": "https://docs.databricks.com/aws/en/compute/serverless/",
+      "content": "Connect to serverless compute | Databricks on AWS Skip to main content Get started Guides Develop Reference Resources Release notes Help \nSupport \nKnowledge Base \nCommunity \nTraining English \nEnglish \n日本語 \nPortuguês \nFrançais AWS \nAzure \nGCP \nSAP Try Databricks \n\nCompute \nServerless compute On this page Last updated on Sep 11, 2026 \nConnect to serverless compute \nThis page explains how to connect to and use serverless compute for notebooks, workflows, and Lakeflow pipelines in Databricks . \nWhat is serverless compute? ​ \nServerless compute is a Databricks -managed service that allows users to quickly connect to on-demand computing resources for notebooks, workflows, and Lakeflow pipelines . \nWhen you choose to use serverless compute, you can run workloads without provisioning any compute resources in your cloud account. Instead, Databricks automatically allocates and manages the necessary compute resources. This speeds up start-up and scaling times, minimizes idle time, and reduces the need to manage compute resources. \nServerless workloads are protected by multiple layers of security and are designed to be enterprise-ready. For more information, see Databricks serverless security . note \nServerless compute is available by default in most workspaces and does not require enablement. Workspaces that have Unity Catalog enabled automatically have access to serverless compute. \nOther Databricks features, such as serverless SQL warehouses, model serving, and AI features, use serverless infrastructure independently and have their own configuration paths. This page covers serverless compute for notebooks, workflows, and Lakeflow pipelines only. \nUse serverless compute for your workloads ​ \nUse the following pages to learn how to configure workloads to use serverless compute: \nServerless notebooks \nGit Folder Serverless (Beta) \nServerless jobs \nServerless Lakeflow pipelines \nStreaming on serverless compute \nAI Runtime (Preview) \nGuides for AI Runtime \nOther features that use",
+      "retrieved": "2026-10-11",
+      "status": "fetched",
+      "source": "2026-10-11-platform-auth-search-results"
+    },
+    {
+      "title": "oauthM2M",
+      "url": "https://docs.databricks.com/aws/en/dev-tools/auth/oauth-m2m",
+      "content": "Authorize service principal access to Databricks with OAuth | Databricks on AWS Skip to main content Get started Guides Develop Reference Resources Release notes Help \nSupport \nKnowledge Base \nCommunity \nTraining English \nEnglish \n日本語 \nPortuguês \nFrançais AWS \nAzure \nGCP \nSAP Try Databricks \n\nAuthenticate developer tools \nAuthenticate as a service principal On this page Last updated on Oct 9, 2026 \nAuthorize service principal access to Databricks with OAuth \nThis page explains how to authorize access to Databricks resources from unattended processes, such as automated CLI commands or REST API calls made from scripts or applications. \nDatabricks uses OAuth 2.0 as the preferred protocol for service principal authorization and authentication outside of the UI. Unified client authentication automates token generation and refresh. When a service principal signs in and is granted consent, OAuth issues an access token for the CLI, SDK, or other tool to use on its behalf. Each access token is valid for one hour, after which a new token is automatically requested. \nIn this page, authorization refers to using OAuth to grant a service principal access to Databricks resources, while authentication refers to validating credentials through access tokens. \nFor more high-level details, see Authorize access to Databricks resources . \nWays to authorize a service principal ​ \nDatabricks supports the following ways to authorize a service principal: \n\nAutomatic (recommended): Use unified authentication with supported tools and SDKs, such as the Databricks Terraform SDK. This approach handles token generation and refresh automatically, and is ideal for automation or other unattended workloads. \n\nManual: Generate a code verifier and challenge, then exchange them for an OAuth token. Use this method if your tool or API doesn’t support unified authentication. You may need to build your own token refresh mechanism for your application. For details, see Manually generate OAuth M2M access token",
+      "retrieved": "2026-10-11",
+      "status": "fetched",
+      "source": "2026-10-11-platform-auth-search-results"
+    },
+    {
+      "title": "unifiedAuth",
+      "url": "https://docs.databricks.com/aws/en/dev-tools/auth/",
+      "content": "Authorize access to Databricks resources | Databricks on AWS Skip to main content Get started Guides Develop Reference Resources Release notes Help \nSupport \nKnowledge Base \nCommunity \nTraining English \nEnglish \n日本語 \nPortuguês \nFrançais AWS \nAzure \nGCP \nSAP Try Databricks \n\nAuthenticate developer tools On this page Last updated on Oct 9, 2026 \nAuthorize access to Databricks resources \nThis page explains how to authorize access to Databricks resources using the Databricks CLI and REST APIs. It describes different authorization methods, when to use them, and how to configure authentication for your use case. \nTo access Databricks resources with the CLI or REST APIs, you must authenticate using a Databricks account with appropriate permissions. Your Databricks administrator or a user with administrator privileges configures the account. \nAccount and API types ​ \nThere are two types of accounts that you can use for authentication: \nUser account: For interactive CLI commands and API calls. \nService principal: For automated CLI commands and API calls without human interaction. \nDatabricks has two types of APIs that require different authentication approaches: \nAccount-level APIs: Available to account owners and admins, hosted on the account console URL. See account-level APIs . \nWorkspace-level APIs: Available to workspace users and admins, hosted at workspace URLs. See workspace-level APIs . \nAuthorization methods ​ \nChoose the authorization method that best fits your use case. Databricks tools and SDKs support multiple authorization methods, so you can select the most appropriate one for your scenario. \n\nMethod \nDescription \nUse case \n\nOAuth token federation (Recommended) \nOAuth tokens from your identity provider for users or service principals. \nEnables you to authenticate to Databricks without managing Databricks secrets. \n\nOAuth for service principals \nShort-lived OAuth tokens for service principals. \nTo reduce the need for long-term credentials, use OAuth OBO to act",
+      "retrieved": "2026-10-11",
+      "status": "fetched",
+      "source": "2026-10-11-platform-auth-search-results"
+    },
+    {
+      "title": "dynamicValues",
+      "url": "https://docs.databricks.com/aws/en/jobs/dynamic-value-references",
+      "content": "Dynamic value references | Databricks on AWS Skip to main content Get started Guides Develop Reference Resources Release notes Help \nSupport \nKnowledge Base \nCommunity \nTraining English \nEnglish \n日本語 \nPortuguês \nFrançais AWS \nAzure \nGCP \nSAP Try Databricks \n\nData engineering \nLakeflow Jobs \nParameterization \nDynamic value references On this page Last updated on Sep 22, 2026 \nDynamic value references \nDynamic value references describe a collection of variables available when configuring jobs and tasks. Use dynamic value references to configure conditional statements for tasks or to pass information as parameters or arguments. \nDynamic value references include information such as: \nConfigured values for the job, including the job name, task names, and trigger type. \nGenerated metadata about the job, including the job ID, the run ID, and the job run start time. \nInformation about how many repair attempts a job has made or retries a task has run. \nThe result state for a specified task. \nValues configured using job parameters, task parameters, or set using task values. \nTo learn how each task type retrieves parameter values, see Access parameter values from a task . \nUse dynamic value references ​ \nUse dynamic value references when configuring jobs or tasks. You cannot directly reference dynamic value references from assets configured using tasks like notebooks, queries, or JARs. Dynamic value references must be defined using parameters or fields that pass context into tasks. \nDynamic value references use double curly braces ( {{ }} ). When a job or task runs, a string literal replaces the dynamic value reference. For example, if you configure the following key-value pair as a task parameter: \n{\"job_run_id\": \"job_{{job.run_id}}\"} \nIf your run ID is 550315892394120 , the value for job_run_id evaluates to job_550315892394120 . note \nContents of the double curly braces are not evaluated as expressions. You cannot run operations or functions in double-curly braces. \nUser-pro",
+      "retrieved": "2026-10-11",
+      "status": "fetched",
+      "source": "2026-10-11-platform-auth-search-results"
+    }
+  ],
+  "sources": [
+    "2026-10-11-platform-auth-search-results"
+  ],
+  "totalResults": 4,
+  "cleaningStats": {
+    "originalChars": 8000,
+    "cleanedChars": 7883,
+    "removedChars": 117,
+    "reductionPercent": 1.5
+  }
+}

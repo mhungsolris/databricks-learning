@@ -1,0 +1,17 @@
+{
+  "session": ".researches/2026-10-11-production-supplement",
+  "metadata": {
+    "query": "Production hardening: layout, observability, quality, tests, DABs and OIDC",
+    "known": "Spark 4.0.4 Delta 4.0.1 local baseline; no cloud",
+    "stoppingRule": "Official version-qualified source for each product behavior",
+    "date": "2026-10-11",
+    "timezone": "Asia/Saigon",
+    "publication": "disabled"
+  },
+  "urls": {
+    "eventlog": "https://docs.databricks.com/aws/en/ldp/monitor-event-logs",
+    "ci": "https://docs.databricks.com/aws/en/dev-tools/ci-cd",
+    "github": "https://docs.databricks.com/aws/en/dev-tools/ci-cd/github",
+    "flows": "https://docs.databricks.com/aws/en/dev-tools/ci-cd/flows"
+  }
+}

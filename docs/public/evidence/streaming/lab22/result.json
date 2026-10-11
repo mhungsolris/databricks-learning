@@ -1,0 +1,836 @@
+{
+  "update": {
+    "secondEmissions": [
+      {
+        "batchId": 1,
+        "rows": [
+          {
+            "user_id": "U1",
+            "amount": 15,
+            "events": 2
+          }
+        ]
+      }
+    ],
+    "phases": [
+      {
+        "queryId": "26071e19-c1f3-4d87-910b-7b7d182a5f70",
+        "runId": "37f7b535-674b-481b-9f0a-91a0699c7ac0",
+        "active": true,
+        "progress": [
+          {
+            "id": "26071e19-c1f3-4d87-910b-7b7d182a5f70",
+            "runId": "37f7b535-674b-481b-9f0a-91a0699c7ac0",
+            "name": null,
+            "timestamp": "2026-10-11T04:14:16.365Z",
+            "batchId": 0,
+            "batchDuration": 2844,
+            "numInputRows": 2,
+            "inputRowsPerSecond": 0.0,
+            "processedRowsPerSecond": 0.7032348804500703,
+            "durationMs": {
+              "addBatch": 1543,
+              "commitOffsets": 229,
+              "getBatch": 53,
+              "latestOffset": 215,
+              "queryPlanning": 641,
+              "triggerExecution": 2844,
+              "walCommit": 161
+            },
+            "stateOperators": [
+              {
+                "operatorName": "stateStoreSave",
+                "numRowsTotal": 2,
+                "numRowsUpdated": 2,
+                "allUpdatesTimeMs": 151,
+                "numRowsRemoved": 0,
+                "allRemovalsTimeMs": 0,
+                "commitTimeMs": 862,
+                "memoryUsedBytes": 1440,
+                "numRowsDroppedByWatermark": 0,
+                "numShufflePartitions": 4,
+                "numStateStoreInstances": 4,
+                "customMetrics": {
+                  "loadedMapCacheHitCount": 0,
+                  "loadedMapCacheMissCount": 0,
+                  "stateOnCurrentVersionSizeBytes": 864
+                }
+              }
+            ],
+            "sources": [
+              {
+                "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab22/update/input]",
+                "startOffset": null,
+                "endOffset": {
+                  "logOffset": 0
+                },
+                "latestOffset": null,
+                "numInputRows": 2,
+                "inputRowsPerSecond": 0.0,
+                "processedRowsPerSecond": 0.7032348804500703
+              }
+            ],
+            "sink": {
+              "description": "ForeachBatchSink",
+              "numOutputRows": -1
+            }
+          },
+          {
+            "id": "26071e19-c1f3-4d87-910b-7b7d182a5f70",
+            "runId": "37f7b535-674b-481b-9f0a-91a0699c7ac0",
+            "name": null,
+            "timestamp": "2026-10-11T04:14:20.000Z",
+            "batchId": 1,
+            "batchDuration": 9685,
+            "numInputRows": 1,
+            "inputRowsPerSecond": 1.2674271229404308,
+            "processedRowsPerSecond": 0.10325245224574083,
+            "durationMs": {
+              "addBatch": 8775,
+              "commitOffsets": 183,
+              "getBatch": 84,
+              "latestOffset": 400,
+              "queryPlanning": 8,
+              "triggerExecution": 9685,
+              "walCommit": 234
+            },
+            "stateOperators": [
+              {
+                "operatorName": "stateStoreSave",
+                "numRowsTotal": 2,
+                "numRowsUpdated": 1,
+                "allUpdatesTimeMs": 62,
+                "numRowsRemoved": 0,
+                "allRemovalsTimeMs": 0,
+                "commitTimeMs": 885,
+                "memoryUsedBytes": 2320,
+                "numRowsDroppedByWatermark": 0,
+                "numShufflePartitions": 4,
+                "numStateStoreInstances": 4,
+                "customMetrics": {
+                  "loadedMapCacheHitCount": 8,
+                  "loadedMapCacheMissCount": 0,
+                  "stateOnCurrentVersionSizeBytes": 800
+                }
+              }
+            ],
+            "sources": [
+              {
+                "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab22/update/input]",
+                "startOffset": {
+                  "logOffset": 0
+                },
+                "endOffset": {
+                  "logOffset": 1
+                },
+                "latestOffset": null,
+                "numInputRows": 1,
+                "inputRowsPerSecond": 1.2674271229404308,
+                "processedRowsPerSecond": 0.10325245224574083
+              }
+            ],
+            "sink": {
+              "description": "ForeachBatchSink",
+              "numOutputRows": -1
+            }
+          }
+        ],
+        "target": [
+          {
+            "user_id": "U1",
+            "amount": 15,
+            "events": 2
+          },
+          {
+            "user_id": "U2",
+            "amount": 20,
+            "events": 1
+          }
+        ],
+        "targetHash": "15dbdbbf983fffa237464d5c242573a081fd3fcdfdeb6b850d7439c1c1952dc8"
+      }
+    ],
+    "emissions": [
+      {
+        "batchId": 0,
+        "rows": [
+          {
+            "user_id": "U1",
+            "amount": 10,
+            "events": 1
+          },
+          {
+            "user_id": "U2",
+            "amount": 20,
+            "events": 1
+          }
+        ]
+      },
+      {
+        "batchId": 1,
+        "rows": [
+          {
+            "user_id": "U1",
+            "amount": 15,
+            "events": 2
+          }
+        ]
+      }
+    ]
+  },
+  "complete": {
+    "secondEmissions": [
+      {
+        "batchId": 1,
+        "rows": [
+          {
+            "user_id": "U1",
+            "amount": 15,
+            "events": 2
+          },
+          {
+            "user_id": "U2",
+            "amount": 20,
+            "events": 1
+          }
+        ]
+      }
+    ],
+    "phases": [
+      {
+        "queryId": "9b96852c-b5de-4bfd-91bf-808dc02866b5",
+        "runId": "4a733fb6-628d-447d-8259-044701645b60",
+        "active": true,
+        "progress": [
+          {
+            "id": "9b96852c-b5de-4bfd-91bf-808dc02866b5",
+            "runId": "4a733fb6-628d-447d-8259-044701645b60",
+            "name": null,
+            "timestamp": "2026-10-11T04:14:34.199Z",
+            "batchId": 0,
+            "batchDuration": 2517,
+            "numInputRows": 2,
+            "inputRowsPerSecond": 0.0,
+            "processedRowsPerSecond": 0.7945967421533572,
+            "durationMs": {
+              "addBatch": 1220,
+              "commitOffsets": 162,
+              "getBatch": 52,
+              "latestOffset": 218,
+              "queryPlanning": 698,
+              "triggerExecution": 2517,
+              "walCommit": 165
+            },
+            "stateOperators": [
+              {
+                "operatorName": "stateStoreSave",
+                "numRowsTotal": 2,
+                "numRowsUpdated": 2,
+                "allUpdatesTimeMs": 59,
+                "numRowsRemoved": 0,
+                "allRemovalsTimeMs": 0,
+                "commitTimeMs": 490,
+                "memoryUsedBytes": 1504,
+                "numRowsDroppedByWatermark": 0,
+                "numShufflePartitions": 4,
+                "numStateStoreInstances": 4,
+                "customMetrics": {
+                  "loadedMapCacheHitCount": 0,
+                  "loadedMapCacheMissCount": 0,
+                  "stateOnCurrentVersionSizeBytes": 928
+                }
+              }
+            ],
+            "sources": [
+              {
+                "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab22/complete/input]",
+                "startOffset": null,
+                "endOffset": {
+                  "logOffset": 0
+                },
+                "latestOffset": null,
+                "numInputRows": 2,
+                "inputRowsPerSecond": 0.0,
+                "processedRowsPerSecond": 0.7945967421533572
+              }
+            ],
+            "sink": {
+              "description": "ForeachBatchSink",
+              "numOutputRows": -1
+            }
+          },
+          {
+            "id": "9b96852c-b5de-4bfd-91bf-808dc02866b5",
+            "runId": "4a733fb6-628d-447d-8259-044701645b60",
+            "name": null,
+            "timestamp": "2026-10-11T04:14:37.000Z",
+            "batchId": 1,
+            "batchDuration": 5270,
+            "numInputRows": 1,
+            "inputRowsPerSecond": 3.53356890459364,
+            "processedRowsPerSecond": 0.18975332068311196,
+            "durationMs": {
+              "addBatch": 4651,
+              "commitOffsets": 183,
+              "getBatch": 53,
+              "latestOffset": 217,
+              "queryPlanning": 6,
+              "triggerExecution": 5270,
+              "walCommit": 159
+            },
+            "stateOperators": [
+              {
+                "operatorName": "stateStoreSave",
+                "numRowsTotal": 2,
+                "numRowsUpdated": 1,
+                "allUpdatesTimeMs": 27,
+                "numRowsRemoved": 0,
+                "allRemovalsTimeMs": 0,
+                "commitTimeMs": 508,
+                "memoryUsedBytes": 2384,
+                "numRowsDroppedByWatermark": 0,
+                "numShufflePartitions": 4,
+                "numStateStoreInstances": 4,
+                "customMetrics": {
+                  "loadedMapCacheHitCount": 8,
+                  "loadedMapCacheMissCount": 0,
+                  "stateOnCurrentVersionSizeBytes": 864
+                }
+              }
+            ],
+            "sources": [
+              {
+                "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab22/complete/input]",
+                "startOffset": {
+                  "logOffset": 0
+                },
+                "endOffset": {
+                  "logOffset": 1
+                },
+                "latestOffset": null,
+                "numInputRows": 1,
+                "inputRowsPerSecond": 3.53356890459364,
+                "processedRowsPerSecond": 0.18975332068311196
+              }
+            ],
+            "sink": {
+              "description": "ForeachBatchSink",
+              "numOutputRows": -1
+            }
+          }
+        ],
+        "target": [
+          {
+            "user_id": "U1",
+            "amount": 15,
+            "events": 2
+          },
+          {
+            "user_id": "U2",
+            "amount": 20,
+            "events": 1
+          }
+        ],
+        "targetHash": "15dbdbbf983fffa237464d5c242573a081fd3fcdfdeb6b850d7439c1c1952dc8"
+      }
+    ],
+    "emissions": [
+      {
+        "batchId": 0,
+        "rows": [
+          {
+            "user_id": "U1",
+            "amount": 10,
+            "events": 1
+          },
+          {
+            "user_id": "U2",
+            "amount": 20,
+            "events": 1
+          }
+        ]
+      },
+      {
+        "batchId": 1,
+        "rows": [
+          {
+            "user_id": "U1",
+            "amount": 15,
+            "events": 2
+          },
+          {
+            "user_id": "U2",
+            "amount": 20,
+            "events": 1
+          }
+        ]
+      }
+    ]
+  },
+  "append": {
+    "phases": [
+      {
+        "queryId": "23806acc-7e1f-4961-a8e8-c7c29c1fb80d",
+        "runId": "d020ef77-21c1-4033-b8fc-5f20798d4e1c",
+        "active": true,
+        "progress": [
+          {
+            "id": "23806acc-7e1f-4961-a8e8-c7c29c1fb80d",
+            "runId": "d020ef77-21c1-4033-b8fc-5f20798d4e1c",
+            "name": null,
+            "timestamp": "2026-10-11T04:14:46.564Z",
+            "batchId": 0,
+            "batchDuration": 2442,
+            "numInputRows": 2,
+            "inputRowsPerSecond": 0.0,
+            "processedRowsPerSecond": 0.8190008190008189,
+            "durationMs": {
+              "addBatch": 1154,
+              "commitOffsets": 162,
+              "getBatch": 55,
+              "latestOffset": 218,
+              "queryPlanning": 692,
+              "triggerExecution": 2442,
+              "walCommit": 159
+            },
+            "eventTime": {
+              "avg": "2026-10-01T10:01:00.000Z",
+              "max": "2026-10-01T10:02:00.000Z",
+              "min": "2026-10-01T10:00:00.000Z",
+              "watermark": "1970-01-01T00:00:00.000Z"
+            },
+            "stateOperators": [
+              {
+                "operatorName": "stateStoreSave",
+                "numRowsTotal": 1,
+                "numRowsUpdated": 1,
+                "allUpdatesTimeMs": 38,
+                "numRowsRemoved": 0,
+                "allRemovalsTimeMs": 133,
+                "commitTimeMs": 805,
+                "memoryUsedBytes": 1248,
+                "numRowsDroppedByWatermark": 0,
+                "numShufflePartitions": 4,
+                "numStateStoreInstances": 4,
+                "customMetrics": {
+                  "loadedMapCacheHitCount": 0,
+                  "loadedMapCacheMissCount": 0,
+                  "stateOnCurrentVersionSizeBytes": 672
+                }
+              }
+            ],
+            "sources": [
+              {
+                "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab22/append/input]",
+                "startOffset": null,
+                "endOffset": {
+                  "logOffset": 0
+                },
+                "latestOffset": null,
+                "numInputRows": 2,
+                "inputRowsPerSecond": 0.0,
+                "processedRowsPerSecond": 0.8190008190008189
+              }
+            ],
+            "sink": {
+              "description": "DeltaSink[/evidence/tests-streaming/20261011T040856Z-6f8487be/lab22/append/target]",
+              "numOutputRows": -1
+            }
+          },
+          {
+            "id": "23806acc-7e1f-4961-a8e8-c7c29c1fb80d",
+            "runId": "d020ef77-21c1-4033-b8fc-5f20798d4e1c",
+            "name": null,
+            "timestamp": "2026-10-11T04:14:49.007Z",
+            "batchId": 1,
+            "batchDuration": 4480,
+            "numInputRows": 0,
+            "inputRowsPerSecond": 0.0,
+            "processedRowsPerSecond": 0.0,
+            "durationMs": {
+              "addBatch": 4112,
+              "commitOffsets": 173,
+              "getBatch": 0,
+              "latestOffset": 15,
+              "queryPlanning": 14,
+              "triggerExecution": 4480,
+              "walCommit": 165
+            },
+            "eventTime": {
+              "watermark": "2026-10-01T09:57:00.000Z"
+            },
+            "stateOperators": [
+              {
+                "operatorName": "stateStoreSave",
+                "numRowsTotal": 1,
+                "numRowsUpdated": 0,
+                "allUpdatesTimeMs": 4,
+                "numRowsRemoved": 0,
+                "allRemovalsTimeMs": 42,
+                "commitTimeMs": 760,
+                "memoryUsedBytes": 2016,
+                "numRowsDroppedByWatermark": 0,
+                "numShufflePartitions": 4,
+                "numStateStoreInstances": 4,
+                "customMetrics": {
+                  "loadedMapCacheHitCount": 8,
+                  "loadedMapCacheMissCount": 0,
+                  "stateOnCurrentVersionSizeBytes": 688
+                }
+              }
+            ],
+            "sources": [
+              {
+                "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab22/append/input]",
+                "startOffset": {
+                  "logOffset": 0
+                },
+                "endOffset": {
+                  "logOffset": 0
+                },
+                "latestOffset": null,
+                "numInputRows": 0,
+                "inputRowsPerSecond": 0.0,
+                "processedRowsPerSecond": 0.0
+              }
+            ],
+            "sink": {
+              "description": "DeltaSink[/evidence/tests-streaming/20261011T040856Z-6f8487be/lab22/append/target]",
+              "numOutputRows": -1
+            }
+          }
+        ],
+        "target": [],
+        "targetHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      {
+        "queryId": "23806acc-7e1f-4961-a8e8-c7c29c1fb80d",
+        "runId": "d020ef77-21c1-4033-b8fc-5f20798d4e1c",
+        "active": true,
+        "progress": [
+          {
+            "id": "23806acc-7e1f-4961-a8e8-c7c29c1fb80d",
+            "runId": "d020ef77-21c1-4033-b8fc-5f20798d4e1c",
+            "name": null,
+            "timestamp": "2026-10-11T04:14:46.564Z",
+            "batchId": 0,
+            "batchDuration": 2442,
+            "numInputRows": 2,
+            "inputRowsPerSecond": 0.0,
+            "processedRowsPerSecond": 0.8190008190008189,
+            "durationMs": {
+              "addBatch": 1154,
+              "commitOffsets": 162,
+              "getBatch": 55,
+              "latestOffset": 218,
+              "queryPlanning": 692,
+              "triggerExecution": 2442,
+              "walCommit": 159
+            },
+            "eventTime": {
+              "avg": "2026-10-01T10:01:00.000Z",
+              "max": "2026-10-01T10:02:00.000Z",
+              "min": "2026-10-01T10:00:00.000Z",
+              "watermark": "1970-01-01T00:00:00.000Z"
+            },
+            "stateOperators": [
+              {
+                "operatorName": "stateStoreSave",
+                "numRowsTotal": 1,
+                "numRowsUpdated": 1,
+                "allUpdatesTimeMs": 38,
+                "numRowsRemoved": 0,
+                "allRemovalsTimeMs": 133,
+                "commitTimeMs": 805,
+                "memoryUsedBytes": 1248,
+                "numRowsDroppedByWatermark": 0,
+                "numShufflePartitions": 4,
+                "numStateStoreInstances": 4,
+                "customMetrics": {
+                  "loadedMapCacheHitCount": 0,
+                  "loadedMapCacheMissCount": 0,
+                  "stateOnCurrentVersionSizeBytes": 672
+                }
+              }
+            ],
+            "sources": [
+              {
+                "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab22/append/input]",
+                "startOffset": null,
+                "endOffset": {
+                  "logOffset": 0
+                },
+                "latestOffset": null,
+                "numInputRows": 2,
+                "inputRowsPerSecond": 0.0,
+                "processedRowsPerSecond": 0.8190008190008189
+              }
+            ],
+            "sink": {
+              "description": "DeltaSink[/evidence/tests-streaming/20261011T040856Z-6f8487be/lab22/append/target]",
+              "numOutputRows": -1
+            }
+          },
+          {
+            "id": "23806acc-7e1f-4961-a8e8-c7c29c1fb80d",
+            "runId": "d020ef77-21c1-4033-b8fc-5f20798d4e1c",
+            "name": null,
+            "timestamp": "2026-10-11T04:14:49.007Z",
+            "batchId": 1,
+            "batchDuration": 4480,
+            "numInputRows": 0,
+            "inputRowsPerSecond": 0.0,
+            "processedRowsPerSecond": 0.0,
+            "durationMs": {
+              "addBatch": 4112,
+              "commitOffsets": 173,
+              "getBatch": 0,
+              "latestOffset": 15,
+              "queryPlanning": 14,
+              "triggerExecution": 4480,
+              "walCommit": 165
+            },
+            "eventTime": {
+              "watermark": "2026-10-01T09:57:00.000Z"
+            },
+            "stateOperators": [
+              {
+                "operatorName": "stateStoreSave",
+                "numRowsTotal": 1,
+                "numRowsUpdated": 0,
+                "allUpdatesTimeMs": 4,
+                "numRowsRemoved": 0,
+                "allRemovalsTimeMs": 42,
+                "commitTimeMs": 760,
+                "memoryUsedBytes": 2016,
+                "numRowsDroppedByWatermark": 0,
+                "numShufflePartitions": 4,
+                "numStateStoreInstances": 4,
+                "customMetrics": {
+                  "loadedMapCacheHitCount": 8,
+                  "loadedMapCacheMissCount": 0,
+                  "stateOnCurrentVersionSizeBytes": 688
+                }
+              }
+            ],
+            "sources": [
+              {
+                "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab22/append/input]",
+                "startOffset": {
+                  "logOffset": 0
+                },
+                "endOffset": {
+                  "logOffset": 0
+                },
+                "latestOffset": null,
+                "numInputRows": 0,
+                "inputRowsPerSecond": 0.0,
+                "processedRowsPerSecond": 0.0
+              }
+            ],
+            "sink": {
+              "description": "DeltaSink[/evidence/tests-streaming/20261011T040856Z-6f8487be/lab22/append/target]",
+              "numOutputRows": -1
+            }
+          },
+          {
+            "id": "23806acc-7e1f-4961-a8e8-c7c29c1fb80d",
+            "runId": "d020ef77-21c1-4033-b8fc-5f20798d4e1c",
+            "name": null,
+            "timestamp": "2026-10-11T04:14:58.001Z",
+            "batchId": 2,
+            "batchDuration": 1467,
+            "numInputRows": 1,
+            "inputRowsPerSecond": 1.0548523206751055,
+            "processedRowsPerSecond": 0.6816632583503749,
+            "durationMs": {
+              "addBatch": 849,
+              "commitOffsets": 160,
+              "getBatch": 54,
+              "latestOffset": 229,
+              "queryPlanning": 9,
+              "triggerExecution": 1467,
+              "walCommit": 165
+            },
+            "eventTime": {
+              "avg": "2026-10-01T10:30:00.000Z",
+              "max": "2026-10-01T10:30:00.000Z",
+              "min": "2026-10-01T10:30:00.000Z",
+              "watermark": "2026-10-01T09:57:00.000Z"
+            },
+            "stateOperators": [
+              {
+                "operatorName": "stateStoreSave",
+                "numRowsTotal": 2,
+                "numRowsUpdated": 1,
+                "allUpdatesTimeMs": 29,
+                "numRowsRemoved": 0,
+                "allRemovalsTimeMs": 35,
+                "commitTimeMs": 546,
+                "memoryUsedBytes": 2240,
+                "numRowsDroppedByWatermark": 0,
+                "numShufflePartitions": 4,
+                "numStateStoreInstances": 4,
+                "customMetrics": {
+                  "loadedMapCacheHitCount": 16,
+                  "loadedMapCacheMissCount": 0,
+                  "stateOnCurrentVersionSizeBytes": 896
+                }
+              }
+            ],
+            "sources": [
+              {
+                "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab22/append/input]",
+                "startOffset": {
+                  "logOffset": 0
+                },
+                "endOffset": {
+                  "logOffset": 1
+                },
+                "latestOffset": null,
+                "numInputRows": 1,
+                "inputRowsPerSecond": 1.0548523206751055,
+                "processedRowsPerSecond": 0.6816632583503749
+              }
+            ],
+            "sink": {
+              "description": "DeltaSink[/evidence/tests-streaming/20261011T040856Z-6f8487be/lab22/append/target]",
+              "numOutputRows": -1
+            }
+          },
+          {
+            "id": "23806acc-7e1f-4961-a8e8-c7c29c1fb80d",
+            "runId": "d020ef77-21c1-4033-b8fc-5f20798d4e1c",
+            "name": null,
+            "timestamp": "2026-10-11T04:14:59.469Z",
+            "batchId": 3,
+            "batchDuration": 4723,
+            "numInputRows": 0,
+            "inputRowsPerSecond": 0.0,
+            "processedRowsPerSecond": 0.0,
+            "durationMs": {
+              "addBatch": 4356,
+              "commitOffsets": 176,
+              "getBatch": 0,
+              "latestOffset": 25,
+              "queryPlanning": 8,
+              "triggerExecution": 4723,
+              "walCommit": 158
+            },
+            "eventTime": {
+              "watermark": "2026-10-01T10:25:00.000Z"
+            },
+            "stateOperators": [
+              {
+                "operatorName": "stateStoreSave",
+                "numRowsTotal": 1,
+                "numRowsUpdated": 0,
+                "allUpdatesTimeMs": 8,
+                "numRowsRemoved": 1,
+                "allRemovalsTimeMs": 104,
+                "commitTimeMs": 614,
+                "memoryUsedBytes": 2240,
+                "numRowsDroppedByWatermark": 0,
+                "numShufflePartitions": 4,
+                "numStateStoreInstances": 4,
+                "customMetrics": {
+                  "loadedMapCacheHitCount": 24,
+                  "loadedMapCacheMissCount": 0,
+                  "stateOnCurrentVersionSizeBytes": 688
+                }
+              }
+            ],
+            "sources": [
+              {
+                "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab22/append/input]",
+                "startOffset": {
+                  "logOffset": 1
+                },
+                "endOffset": {
+                  "logOffset": 1
+                },
+                "latestOffset": null,
+                "numInputRows": 0,
+                "inputRowsPerSecond": 0.0,
+                "processedRowsPerSecond": 0.0
+              }
+            ],
+            "sink": {
+              "description": "DeltaSink[/evidence/tests-streaming/20261011T040856Z-6f8487be/lab22/append/target]",
+              "numOutputRows": -1
+            }
+          }
+        ],
+        "target": [
+          {
+            "window_start": "2026-10-01T10:00:00Z",
+            "window_end": "2026-10-01T10:10:00Z",
+            "amount": 30,
+            "events": 2
+          }
+        ],
+        "targetHash": "3e2600f041cf25c7290f6497dad2fcda9d4408c925a57da00846f1818ce30410"
+      }
+    ],
+    "checkpoint": [
+      ".metadata.crc",
+      "commits/.0.crc",
+      "commits/.1.crc",
+      "commits/.2.crc",
+      "commits/.3.crc",
+      "commits/0",
+      "commits/1",
+      "commits/2",
+      "commits/3",
+      "metadata",
+      "offsets/.0.crc",
+      "offsets/.1.crc",
+      "offsets/.2.crc",
+      "offsets/.3.crc",
+      "offsets/0",
+      "offsets/1",
+      "offsets/2",
+      "offsets/3",
+      "sources/0/.0.crc",
+      "sources/0/.1.crc",
+      "sources/0/0",
+      "sources/0/1",
+      "state/0/0/.1.delta.crc",
+      "state/0/0/.2.delta.crc",
+      "state/0/0/.3.delta.crc",
+      "state/0/0/.4.delta.crc",
+      "state/0/0/1.delta",
+      "state/0/0/2.delta",
+      "state/0/0/3.delta",
+      "state/0/0/4.delta",
+      "state/0/0/_metadata/.schema.crc",
+      "state/0/0/_metadata/schema",
+      "state/0/1/.1.delta.crc",
+      "state/0/1/.2.delta.crc",
+      "state/0/1/.3.delta.crc",
+      "state/0/1/.4.delta.crc",
+      "state/0/1/1.delta",
+      "state/0/1/2.delta",
+      "state/0/1/3.delta",
+      "state/0/1/4.delta",
+      "state/0/2/.1.delta.crc",
+      "state/0/2/.2.delta.crc",
+      "state/0/2/.3.delta.crc",
+      "state/0/2/.4.delta.crc",
+      "state/0/2/1.delta",
+      "state/0/2/2.delta",
+      "state/0/2/3.delta",
+      "state/0/2/4.delta",
+      "state/0/3/.1.delta.crc",
+      "state/0/3/.2.delta.crc",
+      "state/0/3/.3.delta.crc",
+      "state/0/3/.4.delta.crc",
+      "state/0/3/1.delta",
+      "state/0/3/2.delta",
+      "state/0/3/3.delta",
+      "state/0/3/4.delta",
+      "state/0/_metadata/.metadata.crc",
+      "state/0/_metadata/metadata"
+    ]
+  }
+}

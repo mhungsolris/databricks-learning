@@ -1,0 +1,13 @@
+{
+  "query": "ROAS correctness boundaries and Delta MERGE",
+  "known": "Accepted Spark4.0.4 and Delta4.0.1 local evidence",
+  "stoppingRule": "Primary version-qualified docs and deterministic business-state integration contracts",
+  "date": "2026-10-11",
+  "timezone": "Asia/Saigon",
+  "publication": "disabled",
+  "source": "search",
+  "tool": "web-tools",
+  "timestamp": "2026-10-10T180000Z",
+  "timestampIso": "2026-10-10T18:19:14.996Z",
+  "createdAt": "2026-10-10T18:19:14.996Z"
+}

@@ -1,0 +1,17 @@
+{
+  "session": ".researches/2026-10-11-platform-auth",
+  "metadata": {
+    "query": "Workspace OAuth and current Jobs parameter interfaces",
+    "known": "No CLI or selected workspace",
+    "stoppingRule": "Official support guidance, no credential configuration",
+    "date": "2026-10-11",
+    "timezone": "Asia/Saigon",
+    "publication": "disabled"
+  },
+  "urls": {
+    "serverless-overview": "https://docs.databricks.com/aws/en/compute/serverless/",
+    "oauthM2M": "https://docs.databricks.com/aws/en/dev-tools/auth/oauth-m2m",
+    "unifiedAuth": "https://docs.databricks.com/aws/en/dev-tools/auth/",
+    "dynamicValues": "https://docs.databricks.com/aws/en/jobs/dynamic-value-references"
+  }
+}

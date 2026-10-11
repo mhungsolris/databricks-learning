@@ -1,0 +1,148 @@
+{
+  "resources": {
+    "jobs": {
+      "roas": {
+        "name": "ROAS platform learning DAG",
+        "max_concurrent_runs": 1,
+        "parameters": [
+          {
+            "name": "catalog",
+            "default": "${var.catalog}"
+          },
+          {
+            "name": "schema",
+            "default": "${var.schema}"
+          },
+          {
+            "name": "force_validation_failure",
+            "default": "false"
+          }
+        ],
+        "tasks": [
+          {
+            "task_key": "ingest_revenue",
+            "max_retries": 1,
+            "min_retry_interval_millis": 1000,
+            "timeout_seconds": 600,
+            "notebook_task": {
+              "notebook_path": "../src/roas_task.py",
+              "base_parameters": {
+                "stage": "ingest_revenue"
+              }
+            }
+          },
+          {
+            "task_key": "ingest_cost",
+            "max_retries": 1,
+            "min_retry_interval_millis": 1000,
+            "timeout_seconds": 600,
+            "notebook_task": {
+              "notebook_path": "../src/roas_task.py",
+              "base_parameters": {
+                "stage": "ingest_cost"
+              }
+            }
+          },
+          {
+            "task_key": "validate",
+            "depends_on": [
+              {
+                "task_key": "ingest_revenue"
+              },
+              {
+                "task_key": "ingest_cost"
+              }
+            ],
+            "max_retries": 0,
+            "min_retry_interval_millis": 1000,
+            "timeout_seconds": 600,
+            "notebook_task": {
+              "notebook_path": "../src/roas_task.py",
+              "base_parameters": {
+                "stage": "validate"
+              }
+            }
+          },
+          {
+            "task_key": "silver",
+            "depends_on": [
+              {
+                "task_key": "validate"
+              }
+            ],
+            "max_retries": 1,
+            "min_retry_interval_millis": 1000,
+            "timeout_seconds": 600,
+            "notebook_task": {
+              "notebook_path": "../src/roas_task.py",
+              "base_parameters": {
+                "stage": "silver"
+              }
+            }
+          },
+          {
+            "task_key": "gold",
+            "depends_on": [
+              {
+                "task_key": "silver"
+              }
+            ],
+            "max_retries": 1,
+            "min_retry_interval_millis": 1000,
+            "timeout_seconds": 600,
+            "notebook_task": {
+              "notebook_path": "../src/roas_task.py",
+              "base_parameters": {
+                "stage": "gold"
+              }
+            }
+          },
+          {
+            "task_key": "reconcile",
+            "depends_on": [
+              {
+                "task_key": "gold"
+              }
+            ],
+            "max_retries": 1,
+            "min_retry_interval_millis": 1000,
+            "timeout_seconds": 600,
+            "notebook_task": {
+              "notebook_path": "../src/roas_task.py",
+              "base_parameters": {
+                "stage": "reconcile"
+              }
+            }
+          },
+          {
+            "task_key": "failure_report",
+            "depends_on": [
+              {
+                "task_key": "validate"
+              },
+              {
+                "task_key": "silver"
+              },
+              {
+                "task_key": "gold"
+              },
+              {
+                "task_key": "reconcile"
+              }
+            ],
+            "run_if": "AT_LEAST_ONE_FAILED",
+            "max_retries": 1,
+            "min_retry_interval_millis": 1000,
+            "timeout_seconds": 600,
+            "notebook_task": {
+              "notebook_path": "../src/roas_task.py",
+              "base_parameters": {
+                "stage": "failure_report"
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,1012 @@
+[
+  {
+    "stageId": 0,
+    "tasks": 4,
+    "name": "collect at /workspace/scripts/test_production.py:40"
+  },
+  {
+    "stageId": 1,
+    "tasks": 4,
+    "name": "collect at /workspace/scripts/test_production.py:40"
+  },
+  {
+    "stageId": 2,
+    "tasks": 4,
+    "name": "collect at /workspace/scripts/test_production.py:40"
+  },
+  {
+    "stageId": 3,
+    "tasks": 8,
+    "name": "collect at /workspace/scripts/test_production.py:40"
+  },
+  {
+    "stageId": 4,
+    "tasks": 4,
+    "name": "collect at /workspace/scripts/test_production.py:40"
+  },
+  {
+    "stageId": 5,
+    "tasks": 4,
+    "name": "collect at /workspace/scripts/test_production.py:40"
+  },
+  {
+    "stageId": 6,
+    "tasks": 8,
+    "name": "collect at /workspace/scripts/test_production.py:40"
+  },
+  {
+    "stageId": 7,
+    "tasks": 4,
+    "name": "collect at /workspace/scripts/test_production.py:40"
+  },
+  {
+    "stageId": 8,
+    "tasks": 4,
+    "name": "collect at /workspace/scripts/test_production.py:52"
+  },
+  {
+    "stageId": 10,
+    "tasks": 1,
+    "name": "collect at /workspace/scripts/test_production.py:52"
+  },
+  {
+    "stageId": 11,
+    "tasks": 8,
+    "name": "collect at /workspace/labs/spark/common.py:71"
+  },
+  {
+    "stageId": 12,
+    "tasks": 4,
+    "name": "collect at /workspace/labs/spark/common.py:71"
+  },
+  {
+    "stageId": 13,
+    "tasks": 4,
+    "name": "collect at /workspace/labs/spark/common.py:71"
+  },
+  {
+    "stageId": 14,
+    "tasks": 8,
+    "name": "first at /workspace/scripts/test_production.py:67"
+  },
+  {
+    "stageId": 15,
+    "tasks": 4,
+    "name": "first at /workspace/scripts/test_production.py:67"
+  },
+  {
+    "stageId": 16,
+    "tasks": 1,
+    "name": "first at /workspace/scripts/test_production.py:67"
+  },
+  {
+    "stageId": 17,
+    "tasks": 8,
+    "name": "collect at /workspace/scripts/test_production.py:29"
+  },
+  {
+    "stageId": 18,
+    "tasks": 4,
+    "name": "collect at /workspace/scripts/test_production.py:29"
+  },
+  {
+    "stageId": 19,
+    "tasks": 4,
+    "name": "collect at /workspace/scripts/test_production.py:29"
+  },
+  {
+    "stageId": 20,
+    "tasks": 8,
+    "name": "collect at /workspace/scripts/test_production.py:29"
+  },
+  {
+    "stageId": 21,
+    "tasks": 4,
+    "name": "collect at /workspace/scripts/test_production.py:29"
+  },
+  {
+    "stageId": 22,
+    "tasks": 8,
+    "name": "save at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 23,
+    "tasks": 32,
+    "name": "save at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 24,
+    "tasks": 1,
+    "name": "$anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128"
+  },
+  {
+    "stageId": 25,
+    "tasks": 50,
+    "name": "$anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128"
+  },
+  {
+    "stageId": 26,
+    "tasks": 8,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 27,
+    "tasks": 1,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 29,
+    "tasks": 50,
+    "name": "first at /workspace/scripts/test_production.py:86"
+  },
+  {
+    "stageId": 30,
+    "tasks": 1,
+    "name": "first at /workspace/scripts/test_production.py:86"
+  },
+  {
+    "stageId": 32,
+    "tasks": 50,
+    "name": "first at /workspace/scripts/test_production.py:86"
+  },
+  {
+    "stageId": 33,
+    "tasks": 8,
+    "name": "first at /workspace/scripts/test_production.py:86"
+  },
+  {
+    "stageId": 34,
+    "tasks": 1,
+    "name": "first at /workspace/scripts/test_production.py:86"
+  },
+  {
+    "stageId": 36,
+    "tasks": 50,
+    "name": "$anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128"
+  },
+  {
+    "stageId": 38,
+    "tasks": 50,
+    "name": "$anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128"
+  },
+  {
+    "stageId": 39,
+    "tasks": 8,
+    "name": "save at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 40,
+    "tasks": 2,
+    "name": "save at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 41,
+    "tasks": 1,
+    "name": "$anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128"
+  },
+  {
+    "stageId": 42,
+    "tasks": 50,
+    "name": "$anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128"
+  },
+  {
+    "stageId": 43,
+    "tasks": 2,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 44,
+    "tasks": 1,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 46,
+    "tasks": 50,
+    "name": "first at /workspace/scripts/test_production.py:86"
+  },
+  {
+    "stageId": 47,
+    "tasks": 1,
+    "name": "first at /workspace/scripts/test_production.py:86"
+  },
+  {
+    "stageId": 49,
+    "tasks": 50,
+    "name": "first at /workspace/scripts/test_production.py:86"
+  },
+  {
+    "stageId": 50,
+    "tasks": 2,
+    "name": "first at /workspace/scripts/test_production.py:86"
+  },
+  {
+    "stageId": 51,
+    "tasks": 1,
+    "name": "first at /workspace/scripts/test_production.py:86"
+  },
+  {
+    "stageId": 53,
+    "tasks": 50,
+    "name": "$anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128"
+  },
+  {
+    "stageId": 55,
+    "tasks": 50,
+    "name": "$anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128"
+  },
+  {
+    "stageId": 56,
+    "tasks": 8,
+    "name": "collect at /workspace/scripts/test_production.py:101"
+  },
+  {
+    "stageId": 57,
+    "tasks": 8,
+    "name": "collect at /workspace/scripts/test_production.py:101"
+  },
+  {
+    "stageId": 58,
+    "tasks": 8,
+    "name": "collect at /workspace/scripts/test_production.py:29"
+  },
+  {
+    "stageId": 59,
+    "tasks": 4,
+    "name": "collect at /workspace/scripts/test_production.py:29"
+  },
+  {
+    "stageId": 60,
+    "tasks": 8,
+    "name": "collect at /workspace/scripts/test_production.py:29"
+  },
+  {
+    "stageId": 61,
+    "tasks": 4,
+    "name": "collect at /workspace/scripts/test_production.py:29"
+  },
+  {
+    "stageId": 62,
+    "tasks": 8,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 63,
+    "tasks": 4,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 64,
+    "tasks": 1,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 65,
+    "tasks": 8,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 66,
+    "tasks": 4,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 67,
+    "tasks": 1,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 69,
+    "tasks": 8,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 68,
+    "tasks": 8,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 70,
+    "tasks": 4,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 71,
+    "tasks": 4,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 72,
+    "tasks": 4,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 73,
+    "tasks": 1,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 74,
+    "tasks": 8,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 75,
+    "tasks": 4,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 76,
+    "tasks": 8,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 77,
+    "tasks": 4,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 78,
+    "tasks": 1,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 80,
+    "tasks": 8,
+    "name": "first at /workspace/scripts/test_production.py:109"
+  },
+  {
+    "stageId": 79,
+    "tasks": 8,
+    "name": "first at /workspace/scripts/test_production.py:109"
+  },
+  {
+    "stageId": 81,
+    "tasks": 4,
+    "name": "first at /workspace/scripts/test_production.py:109"
+  },
+  {
+    "stageId": 82,
+    "tasks": 4,
+    "name": "first at /workspace/scripts/test_production.py:109"
+  },
+  {
+    "stageId": 83,
+    "tasks": 1,
+    "name": "first at /workspace/scripts/test_production.py:109"
+  },
+  {
+    "stageId": 84,
+    "tasks": 8,
+    "name": "collect at /workspace/scripts/test_production.py:29"
+  },
+  {
+    "stageId": 85,
+    "tasks": 16,
+    "name": "collect at /workspace/scripts/test_production.py:29"
+  },
+  {
+    "stageId": 86,
+    "tasks": 4,
+    "name": "collect at /workspace/scripts/test_production.py:29"
+  },
+  {
+    "stageId": 87,
+    "tasks": 4,
+    "name": "collect at /workspace/scripts/test_production.py:29"
+  },
+  {
+    "stageId": 91,
+    "tasks": 4,
+    "name": "collect at /workspace/scripts/test_production.py:29"
+  },
+  {
+    "stageId": 92,
+    "tasks": 8,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 93,
+    "tasks": 11,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 94,
+    "tasks": 1,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 95,
+    "tasks": 8,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 96,
+    "tasks": 1,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 97,
+    "tasks": 8,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 98,
+    "tasks": 9,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 99,
+    "tasks": 4,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 100,
+    "tasks": 4,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 101,
+    "tasks": 1,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 102,
+    "tasks": 8,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 103,
+    "tasks": 11,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 104,
+    "tasks": 1,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 105,
+    "tasks": 8,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 106,
+    "tasks": 8,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 107,
+    "tasks": 11,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 108,
+    "tasks": 1,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 109,
+    "tasks": 8,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 110,
+    "tasks": 8,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 111,
+    "tasks": 11,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 112,
+    "tasks": 1,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 114,
+    "tasks": 8,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 113,
+    "tasks": 8,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 115,
+    "tasks": 4,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 116,
+    "tasks": 4,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 117,
+    "tasks": 1,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 118,
+    "tasks": 8,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 120,
+    "tasks": 4,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 119,
+    "tasks": 16,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 121,
+    "tasks": 4,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 122,
+    "tasks": 1,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 123,
+    "tasks": 8,
+    "name": "first at /workspace/scripts/test_production.py:137"
+  },
+  {
+    "stageId": 125,
+    "tasks": 4,
+    "name": "first at /workspace/scripts/test_production.py:137"
+  },
+  {
+    "stageId": 124,
+    "tasks": 16,
+    "name": "first at /workspace/scripts/test_production.py:137"
+  },
+  {
+    "stageId": 126,
+    "tasks": 4,
+    "name": "first at /workspace/scripts/test_production.py:137"
+  },
+  {
+    "stageId": 127,
+    "tasks": 1,
+    "name": "first at /workspace/scripts/test_production.py:137"
+  },
+  {
+    "stageId": 128,
+    "tasks": 8,
+    "name": "save at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 129,
+    "tasks": 4,
+    "name": "save at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 130,
+    "tasks": 8,
+    "name": "save at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 131,
+    "tasks": 4,
+    "name": "save at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 132,
+    "tasks": 1,
+    "name": "save at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 133,
+    "tasks": 50,
+    "name": "save at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 134,
+    "tasks": 1,
+    "name": "save at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 135,
+    "tasks": 8,
+    "name": "save at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 136,
+    "tasks": 8,
+    "name": "save at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 137,
+    "tasks": 4,
+    "name": "save at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 138,
+    "tasks": 4,
+    "name": "save at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 140,
+    "tasks": 50,
+    "name": "$anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128"
+  },
+  {
+    "stageId": 141,
+    "tasks": 2,
+    "name": "first at /workspace/scripts/test_production.py:148"
+  },
+  {
+    "stageId": 142,
+    "tasks": 50,
+    "name": "first at /workspace/scripts/test_production.py:148"
+  },
+  {
+    "stageId": 143,
+    "tasks": 1,
+    "name": "first at /workspace/scripts/test_production.py:148"
+  },
+  {
+    "stageId": 145,
+    "tasks": 50,
+    "name": "first at /workspace/scripts/test_production.py:148"
+  },
+  {
+    "stageId": 146,
+    "tasks": 2,
+    "name": "first at /workspace/scripts/test_production.py:148"
+  },
+  {
+    "stageId": 147,
+    "tasks": 1,
+    "name": "first at /workspace/scripts/test_production.py:148"
+  },
+  {
+    "stageId": 149,
+    "tasks": 50,
+    "name": "$anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128"
+  },
+  {
+    "stageId": 150,
+    "tasks": 1,
+    "name": "$anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128"
+  },
+  {
+    "stageId": 151,
+    "tasks": 50,
+    "name": "$anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128"
+  },
+  {
+    "stageId": 152,
+    "tasks": 1,
+    "name": "$anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128"
+  },
+  {
+    "stageId": 157,
+    "tasks": 3,
+    "name": "$anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128"
+  },
+  {
+    "stageId": 160,
+    "tasks": 50,
+    "name": "$anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128"
+  },
+  {
+    "stageId": 161,
+    "tasks": 50,
+    "name": "$anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128"
+  },
+  {
+    "stageId": 162,
+    "tasks": 4,
+    "name": "$anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128"
+  },
+  {
+    "stageId": 163,
+    "tasks": 1,
+    "name": "$anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128"
+  },
+  {
+    "stageId": 166,
+    "tasks": 50,
+    "name": "$anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128"
+  },
+  {
+    "stageId": 167,
+    "tasks": 50,
+    "name": "$anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128"
+  },
+  {
+    "stageId": 168,
+    "tasks": 4,
+    "name": "$anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128"
+  },
+  {
+    "stageId": 169,
+    "tasks": 1,
+    "name": "$anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128"
+  },
+  {
+    "stageId": 171,
+    "tasks": 50,
+    "name": "$anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128"
+  },
+  {
+    "stageId": 172,
+    "tasks": 1,
+    "name": "$anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128"
+  },
+  {
+    "stageId": 174,
+    "tasks": 50,
+    "name": "$anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128"
+  },
+  {
+    "stageId": 176,
+    "tasks": 50,
+    "name": "$anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128"
+  },
+  {
+    "stageId": 177,
+    "tasks": 1,
+    "name": "hasNext at HDFSLogStore.java:117"
+  },
+  {
+    "stageId": 182,
+    "tasks": 1,
+    "name": "hasNext at HDFSLogStore.java:117"
+  },
+  {
+    "stageId": 187,
+    "tasks": 1,
+    "name": "hasNext at HDFSLogStore.java:117"
+  },
+  {
+    "stageId": 192,
+    "tasks": 1,
+    "name": "hasNext at HDFSLogStore.java:117"
+  },
+  {
+    "stageId": 194,
+    "tasks": 50,
+    "name": "$anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128"
+  },
+  {
+    "stageId": 196,
+    "tasks": 50,
+    "name": "$anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128"
+  },
+  {
+    "stageId": 197,
+    "tasks": 1,
+    "name": "hasNext at HDFSLogStore.java:117"
+  },
+  {
+    "stageId": 202,
+    "tasks": 1,
+    "name": "hasNext at HDFSLogStore.java:117"
+  },
+  {
+    "stageId": 207,
+    "tasks": 1,
+    "name": "hasNext at HDFSLogStore.java:117"
+  },
+  {
+    "stageId": 212,
+    "tasks": 1,
+    "name": "hasNext at HDFSLogStore.java:117"
+  },
+  {
+    "stageId": 213,
+    "tasks": 3,
+    "name": "$anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128"
+  },
+  {
+    "stageId": 214,
+    "tasks": 3,
+    "name": "$anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128"
+  },
+  {
+    "stageId": 215,
+    "tasks": 50,
+    "name": "$anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128"
+  },
+  {
+    "stageId": 216,
+    "tasks": 1,
+    "name": "$anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128"
+  },
+  {
+    "stageId": 218,
+    "tasks": 50,
+    "name": "$anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128"
+  },
+  {
+    "stageId": 219,
+    "tasks": 1,
+    "name": "$anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128"
+  },
+  {
+    "stageId": 221,
+    "tasks": 1,
+    "name": "$anonfun$submit$1 at FutureTask.java:264"
+  },
+  {
+    "stageId": 220,
+    "tasks": 1,
+    "name": "$anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128"
+  },
+  {
+    "stageId": 222,
+    "tasks": 1,
+    "name": "collect at /workspace/scripts/test_production.py:29"
+  },
+  {
+    "stageId": 223,
+    "tasks": 50,
+    "name": "collect at /workspace/scripts/test_production.py:29"
+  },
+  {
+    "stageId": 224,
+    "tasks": 1,
+    "name": "collect at /workspace/scripts/test_production.py:29"
+  },
+  {
+    "stageId": 226,
+    "tasks": 50,
+    "name": "collect at /workspace/scripts/test_production.py:29"
+  },
+  {
+    "stageId": 227,
+    "tasks": 2,
+    "name": "collect at /workspace/scripts/test_production.py:29"
+  },
+  {
+    "stageId": 228,
+    "tasks": 8,
+    "name": "collect at /workspace/scripts/test_production.py:29"
+  },
+  {
+    "stageId": 229,
+    "tasks": 8,
+    "name": "collect at /workspace/scripts/test_production.py:29"
+  },
+  {
+    "stageId": 230,
+    "tasks": 4,
+    "name": "collect at /workspace/scripts/test_production.py:29"
+  },
+  {
+    "stageId": 231,
+    "tasks": 4,
+    "name": "collect at /workspace/scripts/test_production.py:29"
+  },
+  {
+    "stageId": 232,
+    "tasks": 8,
+    "name": "getHistory at DeltaTableOperations.scala:60"
+  },
+  {
+    "stageId": 233,
+    "tasks": 8,
+    "name": "save at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 234,
+    "tasks": 4,
+    "name": "save at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 235,
+    "tasks": 8,
+    "name": "save at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 236,
+    "tasks": 4,
+    "name": "save at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 237,
+    "tasks": 8,
+    "name": "save at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 238,
+    "tasks": 8,
+    "name": "save at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 239,
+    "tasks": 4,
+    "name": "save at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 240,
+    "tasks": 4,
+    "name": "save at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 241,
+    "tasks": 1,
+    "name": "first at /workspace/scripts/test_production.py:164"
+  },
+  {
+    "stageId": 242,
+    "tasks": 50,
+    "name": "first at /workspace/scripts/test_production.py:164"
+  },
+  {
+    "stageId": 243,
+    "tasks": 1,
+    "name": "first at /workspace/scripts/test_production.py:164"
+  },
+  {
+    "stageId": 245,
+    "tasks": 50,
+    "name": "first at /workspace/scripts/test_production.py:164"
+  },
+  {
+    "stageId": 246,
+    "tasks": 2,
+    "name": "first at /workspace/scripts/test_production.py:164"
+  },
+  {
+    "stageId": 247,
+    "tasks": 1,
+    "name": "first at /workspace/scripts/test_production.py:164"
+  },
+  {
+    "stageId": 248,
+    "tasks": 1,
+    "name": "collect at /workspace/scripts/test_production.py:29"
+  },
+  {
+    "stageId": 249,
+    "tasks": 50,
+    "name": "collect at /workspace/scripts/test_production.py:29"
+  },
+  {
+    "stageId": 250,
+    "tasks": 1,
+    "name": "collect at /workspace/scripts/test_production.py:29"
+  },
+  {
+    "stageId": 252,
+    "tasks": 50,
+    "name": "collect at /workspace/scripts/test_production.py:29"
+  },
+  {
+    "stageId": 253,
+    "tasks": 2,
+    "name": "collect at /workspace/scripts/test_production.py:29"
+  },
+  {
+    "stageId": 254,
+    "tasks": 8,
+    "name": "collect at /workspace/scripts/test_production.py:29"
+  },
+  {
+    "stageId": 255,
+    "tasks": 4,
+    "name": "collect at /workspace/scripts/test_production.py:29"
+  },
+  {
+    "stageId": 256,
+    "tasks": 8,
+    "name": "collect at /workspace/scripts/test_production.py:29"
+  },
+  {
+    "stageId": 257,
+    "tasks": 4,
+    "name": "collect at /workspace/scripts/test_production.py:29"
+  }
+]

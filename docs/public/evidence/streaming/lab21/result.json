@@ -1,0 +1,1042 @@
+{
+  "phases": [
+    {
+      "queryId": "87a43fb0-435f-47db-8b21-e27f107a8d33",
+      "runId": "33a430a6-3c11-4a94-9fcf-1b22647e4082",
+      "active": true,
+      "progress": [
+        {
+          "id": "87a43fb0-435f-47db-8b21-e27f107a8d33",
+          "runId": "33a430a6-3c11-4a94-9fcf-1b22647e4082",
+          "name": null,
+          "timestamp": "2026-10-11T04:13:40.382Z",
+          "batchId": 0,
+          "batchDuration": 5596,
+          "numInputRows": 4,
+          "inputRowsPerSecond": 0.0,
+          "processedRowsPerSecond": 0.7147962830593281,
+          "durationMs": {
+            "addBatch": 2998,
+            "commitOffsets": 159,
+            "getBatch": 106,
+            "latestOffset": 505,
+            "queryPlanning": 1678,
+            "triggerExecution": 5596,
+            "walCommit": 149
+          },
+          "eventTime": {
+            "avg": "2026-10-01T10:04:00.000Z",
+            "max": "2026-10-01T10:07:00.000Z",
+            "min": "2026-10-01T10:00:00.000Z",
+            "watermark": "1970-01-01T00:00:00.000Z"
+          },
+          "stateOperators": [
+            {
+              "operatorName": "symmetricHashJoin",
+              "numRowsTotal": 4,
+              "numRowsUpdated": 4,
+              "allUpdatesTimeMs": 3327,
+              "numRowsRemoved": 0,
+              "allRemovalsTimeMs": 10,
+              "commitTimeMs": 4562,
+              "memoryUsedBytes": 6008,
+              "numRowsDroppedByWatermark": 0,
+              "numShufflePartitions": 4,
+              "numStateStoreInstances": 16,
+              "customMetrics": {
+                "loadedMapCacheHitCount": 0,
+                "loadedMapCacheMissCount": 0,
+                "stateOnCurrentVersionSizeBytes": 1896
+              }
+            }
+          ],
+          "sources": [
+            {
+              "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab21/clicks]",
+              "startOffset": null,
+              "endOffset": {
+                "logOffset": 0
+              },
+              "latestOffset": null,
+              "numInputRows": 3,
+              "inputRowsPerSecond": 0.0,
+              "processedRowsPerSecond": 0.536097212294496
+            },
+            {
+              "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab21/purchases]",
+              "startOffset": null,
+              "endOffset": {
+                "logOffset": 0
+              },
+              "latestOffset": null,
+              "numInputRows": 1,
+              "inputRowsPerSecond": 0.0,
+              "processedRowsPerSecond": 0.17869907076483202
+            }
+          ],
+          "sink": {
+            "description": "DeltaSink[/evidence/tests-streaming/20261011T040856Z-6f8487be/lab21/target]",
+            "numOutputRows": -1
+          }
+        },
+        {
+          "id": "87a43fb0-435f-47db-8b21-e27f107a8d33",
+          "runId": "33a430a6-3c11-4a94-9fcf-1b22647e4082",
+          "name": null,
+          "timestamp": "2026-10-11T04:13:45.980Z",
+          "batchId": 1,
+          "batchDuration": 3691,
+          "numInputRows": 0,
+          "inputRowsPerSecond": 0.0,
+          "processedRowsPerSecond": 0.0,
+          "durationMs": {
+            "addBatch": 3293,
+            "commitOffsets": 143,
+            "getBatch": 0,
+            "latestOffset": 26,
+            "queryPlanning": 76,
+            "triggerExecution": 3691,
+            "walCommit": 151
+          },
+          "eventTime": {
+            "watermark": "2026-10-01T09:57:00.000Z"
+          },
+          "stateOperators": [
+            {
+              "operatorName": "symmetricHashJoin",
+              "numRowsTotal": 4,
+              "numRowsUpdated": 0,
+              "allUpdatesTimeMs": 169,
+              "numRowsRemoved": 0,
+              "allRemovalsTimeMs": 0,
+              "commitTimeMs": 3722,
+              "memoryUsedBytes": 9256,
+              "numRowsDroppedByWatermark": 0,
+              "numShufflePartitions": 4,
+              "numStateStoreInstances": 16,
+              "customMetrics": {
+                "loadedMapCacheHitCount": 8,
+                "loadedMapCacheMissCount": 0,
+                "stateOnCurrentVersionSizeBytes": 1872
+              }
+            }
+          ],
+          "sources": [
+            {
+              "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab21/clicks]",
+              "startOffset": {
+                "logOffset": 0
+              },
+              "endOffset": {
+                "logOffset": 0
+              },
+              "latestOffset": null,
+              "numInputRows": 0,
+              "inputRowsPerSecond": 0.0,
+              "processedRowsPerSecond": 0.0
+            },
+            {
+              "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab21/purchases]",
+              "startOffset": {
+                "logOffset": 0
+              },
+              "endOffset": {
+                "logOffset": 0
+              },
+              "latestOffset": null,
+              "numInputRows": 0,
+              "inputRowsPerSecond": 0.0,
+              "processedRowsPerSecond": 0.0
+            }
+          ],
+          "sink": {
+            "description": "DeltaSink[/evidence/tests-streaming/20261011T040856Z-6f8487be/lab21/target]",
+            "numOutputRows": -1
+          }
+        }
+      ],
+      "target": [
+        {
+          "click_id": "C1",
+          "user_id": "U1",
+          "click_time": "2026-10-01T10:00:00Z",
+          "purchase_id": "P1",
+          "purchase_time": "2026-10-01T10:10:00Z",
+          "amount": 100
+        }
+      ],
+      "targetHash": "33b88c0c8b09481ee49d0d74e06597254b00984009e809c0db0752131ddbb5c1"
+    },
+    {
+      "queryId": "87a43fb0-435f-47db-8b21-e27f107a8d33",
+      "runId": "33a430a6-3c11-4a94-9fcf-1b22647e4082",
+      "active": true,
+      "progress": [
+        {
+          "id": "87a43fb0-435f-47db-8b21-e27f107a8d33",
+          "runId": "33a430a6-3c11-4a94-9fcf-1b22647e4082",
+          "name": null,
+          "timestamp": "2026-10-11T04:13:40.382Z",
+          "batchId": 0,
+          "batchDuration": 5596,
+          "numInputRows": 4,
+          "inputRowsPerSecond": 0.0,
+          "processedRowsPerSecond": 0.7147962830593281,
+          "durationMs": {
+            "addBatch": 2998,
+            "commitOffsets": 159,
+            "getBatch": 106,
+            "latestOffset": 505,
+            "queryPlanning": 1678,
+            "triggerExecution": 5596,
+            "walCommit": 149
+          },
+          "eventTime": {
+            "avg": "2026-10-01T10:04:00.000Z",
+            "max": "2026-10-01T10:07:00.000Z",
+            "min": "2026-10-01T10:00:00.000Z",
+            "watermark": "1970-01-01T00:00:00.000Z"
+          },
+          "stateOperators": [
+            {
+              "operatorName": "symmetricHashJoin",
+              "numRowsTotal": 4,
+              "numRowsUpdated": 4,
+              "allUpdatesTimeMs": 3327,
+              "numRowsRemoved": 0,
+              "allRemovalsTimeMs": 10,
+              "commitTimeMs": 4562,
+              "memoryUsedBytes": 6008,
+              "numRowsDroppedByWatermark": 0,
+              "numShufflePartitions": 4,
+              "numStateStoreInstances": 16,
+              "customMetrics": {
+                "loadedMapCacheHitCount": 0,
+                "loadedMapCacheMissCount": 0,
+                "stateOnCurrentVersionSizeBytes": 1896
+              }
+            }
+          ],
+          "sources": [
+            {
+              "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab21/clicks]",
+              "startOffset": null,
+              "endOffset": {
+                "logOffset": 0
+              },
+              "latestOffset": null,
+              "numInputRows": 3,
+              "inputRowsPerSecond": 0.0,
+              "processedRowsPerSecond": 0.536097212294496
+            },
+            {
+              "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab21/purchases]",
+              "startOffset": null,
+              "endOffset": {
+                "logOffset": 0
+              },
+              "latestOffset": null,
+              "numInputRows": 1,
+              "inputRowsPerSecond": 0.0,
+              "processedRowsPerSecond": 0.17869907076483202
+            }
+          ],
+          "sink": {
+            "description": "DeltaSink[/evidence/tests-streaming/20261011T040856Z-6f8487be/lab21/target]",
+            "numOutputRows": -1
+          }
+        },
+        {
+          "id": "87a43fb0-435f-47db-8b21-e27f107a8d33",
+          "runId": "33a430a6-3c11-4a94-9fcf-1b22647e4082",
+          "name": null,
+          "timestamp": "2026-10-11T04:13:45.980Z",
+          "batchId": 1,
+          "batchDuration": 3691,
+          "numInputRows": 0,
+          "inputRowsPerSecond": 0.0,
+          "processedRowsPerSecond": 0.0,
+          "durationMs": {
+            "addBatch": 3293,
+            "commitOffsets": 143,
+            "getBatch": 0,
+            "latestOffset": 26,
+            "queryPlanning": 76,
+            "triggerExecution": 3691,
+            "walCommit": 151
+          },
+          "eventTime": {
+            "watermark": "2026-10-01T09:57:00.000Z"
+          },
+          "stateOperators": [
+            {
+              "operatorName": "symmetricHashJoin",
+              "numRowsTotal": 4,
+              "numRowsUpdated": 0,
+              "allUpdatesTimeMs": 169,
+              "numRowsRemoved": 0,
+              "allRemovalsTimeMs": 0,
+              "commitTimeMs": 3722,
+              "memoryUsedBytes": 9256,
+              "numRowsDroppedByWatermark": 0,
+              "numShufflePartitions": 4,
+              "numStateStoreInstances": 16,
+              "customMetrics": {
+                "loadedMapCacheHitCount": 8,
+                "loadedMapCacheMissCount": 0,
+                "stateOnCurrentVersionSizeBytes": 1872
+              }
+            }
+          ],
+          "sources": [
+            {
+              "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab21/clicks]",
+              "startOffset": {
+                "logOffset": 0
+              },
+              "endOffset": {
+                "logOffset": 0
+              },
+              "latestOffset": null,
+              "numInputRows": 0,
+              "inputRowsPerSecond": 0.0,
+              "processedRowsPerSecond": 0.0
+            },
+            {
+              "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab21/purchases]",
+              "startOffset": {
+                "logOffset": 0
+              },
+              "endOffset": {
+                "logOffset": 0
+              },
+              "latestOffset": null,
+              "numInputRows": 0,
+              "inputRowsPerSecond": 0.0,
+              "processedRowsPerSecond": 0.0
+            }
+          ],
+          "sink": {
+            "description": "DeltaSink[/evidence/tests-streaming/20261011T040856Z-6f8487be/lab21/target]",
+            "numOutputRows": -1
+          }
+        },
+        {
+          "id": "87a43fb0-435f-47db-8b21-e27f107a8d33",
+          "runId": "33a430a6-3c11-4a94-9fcf-1b22647e4082",
+          "name": null,
+          "timestamp": "2026-10-11T04:13:54.000Z",
+          "batchId": 2,
+          "batchDuration": 4338,
+          "numInputRows": 1,
+          "inputRowsPerSecond": 1.0615711252653928,
+          "processedRowsPerSecond": 0.2305209774089442,
+          "durationMs": {
+            "addBatch": 3409,
+            "commitOffsets": 225,
+            "getBatch": 56,
+            "latestOffset": 234,
+            "queryPlanning": 260,
+            "triggerExecution": 4337,
+            "walCommit": 152
+          },
+          "eventTime": {
+            "avg": "2026-10-01T10:12:00.000Z",
+            "max": "2026-10-01T10:12:00.000Z",
+            "min": "2026-10-01T10:12:00.000Z",
+            "watermark": "2026-10-01T09:57:00.000Z"
+          },
+          "stateOperators": [
+            {
+              "operatorName": "symmetricHashJoin",
+              "numRowsTotal": 5,
+              "numRowsUpdated": 1,
+              "allUpdatesTimeMs": 1203,
+              "numRowsRemoved": 0,
+              "allRemovalsTimeMs": 0,
+              "commitTimeMs": 5585,
+              "memoryUsedBytes": 9808,
+              "numRowsDroppedByWatermark": 0,
+              "numShufflePartitions": 4,
+              "numStateStoreInstances": 16,
+              "customMetrics": {
+                "loadedMapCacheHitCount": 16,
+                "loadedMapCacheMissCount": 0,
+                "stateOnCurrentVersionSizeBytes": 2152
+              }
+            }
+          ],
+          "sources": [
+            {
+              "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab21/clicks]",
+              "startOffset": {
+                "logOffset": 0
+              },
+              "endOffset": {
+                "logOffset": 0
+              },
+              "latestOffset": null,
+              "numInputRows": 0,
+              "inputRowsPerSecond": 0.0,
+              "processedRowsPerSecond": 0.0
+            },
+            {
+              "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab21/purchases]",
+              "startOffset": {
+                "logOffset": 0
+              },
+              "endOffset": {
+                "logOffset": 1
+              },
+              "latestOffset": null,
+              "numInputRows": 1,
+              "inputRowsPerSecond": 1.0615711252653928,
+              "processedRowsPerSecond": 0.2305209774089442
+            }
+          ],
+          "sink": {
+            "description": "DeltaSink[/evidence/tests-streaming/20261011T040856Z-6f8487be/lab21/target]",
+            "numOutputRows": -1
+          }
+        }
+      ],
+      "target": [
+        {
+          "click_id": "C1",
+          "user_id": "U1",
+          "click_time": "2026-10-01T10:00:00Z",
+          "purchase_id": "P1",
+          "purchase_time": "2026-10-01T10:10:00Z",
+          "amount": 100
+        },
+        {
+          "click_id": "C2",
+          "user_id": "U1",
+          "click_time": "2026-10-01T10:05:00Z",
+          "purchase_id": "P2",
+          "purchase_time": "2026-10-01T10:12:00Z",
+          "amount": 100
+        }
+      ],
+      "targetHash": "bb64090e66c55a48d4b3b3847accd06d47212604a580aecc031771e2f400a255"
+    },
+    {
+      "queryId": "87a43fb0-435f-47db-8b21-e27f107a8d33",
+      "runId": "33a430a6-3c11-4a94-9fcf-1b22647e4082",
+      "active": true,
+      "progress": [
+        {
+          "id": "87a43fb0-435f-47db-8b21-e27f107a8d33",
+          "runId": "33a430a6-3c11-4a94-9fcf-1b22647e4082",
+          "name": null,
+          "timestamp": "2026-10-11T04:13:40.382Z",
+          "batchId": 0,
+          "batchDuration": 5596,
+          "numInputRows": 4,
+          "inputRowsPerSecond": 0.0,
+          "processedRowsPerSecond": 0.7147962830593281,
+          "durationMs": {
+            "addBatch": 2998,
+            "commitOffsets": 159,
+            "getBatch": 106,
+            "latestOffset": 505,
+            "queryPlanning": 1678,
+            "triggerExecution": 5596,
+            "walCommit": 149
+          },
+          "eventTime": {
+            "avg": "2026-10-01T10:04:00.000Z",
+            "max": "2026-10-01T10:07:00.000Z",
+            "min": "2026-10-01T10:00:00.000Z",
+            "watermark": "1970-01-01T00:00:00.000Z"
+          },
+          "stateOperators": [
+            {
+              "operatorName": "symmetricHashJoin",
+              "numRowsTotal": 4,
+              "numRowsUpdated": 4,
+              "allUpdatesTimeMs": 3327,
+              "numRowsRemoved": 0,
+              "allRemovalsTimeMs": 10,
+              "commitTimeMs": 4562,
+              "memoryUsedBytes": 6008,
+              "numRowsDroppedByWatermark": 0,
+              "numShufflePartitions": 4,
+              "numStateStoreInstances": 16,
+              "customMetrics": {
+                "loadedMapCacheHitCount": 0,
+                "loadedMapCacheMissCount": 0,
+                "stateOnCurrentVersionSizeBytes": 1896
+              }
+            }
+          ],
+          "sources": [
+            {
+              "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab21/clicks]",
+              "startOffset": null,
+              "endOffset": {
+                "logOffset": 0
+              },
+              "latestOffset": null,
+              "numInputRows": 3,
+              "inputRowsPerSecond": 0.0,
+              "processedRowsPerSecond": 0.536097212294496
+            },
+            {
+              "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab21/purchases]",
+              "startOffset": null,
+              "endOffset": {
+                "logOffset": 0
+              },
+              "latestOffset": null,
+              "numInputRows": 1,
+              "inputRowsPerSecond": 0.0,
+              "processedRowsPerSecond": 0.17869907076483202
+            }
+          ],
+          "sink": {
+            "description": "DeltaSink[/evidence/tests-streaming/20261011T040856Z-6f8487be/lab21/target]",
+            "numOutputRows": -1
+          }
+        },
+        {
+          "id": "87a43fb0-435f-47db-8b21-e27f107a8d33",
+          "runId": "33a430a6-3c11-4a94-9fcf-1b22647e4082",
+          "name": null,
+          "timestamp": "2026-10-11T04:13:45.980Z",
+          "batchId": 1,
+          "batchDuration": 3691,
+          "numInputRows": 0,
+          "inputRowsPerSecond": 0.0,
+          "processedRowsPerSecond": 0.0,
+          "durationMs": {
+            "addBatch": 3293,
+            "commitOffsets": 143,
+            "getBatch": 0,
+            "latestOffset": 26,
+            "queryPlanning": 76,
+            "triggerExecution": 3691,
+            "walCommit": 151
+          },
+          "eventTime": {
+            "watermark": "2026-10-01T09:57:00.000Z"
+          },
+          "stateOperators": [
+            {
+              "operatorName": "symmetricHashJoin",
+              "numRowsTotal": 4,
+              "numRowsUpdated": 0,
+              "allUpdatesTimeMs": 169,
+              "numRowsRemoved": 0,
+              "allRemovalsTimeMs": 0,
+              "commitTimeMs": 3722,
+              "memoryUsedBytes": 9256,
+              "numRowsDroppedByWatermark": 0,
+              "numShufflePartitions": 4,
+              "numStateStoreInstances": 16,
+              "customMetrics": {
+                "loadedMapCacheHitCount": 8,
+                "loadedMapCacheMissCount": 0,
+                "stateOnCurrentVersionSizeBytes": 1872
+              }
+            }
+          ],
+          "sources": [
+            {
+              "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab21/clicks]",
+              "startOffset": {
+                "logOffset": 0
+              },
+              "endOffset": {
+                "logOffset": 0
+              },
+              "latestOffset": null,
+              "numInputRows": 0,
+              "inputRowsPerSecond": 0.0,
+              "processedRowsPerSecond": 0.0
+            },
+            {
+              "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab21/purchases]",
+              "startOffset": {
+                "logOffset": 0
+              },
+              "endOffset": {
+                "logOffset": 0
+              },
+              "latestOffset": null,
+              "numInputRows": 0,
+              "inputRowsPerSecond": 0.0,
+              "processedRowsPerSecond": 0.0
+            }
+          ],
+          "sink": {
+            "description": "DeltaSink[/evidence/tests-streaming/20261011T040856Z-6f8487be/lab21/target]",
+            "numOutputRows": -1
+          }
+        },
+        {
+          "id": "87a43fb0-435f-47db-8b21-e27f107a8d33",
+          "runId": "33a430a6-3c11-4a94-9fcf-1b22647e4082",
+          "name": null,
+          "timestamp": "2026-10-11T04:13:54.000Z",
+          "batchId": 2,
+          "batchDuration": 4338,
+          "numInputRows": 1,
+          "inputRowsPerSecond": 1.0615711252653928,
+          "processedRowsPerSecond": 0.2305209774089442,
+          "durationMs": {
+            "addBatch": 3409,
+            "commitOffsets": 225,
+            "getBatch": 56,
+            "latestOffset": 234,
+            "queryPlanning": 260,
+            "triggerExecution": 4337,
+            "walCommit": 152
+          },
+          "eventTime": {
+            "avg": "2026-10-01T10:12:00.000Z",
+            "max": "2026-10-01T10:12:00.000Z",
+            "min": "2026-10-01T10:12:00.000Z",
+            "watermark": "2026-10-01T09:57:00.000Z"
+          },
+          "stateOperators": [
+            {
+              "operatorName": "symmetricHashJoin",
+              "numRowsTotal": 5,
+              "numRowsUpdated": 1,
+              "allUpdatesTimeMs": 1203,
+              "numRowsRemoved": 0,
+              "allRemovalsTimeMs": 0,
+              "commitTimeMs": 5585,
+              "memoryUsedBytes": 9808,
+              "numRowsDroppedByWatermark": 0,
+              "numShufflePartitions": 4,
+              "numStateStoreInstances": 16,
+              "customMetrics": {
+                "loadedMapCacheHitCount": 16,
+                "loadedMapCacheMissCount": 0,
+                "stateOnCurrentVersionSizeBytes": 2152
+              }
+            }
+          ],
+          "sources": [
+            {
+              "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab21/clicks]",
+              "startOffset": {
+                "logOffset": 0
+              },
+              "endOffset": {
+                "logOffset": 0
+              },
+              "latestOffset": null,
+              "numInputRows": 0,
+              "inputRowsPerSecond": 0.0,
+              "processedRowsPerSecond": 0.0
+            },
+            {
+              "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab21/purchases]",
+              "startOffset": {
+                "logOffset": 0
+              },
+              "endOffset": {
+                "logOffset": 1
+              },
+              "latestOffset": null,
+              "numInputRows": 1,
+              "inputRowsPerSecond": 1.0615711252653928,
+              "processedRowsPerSecond": 0.2305209774089442
+            }
+          ],
+          "sink": {
+            "description": "DeltaSink[/evidence/tests-streaming/20261011T040856Z-6f8487be/lab21/target]",
+            "numOutputRows": -1
+          }
+        },
+        {
+          "id": "87a43fb0-435f-47db-8b21-e27f107a8d33",
+          "runId": "33a430a6-3c11-4a94-9fcf-1b22647e4082",
+          "name": null,
+          "timestamp": "2026-10-11T04:14:03.000Z",
+          "batchId": 3,
+          "batchDuration": 2996,
+          "numInputRows": 2,
+          "inputRowsPerSecond": 2.1231422505307855,
+          "processedRowsPerSecond": 0.6675567423230975,
+          "durationMs": {
+            "addBatch": 1746,
+            "commitOffsets": 154,
+            "getBatch": 91,
+            "latestOffset": 613,
+            "queryPlanning": 79,
+            "triggerExecution": 2996,
+            "walCommit": 311
+          },
+          "eventTime": {
+            "avg": "2026-10-01T11:00:00.000Z",
+            "max": "2026-10-01T11:00:00.000Z",
+            "min": "2026-10-01T11:00:00.000Z",
+            "watermark": "2026-10-01T09:57:00.000Z"
+          },
+          "stateOperators": [
+            {
+              "operatorName": "symmetricHashJoin",
+              "numRowsTotal": 7,
+              "numRowsUpdated": 2,
+              "allUpdatesTimeMs": 289,
+              "numRowsRemoved": 0,
+              "allRemovalsTimeMs": 0,
+              "commitTimeMs": 2653,
+              "memoryUsedBytes": 10736,
+              "numRowsDroppedByWatermark": 0,
+              "numShufflePartitions": 4,
+              "numStateStoreInstances": 16,
+              "customMetrics": {
+                "loadedMapCacheHitCount": 24,
+                "loadedMapCacheMissCount": 0,
+                "stateOnCurrentVersionSizeBytes": 2696
+              }
+            }
+          ],
+          "sources": [
+            {
+              "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab21/clicks]",
+              "startOffset": {
+                "logOffset": 0
+              },
+              "endOffset": {
+                "logOffset": 1
+              },
+              "latestOffset": null,
+              "numInputRows": 1,
+              "inputRowsPerSecond": 1.0615711252653928,
+              "processedRowsPerSecond": 0.33377837116154874
+            },
+            {
+              "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab21/purchases]",
+              "startOffset": {
+                "logOffset": 1
+              },
+              "endOffset": {
+                "logOffset": 2
+              },
+              "latestOffset": null,
+              "numInputRows": 1,
+              "inputRowsPerSecond": 1.0615711252653928,
+              "processedRowsPerSecond": 0.33377837116154874
+            }
+          ],
+          "sink": {
+            "description": "DeltaSink[/evidence/tests-streaming/20261011T040856Z-6f8487be/lab21/target]",
+            "numOutputRows": -1
+          }
+        },
+        {
+          "id": "87a43fb0-435f-47db-8b21-e27f107a8d33",
+          "runId": "33a430a6-3c11-4a94-9fcf-1b22647e4082",
+          "name": null,
+          "timestamp": "2026-10-11T04:14:05.997Z",
+          "batchId": 4,
+          "batchDuration": 4461,
+          "numInputRows": 0,
+          "inputRowsPerSecond": 0.0,
+          "processedRowsPerSecond": 0.0,
+          "durationMs": {
+            "addBatch": 3946,
+            "commitOffsets": 216,
+            "getBatch": 0,
+            "latestOffset": 44,
+            "queryPlanning": 95,
+            "triggerExecution": 4461,
+            "walCommit": 156
+          },
+          "eventTime": {
+            "watermark": "2026-10-01T10:50:00.000Z"
+          },
+          "stateOperators": [
+            {
+              "operatorName": "symmetricHashJoin",
+              "numRowsTotal": 2,
+              "numRowsUpdated": 0,
+              "allUpdatesTimeMs": 239,
+              "numRowsRemoved": 2,
+              "allRemovalsTimeMs": 185,
+              "commitTimeMs": 2640,
+              "memoryUsedBytes": 10640,
+              "numRowsDroppedByWatermark": 0,
+              "numShufflePartitions": 4,
+              "numStateStoreInstances": 16,
+              "customMetrics": {
+                "loadedMapCacheHitCount": 32,
+                "loadedMapCacheMissCount": 0,
+                "stateOnCurrentVersionSizeBytes": 1440
+              }
+            }
+          ],
+          "sources": [
+            {
+              "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab21/clicks]",
+              "startOffset": {
+                "logOffset": 1
+              },
+              "endOffset": {
+                "logOffset": 1
+              },
+              "latestOffset": null,
+              "numInputRows": 0,
+              "inputRowsPerSecond": 0.0,
+              "processedRowsPerSecond": 0.0
+            },
+            {
+              "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab21/purchases]",
+              "startOffset": {
+                "logOffset": 2
+              },
+              "endOffset": {
+                "logOffset": 2
+              },
+              "latestOffset": null,
+              "numInputRows": 0,
+              "inputRowsPerSecond": 0.0,
+              "processedRowsPerSecond": 0.0
+            }
+          ],
+          "sink": {
+            "description": "DeltaSink[/evidence/tests-streaming/20261011T040856Z-6f8487be/lab21/target]",
+            "numOutputRows": -1
+          }
+        }
+      ],
+      "target": [
+        {
+          "click_id": "C1",
+          "user_id": "U1",
+          "click_time": "2026-10-01T10:00:00Z",
+          "purchase_id": "P1",
+          "purchase_time": "2026-10-01T10:10:00Z",
+          "amount": 100
+        },
+        {
+          "click_id": "C2",
+          "user_id": "U1",
+          "click_time": "2026-10-01T10:05:00Z",
+          "purchase_id": "P2",
+          "purchase_time": "2026-10-01T10:12:00Z",
+          "amount": 100
+        },
+        {
+          "click_id": "C3",
+          "user_id": "U1",
+          "click_time": "2026-10-01T10:07:00Z",
+          "purchase_id": null,
+          "purchase_time": null,
+          "amount": null
+        }
+      ],
+      "targetHash": "7dc5d9e3a48a2fcb0fc5b72dfc963f4a3686cf4334026ea87e4ecaccb27d08e1"
+    }
+  ],
+  "checkpoint": [
+    ".metadata.crc",
+    "commits/.0.crc",
+    "commits/.1.crc",
+    "commits/.2.crc",
+    "commits/.3.crc",
+    "commits/.4.crc",
+    "commits/0",
+    "commits/1",
+    "commits/2",
+    "commits/3",
+    "commits/4",
+    "metadata",
+    "offsets/.0.crc",
+    "offsets/.1.crc",
+    "offsets/.2.crc",
+    "offsets/.3.crc",
+    "offsets/.4.crc",
+    "offsets/0",
+    "offsets/1",
+    "offsets/2",
+    "offsets/3",
+    "offsets/4",
+    "sources/0/.0.crc",
+    "sources/0/.1.crc",
+    "sources/0/0",
+    "sources/0/1",
+    "sources/1/.0.crc",
+    "sources/1/.1.crc",
+    "sources/1/.2.crc",
+    "sources/1/0",
+    "sources/1/1",
+    "sources/1/2",
+    "state/0/0/left-keyToNumValues/.1.delta.crc",
+    "state/0/0/left-keyToNumValues/.2.delta.crc",
+    "state/0/0/left-keyToNumValues/.3.delta.crc",
+    "state/0/0/left-keyToNumValues/.4.delta.crc",
+    "state/0/0/left-keyToNumValues/.5.delta.crc",
+    "state/0/0/left-keyToNumValues/1.delta",
+    "state/0/0/left-keyToNumValues/2.delta",
+    "state/0/0/left-keyToNumValues/3.delta",
+    "state/0/0/left-keyToNumValues/4.delta",
+    "state/0/0/left-keyToNumValues/5.delta",
+    "state/0/0/left-keyToNumValues/_metadata/.schema.crc",
+    "state/0/0/left-keyToNumValues/_metadata/schema",
+    "state/0/0/left-keyWithIndexToValue/.1.delta.crc",
+    "state/0/0/left-keyWithIndexToValue/.2.delta.crc",
+    "state/0/0/left-keyWithIndexToValue/.3.delta.crc",
+    "state/0/0/left-keyWithIndexToValue/.4.delta.crc",
+    "state/0/0/left-keyWithIndexToValue/.5.delta.crc",
+    "state/0/0/left-keyWithIndexToValue/1.delta",
+    "state/0/0/left-keyWithIndexToValue/2.delta",
+    "state/0/0/left-keyWithIndexToValue/3.delta",
+    "state/0/0/left-keyWithIndexToValue/4.delta",
+    "state/0/0/left-keyWithIndexToValue/5.delta",
+    "state/0/0/left-keyWithIndexToValue/_metadata/.schema.crc",
+    "state/0/0/left-keyWithIndexToValue/_metadata/schema",
+    "state/0/0/right-keyToNumValues/.1.delta.crc",
+    "state/0/0/right-keyToNumValues/.2.delta.crc",
+    "state/0/0/right-keyToNumValues/.3.delta.crc",
+    "state/0/0/right-keyToNumValues/.4.delta.crc",
+    "state/0/0/right-keyToNumValues/.5.delta.crc",
+    "state/0/0/right-keyToNumValues/1.delta",
+    "state/0/0/right-keyToNumValues/2.delta",
+    "state/0/0/right-keyToNumValues/3.delta",
+    "state/0/0/right-keyToNumValues/4.delta",
+    "state/0/0/right-keyToNumValues/5.delta",
+    "state/0/0/right-keyToNumValues/_metadata/.schema.crc",
+    "state/0/0/right-keyToNumValues/_metadata/schema",
+    "state/0/0/right-keyWithIndexToValue/.1.delta.crc",
+    "state/0/0/right-keyWithIndexToValue/.2.delta.crc",
+    "state/0/0/right-keyWithIndexToValue/.3.delta.crc",
+    "state/0/0/right-keyWithIndexToValue/.4.delta.crc",
+    "state/0/0/right-keyWithIndexToValue/.5.delta.crc",
+    "state/0/0/right-keyWithIndexToValue/1.delta",
+    "state/0/0/right-keyWithIndexToValue/2.delta",
+    "state/0/0/right-keyWithIndexToValue/3.delta",
+    "state/0/0/right-keyWithIndexToValue/4.delta",
+    "state/0/0/right-keyWithIndexToValue/5.delta",
+    "state/0/0/right-keyWithIndexToValue/_metadata/.schema.crc",
+    "state/0/0/right-keyWithIndexToValue/_metadata/schema",
+    "state/0/1/left-keyToNumValues/.1.delta.crc",
+    "state/0/1/left-keyToNumValues/.2.delta.crc",
+    "state/0/1/left-keyToNumValues/.3.delta.crc",
+    "state/0/1/left-keyToNumValues/.4.delta.crc",
+    "state/0/1/left-keyToNumValues/.5.delta.crc",
+    "state/0/1/left-keyToNumValues/1.delta",
+    "state/0/1/left-keyToNumValues/2.delta",
+    "state/0/1/left-keyToNumValues/3.delta",
+    "state/0/1/left-keyToNumValues/4.delta",
+    "state/0/1/left-keyToNumValues/5.delta",
+    "state/0/1/left-keyWithIndexToValue/.1.delta.crc",
+    "state/0/1/left-keyWithIndexToValue/.2.delta.crc",
+    "state/0/1/left-keyWithIndexToValue/.3.delta.crc",
+    "state/0/1/left-keyWithIndexToValue/.4.delta.crc",
+    "state/0/1/left-keyWithIndexToValue/.5.delta.crc",
+    "state/0/1/left-keyWithIndexToValue/1.delta",
+    "state/0/1/left-keyWithIndexToValue/2.delta",
+    "state/0/1/left-keyWithIndexToValue/3.delta",
+    "state/0/1/left-keyWithIndexToValue/4.delta",
+    "state/0/1/left-keyWithIndexToValue/5.delta",
+    "state/0/1/right-keyToNumValues/.1.delta.crc",
+    "state/0/1/right-keyToNumValues/.2.delta.crc",
+    "state/0/1/right-keyToNumValues/.3.delta.crc",
+    "state/0/1/right-keyToNumValues/.4.delta.crc",
+    "state/0/1/right-keyToNumValues/.5.delta.crc",
+    "state/0/1/right-keyToNumValues/1.delta",
+    "state/0/1/right-keyToNumValues/2.delta",
+    "state/0/1/right-keyToNumValues/3.delta",
+    "state/0/1/right-keyToNumValues/4.delta",
+    "state/0/1/right-keyToNumValues/5.delta",
+    "state/0/1/right-keyWithIndexToValue/.1.delta.crc",
+    "state/0/1/right-keyWithIndexToValue/.2.delta.crc",
+    "state/0/1/right-keyWithIndexToValue/.3.delta.crc",
+    "state/0/1/right-keyWithIndexToValue/.4.delta.crc",
+    "state/0/1/right-keyWithIndexToValue/.5.delta.crc",
+    "state/0/1/right-keyWithIndexToValue/1.delta",
+    "state/0/1/right-keyWithIndexToValue/2.delta",
+    "state/0/1/right-keyWithIndexToValue/3.delta",
+    "state/0/1/right-keyWithIndexToValue/4.delta",
+    "state/0/1/right-keyWithIndexToValue/5.delta",
+    "state/0/2/left-keyToNumValues/.1.delta.crc",
+    "state/0/2/left-keyToNumValues/.2.delta.crc",
+    "state/0/2/left-keyToNumValues/.3.delta.crc",
+    "state/0/2/left-keyToNumValues/.4.delta.crc",
+    "state/0/2/left-keyToNumValues/.5.delta.crc",
+    "state/0/2/left-keyToNumValues/1.delta",
+    "state/0/2/left-keyToNumValues/2.delta",
+    "state/0/2/left-keyToNumValues/3.delta",
+    "state/0/2/left-keyToNumValues/4.delta",
+    "state/0/2/left-keyToNumValues/5.delta",
+    "state/0/2/left-keyWithIndexToValue/.1.delta.crc",
+    "state/0/2/left-keyWithIndexToValue/.2.delta.crc",
+    "state/0/2/left-keyWithIndexToValue/.3.delta.crc",
+    "state/0/2/left-keyWithIndexToValue/.4.delta.crc",
+    "state/0/2/left-keyWithIndexToValue/.5.delta.crc",
+    "state/0/2/left-keyWithIndexToValue/1.delta",
+    "state/0/2/left-keyWithIndexToValue/2.delta",
+    "state/0/2/left-keyWithIndexToValue/3.delta",
+    "state/0/2/left-keyWithIndexToValue/4.delta",
+    "state/0/2/left-keyWithIndexToValue/5.delta",
+    "state/0/2/right-keyToNumValues/.1.delta.crc",
+    "state/0/2/right-keyToNumValues/.2.delta.crc",
+    "state/0/2/right-keyToNumValues/.3.delta.crc",
+    "state/0/2/right-keyToNumValues/.4.delta.crc",
+    "state/0/2/right-keyToNumValues/.5.delta.crc",
+    "state/0/2/right-keyToNumValues/1.delta",
+    "state/0/2/right-keyToNumValues/2.delta",
+    "state/0/2/right-keyToNumValues/3.delta",
+    "state/0/2/right-keyToNumValues/4.delta",
+    "state/0/2/right-keyToNumValues/5.delta",
+    "state/0/2/right-keyWithIndexToValue/.1.delta.crc",
+    "state/0/2/right-keyWithIndexToValue/.2.delta.crc",
+    "state/0/2/right-keyWithIndexToValue/.3.delta.crc",
+    "state/0/2/right-keyWithIndexToValue/.4.delta.crc",
+    "state/0/2/right-keyWithIndexToValue/.5.delta.crc",
+    "state/0/2/right-keyWithIndexToValue/1.delta",
+    "state/0/2/right-keyWithIndexToValue/2.delta",
+    "state/0/2/right-keyWithIndexToValue/3.delta",
+    "state/0/2/right-keyWithIndexToValue/4.delta",
+    "state/0/2/right-keyWithIndexToValue/5.delta",
+    "state/0/3/left-keyToNumValues/.1.delta.crc",
+    "state/0/3/left-keyToNumValues/.2.delta.crc",
+    "state/0/3/left-keyToNumValues/.3.delta.crc",
+    "state/0/3/left-keyToNumValues/.4.delta.crc",
+    "state/0/3/left-keyToNumValues/.5.delta.crc",
+    "state/0/3/left-keyToNumValues/1.delta",
+    "state/0/3/left-keyToNumValues/2.delta",
+    "state/0/3/left-keyToNumValues/3.delta",
+    "state/0/3/left-keyToNumValues/4.delta",
+    "state/0/3/left-keyToNumValues/5.delta",
+    "state/0/3/left-keyWithIndexToValue/.1.delta.crc",
+    "state/0/3/left-keyWithIndexToValue/.2.delta.crc",
+    "state/0/3/left-keyWithIndexToValue/.3.delta.crc",
+    "state/0/3/left-keyWithIndexToValue/.4.delta.crc",
+    "state/0/3/left-keyWithIndexToValue/.5.delta.crc",
+    "state/0/3/left-keyWithIndexToValue/1.delta",
+    "state/0/3/left-keyWithIndexToValue/2.delta",
+    "state/0/3/left-keyWithIndexToValue/3.delta",
+    "state/0/3/left-keyWithIndexToValue/4.delta",
+    "state/0/3/left-keyWithIndexToValue/5.delta",
+    "state/0/3/right-keyToNumValues/.1.delta.crc",
+    "state/0/3/right-keyToNumValues/.2.delta.crc",
+    "state/0/3/right-keyToNumValues/.3.delta.crc",
+    "state/0/3/right-keyToNumValues/.4.delta.crc",
+    "state/0/3/right-keyToNumValues/.5.delta.crc",
+    "state/0/3/right-keyToNumValues/1.delta",
+    "state/0/3/right-keyToNumValues/2.delta",
+    "state/0/3/right-keyToNumValues/3.delta",
+    "state/0/3/right-keyToNumValues/4.delta",
+    "state/0/3/right-keyToNumValues/5.delta",
+    "state/0/3/right-keyWithIndexToValue/.1.delta.crc",
+    "state/0/3/right-keyWithIndexToValue/.2.delta.crc",
+    "state/0/3/right-keyWithIndexToValue/.3.delta.crc",
+    "state/0/3/right-keyWithIndexToValue/.4.delta.crc",
+    "state/0/3/right-keyWithIndexToValue/.5.delta.crc",
+    "state/0/3/right-keyWithIndexToValue/1.delta",
+    "state/0/3/right-keyWithIndexToValue/2.delta",
+    "state/0/3/right-keyWithIndexToValue/3.delta",
+    "state/0/3/right-keyWithIndexToValue/4.delta",
+    "state/0/3/right-keyWithIndexToValue/5.delta",
+    "state/0/_metadata/.metadata.crc",
+    "state/0/_metadata/metadata"
+  ]
+}

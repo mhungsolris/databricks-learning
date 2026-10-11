@@ -1,0 +1,26 @@
+{
+  "tests": 8,
+  "success": true,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "sourceHashes": {
+    "labs/production/model.py": "ac9ad9383091d0b2934a56a449b4c1ded773281988854d192165b59c2314348e",
+    "labs/production/src/transforms.py": "2cd8cfbb2df4fc9a9de136a3fef91d4afbd09e4d945aa7d2142b5256a0bdabf3",
+    "labs/production/src/expectations.py": "381b3d0c9c7abbccd094c7f9a25d5262363496a940e106530ff0043bdebb4a3f",
+    "labs/production/src/fixtures.json": "5869732a06adfe3fa0567e2d07f5e218b7333a275a9a281480213fc5d53584ab",
+    "labs/production/src/roas.py": "889bfba9bea0eb617f12b56812ceacba96d8b9ff67105ee4403600c8cd2d50f6",
+    "labs/production/databricks.yml": "7d473fd612734cf55c9918f73cd2555efd5274e4eb18430a3cc1cb9c5a1ec6ba",
+    "labs/production/resources/roas.job.yml": "c4e4b1e31eba146c5c1f07d4d6b36190831eb0a46c893884d20f669852765d35",
+    "labs/production/tests/test_contracts.py": "153ad0895f1a810751932a141fe9bdce2bce8b62c5c95c08eba5df6597456d91",
+    "scripts/test_production.py": "847185b2eda60afbe3f82575fb71dac242475b5c84d78e66318625a22a678eec",
+    "scripts/production_evidence.py": "4fbc51af5fe936864c0122a7685b19fe86cd08f0e5993d44d3cf34930b5e04db",
+    "scripts/check_production_config.py": "13cc2e8e33c3c29dd5c778117b62c2e854930761d4a81c1fca042ed139d1451b",
+    ".github/workflows/roas-release.yml": "9ab3c8407a65b6704472d87f70732a01fd0af0a90b42552b4e5f8865080b1fc9",
+    "runtime/spark.json": "cf4a020d3ab4d1bb0290ca086f2f7e57a97f8ed58881a04c185ca93d3afbe844",
+    "labs/spark/common.py": "29b796c57287f03bd43ad689119000b5d00d9d3eef33c109da4ca45a55d1aabf",
+    "scripts/spark_runtime.py": "4cf8448396e6ca9cc44bdf7950cb8e077f37c9029484561e12e70a58392856e9"
+  },
+  "sourceEncoding": "UTF-8 LF",
+  "completedStages": 202
+}

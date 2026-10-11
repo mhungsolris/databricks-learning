@@ -1,0 +1,4 @@
+{
+  "errorClass": "DELTA_MULTIPLE_SOURCE_ROW_MATCHING_TARGET_ROW_IN_MERGE",
+  "noNewCommit": true
+}

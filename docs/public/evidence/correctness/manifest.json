@@ -1,0 +1,52 @@
+{
+  "verifiedDate": "2026-10-11",
+  "timezone": "Asia/Saigon",
+  "sourceRun": ".skills-test/spark/tests-correctness/20261010T182402Z-b6e98655",
+  "runtimePin": {
+    "sparkVersion": "4.0.4",
+    "image": "apache/spark@sha256:94ad730f7510002d8a1615de269f27cdeca4d4eef51657384db3fa9246b5a4d8",
+    "sourceTag": "apache/spark:4.0.4-python3",
+    "master": "local[*]",
+    "cpus": "2",
+    "memory": "4g",
+    "driverMemory": "1g",
+    "deltaVersion": "4.0.1"
+  },
+  "purpose": "Business state, retry histories, source ambiguity and bounded publish invariants",
+  "completedStages": 487,
+  "files": {
+    "runtime.json": "4fdde6391be833247df84c1c34ffb55aecaa6e2ed6b1051b60bf89b30ed61191",
+    "shutdown.json": "995b859531438e449c3901e8ef45dcbd8a9e476ec73d1f0fded746f738b6b99b",
+    "test-summary.json": "7bb8b66c9d93baddb3ea2258b45d16822170fea2edac7871cbc79b9317cbc6ee",
+    "lab09/result.json": "8ae46de9339e49ea7afcc6a5854feae79d5102e90f92b6fd3b669075ef3c2fee",
+    "lab09/grain-contracts.json": "ac583977b98400c15c993815e5f37a8394be937aba462426d6acc7dd629922f3",
+    "lab09/bronze-payloads.json": "07bfa8f7bbd00000a7cf22dc6244287c2068aa0836af6171d80114e59448e40b",
+    "lab10/result.json": "2d6d7315d65b0039088e445b89871b6f701fef1cdb2ee3bcc3c706eb6ce22ccb",
+    "lab11/result.json": "110a6ab17716ac9183f9d0034a4116a473061a2c7c496723068d5db90c41c311",
+    "lab11/once.json": "8ad2247598005499a946088db6dfa5d84526922f6933660029a47f74ab6f959a",
+    "lab11/replay.json": "7fc5a9a1095b191e43876d0156f7c962937181301c1314a940c43494b6aea89f",
+    "lab11/append-duplicates.json": "0605eeae877f1939c2ac3d0a8579be24d31aa41577205699bad4e9130b28a109",
+    "lab11/after-ack-failure-retry.json": "f815c5fb1893d774ea72a18fd831ceca36e1caad1b5450220dc73e1c33b86116",
+    "lab12/result.json": "9e4e8a3dbf701aa077416bcfa25b2f61fee6f38db8395d9cc1e4b4ad944d31ce",
+    "lab12/newer.json": "01f8be67baf597130bde358239bc5b171aec98afba37ff3318ad34eb07d444c2",
+    "lab12/ambiguous-source-error.json": "8077af41514488c436003a8481272d33e435bdd865c17ea5313976d9e8011274",
+    "lab12/non-idempotent-merge.json": "4446321d9b9c8d6fcb9cff12c312ba265d72dc402ce165a29eb2038072b3e7b4",
+    "lab13/result.json": "6057212f254b62a6069fbf60317e402066fddc2bdb6139d2681f33cd58f61ca6",
+    "lab14/result.json": "84f1e8c513af5ae638cd13f4fa762c7fa7d9f41a61d817bba205bf370f986d6a",
+    "lab14/t2.json": "021d78ffa5059c2e305d0461481afc352269cac2bdb5f7aad0a9f6628a6175e3",
+    "lab14/replay-all-snapshots.json": "651224e69abaca5056ce80e4037f5b38678f082bdb654f4f080d83a5c03bfbe2",
+    "lab14/mismatch-reconciliation.json": "47677608bf7c732ac1a7f4785b67edb6f07e0f07af767b6d4262149a971e9a35",
+    "lab15/result.json": "210874fa97e0ec7276fc9c4c58dfd3d960730db6eaad4069b6e88816bc931c29",
+    "lab15/validation-before-publish.json": "d93f41eb1a311c93cdc8ef81a4ba5173fb37f5a06888da2adae41c9bb181cfdd",
+    "lab15/rerun-with-live-update.json": "20e97685f6a04c7d2ed3d64915a54d30a8fc0dfa2aea62209e7faa7f4481842a",
+    "unmatched-duplicates/result.json": "270ddaf8e7d4529044cee88b6bf62ecfff284cfba0aec2a5b7f759f7f27799f3"
+  },
+  "sourceHashes": {
+    "labs/correctness/model.py": "3d180f3c72fc249f7a13064f2c0dfa6c322f1161889d96fe5812b452c66f4a43",
+    "labs/correctness/delta_labs.py": "95256fcdadf5f6458c979b16b414bab4a87651eacc2ccc68f1412a1d1fe4dcfb",
+    "scripts/test_correctness.py": "0c183ab26800962f7f7b820df343207a5899a979561ed1047dcd7f8e23c1550b",
+    "scripts/run_correctness.py": "258beafd33e0144085b8037ceb8137fce865c48520fc6cce691ced08677e8111",
+    "runtime/spark.json": "cf4a020d3ab4d1bb0290ca086f2f7e57a97f8ed58881a04c185ca93d3afbe844"
+  },
+  "sourceHashEncoding": "UTF-8 with LF newlines"
+}

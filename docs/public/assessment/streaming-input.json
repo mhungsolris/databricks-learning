@@ -1,0 +1,126 @@
+{
+  "case": "Synthetic ROAS streaming assessment",
+  "requirements": {
+    "freshnessMinutes": 15,
+    "arrivalToleranceHours": 2,
+    "mutationHorizonHours": 72,
+    "money": "integer USD cents",
+    "timezone": "UTC",
+    "costCadence": "daily"
+  },
+  "sourceContract": {
+    "revision": "strictly increasing per business identity; same revision content conflicts are errors",
+    "eventTime": "immutable business occurrence",
+    "updatedAt": "source mutation time",
+    "bronze": "retains all raw deliveries and revisions for 7 days",
+    "authoritativeBackfill": "complete bounded snapshot available for 90 days at explicit cutoff",
+    "identifierScopes": "event_id is stable within one source_system/app_id, but can collide across apps or source systems"
+  },
+  "deliveries": [
+    {
+      "source_system": "callbacks",
+      "app_id": "game-a",
+      "event_id": "S701",
+      "revision": 1,
+      "event_time": "2026-10-01T10:00:00Z",
+      "updated_at": "2026-10-01T10:00:00Z",
+      "arrival": "2026-10-01T10:01:00Z",
+      "revenue": 230,
+      "campaign": "G1"
+    },
+    {
+      "source_system": "callbacks",
+      "app_id": "game-a",
+      "event_id": "S701",
+      "revision": 1,
+      "event_time": "2026-10-01T10:00:00Z",
+      "updated_at": "2026-10-01T10:00:00Z",
+      "arrival": "2026-10-01T10:02:00Z",
+      "revenue": 230,
+      "campaign": "G1"
+    },
+    {
+      "source_system": "callbacks",
+      "app_id": "game-b",
+      "event_id": "S701",
+      "revision": 1,
+      "event_time": "2026-10-01T10:03:00Z",
+      "updated_at": "2026-10-01T10:03:00Z",
+      "arrival": "2026-10-01T10:04:00Z",
+      "revenue": 410,
+      "campaign": "M1"
+    },
+    {
+      "source_system": "callbacks",
+      "app_id": "game-a",
+      "event_id": "S702",
+      "revision": 1,
+      "event_time": "2026-10-01T09:50:00Z",
+      "updated_at": "2026-10-01T09:50:00Z",
+      "arrival": "2026-10-01T11:40:00Z",
+      "revenue": 90,
+      "campaign": "G1"
+    },
+    {
+      "source_system": "callbacks",
+      "app_id": "game-a",
+      "event_id": "S701",
+      "revision": 2,
+      "event_time": "2026-10-01T10:00:00Z",
+      "updated_at": "2026-10-03T09:00:00Z",
+      "arrival": "2026-10-03T09:02:00Z",
+      "revenue": 260,
+      "campaign": "M2"
+    }
+  ],
+  "incidents": [
+    {
+      "name": "uncertain-write",
+      "checkpoint": "readable and compatible",
+      "source": "retained",
+      "sink": "Delta transaction durable for attempted batch; engine commits log lacks that batch"
+    },
+    {
+      "name": "lost-checkpoint-complete-replay",
+      "checkpoint": "unusable",
+      "target": "latest known state through revision 1; live unrelated scope has new writes",
+      "replayComplete": true,
+      "authoritativeBackfill": true
+    },
+    {
+      "name": "lost-checkpoint-retention-gap",
+      "checkpoint": "unusable",
+      "target": "historical Gold contains yesterday events",
+      "replayComplete": false,
+      "missingScope": "yesterday first 6 hours",
+      "authoritativeBackfill": true
+    },
+    {
+      "name": "missing-truth",
+      "checkpoint": "unusable",
+      "replayComplete": false,
+      "authoritativeBackfill": false,
+      "reconciliation": "source completeness cannot be proven"
+    }
+  ],
+  "lastKnownTarget": [
+    {
+      "source_system": "callbacks",
+      "app_id": "game-a",
+      "event_id": "S701",
+      "revision": 1,
+      "revenue": 230,
+      "campaign": "G1"
+    }
+  ],
+  "requiredTests": [
+    "identity collision",
+    "within-horizon duplicate",
+    "late arrival",
+    "72h revision",
+    "same checkpoint retry",
+    "new checkpoint replay",
+    "state key change",
+    "content mismatch with same total"
+  ]
+}

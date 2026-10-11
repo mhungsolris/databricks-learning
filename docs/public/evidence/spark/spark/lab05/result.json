@@ -1,0 +1,18 @@
+{
+  "narrow": {
+    "rows": 60,
+    "exchange": false
+  },
+  "aggregate": {
+    "rows": 3,
+    "exchange": true
+  },
+  "order": {
+    "rows": 120,
+    "exchange": true
+  },
+  "join": {
+    "rows": 120,
+    "exchange": true
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "safeRevenue": 100,
+  "appendRevenue": 300,
+  "onceHash": "43ae02345adb272dba6a5349f9a1ca7372966344f98de9961a58b9756d30aa8b",
+  "replayHash": "43ae02345adb272dba6a5349f9a1ca7372966344f98de9961a58b9756d30aa8b",
+  "ackRetryHash": "43ae02345adb272dba6a5349f9a1ca7372966344f98de9961a58b9756d30aa8b",
+  "reconciliation": {
+    "missing": [],
+    "extra": [],
+    "duplicates": [],
+    "mismatched": [],
+    "nullKeys": 0,
+    "expectedRows": 1,
+    "actualRows": 1,
+    "expectedRevenue": 100,
+    "actualRevenue": 100,
+    "tolerance": 0,
+    "expectedByDay": {
+      "2026-10-01": 100
+    },
+    "actualByDay": {
+      "2026-10-01": 100
+    },
+    "pass": true
+  },
+  "faultsObserved": [
+    "after_read_before_write",
+    "after_commit_before_ack"
+  ],
+  "businessStateStableDespiteHistoryChanges": true
+}

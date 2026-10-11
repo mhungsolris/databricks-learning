@@ -1,0 +1,42 @@
+{
+  "resources": {
+    "jobs": {
+      "roas": {
+        "name": "course-roas-${bundle.target}",
+        "max_concurrent_runs": 1,
+        "parameters": [
+          {
+            "name": "catalog",
+            "default": "${var.catalog}"
+          },
+          {
+            "name": "schema",
+            "default": "${var.schema}"
+          },
+          {
+            "name": "force_failure",
+            "default": "false"
+          }
+        ],
+        "permissions": [
+          {
+            "group_name": "${var.operator_group}",
+            "level": "CAN_VIEW"
+          }
+        ],
+        "tasks": [
+          {
+            "task_key": "validate_stage_reconcile_publish",
+            "notebook_task": {
+              "notebook_path": "../src/roas.py"
+            },
+            "max_retries": 1,
+            "min_retry_interval_millis": 1000,
+            "retry_on_timeout": false,
+            "timeout_seconds": 1200
+          }
+        ]
+      }
+    }
+  }
+}

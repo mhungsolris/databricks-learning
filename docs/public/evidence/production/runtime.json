@@ -1,0 +1,11 @@
+{
+  "sparkVersion": "4.0.4",
+  "master": "local[*]",
+  "pythonVersion": "3.10.12",
+  "javaVersion": "17.0.19",
+  "applicationId": "local-1791699892772",
+  "defaultParallelism": 8,
+  "adaptiveEnabled": "false",
+  "shufflePartitions": "4",
+  "uiUrl": "http://localhost:4040"
+}

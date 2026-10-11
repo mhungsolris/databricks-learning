@@ -1,0 +1,48 @@
+{
+  "narrow": {
+    "rows": 60,
+    "exchange": false,
+    "jobIds": [
+      0
+    ],
+    "stageIds": [
+      0
+    ]
+  },
+  "aggregate": {
+    "rows": 3,
+    "exchange": true,
+    "jobIds": [
+      1
+    ],
+    "stageIds": [
+      1,
+      2
+    ]
+  },
+  "order": {
+    "rows": 120,
+    "exchange": true,
+    "jobIds": [
+      2,
+      3
+    ],
+    "stageIds": [
+      3,
+      4,
+      5
+    ]
+  },
+  "join": {
+    "rows": 120,
+    "exchange": true,
+    "jobIds": [
+      4
+    ],
+    "stageIds": [
+      6,
+      7,
+      8
+    ]
+  }
+}

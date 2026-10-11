@@ -1,0 +1,290 @@
+{
+  "before": {
+    "queryId": "401a7b16-59d6-4bf5-985a-1689f4e95cf2",
+    "runId": "60c6dd70-df22-409d-a287-3d943411694c",
+    "active": true,
+    "progress": [
+      {
+        "id": "401a7b16-59d6-4bf5-985a-1689f4e95cf2",
+        "runId": "60c6dd70-df22-409d-a287-3d943411694c",
+        "name": null,
+        "timestamp": "2026-10-11T04:15:28.171Z",
+        "batchId": 0,
+        "batchDuration": 2467,
+        "numInputRows": 2,
+        "inputRowsPerSecond": 0.0,
+        "processedRowsPerSecond": 0.8107012565869477,
+        "durationMs": {
+          "addBatch": 1281,
+          "commitOffsets": 145,
+          "getBatch": 48,
+          "latestOffset": 183,
+          "queryPlanning": 668,
+          "triggerExecution": 2467,
+          "walCommit": 141
+        },
+        "stateOperators": [
+          {
+            "operatorName": "stateStoreSave",
+            "numRowsTotal": 2,
+            "numRowsUpdated": 2,
+            "allUpdatesTimeMs": 59,
+            "numRowsRemoved": 0,
+            "allRemovalsTimeMs": 0,
+            "commitTimeMs": 675,
+            "memoryUsedBytes": 1504,
+            "numRowsDroppedByWatermark": 0,
+            "numShufflePartitions": 4,
+            "numStateStoreInstances": 4,
+            "customMetrics": {
+              "loadedMapCacheHitCount": 0,
+              "loadedMapCacheMissCount": 0,
+              "stateOnCurrentVersionSizeBytes": 928
+            }
+          }
+        ],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab24/input]",
+            "startOffset": null,
+            "endOffset": {
+              "logOffset": 0
+            },
+            "latestOffset": null,
+            "numInputRows": 2,
+            "inputRowsPerSecond": 0.0,
+            "processedRowsPerSecond": 0.8107012565869477
+          }
+        ],
+        "sink": {
+          "description": "ForeachBatchSink",
+          "numOutputRows": -1
+        }
+      }
+    ],
+    "target": [
+      {
+        "user_id": "U1",
+        "amount": 100,
+        "events": 1
+      },
+      {
+        "user_id": "U2",
+        "amount": 50,
+        "events": 1
+      }
+    ],
+    "targetHash": "88b277ba954c4b20de5406c010a8934fd36fdc67907e8142ac20edd23318fcfb"
+  },
+  "incompatibleFailure": "[STREAM_FAILED] Query [id = 401a7b16-59d6-4bf5-985a-1689f4e95cf2, runId = a420c3d4-b1c1-4c07-91cc-d421b809a8ae] terminated with exception: [STATE_STORE_KEY_SCHEMA_NOT_COMPATIBLE] Provided key schema does not match existing state key schema.\nPlease check number and type of fields.\nExisting key_schema=StructType(StructField(user_id,StringType,true)) and new key_schema=StructType(StructField(user_id,StringType,true),StructField(platform,StringType,true)).\nIf you want to force running the query without schema validation, please set spark.sql.streaming.stateStore.stateSchemaCheck to false.\nHowever, please note that running the query with incompatible schema could cause non-deterministic behavior. SQLSTATE: XXKST SQLSTATE: XXKST\n=== Streaming Query ===\nIdentifier: [id = 401a7b16-59d6-4bf5-985a-1689f4e95cf2, runId = a420c3d4-b1c1-4c07-91cc-d421b809a8ae]\nCurrent Committed Offsets: {FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab24/input]: {\"logOffset\":0}}\nCurrent Available Offsets: {FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab24/input]: {\"logOffset\":1}}\n\nCurrent State: ACTIVE\nThread State: RUNNABLE\n\nLogical Plan:\n~WriteToMicroBatchDataSourceV1 ForeachBatchSink, 401a7b16-59d6-4bf5-985a-1689f4e95cf2, [checkpointLocation=/evidence/tests-streaming/20261011T040856Z-6f8487be/lab24/incompatible-checkpoint], Complete\n+- ~Aggregate [user_id#47146, platform#47150], [user_id#47146, platform#47150, sum(amount#47148L) AS amount#47151L, count(1) AS events#47152L]\n   +- ~StreamingExecutionRelation FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab24/input], [source_system#47143, app_id#47144, event_id#47145, user_id#47146, event_time#47147, amount#47148L, status#47149, platform#47150]\n",
+  "recovered": {
+    "queryId": "40914f10-ec04-4e15-9678-72a92d9d3f39",
+    "runId": "74b9fa29-39d5-449c-b33e-b10826c517d8",
+    "active": true,
+    "progress": [
+      {
+        "id": "40914f10-ec04-4e15-9678-72a92d9d3f39",
+        "runId": "74b9fa29-39d5-449c-b33e-b10826c517d8",
+        "name": null,
+        "timestamp": "2026-10-11T04:15:36.811Z",
+        "batchId": 0,
+        "batchDuration": 2632,
+        "numInputRows": 2,
+        "inputRowsPerSecond": 0.0,
+        "processedRowsPerSecond": 0.7598784194528875,
+        "durationMs": {
+          "addBatch": 1158,
+          "commitOffsets": 136,
+          "getBatch": 63,
+          "latestOffset": 370,
+          "queryPlanning": 747,
+          "triggerExecution": 2632,
+          "walCommit": 155
+        },
+        "stateOperators": [
+          {
+            "operatorName": "stateStoreSave",
+            "numRowsTotal": 2,
+            "numRowsUpdated": 2,
+            "allUpdatesTimeMs": 63,
+            "numRowsRemoved": 0,
+            "allRemovalsTimeMs": 0,
+            "commitTimeMs": 488,
+            "memoryUsedBytes": 1536,
+            "numRowsDroppedByWatermark": 0,
+            "numShufflePartitions": 4,
+            "numStateStoreInstances": 4,
+            "customMetrics": {
+              "loadedMapCacheHitCount": 0,
+              "loadedMapCacheMissCount": 0,
+              "stateOnCurrentVersionSizeBytes": 960
+            }
+          }
+        ],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab24/input]",
+            "startOffset": null,
+            "endOffset": {
+              "logOffset": 0
+            },
+            "latestOffset": null,
+            "numInputRows": 2,
+            "inputRowsPerSecond": 0.0,
+            "processedRowsPerSecond": 0.7598784194528875
+          }
+        ],
+        "sink": {
+          "description": "ForeachBatchSink",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "40914f10-ec04-4e15-9678-72a92d9d3f39",
+        "runId": "74b9fa29-39d5-449c-b33e-b10826c517d8",
+        "name": null,
+        "timestamp": "2026-10-11T04:15:39.444Z",
+        "batchId": 1,
+        "batchDuration": 5330,
+        "numInputRows": 1,
+        "inputRowsPerSecond": 0.379794910748196,
+        "processedRowsPerSecond": 0.18761726078799248,
+        "durationMs": {
+          "addBatch": 4743,
+          "commitOffsets": 194,
+          "getBatch": 52,
+          "latestOffset": 178,
+          "queryPlanning": 5,
+          "triggerExecution": 5330,
+          "walCommit": 155
+        },
+        "stateOperators": [
+          {
+            "operatorName": "stateStoreSave",
+            "numRowsTotal": 2,
+            "numRowsUpdated": 1,
+            "allUpdatesTimeMs": 33,
+            "numRowsRemoved": 0,
+            "allRemovalsTimeMs": 0,
+            "commitTimeMs": 518,
+            "memoryUsedBytes": 2416,
+            "numRowsDroppedByWatermark": 0,
+            "numShufflePartitions": 4,
+            "numStateStoreInstances": 4,
+            "customMetrics": {
+              "loadedMapCacheHitCount": 8,
+              "loadedMapCacheMissCount": 0,
+              "stateOnCurrentVersionSizeBytes": 896
+            }
+          }
+        ],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab24/input]",
+            "startOffset": {
+              "logOffset": 0
+            },
+            "endOffset": {
+              "logOffset": 1
+            },
+            "latestOffset": null,
+            "numInputRows": 1,
+            "inputRowsPerSecond": 0.379794910748196,
+            "processedRowsPerSecond": 0.18761726078799248
+          }
+        ],
+        "sink": {
+          "description": "ForeachBatchSink",
+          "numOutputRows": -1
+        }
+      }
+    ],
+    "target": [
+      {
+        "user_id": "U1",
+        "platform": "google",
+        "amount": 120,
+        "events": 2
+      },
+      {
+        "user_id": "U2",
+        "platform": "google",
+        "amount": 50,
+        "events": 1
+      }
+    ],
+    "targetHash": "08b22854c1d4499c61d2c01f6278e63b4850516e378e5b35b457841282eb860e"
+  },
+  "reconciliation": {
+    "passCheck": true,
+    "originalTargetUnchanged": true
+  },
+  "cases": [
+    {
+      "name": "compatible",
+      "facts": {
+        "checkpointReadable": true,
+        "queryCompatible": true,
+        "sourcePositionAvailable": true,
+        "replayComplete": true,
+        "authoritativeBackfill": true
+      },
+      "decision": "reuse-checkpoint-and-reconcile"
+    },
+    {
+      "name": "deleted-or-incompatible",
+      "facts": {
+        "checkpointReadable": false,
+        "queryCompatible": false,
+        "sourcePositionAvailable": true,
+        "replayComplete": true,
+        "authoritativeBackfill": true
+      },
+      "decision": "new-checkpoint-replay-to-staging-and-reconcile"
+    },
+    {
+      "name": "retention-gap",
+      "facts": {
+        "checkpointReadable": false,
+        "queryCompatible": false,
+        "sourcePositionAvailable": false,
+        "replayComplete": false,
+        "authoritativeBackfill": true
+      },
+      "decision": "bounded-backfill-and-rebuild-state"
+    },
+    {
+      "name": "no-retained-truth",
+      "facts": {
+        "checkpointReadable": false,
+        "queryCompatible": false,
+        "sourcePositionAvailable": false,
+        "replayComplete": false,
+        "authoritativeBackfill": false
+      },
+      "decision": "blocked-missing-truth"
+    }
+  ],
+  "checkpoint": [
+    ".metadata.crc",
+    "commits/.0.crc",
+    "commits/0",
+    "metadata",
+    "offsets/.0.crc",
+    "offsets/0",
+    "sources/0/.0.crc",
+    "sources/0/0",
+    "state/0/0/.1.delta.crc",
+    "state/0/0/1.delta",
+    "state/0/0/_metadata/.schema.crc",
+    "state/0/0/_metadata/schema",
+    "state/0/1/.1.delta.crc",
+    "state/0/1/1.delta",
+    "state/0/2/.1.delta.crc",
+    "state/0/2/1.delta",
+    "state/0/3/.1.delta.crc",
+    "state/0/3/1.delta",
+    "state/0/_metadata/.metadata.crc",
+    "state/0/_metadata/metadata"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "version": "1.20.0",
+  "url": "https://github.com/databricks/cli/releases/download/v1.20.0/databricks_cli_1.20.0_windows_amd64.zip",
+  "sha256": "e5c44076ba7062962ce96d303f2dbcec7c21a2c9f3b5797f2514fb45ac8a1736",
+  "canonicalSchemaSHA256": "1aa80c7378e45f2193efb4d77031d395ab496555b43ff3a359b59fb9a87b85d0",
+  "verifiedDate": "2026-10-11",
+  "scope": "Unauthenticated version/help/schema only; no strict target validation or cloud",
+  "actions": {
+    "actions/checkout": "11d5960a326750d5838078e36cf38b85af677262",
+    "actions/setup-python": "a26af69be951a213d495a4c3e4e4022e16d87065",
+    "databricks/setup-cli": "9b64c94a6d2b2e830592d80e9f14c26d32b42ad7"
+  },
+  "versionOutput": {
+    "ProjectName": "cli",
+    "Version": "1.20.0",
+    "Branch": "HEAD",
+    "Tag": "v1.20.0",
+    "ShortCommit": "5ed93138d",
+    "FullCommit": "5ed93138d9cb6a49776d2f4f0b668ad08a378be9",
+    "CommitTime": "2026-10-07T19:10:14+07:00",
+    "Summary": "v1.20.0",
+    "Major": 1,
+    "Minor": 20,
+    "Patch": 0,
+    "Prerelease": "",
+    "IsSnapshot": false,
+    "BuildTime": "2026-10-07T19:11:55+07:00"
+  }
+}

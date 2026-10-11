@@ -1,0 +1,8 @@
+{
+  "query": "Grain/cardinality contracts, BigQuery-Databricks operating boundaries, and Spark execution concepts",
+  "known": "Chapter 00 baseline accepted; Python 3.12 available; PySpark absent and java absent from PATH",
+  "stoppingRule": "Official evidence for each load-bearing claim; both vendor perspectives; deterministic local examples",
+  "date": "2026-10-10",
+  "timezone": "Asia/Saigon",
+  "publication": "disabled"
+}

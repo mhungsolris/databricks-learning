@@ -1,0 +1,42 @@
+{
+  "session": ".researches/2026-10-11-production",
+  "metadata": {
+    "query": "Production hardening: layout, observability, quality, tests, DABs and OIDC",
+    "known": "Spark 4.0.4 Delta 4.0.1 local baseline; no cloud",
+    "stoppingRule": "Official version-qualified source for each product behavior",
+    "date": "2026-10-11",
+    "timezone": "Asia/Saigon",
+    "publication": "disabled"
+  },
+  "urls": {
+    "clustering": "https://docs.databricks.com/aws/en/tables/clustering",
+    "partitioning": "https://docs.databricks.com/aws/en/tables/partitions",
+    "predictive": "https://docs.databricks.com/aws/en/optimizations/predictive-optimization",
+    "photon": "https://docs.databricks.com/aws/en/compute/photon",
+    "profile": "https://docs.databricks.com/aws/en/sql/user/queries/query-profile",
+    "history": "https://docs.databricks.com/aws/en/sql/user/queries/query-history",
+    "system": "https://docs.databricks.com/aws/en/admin/system-tables",
+    "jobs": "https://docs.databricks.com/aws/en/admin/system-tables/jobs",
+    "query": "https://docs.databricks.com/aws/en/admin/system-tables/query-history",
+    "billing": "https://docs.databricks.com/aws/en/admin/system-tables/billing",
+    "expectations": "https://docs.databricks.com/aws/en/ldp/expectations",
+    "qualitypatterns": "https://docs.databricks.com/aws/en/ldp/expectation-patterns",
+    "monitor": "https://docs.databricks.com/aws/en/ldp/monitor",
+    "bundles": "https://docs.databricks.com/aws/en/dev-tools/bundles/",
+    "settings": "https://docs.databricks.com/aws/en/dev-tools/bundles/settings",
+    "modes": "https://docs.databricks.com/aws/en/dev-tools/bundles/deployment-modes",
+    "runas": "https://docs.databricks.com/aws/en/dev-tools/bundles/run-as",
+    "commands": "https://docs.databricks.com/aws/en/dev-tools/cli/bundle-commands",
+    "direct": "https://docs.databricks.com/aws/en/dev-tools/bundles/direct",
+    "oidc": "https://docs.databricks.com/aws/en/dev-tools/auth/provider-github",
+    "ci": "https://docs.databricks.com/aws/en/dev-tools/ci-cd/ci-cd-bundles",
+    "testing": "https://docs.databricks.com/aws/en/dev-tools/ci-cd/best-practices",
+    "unittest": "https://docs.databricks.com/aws/en/notebooks/testing",
+    "deltaHistory": "https://docs.databricks.com/aws/en/tables/history",
+    "restore": "https://docs.databricks.com/aws/en/sql/language-manual/delta-restore",
+    "spark": "https://spark.apache.org/docs/4.0.4/sql-performance-tuning.html",
+    "dfTests": "https://spark.apache.org/docs/4.0.4/api/python/getting_started/testing_pyspark.html",
+    "githubEnvironments": "https://docs.github.com/en/actions/how-tos/deploy/configure-and-manage-deployments/manage-environments",
+    "pytest": "https://docs.pytest.org/en/stable/how-to/usage.html"
+  }
+}

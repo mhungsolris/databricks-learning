@@ -1,0 +1,30 @@
+{
+  "factRows": 10000,
+  "dimensionRows": 101,
+  "normalRows": 10000,
+  "broadcastRows": 10000,
+  "idSum": 49995000,
+  "hotRows": 7000,
+  "hotPartition": 0,
+  "hashDistribution": [
+    {
+      "partition": 0,
+      "rows": 7900
+    },
+    {
+      "partition": 1,
+      "rows": 630
+    },
+    {
+      "partition": 2,
+      "rows": 810
+    },
+    {
+      "partition": 3,
+      "rows": 660
+    }
+  ],
+  "duplicateLookupRows": 17000,
+  "equalityNullRows": 1,
+  "nullSafeRows": 2
+}

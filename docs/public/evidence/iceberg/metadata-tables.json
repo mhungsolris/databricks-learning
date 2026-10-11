@@ -1,0 +1,71 @@
+{
+  "snapshots": [
+    {
+      "snapshot_id": 1188463604688640897,
+      "manifest_list": "file:/evidence/tests-iceberg/20261011T090254Z-ab860623/iceberg-warehouse/course/events/metadata/snap-1188463604688640897-1-a4b73fc3-46e4-4656-8fa3-d49ef462be32.avro"
+    },
+    {
+      "snapshot_id": 3561995890687308440,
+      "manifest_list": "file:/evidence/tests-iceberg/20261011T090254Z-ab860623/iceberg-warehouse/course/events/metadata/snap-3561995890687308440-1-eb27636b-7092-45ff-89d9-1bc8c5a30df3.avro"
+    },
+    {
+      "snapshot_id": 7288907117030622282,
+      "manifest_list": "file:/evidence/tests-iceberg/20261011T090254Z-ab860623/iceberg-warehouse/course/events/metadata/snap-7288907117030622282-1-b7c16eff-2aa7-4ff4-a9a0-74241108d0d8.avro"
+    }
+  ],
+  "manifests": [
+    {
+      "path": "file:/evidence/tests-iceberg/20261011T090254Z-ab860623/iceberg-warehouse/course/events/metadata/b7c16eff-2aa7-4ff4-a9a0-74241108d0d8-m0.avro",
+      "length": 7291,
+      "partition_spec_id": 0,
+      "added_data_files_count": 1
+    },
+    {
+      "path": "file:/evidence/tests-iceberg/20261011T090254Z-ab860623/iceberg-warehouse/course/events/metadata/eb27636b-7092-45ff-89d9-1bc8c5a30df3-m0.avro",
+      "length": 7215,
+      "partition_spec_id": 0,
+      "added_data_files_count": 1
+    },
+    {
+      "path": "file:/evidence/tests-iceberg/20261011T090254Z-ab860623/iceberg-warehouse/course/events/metadata/a4b73fc3-46e4-4656-8fa3-d49ef462be32-m0.avro",
+      "length": 7249,
+      "partition_spec_id": 0,
+      "added_data_files_count": 2
+    }
+  ],
+  "files": [
+    {
+      "file_path": "file:/evidence/tests-iceberg/20261011T090254Z-ab860623/iceberg-warehouse/course/events/data/00000-17-c27a3b2f-a8c3-45d8-8438-8225f013435f-0-00001.parquet",
+      "record_count": 1
+    },
+    {
+      "file_path": "file:/evidence/tests-iceberg/20261011T090254Z-ab860623/iceberg-warehouse/course/events/data/00000-8-067f3657-4382-4b7f-85aa-2db2df921eaf-0-00001.parquet",
+      "record_count": 1
+    },
+    {
+      "file_path": "file:/evidence/tests-iceberg/20261011T090254Z-ab860623/iceberg-warehouse/course/events/data/00000-0-ba640dc9-7d2d-4b5e-a2d7-25ae4bc0097d-0-00001.parquet",
+      "record_count": 1
+    },
+    {
+      "file_path": "file:/evidence/tests-iceberg/20261011T090254Z-ab860623/iceberg-warehouse/course/events/data/00001-1-ba640dc9-7d2d-4b5e-a2d7-25ae4bc0097d-0-00001.parquet",
+      "record_count": 1
+    }
+  ],
+  "history": [
+    {
+      "made_current_at": "2026-10-11 09:03:17.861000",
+      "snapshot_id": 1188463604688640897,
+      "is_current_ancestor": true
+    },
+    {
+      "made_current_at": "2026-10-11 09:03:25.570000",
+      "snapshot_id": 3561995890687308440,
+      "is_current_ancestor": true
+    },
+    {
+      "made_current_at": "2026-10-11 09:03:29.423000",
+      "snapshot_id": 7288907117030622282,
+      "is_current_ancestor": true
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+[
+  {
+    "stageId": 0,
+    "tasks": 4,
+    "name": "collect at /workspace/labs/spark/experiments.py:63"
+  },
+  {
+    "stageId": 1,
+    "tasks": 4,
+    "name": "collect at /workspace/labs/spark/experiments.py:63"
+  },
+  {
+    "stageId": 2,
+    "tasks": 4,
+    "name": "collect at /workspace/labs/spark/experiments.py:63"
+  },
+  {
+    "stageId": 3,
+    "tasks": 4,
+    "name": "collect at /workspace/labs/spark/experiments.py:63"
+  },
+  {
+    "stageId": 4,
+    "tasks": 4,
+    "name": "collect at /workspace/labs/spark/experiments.py:63"
+  },
+  {
+    "stageId": 5,
+    "tasks": 4,
+    "name": "collect at /workspace/labs/spark/experiments.py:63"
+  },
+  {
+    "stageId": 6,
+    "tasks": 8,
+    "name": "collect at /workspace/labs/spark/experiments.py:63"
+  },
+  {
+    "stageId": 7,
+    "tasks": 4,
+    "name": "collect at /workspace/labs/spark/experiments.py:63"
+  },
+  {
+    "stageId": 8,
+    "tasks": 4,
+    "name": "collect at /workspace/labs/spark/experiments.py:63"
+  },
+  {
+    "stageId": 10,
+    "tasks": 4,
+    "name": "collect at /workspace/labs/spark/experiments.py:72"
+  }
+]

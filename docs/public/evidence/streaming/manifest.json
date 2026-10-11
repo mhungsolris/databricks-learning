@@ -1,0 +1,43 @@
+{
+  "verifiedDate": "2026-10-11",
+  "timezone": "Asia/Saigon",
+  "sourceRun": ".skills-test/spark/tests-streaming/20261011T040856Z-6f8487be",
+  "runtimePin": {
+    "sparkVersion": "4.0.4",
+    "image": "apache/spark@sha256:94ad730f7510002d8a1615de269f27cdeca4d4eef51657384db3fa9246b5a4d8",
+    "sourceTag": "apache/spark:4.0.4-python3",
+    "master": "local[*]",
+    "cpus": "2",
+    "memory": "4g",
+    "driverMemory": "1g",
+    "deltaVersion": "4.0.1"
+  },
+  "completedStages": 365,
+  "purpose": "Actual micro-batch progress, target states, checkpoint inventory and controlled sink/schema failures",
+  "files": {
+    "runtime.json": "8b3370657156216a58ef3a9e689e64abfe5750fd84ed17e8e3dd7469861ee140",
+    "shutdown.json": "995b859531438e449c3901e8ef45dcbd8a9e476ec73d1f0fded746f738b6b99b",
+    "test-summary.json": "7bb8b66c9d93baddb3ea2258b45d16822170fea2edac7871cbc79b9317cbc6ee",
+    "streaming-config.json": "b151e1493a82e83043e44c64374e9068b24746965bac10117b1cdadb1bcd8ddb",
+    "lab16/result.json": "208cca3f5fbd95e95360c250c0e5c650751600f99450bf25b76b86678a8ba894",
+    "lab17/result.json": "badf8217665bf1e2a1db3b2c74a0a2bdd0919fb3a3c441986cd9672c34ad0448",
+    "lab18/result.json": "d5c2f19e92bde15523bec2f7b766060dddde159bfd9925daaf4335c8e4d2e062",
+    "lab19/result.json": "2fef384d0a61763d74baf61dc8b36dc68ba05523f8be4dbad10290520c040b22",
+    "lab20/result.json": "7c85a3b8e320de790555067fd8a61a2dbadaed6df6326ec7200413fbadea2bb7",
+    "lab21/result.json": "a04abbc08adede393b08db5543613e4118cd921bb9382cf8237113b10d8532d6",
+    "lab22/result.json": "ee04ea2300ae47e38f4503b930a5e4bb4d65017e129061d9d70c27ff5aaa7eb6",
+    "lab23/result.json": "a05ea5fd2cd331d66de905f809668e64b6ca2c352b7877ef0b7258c9847bf1ac",
+    "lab24/result.json": "e3d957401f9a922ddd98012d93c1e93c4c1981fbd3238fedb494ba54b612ab72"
+  },
+  "sourceHashes": {
+    "labs/streaming/common.py": "e01f707da59700cfab94b00a061cfae2ccb4fec7d066ed5fdfd02476bc0fd5aa",
+    "labs/streaming/experiments.py": "00dcac36f72a178c6e8bdfa34fcec5d2513b65d82e10e31035b4bc958a81a572",
+    "labs/streaming/recovery.py": "06e10c5a1bc96ecc92ac5e915c25bda6c0c7d126f95499d8b143293f614048bd",
+    "labs/spark/common.py": "29b796c57287f03bd43ad689119000b5d00d9d3eef33c109da4ca45a55d1aabf",
+    "scripts/test_streaming.py": "e97bb828ce94ad54c76db2e21da6315b215829fb283a09f120f3c8ecf8e65dc8",
+    "scripts/run_streaming.py": "f511df946587713c36885d33910600727b7b5b6f6f2d66765d546b64498bad78",
+    "scripts/spark_runtime.py": "4cf8448396e6ca9cc44bdf7950cb8e077f37c9029484561e12e70a58392856e9",
+    "runtime/spark.json": "cf4a020d3ab4d1bb0290ca086f2f7e57a97f8ed58881a04c185ca93d3afbe844"
+  },
+  "sourceHashEncoding": "UTF-8 with LF newlines"
+}

@@ -1,0 +1,6 @@
+{
+  "spark.sql.session.timeZone": "UTC",
+  "spark.sql.streaming.stateStore.providerClass": "org.apache.spark.sql.execution.streaming.state.HDFSBackedStateStoreProvider",
+  "spark.sql.streaming.multipleWatermarkPolicy": "min",
+  "spark.sql.streaming.noDataMicroBatches.enabled": "true"
+}

@@ -1,0 +1,86 @@
+{
+  "input": {
+    "partitions": 4,
+    "distribution": [
+      {
+        "partition": 0,
+        "rows": 30
+      },
+      {
+        "partition": 1,
+        "rows": 30
+      },
+      {
+        "partition": 2,
+        "rows": 30
+      },
+      {
+        "partition": 3,
+        "rows": 30
+      }
+    ]
+  },
+  "repartition6": {
+    "partitions": 6,
+    "distribution": [
+      {
+        "partition": 0,
+        "rows": 20
+      },
+      {
+        "partition": 1,
+        "rows": 20
+      },
+      {
+        "partition": 2,
+        "rows": 20
+      },
+      {
+        "partition": 3,
+        "rows": 20
+      },
+      {
+        "partition": 4,
+        "rows": 20
+      },
+      {
+        "partition": 5,
+        "rows": 20
+      }
+    ]
+  },
+  "coalesce2": {
+    "partitions": 2,
+    "distribution": [
+      {
+        "partition": 0,
+        "rows": 60
+      },
+      {
+        "partition": 1,
+        "rows": 60
+      }
+    ]
+  },
+  "coalesce8": {
+    "partitions": 4,
+    "distribution": [
+      {
+        "partition": 0,
+        "rows": 30
+      },
+      {
+        "partition": 1,
+        "rows": 30
+      },
+      {
+        "partition": 2,
+        "rows": 30
+      },
+      {
+        "partition": 3,
+        "rows": 30
+      }
+    ]
+  }
+}

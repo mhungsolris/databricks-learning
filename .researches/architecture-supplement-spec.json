@@ -1,0 +1,21 @@
+{
+  "session": ".researches/2026-10-11-architecture-supplement",
+  "metadata": {
+    "query": "Correct latest documentation routes after explicit version route404",
+    "known": "Iceberg1.12.0 release verified; numbered docs routes unavailable",
+    "stoppingRule": "Current official integration pages",
+    "date": "2026-10-11",
+    "timezone": "Asia/Saigon",
+    "publication": "disabled"
+  },
+  "urls": {
+    "spark": "https://iceberg.apache.org/docs/latest/spark-getting-started/",
+    "queries": "https://iceberg.apache.org/docs/latest/spark-queries/",
+    "ddl": "https://iceberg.apache.org/docs/latest/spark-ddl/",
+    "writes": "https://iceberg.apache.org/docs/latest/spark-writes/",
+    "evolution": "https://iceberg.apache.org/docs/latest/evolution/",
+    "partition": "https://iceberg.apache.org/docs/latest/partitioning/",
+    "hadoop": "https://iceberg.apache.org/docs/latest/hadoop/",
+    "horizon": "https://docs.snowflake.com/en/user-guide/tables-iceberg-query"
+  }
+}

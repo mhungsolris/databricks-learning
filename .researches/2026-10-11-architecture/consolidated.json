@@ -1,0 +1,200 @@
+{
+  "format": "source-based",
+  "query": "Architecture and interoperability",
+  "results": [
+    {
+      "title": "releases",
+      "url": "https://iceberg.apache.org/releases/",
+      "content": "Releases - Apache Iceberg™ Skip to content Apache Iceberg™ Apache Iceberg™ Initializing search \nHome \nQuickstart \nDocs \nReleases \nProject \nCommunity \nBlog \nSpecification Apache Iceberg™ \nHome \nQuickstart Quickstart \nSpark \nFlink \nHive \nDocs Docs \nJava Java \nLatest (1.12.0) Latest (1.12.0) \nIntroduction \nConcepts Concepts \nTables Tables \nBranching and Tagging \nConfiguration \nEncryption \nEvolution \nMaintenance \nMetrics Reporting \nPartitioning \nPerformance \nReliability \nSchemas \nViews Views \nConfiguration \nCatalogs Catalogs \nREST Catalog Protocol \nAPI API \nQuickstart \nAPI \nFile I/O \nJavadoc \nIntegrations Integrations \nApache Spark Apache Spark \nGetting Started \nConfiguration \nDDL \nProcedures \nQueries \nStructured Streaming \nWrites \nApache Flink Apache Flink \nGetting Started \nFlink Connector \nFlink DDL \nFlink Queries \nFlink Writes \nFlink TableMaintenance \nFlink Configuration \nKafka Connect \nApache Hive \nMigration Migration \nOverview \nHive Migration \nDelta Lake Migration \nCatalogs Catalogs \nCatalog properties \nREST Compatible Catalog \nAWS Glue \nAWS DynamoDB \nHadoopCatalog \nHiveCatalog \nJDBC \nJava Custom Catalog \nNessie \nStorage Storage \nAWS S3 \nDell ECS \nNightly Nightly \nIntroduction \nConcepts Concepts \nTables Tables \nBranching and Tagging \nConfiguration \nEncryption \nEvolution \nMaintenance \nMetrics Reporting \nPartitioning \nPerformance \nReliability \nSchemas \nViews Views \nConfiguration \nCatalogs Catalogs \nREST Catalog Protocol \nAPI API \nQuickstart \nAPI \nFile I/O \nJavadoc \nIntegrations Integrations \nApache Spark Apache Spark \nGetting Started \nConfiguration \nDDL \nProcedures \nQueries \nStructured Streaming \nWrites \nApache Flink Apache Flink \nGetting Started \nFlink Connector \nFlink DDL \nFlink Queries \nFlink Writes \nFlink TableMaintenance \nFlink Configuration \nKafka Connect \nApache Hive \nMigration Migration \nOverview \nHive Migration \nDelta Lake Migration \nCatalogs Catalogs \nCatalog properties \nREST Compatible Catalog \nAWS Glue \nAWS DynamoDB \nHadoopCatalog \nHiveCatalog \nJDBC \nJava",
+      "retrieved": "2026-10-11",
+      "status": "fetched",
+      "source": "2026-10-11-architecture-search-results"
+    },
+    {
+      "title": "spark",
+      "url": "https://iceberg.apache.org/docs/1.12.0/spark-getting-started/",
+      "status": "unavailable",
+      "error": "HTTP Error 404: Not Found",
+      "source": "2026-10-11-architecture-search-results"
+    },
+    {
+      "title": "spec",
+      "url": "https://iceberg.apache.org/spec/",
+      "content": "Spec - Apache Iceberg™ Skip to content Apache Iceberg™ Apache Iceberg™ Initializing search \nHome \nQuickstart \nDocs \nReleases \nProject \nCommunity \nBlog \nSpecification Apache Iceberg™ \nHome \nQuickstart Quickstart \nSpark \nFlink \nHive \nDocs Docs \nJava Java \nLatest (1.12.0) Latest (1.12.0) \nIntroduction \nConcepts Concepts \nTables Tables \nBranching and Tagging \nConfiguration \nEncryption \nEvolution \nMaintenance \nMetrics Reporting \nPartitioning \nPerformance \nReliability \nSchemas \nViews Views \nConfiguration \nCatalogs Catalogs \nREST Catalog Protocol \nAPI API \nQuickstart \nAPI \nFile I/O \nJavadoc \nIntegrations Integrations \nApache Spark Apache Spark \nGetting Started \nConfiguration \nDDL \nProcedures \nQueries \nStructured Streaming \nWrites \nApache Flink Apache Flink \nGetting Started \nFlink Connector \nFlink DDL \nFlink Queries \nFlink Writes \nFlink TableMaintenance \nFlink Configuration \nKafka Connect \nApache Hive \nMigration Migration \nOverview \nHive Migration \nDelta Lake Migration \nCatalogs Catalogs \nCatalog properties \nREST Compatible Catalog \nAWS Glue \nAWS DynamoDB \nHadoopCatalog \nHiveCatalog \nJDBC \nJava Custom Catalog \nNessie \nStorage Storage \nAWS S3 \nDell ECS \nNightly Nightly \nIntroduction \nConcepts Concepts \nTables Tables \nBranching and Tagging \nConfiguration \nEncryption \nEvolution \nMaintenance \nMetrics Reporting \nPartitioning \nPerformance \nReliability \nSchemas \nViews Views \nConfiguration \nCatalogs Catalogs \nREST Catalog Protocol \nAPI API \nQuickstart \nAPI \nFile I/O \nJavadoc \nIntegrations Integrations \nApache Spark Apache Spark \nGetting Started \nConfiguration \nDDL \nProcedures \nQueries \nStructured Streaming \nWrites \nApache Flink Apache Flink \nGetting Started \nFlink Connector \nFlink DDL \nFlink Queries \nFlink Writes \nFlink TableMaintenance \nFlink Configuration \nKafka Connect \nApache Hive \nMigration Migration \nOverview \nHive Migration \nDelta Lake Migration \nCatalogs Catalogs \nCatalog properties \nREST Compatible Catalog \nAWS Glue \nAWS DynamoDB \nHadoopCatalog \nHiveCatalog \nJDBC \nJava Cus",
+      "retrieved": "2026-10-11",
+      "status": "fetched",
+      "source": "2026-10-11-architecture-search-results"
+    },
+    {
+      "title": "queries",
+      "url": "https://iceberg.apache.org/docs/1.12.0/spark-queries/",
+      "status": "unavailable",
+      "error": "HTTP Error 404: Not Found",
+      "source": "2026-10-11-architecture-search-results"
+    },
+    {
+      "title": "ddl",
+      "url": "https://iceberg.apache.org/docs/1.12.0/spark-ddl/",
+      "status": "unavailable",
+      "error": "HTTP Error 404: Not Found",
+      "source": "2026-10-11-architecture-search-results"
+    },
+    {
+      "title": "writes",
+      "url": "https://iceberg.apache.org/docs/1.12.0/spark-writes/",
+      "status": "unavailable",
+      "error": "HTTP Error 404: Not Found",
+      "source": "2026-10-11-architecture-search-results"
+    },
+    {
+      "title": "evolution",
+      "url": "https://iceberg.apache.org/docs/1.12.0/evolution/",
+      "status": "unavailable",
+      "error": "HTTP Error 404: Not Found",
+      "source": "2026-10-11-architecture-search-results"
+    },
+    {
+      "title": "partition",
+      "url": "https://iceberg.apache.org/docs/1.12.0/partitioning/",
+      "status": "unavailable",
+      "error": "HTTP Error 404: Not Found",
+      "source": "2026-10-11-architecture-search-results"
+    },
+    {
+      "title": "rest",
+      "url": "https://iceberg.apache.org/rest-catalog-spec/",
+      "content": "REST Catalog Spec - Apache Iceberg™ Skip to content Apache Iceberg™ Apache Iceberg™ Initializing search \nHome \nQuickstart \nDocs \nReleases \nProject \nCommunity \nBlog \nSpecification Apache Iceberg™ \nHome \nQuickstart Quickstart \nSpark \nFlink \nHive \nDocs Docs \nJava Java \nLatest (1.12.0) Latest (1.12.0) \nIntroduction \nConcepts Concepts \nTables Tables \nBranching and Tagging \nConfiguration \nEncryption \nEvolution \nMaintenance \nMetrics Reporting \nPartitioning \nPerformance \nReliability \nSchemas \nViews Views \nConfiguration \nCatalogs Catalogs \nREST Catalog Protocol \nAPI API \nQuickstart \nAPI \nFile I/O \nJavadoc \nIntegrations Integrations \nApache Spark Apache Spark \nGetting Started \nConfiguration \nDDL \nProcedures \nQueries \nStructured Streaming \nWrites \nApache Flink Apache Flink \nGetting Started \nFlink Connector \nFlink DDL \nFlink Queries \nFlink Writes \nFlink TableMaintenance \nFlink Configuration \nKafka Connect \nApache Hive \nMigration Migration \nOverview \nHive Migration \nDelta Lake Migration \nCatalogs Catalogs \nCatalog properties \nREST Compatible Catalog \nAWS Glue \nAWS DynamoDB \nHadoopCatalog \nHiveCatalog \nJDBC \nJava Custom Catalog \nNessie \nStorage Storage \nAWS S3 \nDell ECS \nNightly Nightly \nIntroduction \nConcepts Concepts \nTables Tables \nBranching and Tagging \nConfiguration \nEncryption \nEvolution \nMaintenance \nMetrics Reporting \nPartitioning \nPerformance \nReliability \nSchemas \nViews Views \nConfiguration \nCatalogs Catalogs \nREST Catalog Protocol \nAPI API \nQuickstart \nAPI \nFile I/O \nJavadoc \nIntegrations Integrations \nApache Spark Apache Spark \nGetting Started \nConfiguration \nDDL \nProcedures \nQueries \nStructured Streaming \nWrites \nApache Flink Apache Flink \nGetting Started \nFlink Connector \nFlink DDL \nFlink Queries \nFlink Writes \nFlink TableMaintenance \nFlink Configuration \nKafka Connect \nApache Hive \nMigration Migration \nOverview \nHive Migration \nDelta Lake Migration \nCatalogs Catalogs \nCatalog properties \nREST Compatible Catalog \nAWS Glue \nAWS DynamoDB \nHadoopCatalog \nHiveCatalog \nJ",
+      "retrieved": "2026-10-11",
+      "status": "fetched",
+      "source": "2026-10-11-architecture-search-results"
+    },
+    {
+      "title": "hadoop",
+      "url": "https://iceberg.apache.org/docs/1.12.0/hadoop/",
+      "status": "unavailable",
+      "error": "HTTP Error 404: Not Found",
+      "source": "2026-10-11-architecture-search-results"
+    },
+    {
+      "title": "databricks",
+      "url": "https://docs.databricks.com/aws/en/iceberg/",
+      "content": "What is Apache Iceberg in Databricks? | Databricks on AWS Skip to main content Get started Guides Develop Reference Resources Release notes Help \nSupport \nKnowledge Base \nCommunity \nTraining English \nEnglish \n日本語 \nPortuguês \nFrançais AWS \nAzure \nGCP \nSAP Try Databricks \n\nTables \nTable formats \nIceberg On this page Last updated on Sep 22, 2026 \nWhat is Apache Iceberg in Databricks ? \nApache Iceberg is an open-source table format for analytics workloads that supports features like schema evolution, time travel, and hidden partitioning. Like Delta Lake , Iceberg creates an abstraction layer that allows ACID transactions on your data in object storage. \nDatabricks supports Iceberg tables that use the Apache Parquet file format and versions 1, 2, and 3 of the Iceberg specification. Iceberg maintains atomicity and consistency by writing new metadata files for each table change. All Iceberg tables in Databricks follow the open Iceberg table format specification. See the Iceberg table specification . \nAn Iceberg catalog is the top-level layer of the Iceberg table architecture that returns the current metadata when loading a table. The Iceberg catalog handles operations like creating, dropping, and renaming tables. \nDatabricks supports Iceberg tables managed by: \nUnity Catalog \nForeign catalogs , such as AWS Glue, Hive metastore , or Snowflake Horizon Catalog \nRequirements ​ \nTo use Apache Iceberg managed or foreign tables, you must meet the following requirements: \nUse a workspace with Unity Catalog enabled. \nUse Databricks Runtime 16.4 LTS or above. \nFor managed tables, you must also meet the following requirement: \nA workspace with serverless compute enabled \nDatabricks uses serverless compute to maintain Iceberg table metadata for managed tables. Serverless compute must have network connectivity to the cloud storage account that backs the table. If a firewall protects the storage account, configure serverless network connectivity so that serverless compute can reach it. ",
+      "retrieved": "2026-10-11",
+      "status": "fetched",
+      "source": "2026-10-11-architecture-search-results"
+    },
+    {
+      "title": "uniform",
+      "url": "https://docs.databricks.com/aws/en/delta/iceberg-reads",
+      "content": "Read Delta Lake tables with Iceberg clients | Databricks on AWS Skip to main content Get started Guides Develop Reference Resources Release notes Help \nSupport \nKnowledge Base \nCommunity \nTraining English \nEnglish \n日本語 \nPortuguês \nFrançais AWS \nAzure \nGCP \nSAP Try Databricks \n\nTables \nTable functionality \nTable features \nIceberg reads for Delta Lake On this page Last updated on Sep 11, 2026 \nRead Delta Lake tables with Iceberg clients \nAvailable in Databricks Runtime 14.3 LTS and above, Iceberg reads configure Delta Lake tables to automatically generate Iceberg metadata, so Iceberg clients can read Delta Lake data without rewriting files. \nYou can configure an external connection to have Unity Catalog act as an Iceberg catalog. See Access Databricks tables from Apache Iceberg clients . \nHow Iceberg reads work ​ \nBoth Delta Lake and Apache Iceberg consist of Parquet data files and a metadata layer. When you enable Iceberg reads, Databricks configures your tables to use the Universal Format (UniForm) for the metadata layer. UniForm automatically generates Iceberg metadata asynchronously alongside the Delta Lake metadata, without rewriting the Parquet data files. A single copy of the data files supports both Delta and Iceberg clients. \nWhen using Iceberg reads, consider the following: \nDelta Lake tables with Iceberg reads enabled use Zstandard instead of Snappy as the compression codec for underlying Parquet data files. \nIceberg metadata generation runs asynchronously on the compute used to write data to Delta Lake tables, which might increase the driver resource usage. \nFor documentation about the legacy UniForm IcebergCompatV1 table feature, see Legacy UniForm IcebergCompatV1 . \nRequirements ​ \nTo enable Iceberg reads, the following requirements must be met: \nThe Delta Lake table must be registered to Unity Catalog . Both managed and external tables are supported. \nThe table must have column mapping enabled. See Rename and drop columns with Delta Lake column mapping ",
+      "retrieved": "2026-10-11",
+      "status": "fetched",
+      "source": "2026-10-11-architecture-search-results"
+    },
+    {
+      "title": "ucRest",
+      "url": "https://docs.databricks.com/aws/en/external-access/iceberg",
+      "content": "Access Databricks tables from Apache Iceberg clients | Databricks on AWS Skip to main content Get started Guides Develop Reference Resources Release notes Help \nSupport \nKnowledge Base \nCommunity \nTraining English \nEnglish \n日本語 \nPortuguês \nFrançais AWS \nAzure \nGCP \nSAP Try Databricks \n\nData guides \nAccess data using external systems \nIceberg client access On this page Last updated on Sep 24, 2026 \nAccess Databricks tables from Apache Iceberg clients \nThe Apache Iceberg REST catalog lets supported clients, such as Apache Spark , Apache Flink, and Trino, read from and write to Unity Catalog -registered Iceberg tables on Databricks . \nFor a full list of supported integrations, see Unity Catalog integrations . note \nUnity Catalog also has a read-only Iceberg REST Catalog API endpoint. This is a legacy endpoint. See Read Databricks tables from Apache Iceberg clients (legacy) . \nUse the Unity Catalog Iceberg catalog endpoint ​ \nUnity Catalog provides an implementation of the Iceberg REST catalog API specification. \nConfigure access using the endpoint /api/2.1/unity-catalog/iceberg-rest . See the Iceberg REST API spec for details on using this REST API. note \nDatabricks has introduced credential vending for some Iceberg reader clients. Databricks recommends using credential vending to control access to cloud storage locations for supported systems. See Unity Catalog credential vending for external system access and Access Iceberg tables using external systems . \nIf credential vending is unsupported for your client, you must configure access from the client to the storage location containing the files and metadata for the Delta or Iceberg table. Refer to documentation for your Iceberg client for configuration details. \nRequirements ​ \nDatabricks supports Iceberg REST catalog access to tables as part of Unity Catalog . You must have Unity Catalog enabled in your workspace to use these endpoints. The following table types are accessible using the Iceberg REST Catalog: \n\nTopic",
+      "retrieved": "2026-10-11",
+      "status": "fetched",
+      "source": "2026-10-11-architecture-search-results"
+    },
+    {
+      "title": "v3",
+      "url": "https://docs.databricks.com/aws/en/iceberg/iceberg-v3",
+      "content": "Use Apache Iceberg v3 features | Databricks on AWS Skip to main content Get started Guides Develop Reference Resources Release notes Help \nSupport \nKnowledge Base \nCommunity \nTraining English \nEnglish \n日本語 \nPortuguês \nFrançais AWS \nAzure \nGCP \nSAP Try Databricks \n\nTables \nTable formats \nIceberg \nIceberg v3 On this page Last updated on Sep 11, 2026 \nUse Apache Iceberg v3 features \nApache Iceberg v3 enhances query performance and introduces new capabilities for managed tables using Iceberg or Delta Lake with Iceberg reads in Unity Catalog . \nThe key features of Iceberg v3 are: \nDeletion vectors : Enable efficient, row-level deletes without rewriting entire data files. See Deletion vectors in Databricks . \nVARIANT data type : Supports storing and processing semi-structured data. See Variant type support for Apache Iceberg and Delta Lake . \nRow lineage : Tracks incremental changes to table data. See Row tracking in Databricks . \nGEOMETRY and GEOGRAPHY data types : Store and query geospatial data for spatial analytics and joins. See GEOMETRY type and GEOGRAPHY type . \nWrite defaults : Specify column values that apply to new rows when a write omits a column. See Create a table with write defaults . \nRequirements ​ \nTo use managed tables with Iceberg v3 features, such as geospatial types, you must meet the following requirements: \nA workspace with Unity Catalog enabled. \nDatabricks Runtime 18 LTS and above. \nCreate a new table with Iceberg v3 ​ \nCreate new tables with Iceberg v3 enabled for both managed Delta Lake tables with Iceberg reads and managed Iceberg tables. \nDelta Lake \nIceberg \nTo create a new managed table using Delta Lake with Iceberg reads and Iceberg v3 enabled, use the following SQL command: SQL \nCREATE OR REPLACE TABLE main . schema . table ( c1 INT ) TBLPROPERTIES ( 'delta.universalFormat.enabledFormats' = 'iceberg' , 'delta.enableIcebergCompatV3' = 'true' ) ; \nFor more information about Iceberg reads, see Read Delta Lake tables with Iceberg clients . \nTo",
+      "retrieved": "2026-10-11",
+      "status": "fetched",
+      "source": "2026-10-11-architecture-search-results"
+    },
+    {
+      "title": "bigquery",
+      "url": "https://docs.cloud.google.com/bigquery/docs/introduction",
+      "content": "BigQuery overview  |  Google Cloud Documentation Skip to main content Documentation close \nGet Started \nGet Started with Google Cloud \nProduct List \nCloud Customer Care \nFeatured Products \nAgent Platform \nApigee API Management \nBigQuery \nCompute Engine \nCloud CDN \nCloud Run \nCloud Storage \nCloud SQL \nGemini Enterprise \nGoogle Kubernetes Engine \nLooker \nCross-product Tools \nAccess and resources management \nCosts and usage management \nInfrastructure as code \nSDK, languages, frameworks, and tools \nTechnology Areas \nAI and ML \nApplication development \nApplication hosting \nCompute \nData analytics and pipelines \nDatabases \nDistributed, hybrid, and multicloud \nIndustry solutions \nMigration \nNetworking \nObservability and monitoring \nSecurity \nStorage / Console \nEnglish \nDeutsch \nEspañol \nEspañol – América Latina \nFrançais \nIndonesia \nItaliano \nPortuguês \nPortuguês – Brasil \nעברית \n中文 – 简体 \n中文 – 繁體 \n日本語 \n한국어 Sign in \nBigQuery Start free Overview Guides Reference Samples Resources \nDocumentation \nMore \nOverview \nGuides \nReference \nSamples \nResources \nConsole \nDiscover \nProduct overview \nTry BigQuery using the sandbox \nGet started \nConsole walkthroughs and videos \nUse the console \nExplore the console \nLoad and query data \nUse Notebook gallery \nCreate reservations \nTry DataFrames \nUse agents \nAnalyze data with the Colab Data Science Agent \nUse the bq CLI tool \nUse the client libraries \nPlan \nIntroduction to the resource hierarchy \nAPI dependencies \nDatasets \nIntroduction \nCreate datasets \nList datasets \nCross-region replication \nManaged disaster recovery \nMigrate to managed disaster recovery \nDataset data retention \nTables \nBigQuery tables \nIntroduction \nCreate and use tables \nSpecify table schemas \nSpecify a schema \nSpecify nested and repeated columns \nSpecify default column values \nSpecify an identity column \nSpecify ObjectRef values \nSegment with partitioned tables \nIntroduction \nCreate partitioned tables \nManage partitioned tables \nQuery partitioned tables \nOptimize with cl",
+      "retrieved": "2026-10-11",
+      "status": "fetched",
+      "source": "2026-10-11-architecture-search-results"
+    },
+    {
+      "title": "bqIceberg",
+      "url": "https://docs.cloud.google.com/bigquery/docs/biglake-iceberg-tables-in-bigquery",
+      "content": "Apache Iceberg managed tables  |  BigQuery  |  Google Cloud Documentation Skip to main content Documentation close \nGet Started \nGet Started with Google Cloud \nProduct List \nCloud Customer Care \nFeatured Products \nAgent Platform \nApigee API Management \nBigQuery \nCompute Engine \nCloud CDN \nCloud Run \nCloud Storage \nCloud SQL \nGemini Enterprise \nGoogle Kubernetes Engine \nLooker \nCross-product Tools \nAccess and resources management \nCosts and usage management \nInfrastructure as code \nSDK, languages, frameworks, and tools \nTechnology Areas \nAI and ML \nApplication development \nApplication hosting \nCompute \nData analytics and pipelines \nDatabases \nDistributed, hybrid, and multicloud \nIndustry solutions \nMigration \nNetworking \nObservability and monitoring \nSecurity \nStorage / Console \nEnglish \nDeutsch \nEspañol – América Latina \nFrançais \nIndonesia \nItaliano \nPortuguês – Brasil \nעברית \n中文 – 简体 \n中文 – 繁體 \n日本語 \n한국어 Sign in \nBigQuery Start free Overview Guides Reference Samples Resources \nDocumentation \nMore \nOverview \nGuides \nReference \nSamples \nResources \nConsole \nDiscover \nProduct overview \nTry BigQuery using the sandbox \nGet started \nConsole walkthroughs and videos \nUse the console \nExplore the console \nLoad and query data \nUse Notebook gallery \nCreate reservations \nTry DataFrames \nUse agents \nAnalyze data with the Colab Data Science Agent \nUse the bq CLI tool \nUse the client libraries \nPlan \nIntroduction to the resource hierarchy \nAPI dependencies \nDatasets \nIntroduction \nCreate datasets \nList datasets \nCross-region replication \nManaged disaster recovery \nMigrate to managed disaster recovery \nDataset data retention \nTables \nBigQuery tables \nIntroduction \nCreate and use tables \nSpecify table schemas \nSpecify a schema \nSpecify nested and repeated columns \nSpecify default column values \nSpecify an identity column \nSpecify ObjectRef values \nSegment with partitioned tables \nIntroduction \nCreate partitioned tables \nManage partitioned tables \nQuery partitioned tables \nOptimize wi",
+      "retrieved": "2026-10-11",
+      "status": "fetched",
+      "source": "2026-10-11-architecture-search-results"
+    },
+    {
+      "title": "googleLakehouse",
+      "url": "https://docs.cloud.google.com/lakehouse/docs/manage-tables",
+      "content": "Overview of Apache Iceberg tables  |  Lakehouse  |  Google Cloud Documentation Skip to main content Documentation close \nGet Started \nGet Started with Google Cloud \nProduct List \nCloud Customer Care \nFeatured Products \nAgent Platform \nApigee API Management \nBigQuery \nCompute Engine \nCloud CDN \nCloud Run \nCloud Storage \nCloud SQL \nGemini Enterprise \nGoogle Kubernetes Engine \nLooker \nCross-product Tools \nAccess and resources management \nCosts and usage management \nInfrastructure as code \nSDK, languages, frameworks, and tools \nTechnology Areas \nAI and ML \nApplication development \nApplication hosting \nCompute \nData analytics and pipelines \nDatabases \nDistributed, hybrid, and multicloud \nIndustry solutions \nMigration \nNetworking \nObservability and monitoring \nSecurity \nStorage / Console \nEnglish \nDeutsch \nEspañol – América Latina \nFrançais \nIndonesia \nItaliano \nPortuguês – Brasil \nעברית \n中文 – 简体 \n中文 – 繁體 \n日本語 \n한국어 Sign in \nLakehouse Start free Overview Guides Reference Resources \nDocumentation \nMore \nOverview \nGuides \nReference \nResources \nConsole \nDiscover \nWhat is borderless Lakehouse? \nHow borderless Lakehouse works \nKey concepts \nGet started \nCreate and query an Iceberg table using the Google Cloud console \nCreate and query an Iceberg table using the gcloud CLI \nSet up cross-cloud data access \nUse cases \nForecast demand from customer feedback \nConfigure the Lakehouse runtime catalog \nAbout the Lakehouse runtime catalog \nSet up catalog endpoints \nApache Iceberg REST catalog endpoint \nAbout the Iceberg REST catalog endpoint \nSet up the Iceberg REST catalog endpoint \nUse open-source engines and tools \nApache Spark \nApache Flink \nTrino \nTerraform \nCustom Apache Iceberg catalog for BigQuery endpoint \nOverview \nConfigure for Apache Spark \nUse Apache Iceberg 1.10 and higher \nUse Apache Iceberg 1.9 and lower \nCreate and manage resources \nUse with BigQuery tables \nUse with stored procedures \nCustomize features \nApache Hive catalog endpoint \nOverview \nSet up Apache Spark and H",
+      "retrieved": "2026-10-11",
+      "status": "fetched",
+      "source": "2026-10-11-architecture-search-results"
+    },
+    {
+      "title": "snowflake",
+      "url": "https://docs.snowflake.com/en/user-guide/tables-iceberg",
+      "content": "Apache Iceberg™ tables | Snowflake Documentation DOCUMENTATION / EN Language English Français Deutsch 日本語 한국어 Português Get started Guides Developer Reference Release notes Tutorials Status For AI agents: documentation index at /llms.txt — fetch to discover all Snowflake documentation pages. Markdown version of this page: /en/user-guide/tables-iceberg.md \nOverview \nSnowflake Horizon Catalog \n\nApplications and tools for connecting to Snowflake \n\nVirtual warehouses \nDatabases, Tables, & Views \nData types \n\nData Integration \nSnowflake Openflow \nApache Iceberg™ \nApache Iceberg™ Tables \nStorage \nMetadata And Retention \nTransactions \nData Types \nApache Iceberg™ v3 support \nTutorials \nTutorial: Create Your First Apache Iceberg™ Table \nTutorial: Set Up Bidirectional Access to Unity Catalog \nWork With Apache Iceberg™ Tables \nBest Practices \nConfigure A Catalog Integration \nAutomated Refresh \nCreate a Table \nLoad Data \nManage Tables \nConvert a Table \nUse an external query engine \nSnowflake Open Catalog \nSnowflake Catalog SDK \nSnowflake Open Catalog \nZero-Copy Connectors \nAbout SAP® and Snowflake \nAbout Salesforce Data Cloud and Snowflake \nAbout Workday Live Data Query for Snowflake \nAbout Workday Data Cloud and Snowflake \nData engineering \nData loading \nDynamic tables \nStreams and tasks \nRow timestamps \nDCM Projects \ndbt Projects on Snowflake \nData Unloading \nStorage lifecycle policies \nMigrations \n\nQueries \nCollaboration \n\nSnowflake AI & ML \n\nSnowflake Postgres \n\nAlerts & Notifications \n\nSecurity \n\nOrganizations & Accounts \nBusiness continuity & data recovery \n\nPerformance optimization \nCost & Billing Guides Data Integration Apache Iceberg™ Apache Iceberg™ Tables \nApache Iceberg™ tables ¶ \nApache Iceberg™ tables for Snowflake combine the performance and query semantics of typical\nSnowflake tables with external cloud storage that you manage. They are\nideal for existing data lakes that you cannot, or choose not to, store in Snowflake. \nIceberg tables use the Apache Iceberg™ op",
+      "retrieved": "2026-10-11",
+      "status": "fetched",
+      "source": "2026-10-11-architecture-search-results"
+    },
+    {
+      "title": "snowArchitecture",
+      "url": "https://docs.snowflake.com/en/user-guide/intro-key-concepts",
+      "content": "Snowflake key concepts and architecture | Snowflake Documentation DOCUMENTATION / EN Language English Français Deutsch 日本語 한국어 Português Get started Guides Developer Reference Release notes Tutorials Status For AI agents: documentation index at /llms.txt — fetch to discover all Snowflake documentation pages. Markdown version of this page: /en/user-guide/intro-key-concepts.md \nOverview \nGet started for users \nBefore you begin \nSign in \nKey concepts and architecture \nTutorial: Snowflake in 20 minutes \nSnowsight tour \nData lifecycle \nTutorials \nConcepts for administrators \nSample data \nContacting support Get started Get started for users Key concepts and architecture \nSnowflake key concepts and architecture ¶ \nSnowflake is powered by an advanced data platform that is provided to you as a self-managed\nservice. Snowflake’s data platform brings together data storage, processing, and analytic solutions\nthat are faster, easier to use, and far more flexible than traditional offerings. \nSnowflake combines a completely new SQL query engine with an innovative architecture that is\nnatively designed for the cloud. It offers full enterprise analytic database functionality,\nand unique features and capabilities. \nData platform as a self-managed service ¶ \nAs a self-managed service , Snowflake has the following advantages: \nThere is no hardware (virtual or physical) for you to select, install, configure, or manage. \nThere is virtually no software for you to install, configure, or manage. \nOngoing maintenance, management, upgrades, and tuning are handled by Snowflake. \nSnowflake uses public cloud infrastructure to host virtual compute instances and persistent data storage.\nSnowflake manages software updates and infrastructure so you don’t have to. You can’t install and run Snowflake\nlocally or on private cloud infrastructures, whether on-premises or hosted. \nSnowflake architecture ¶ \nSnowflake’s architecture is a hybrid of traditional shared-disk and shared-nothing database architectu",
+      "retrieved": "2026-10-11",
+      "status": "fetched",
+      "source": "2026-10-11-architecture-search-results"
+    },
+    {
+      "title": "horizon",
+      "url": "https://docs.snowflake.com/en/user-guide/tables-iceberg-access-iceberg-tables",
+      "status": "unavailable",
+      "error": "HTTP Error 404: Not Found",
+      "source": "2026-10-11-architecture-search-results"
+    },
+    {
+      "title": "fabric",
+      "url": "https://learn.microsoft.com/en-us/fabric/onelake/onelake-overview",
+      "content": "OneLake, the unified data lake - Microsoft Fabric | Microsoft Learn Skip to main content Skip to Ask Learn chat experience \nThis browser is no longer supported. \nUpgrade to Microsoft Edge to take advantage of the latest features, security updates, and technical support. Download Microsoft Edge More info about Internet Explorer and Microsoft Edge Table of contents Exit editor mode Ask Learn Ask Learn Reading mode Table of contents Read in English Add Add to Plans Edit Copy Markdown Print \nNote \nAccess to this page requires authorization. You can try signing in or changing directories . \nAccess to this page requires authorization. You can try changing directories . \nWhat is OneLake? Feedback Summarize this article for me \nIn this article \nMicrosoft OneLake is a unified data lake for your whole organization. Every Microsoft Fabric tenant automatically includes OneLake, and it's the single place for all your analytics data. It's a central repository where you can store, manage, and govern all your data for analytics and AI workloads across the organization. \nOneLake is built on Azure Data Lake Storage and stores tables in Delta Parquet or Iceberg format, two open standards that any tool can read. This approach means your data isn't locked into proprietary formats. \nOneLake provides: \nUnified data storage for the entire organization with built-in governance and security \nOne copy of data to use with multiple analytical engines without duplication \nFlexible connectivity through file explorer, ADLS Gen2 APIs, and Azure service integrations \nData protection and monitoring with built-in redundancy, disaster recovery, and access diagnostics \nUnified data storage \nBefore OneLake, organizations often created multiple lakes for different business groups, which led to extra overhead for managing multiple resources. This siloed approach made it difficult to collaborate across teams, slowed down data projects, and increased the risk of duplication. \nOneLake solves these challenges ",
+      "retrieved": "2026-10-11",
+      "status": "fetched",
+      "source": "2026-10-11-architecture-search-results"
+    },
+    {
+      "title": "fabricIceberg",
+      "url": "https://learn.microsoft.com/en-us/fabric/onelake/onelake-iceberg-tables",
+      "content": "Use Iceberg tables with OneLake - Microsoft Fabric | Microsoft Learn Skip to main content Skip to Ask Learn chat experience \nThis browser is no longer supported. \nUpgrade to Microsoft Edge to take advantage of the latest features, security updates, and technical support. Download Microsoft Edge More info about Internet Explorer and Microsoft Edge Table of contents Exit editor mode Ask Learn Ask Learn Reading mode Table of contents Read in English Add Add to Plans Edit Copy Markdown Print \nNote \nAccess to this page requires authorization. You can try signing in or changing directories . \nAccess to this page requires authorization. You can try changing directories . \nUse Iceberg tables with OneLake Feedback Summarize this article for me \nIn this article \nIn OneLake, you can seamlessly work with tables in both Delta Lake and Apache Iceberg formats. \nThis flexibility is enabled through metadata virtualization , a feature that allows Iceberg tables to be interpreted as Delta Lake tables, and vice versa. You can directly write Iceberg tables or create shortcuts to them, making these tables accessible across various Fabric workloads. Similarly, Fabric tables written in the Delta Lake format can be read using Iceberg readers. \nWhen you write or create a shortcut to an Iceberg table folder, OneLake automatically generates virtual Delta Lake metadata (Delta log) for the table, enabling its use with Fabric workloads. Conversely, Delta Lake tables now include virtual Iceberg metadata, allowing compatibility with Iceberg readers. \n\nWhile this article includes guidance for using Iceberg tables with Snowflake, this feature is intended to work with any Iceberg tables with Parquet-formatted data files in storage. \nVirtualize Delta Lake tables as Iceberg \nTo set up the automatic conversion and virtualization of tables from Delta Lake format to Iceberg format, follow these steps. \n\nEnsure your Delta Lake table, or a shortcut to it, is located in the Tables section of your data item. T",
+      "retrieved": "2026-10-11",
+      "status": "fetched",
+      "source": "2026-10-11-architecture-search-results"
+    },
+    {
+      "title": "fabricDelta",
+      "url": "https://learn.microsoft.com/en-us/fabric/fundamentals/delta-lake-interoperability",
+      "content": "Delta Lake Table Format Interoperability - Microsoft Fabric | Microsoft Learn Skip to main content Skip to Ask Learn chat experience \nThis browser is no longer supported. \nUpgrade to Microsoft Edge to take advantage of the latest features, security updates, and technical support. Download Microsoft Edge More info about Internet Explorer and Microsoft Edge Table of contents Exit editor mode Ask Learn Ask Learn Reading mode Table of contents Read in English Add Add to Plans Edit Copy Markdown Print \nNote \nAccess to this page requires authorization. You can try signing in or changing directories . \nAccess to this page requires authorization. You can try changing directories . \nDelta Lake table format interoperability Feedback Summarize this article for me \nIn this article \nIn Microsoft Fabric, the Delta Lake table format is the standard for analytics. Delta Lake is an open-source storage layer that brings ACID (Atomicity, Consistency, Isolation, Durability) transactions to big data and analytics workloads. \nAll Fabric experiences natively generate and consume Delta Lake tables, providing a unified product experience. Delta Lake tables produced by one compute engine, such as Fabric Data Warehouse or Synapse Spark, can be consumed by any other engine, such as Power BI. When you ingest data into Fabric, it stores the data as Delta tables by default. You can easily integrate external data containing Delta Lake tables by using OneLake shortcuts. \nDelta Lake features and Fabric experiences \nTo achieve interoperability, all the Fabric experiences align on the Delta Lake features and Fabric capabilities. Some experiences can only write to Delta Lake tables, while others can read from it. \nWriters : Data warehouses, eventstreams, and exported Power BI semantic models into OneLake \nReaders : SQL analytics endpoint and Power BI direct lake semantic models \nWriters and readers : Fabric Spark runtime, dataflows, pipelines, and Kusto Query Language (KQL) databases \nThe following mat",
+      "retrieved": "2026-10-11",
+      "status": "fetched",
+      "source": "2026-10-11-architecture-search-results"
+    },
+    {
+      "title": "delta",
+      "url": "https://docs.delta.io/",
+      "content": "Welcome to the Delta Lake documentation | Delta Lake Skip to content Delta Lake Search Ctrl K Cancel GitHub Select theme Dark Light Auto \nIntroduction \nApache Spark connector \nQuick Start \nTable batch reads and writes \nTable streaming reads and writes \nTable deletes, updates, and merges \nChange data feed \nTable utility commands \nConstraints \nHow does Delta Lake manage feature compatibility? \nDelta default column values \nDelta column mapping \nUse liquid clustering for Delta tables \nWhat are deletion vectors? \nUse catalog-managed tables \nDrop Delta table features \nUse row tracking for Delta tables \nDelta Connect (aka Spark Connect Support in Delta) \nStorage configuration \nDelta type widening \nUniversal Format (UniForm) \nRead Delta Sharing Tables \nConcurrency control \nMigration guide \nBest practices \nFrequently asked questions (FAQ) \nOptimizations \nTrino connector \nStarburst connector \nPresto connector \nAWS Redshift Spectrum connector \nSnowflake connector \nGoogle BigQuery connector \nApache Flink connector \nOther connectors \nDelta Kernel \nDelta Standalone (deprecated) \nDelta Lake APIs \nReleases \nDelta Lake resources \nDelta Table Properties Reference \nContribute GitHub Select theme Dark Light Auto On this page \nOverview \nOn this page \nOverview \nWelcome to the Delta Lake documentation \nDelta Lake is an open source project that enables building a Lakehouse architecture on top of data lakes . Delta Lake provides ACID transactions , scalable metadata handling, and unifies streaming and batch data processing on top of existing data lakes, such as S3, ADLS, GCS, and HDFS. \nSpecifically, Delta Lake offers: \nACID transactions on Spark: Serializable isolation levels ensure that readers never see inconsistent data. \nScalable metadata handling: Leverages Spark distributed processing power to handle all the metadata for petabyte-scale tables with billions of files at ease. \nStreaming and batch unification: A table in Delta Lake is a batch table as well as a streaming source and sink",
+      "retrieved": "2026-10-11",
+      "status": "fetched",
+      "source": "2026-10-11-architecture-search-results"
+    }
+  ],
+  "sources": [
+    "2026-10-11-architecture-search-results"
+  ],
+  "totalResults": 24,
+  "cleaningStats": {
+    "originalChars": 32000,
+    "cleanedChars": 31012,
+    "removedChars": 988,
+    "reductionPercent": 3.1
+  }
+}

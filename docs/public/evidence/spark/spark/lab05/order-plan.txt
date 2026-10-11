@@ -1,0 +1,22 @@
+== Parsed Logical Plan ==
+'Sort ['key DESC NULLS LAST, 'id ASC NULLS FIRST], true
++- Project [id#60L, (id#60L % cast(3 as bigint)) AS key#61L]
+   +- Range (0, 120, step=1, splits=Some(4))
+
+== Analyzed Logical Plan ==
+id: bigint, key: bigint
+Sort [key#61L DESC NULLS LAST, id#60L ASC NULLS FIRST], true
++- Project [id#60L, (id#60L % cast(3 as bigint)) AS key#61L]
+   +- Range (0, 120, step=1, splits=Some(4))
+
+== Optimized Logical Plan ==
+Sort [key#61L DESC NULLS LAST, id#60L ASC NULLS FIRST], true
++- Project [id#60L, (id#60L % 3) AS key#61L]
+   +- Range (0, 120, step=1, splits=Some(4))
+
+== Physical Plan ==
+*(2) Sort [key#61L DESC NULLS LAST, id#60L ASC NULLS FIRST], true, 0
++- Exchange rangepartitioning(key#61L DESC NULLS LAST, id#60L ASC NULLS FIRST, 4), ENSURE_REQUIREMENTS, [plan_id=510]
+   +- *(1) Project [id#60L, (id#60L % 3) AS key#61L]
+      +- *(1) Range (0, 120, step=1, splits=4)
+

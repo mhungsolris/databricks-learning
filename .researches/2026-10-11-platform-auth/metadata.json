@@ -1,0 +1,13 @@
+{
+  "query": "Supported OAuth, Jobs references and serverless operating model",
+  "known": "No CLI or selected workspace",
+  "stoppingRule": "Official support guidance, no credential configuration",
+  "date": "2026-10-11",
+  "timezone": "Asia/Saigon",
+  "publication": "disabled",
+  "source": "search",
+  "tool": "web-tools",
+  "timestamp": "2026-10-11-platform-auth",
+  "timestampIso": "2026-10-11T05:27:55.583Z",
+  "createdAt": "2026-10-11T05:27:55.583Z"
+}

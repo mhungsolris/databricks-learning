@@ -1,0 +1,83 @@
+﻿{
+    "applicationId":  "local-1791625215843",
+    "httpStatus":  200,
+    "stages":  [
+                   {
+                       "stageId":  10,
+                       "status":  "COMPLETE",
+                       "numTasks":  4,
+                       "shuffleReadBytes":  532,
+                       "shuffleWriteBytes":  0
+                   },
+                   {
+                       "stageId":  9,
+                       "status":  "SKIPPED",
+                       "numTasks":  4,
+                       "shuffleReadBytes":  0,
+                       "shuffleWriteBytes":  0
+                   },
+                   {
+                       "stageId":  8,
+                       "status":  "COMPLETE",
+                       "numTasks":  4,
+                       "shuffleReadBytes":  1677,
+                       "shuffleWriteBytes":  0
+                   },
+                   {
+                       "stageId":  7,
+                       "status":  "COMPLETE",
+                       "numTasks":  4,
+                       "shuffleReadBytes":  0,
+                       "shuffleWriteBytes":  1503
+                   },
+                   {
+                       "stageId":  6,
+                       "status":  "COMPLETE",
+                       "numTasks":  8,
+                       "shuffleReadBytes":  0,
+                       "shuffleWriteBytes":  174
+                   },
+                   {
+                       "stageId":  5,
+                       "status":  "COMPLETE",
+                       "numTasks":  4,
+                       "shuffleReadBytes":  1678,
+                       "shuffleWriteBytes":  0
+                   },
+                   {
+                       "stageId":  4,
+                       "status":  "COMPLETE",
+                       "numTasks":  4,
+                       "shuffleReadBytes":  0,
+                       "shuffleWriteBytes":  1678
+                   },
+                   {
+                       "stageId":  3,
+                       "status":  "COMPLETE",
+                       "numTasks":  4,
+                       "shuffleReadBytes":  0,
+                       "shuffleWriteBytes":  0
+                   },
+                   {
+                       "stageId":  2,
+                       "status":  "COMPLETE",
+                       "numTasks":  4,
+                       "shuffleReadBytes":  532,
+                       "shuffleWriteBytes":  0
+                   },
+                   {
+                       "stageId":  1,
+                       "status":  "COMPLETE",
+                       "numTasks":  4,
+                       "shuffleReadBytes":  0,
+                       "shuffleWriteBytes":  532
+                   },
+                   {
+                       "stageId":  0,
+                       "status":  "COMPLETE",
+                       "numTasks":  4,
+                       "shuffleReadBytes":  0,
+                       "shuffleWriteBytes":  0
+                   }
+               ]
+}

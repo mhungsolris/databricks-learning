@@ -1,0 +1,23 @@
+== Parsed Logical Plan ==
+'Aggregate ['key], ['key, 'count(1) AS count#2]
++- Project [id#0L, (id#0L % cast(3 as bigint)) AS key#1L]
+   +- Range (0, 120, step=1, splits=Some(4))
+
+== Analyzed Logical Plan ==
+key: bigint, count: bigint
+Aggregate [key#1L], [key#1L, count(1) AS count#2L]
++- Project [id#0L, (id#0L % cast(3 as bigint)) AS key#1L]
+   +- Range (0, 120, step=1, splits=Some(4))
+
+== Optimized Logical Plan ==
+Aggregate [key#1L], [key#1L, count(1) AS count#2L]
++- Project [(id#0L % 3) AS key#1L]
+   +- Range (0, 120, step=1, splits=Some(4))
+
+== Physical Plan ==
+*(2) HashAggregate(keys=[key#1L], functions=[count(1)], output=[key#1L, count#2L])
++- Exchange hashpartitioning(key#1L, 4), ENSURE_REQUIREMENTS, [plan_id=29]
+   +- *(1) HashAggregate(keys=[key#1L], functions=[partial_count(1)], output=[key#1L, count#9L])
+      +- *(1) Project [(id#0L % 3) AS key#1L]
+         +- *(1) Range (0, 120, step=1, splits=4)
+

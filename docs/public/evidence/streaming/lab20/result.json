@@ -1,0 +1,2110 @@
+{
+  "phases": [
+    {
+      "queryId": "dddbecb0-9f84-46bc-8522-401a9c716fdb",
+      "runId": "82b69a9b-6c8c-4d11-8687-32029379d69d",
+      "active": true,
+      "progress": [
+        {
+          "id": "dddbecb0-9f84-46bc-8522-401a9c716fdb",
+          "runId": "82b69a9b-6c8c-4d11-8687-32029379d69d",
+          "name": null,
+          "timestamp": "2026-10-11T04:12:48.930Z",
+          "batchId": 0,
+          "batchDuration": 2314,
+          "numInputRows": 1,
+          "inputRowsPerSecond": 0.0,
+          "processedRowsPerSecond": 0.43215211754537597,
+          "durationMs": {
+            "addBatch": 1147,
+            "commitOffsets": 149,
+            "getBatch": 52,
+            "latestOffset": 217,
+            "queryPlanning": 593,
+            "triggerExecution": 2314,
+            "walCommit": 155
+          },
+          "eventTime": {
+            "avg": "2026-10-01T10:00:00.000Z",
+            "max": "2026-10-01T10:00:00.000Z",
+            "min": "2026-10-01T10:00:00.000Z",
+            "watermark": "1970-01-01T00:00:00.000Z"
+          },
+          "stateOperators": [
+            {
+              "operatorName": "dedupeWithinWatermark",
+              "numRowsTotal": 1,
+              "numRowsUpdated": 1,
+              "allUpdatesTimeMs": 248,
+              "numRowsRemoved": 0,
+              "allRemovalsTimeMs": 1,
+              "commitTimeMs": 924,
+              "memoryUsedBytes": 1256,
+              "numRowsDroppedByWatermark": 0,
+              "numShufflePartitions": 4,
+              "numStateStoreInstances": 4,
+              "customMetrics": {
+                "loadedMapCacheHitCount": 0,
+                "loadedMapCacheMissCount": 0,
+                "numDroppedDuplicateRows": 0,
+                "stateOnCurrentVersionSizeBytes": 680
+              }
+            }
+          ],
+          "sources": [
+            {
+              "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab20/input]",
+              "startOffset": null,
+              "endOffset": {
+                "logOffset": 0
+              },
+              "latestOffset": null,
+              "numInputRows": 1,
+              "inputRowsPerSecond": 0.0,
+              "processedRowsPerSecond": 0.43215211754537597
+            }
+          ],
+          "sink": {
+            "description": "DeltaSink[/evidence/tests-streaming/20261011T040856Z-6f8487be/lab20/target]",
+            "numOutputRows": -1
+          }
+        },
+        {
+          "id": "dddbecb0-9f84-46bc-8522-401a9c716fdb",
+          "runId": "82b69a9b-6c8c-4d11-8687-32029379d69d",
+          "name": null,
+          "timestamp": "2026-10-11T04:12:51.246Z",
+          "batchId": 1,
+          "batchDuration": 4707,
+          "numInputRows": 0,
+          "inputRowsPerSecond": 0.0,
+          "processedRowsPerSecond": 0.0,
+          "durationMs": {
+            "addBatch": 4398,
+            "commitOffsets": 136,
+            "getBatch": 0,
+            "latestOffset": 11,
+            "queryPlanning": 4,
+            "triggerExecution": 4707,
+            "walCommit": 155
+          },
+          "eventTime": {
+            "watermark": "2026-10-01T09:50:00.000Z"
+          },
+          "stateOperators": [
+            {
+              "operatorName": "dedupeWithinWatermark",
+              "numRowsTotal": 1,
+              "numRowsUpdated": 0,
+              "allUpdatesTimeMs": 102,
+              "numRowsRemoved": 0,
+              "allRemovalsTimeMs": 0,
+              "commitTimeMs": 1551,
+              "memoryUsedBytes": 2024,
+              "numRowsDroppedByWatermark": 0,
+              "numShufflePartitions": 4,
+              "numStateStoreInstances": 4,
+              "customMetrics": {
+                "loadedMapCacheHitCount": 4,
+                "loadedMapCacheMissCount": 0,
+                "numDroppedDuplicateRows": 0,
+                "stateOnCurrentVersionSizeBytes": 696
+              }
+            }
+          ],
+          "sources": [
+            {
+              "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab20/input]",
+              "startOffset": {
+                "logOffset": 0
+              },
+              "endOffset": {
+                "logOffset": 0
+              },
+              "latestOffset": null,
+              "numInputRows": 0,
+              "inputRowsPerSecond": 0.0,
+              "processedRowsPerSecond": 0.0
+            }
+          ],
+          "sink": {
+            "description": "DeltaSink[/evidence/tests-streaming/20261011T040856Z-6f8487be/lab20/target]",
+            "numOutputRows": -1
+          }
+        }
+      ],
+      "target": [
+        {
+          "source_system": "callback",
+          "app_id": "app1",
+          "event_id": "E123",
+          "user_id": "U1",
+          "event_time": "2026-10-01T10:00:00Z",
+          "amount": 100,
+          "status": "COMPLETED",
+          "platform": "google"
+        }
+      ],
+      "targetHash": "a21f12febca7d1834c3b15ecdd7d3617c3bdd0527dc556e8e5c9051c58846918"
+    },
+    {
+      "queryId": "dddbecb0-9f84-46bc-8522-401a9c716fdb",
+      "runId": "82b69a9b-6c8c-4d11-8687-32029379d69d",
+      "active": true,
+      "progress": [
+        {
+          "id": "dddbecb0-9f84-46bc-8522-401a9c716fdb",
+          "runId": "82b69a9b-6c8c-4d11-8687-32029379d69d",
+          "name": null,
+          "timestamp": "2026-10-11T04:12:48.930Z",
+          "batchId": 0,
+          "batchDuration": 2314,
+          "numInputRows": 1,
+          "inputRowsPerSecond": 0.0,
+          "processedRowsPerSecond": 0.43215211754537597,
+          "durationMs": {
+            "addBatch": 1147,
+            "commitOffsets": 149,
+            "getBatch": 52,
+            "latestOffset": 217,
+            "queryPlanning": 593,
+            "triggerExecution": 2314,
+            "walCommit": 155
+          },
+          "eventTime": {
+            "avg": "2026-10-01T10:00:00.000Z",
+            "max": "2026-10-01T10:00:00.000Z",
+            "min": "2026-10-01T10:00:00.000Z",
+            "watermark": "1970-01-01T00:00:00.000Z"
+          },
+          "stateOperators": [
+            {
+              "operatorName": "dedupeWithinWatermark",
+              "numRowsTotal": 1,
+              "numRowsUpdated": 1,
+              "allUpdatesTimeMs": 248,
+              "numRowsRemoved": 0,
+              "allRemovalsTimeMs": 1,
+              "commitTimeMs": 924,
+              "memoryUsedBytes": 1256,
+              "numRowsDroppedByWatermark": 0,
+              "numShufflePartitions": 4,
+              "numStateStoreInstances": 4,
+              "customMetrics": {
+                "loadedMapCacheHitCount": 0,
+                "loadedMapCacheMissCount": 0,
+                "numDroppedDuplicateRows": 0,
+                "stateOnCurrentVersionSizeBytes": 680
+              }
+            }
+          ],
+          "sources": [
+            {
+              "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab20/input]",
+              "startOffset": null,
+              "endOffset": {
+                "logOffset": 0
+              },
+              "latestOffset": null,
+              "numInputRows": 1,
+              "inputRowsPerSecond": 0.0,
+              "processedRowsPerSecond": 0.43215211754537597
+            }
+          ],
+          "sink": {
+            "description": "DeltaSink[/evidence/tests-streaming/20261011T040856Z-6f8487be/lab20/target]",
+            "numOutputRows": -1
+          }
+        },
+        {
+          "id": "dddbecb0-9f84-46bc-8522-401a9c716fdb",
+          "runId": "82b69a9b-6c8c-4d11-8687-32029379d69d",
+          "name": null,
+          "timestamp": "2026-10-11T04:12:51.246Z",
+          "batchId": 1,
+          "batchDuration": 4707,
+          "numInputRows": 0,
+          "inputRowsPerSecond": 0.0,
+          "processedRowsPerSecond": 0.0,
+          "durationMs": {
+            "addBatch": 4398,
+            "commitOffsets": 136,
+            "getBatch": 0,
+            "latestOffset": 11,
+            "queryPlanning": 4,
+            "triggerExecution": 4707,
+            "walCommit": 155
+          },
+          "eventTime": {
+            "watermark": "2026-10-01T09:50:00.000Z"
+          },
+          "stateOperators": [
+            {
+              "operatorName": "dedupeWithinWatermark",
+              "numRowsTotal": 1,
+              "numRowsUpdated": 0,
+              "allUpdatesTimeMs": 102,
+              "numRowsRemoved": 0,
+              "allRemovalsTimeMs": 0,
+              "commitTimeMs": 1551,
+              "memoryUsedBytes": 2024,
+              "numRowsDroppedByWatermark": 0,
+              "numShufflePartitions": 4,
+              "numStateStoreInstances": 4,
+              "customMetrics": {
+                "loadedMapCacheHitCount": 4,
+                "loadedMapCacheMissCount": 0,
+                "numDroppedDuplicateRows": 0,
+                "stateOnCurrentVersionSizeBytes": 696
+              }
+            }
+          ],
+          "sources": [
+            {
+              "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab20/input]",
+              "startOffset": {
+                "logOffset": 0
+              },
+              "endOffset": {
+                "logOffset": 0
+              },
+              "latestOffset": null,
+              "numInputRows": 0,
+              "inputRowsPerSecond": 0.0,
+              "processedRowsPerSecond": 0.0
+            }
+          ],
+          "sink": {
+            "description": "DeltaSink[/evidence/tests-streaming/20261011T040856Z-6f8487be/lab20/target]",
+            "numOutputRows": -1
+          }
+        },
+        {
+          "id": "dddbecb0-9f84-46bc-8522-401a9c716fdb",
+          "runId": "82b69a9b-6c8c-4d11-8687-32029379d69d",
+          "name": null,
+          "timestamp": "2026-10-11T04:13:00.000Z",
+          "batchId": 2,
+          "batchDuration": 1648,
+          "numInputRows": 2,
+          "inputRowsPerSecond": 2.1834061135371177,
+          "processedRowsPerSecond": 1.2135922330097089,
+          "durationMs": {
+            "addBatch": 869,
+            "commitOffsets": 157,
+            "getBatch": 48,
+            "latestOffset": 415,
+            "queryPlanning": 5,
+            "triggerExecution": 1648,
+            "walCommit": 151
+          },
+          "eventTime": {
+            "avg": "2026-10-01T10:01:30.000Z",
+            "max": "2026-10-01T10:02:00.000Z",
+            "min": "2026-10-01T10:01:00.000Z",
+            "watermark": "2026-10-01T09:50:00.000Z"
+          },
+          "stateOperators": [
+            {
+              "operatorName": "dedupeWithinWatermark",
+              "numRowsTotal": 2,
+              "numRowsUpdated": 1,
+              "allUpdatesTimeMs": 173,
+              "numRowsRemoved": 0,
+              "allRemovalsTimeMs": 0,
+              "commitTimeMs": 631,
+              "memoryUsedBytes": 2256,
+              "numRowsDroppedByWatermark": 0,
+              "numShufflePartitions": 4,
+              "numStateStoreInstances": 4,
+              "customMetrics": {
+                "loadedMapCacheHitCount": 8,
+                "loadedMapCacheMissCount": 0,
+                "numDroppedDuplicateRows": 1,
+                "stateOnCurrentVersionSizeBytes": 912
+              }
+            }
+          ],
+          "sources": [
+            {
+              "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab20/input]",
+              "startOffset": {
+                "logOffset": 0
+              },
+              "endOffset": {
+                "logOffset": 1
+              },
+              "latestOffset": null,
+              "numInputRows": 2,
+              "inputRowsPerSecond": 2.1834061135371177,
+              "processedRowsPerSecond": 1.2135922330097089
+            }
+          ],
+          "sink": {
+            "description": "DeltaSink[/evidence/tests-streaming/20261011T040856Z-6f8487be/lab20/target]",
+            "numOutputRows": -1
+          }
+        },
+        {
+          "id": "dddbecb0-9f84-46bc-8522-401a9c716fdb",
+          "runId": "82b69a9b-6c8c-4d11-8687-32029379d69d",
+          "name": null,
+          "timestamp": "2026-10-11T04:13:01.649Z",
+          "batchId": 3,
+          "batchDuration": 5006,
+          "numInputRows": 0,
+          "inputRowsPerSecond": 0.0,
+          "processedRowsPerSecond": 0.0,
+          "durationMs": {
+            "addBatch": 4685,
+            "commitOffsets": 142,
+            "getBatch": 0,
+            "latestOffset": 21,
+            "queryPlanning": 4,
+            "triggerExecution": 5006,
+            "walCommit": 152
+          },
+          "eventTime": {
+            "watermark": "2026-10-01T09:52:00.000Z"
+          },
+          "stateOperators": [
+            {
+              "operatorName": "dedupeWithinWatermark",
+              "numRowsTotal": 2,
+              "numRowsUpdated": 0,
+              "allUpdatesTimeMs": 49,
+              "numRowsRemoved": 0,
+              "allRemovalsTimeMs": 0,
+              "commitTimeMs": 960,
+              "memoryUsedBytes": 2288,
+              "numRowsDroppedByWatermark": 0,
+              "numShufflePartitions": 4,
+              "numStateStoreInstances": 4,
+              "customMetrics": {
+                "loadedMapCacheHitCount": 12,
+                "loadedMapCacheMissCount": 0,
+                "numDroppedDuplicateRows": 0,
+                "stateOnCurrentVersionSizeBytes": 912
+              }
+            }
+          ],
+          "sources": [
+            {
+              "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab20/input]",
+              "startOffset": {
+                "logOffset": 1
+              },
+              "endOffset": {
+                "logOffset": 1
+              },
+              "latestOffset": null,
+              "numInputRows": 0,
+              "inputRowsPerSecond": 0.0,
+              "processedRowsPerSecond": 0.0
+            }
+          ],
+          "sink": {
+            "description": "DeltaSink[/evidence/tests-streaming/20261011T040856Z-6f8487be/lab20/target]",
+            "numOutputRows": -1
+          }
+        }
+      ],
+      "target": [
+        {
+          "source_system": "callback",
+          "app_id": "app1",
+          "event_id": "E123",
+          "user_id": "U1",
+          "event_time": "2026-10-01T10:00:00Z",
+          "amount": 100,
+          "status": "COMPLETED",
+          "platform": "google"
+        },
+        {
+          "source_system": "callback",
+          "app_id": "app1",
+          "event_id": "E124",
+          "user_id": "U1",
+          "event_time": "2026-10-01T10:02:00Z",
+          "amount": 100,
+          "status": "COMPLETED",
+          "platform": "google"
+        }
+      ],
+      "targetHash": "3381a974b11bf748a5c109fc3d60eaf5b55f5812cbbfa3b1e960df9c0cb50c9e"
+    },
+    {
+      "queryId": "dddbecb0-9f84-46bc-8522-401a9c716fdb",
+      "runId": "82b69a9b-6c8c-4d11-8687-32029379d69d",
+      "active": true,
+      "progress": [
+        {
+          "id": "dddbecb0-9f84-46bc-8522-401a9c716fdb",
+          "runId": "82b69a9b-6c8c-4d11-8687-32029379d69d",
+          "name": null,
+          "timestamp": "2026-10-11T04:12:48.930Z",
+          "batchId": 0,
+          "batchDuration": 2314,
+          "numInputRows": 1,
+          "inputRowsPerSecond": 0.0,
+          "processedRowsPerSecond": 0.43215211754537597,
+          "durationMs": {
+            "addBatch": 1147,
+            "commitOffsets": 149,
+            "getBatch": 52,
+            "latestOffset": 217,
+            "queryPlanning": 593,
+            "triggerExecution": 2314,
+            "walCommit": 155
+          },
+          "eventTime": {
+            "avg": "2026-10-01T10:00:00.000Z",
+            "max": "2026-10-01T10:00:00.000Z",
+            "min": "2026-10-01T10:00:00.000Z",
+            "watermark": "1970-01-01T00:00:00.000Z"
+          },
+          "stateOperators": [
+            {
+              "operatorName": "dedupeWithinWatermark",
+              "numRowsTotal": 1,
+              "numRowsUpdated": 1,
+              "allUpdatesTimeMs": 248,
+              "numRowsRemoved": 0,
+              "allRemovalsTimeMs": 1,
+              "commitTimeMs": 924,
+              "memoryUsedBytes": 1256,
+              "numRowsDroppedByWatermark": 0,
+              "numShufflePartitions": 4,
+              "numStateStoreInstances": 4,
+              "customMetrics": {
+                "loadedMapCacheHitCount": 0,
+                "loadedMapCacheMissCount": 0,
+                "numDroppedDuplicateRows": 0,
+                "stateOnCurrentVersionSizeBytes": 680
+              }
+            }
+          ],
+          "sources": [
+            {
+              "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab20/input]",
+              "startOffset": null,
+              "endOffset": {
+                "logOffset": 0
+              },
+              "latestOffset": null,
+              "numInputRows": 1,
+              "inputRowsPerSecond": 0.0,
+              "processedRowsPerSecond": 0.43215211754537597
+            }
+          ],
+          "sink": {
+            "description": "DeltaSink[/evidence/tests-streaming/20261011T040856Z-6f8487be/lab20/target]",
+            "numOutputRows": -1
+          }
+        },
+        {
+          "id": "dddbecb0-9f84-46bc-8522-401a9c716fdb",
+          "runId": "82b69a9b-6c8c-4d11-8687-32029379d69d",
+          "name": null,
+          "timestamp": "2026-10-11T04:12:51.246Z",
+          "batchId": 1,
+          "batchDuration": 4707,
+          "numInputRows": 0,
+          "inputRowsPerSecond": 0.0,
+          "processedRowsPerSecond": 0.0,
+          "durationMs": {
+            "addBatch": 4398,
+            "commitOffsets": 136,
+            "getBatch": 0,
+            "latestOffset": 11,
+            "queryPlanning": 4,
+            "triggerExecution": 4707,
+            "walCommit": 155
+          },
+          "eventTime": {
+            "watermark": "2026-10-01T09:50:00.000Z"
+          },
+          "stateOperators": [
+            {
+              "operatorName": "dedupeWithinWatermark",
+              "numRowsTotal": 1,
+              "numRowsUpdated": 0,
+              "allUpdatesTimeMs": 102,
+              "numRowsRemoved": 0,
+              "allRemovalsTimeMs": 0,
+              "commitTimeMs": 1551,
+              "memoryUsedBytes": 2024,
+              "numRowsDroppedByWatermark": 0,
+              "numShufflePartitions": 4,
+              "numStateStoreInstances": 4,
+              "customMetrics": {
+                "loadedMapCacheHitCount": 4,
+                "loadedMapCacheMissCount": 0,
+                "numDroppedDuplicateRows": 0,
+                "stateOnCurrentVersionSizeBytes": 696
+              }
+            }
+          ],
+          "sources": [
+            {
+              "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab20/input]",
+              "startOffset": {
+                "logOffset": 0
+              },
+              "endOffset": {
+                "logOffset": 0
+              },
+              "latestOffset": null,
+              "numInputRows": 0,
+              "inputRowsPerSecond": 0.0,
+              "processedRowsPerSecond": 0.0
+            }
+          ],
+          "sink": {
+            "description": "DeltaSink[/evidence/tests-streaming/20261011T040856Z-6f8487be/lab20/target]",
+            "numOutputRows": -1
+          }
+        },
+        {
+          "id": "dddbecb0-9f84-46bc-8522-401a9c716fdb",
+          "runId": "82b69a9b-6c8c-4d11-8687-32029379d69d",
+          "name": null,
+          "timestamp": "2026-10-11T04:13:00.000Z",
+          "batchId": 2,
+          "batchDuration": 1648,
+          "numInputRows": 2,
+          "inputRowsPerSecond": 2.1834061135371177,
+          "processedRowsPerSecond": 1.2135922330097089,
+          "durationMs": {
+            "addBatch": 869,
+            "commitOffsets": 157,
+            "getBatch": 48,
+            "latestOffset": 415,
+            "queryPlanning": 5,
+            "triggerExecution": 1648,
+            "walCommit": 151
+          },
+          "eventTime": {
+            "avg": "2026-10-01T10:01:30.000Z",
+            "max": "2026-10-01T10:02:00.000Z",
+            "min": "2026-10-01T10:01:00.000Z",
+            "watermark": "2026-10-01T09:50:00.000Z"
+          },
+          "stateOperators": [
+            {
+              "operatorName": "dedupeWithinWatermark",
+              "numRowsTotal": 2,
+              "numRowsUpdated": 1,
+              "allUpdatesTimeMs": 173,
+              "numRowsRemoved": 0,
+              "allRemovalsTimeMs": 0,
+              "commitTimeMs": 631,
+              "memoryUsedBytes": 2256,
+              "numRowsDroppedByWatermark": 0,
+              "numShufflePartitions": 4,
+              "numStateStoreInstances": 4,
+              "customMetrics": {
+                "loadedMapCacheHitCount": 8,
+                "loadedMapCacheMissCount": 0,
+                "numDroppedDuplicateRows": 1,
+                "stateOnCurrentVersionSizeBytes": 912
+              }
+            }
+          ],
+          "sources": [
+            {
+              "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab20/input]",
+              "startOffset": {
+                "logOffset": 0
+              },
+              "endOffset": {
+                "logOffset": 1
+              },
+              "latestOffset": null,
+              "numInputRows": 2,
+              "inputRowsPerSecond": 2.1834061135371177,
+              "processedRowsPerSecond": 1.2135922330097089
+            }
+          ],
+          "sink": {
+            "description": "DeltaSink[/evidence/tests-streaming/20261011T040856Z-6f8487be/lab20/target]",
+            "numOutputRows": -1
+          }
+        },
+        {
+          "id": "dddbecb0-9f84-46bc-8522-401a9c716fdb",
+          "runId": "82b69a9b-6c8c-4d11-8687-32029379d69d",
+          "name": null,
+          "timestamp": "2026-10-11T04:13:01.649Z",
+          "batchId": 3,
+          "batchDuration": 5006,
+          "numInputRows": 0,
+          "inputRowsPerSecond": 0.0,
+          "processedRowsPerSecond": 0.0,
+          "durationMs": {
+            "addBatch": 4685,
+            "commitOffsets": 142,
+            "getBatch": 0,
+            "latestOffset": 21,
+            "queryPlanning": 4,
+            "triggerExecution": 5006,
+            "walCommit": 152
+          },
+          "eventTime": {
+            "watermark": "2026-10-01T09:52:00.000Z"
+          },
+          "stateOperators": [
+            {
+              "operatorName": "dedupeWithinWatermark",
+              "numRowsTotal": 2,
+              "numRowsUpdated": 0,
+              "allUpdatesTimeMs": 49,
+              "numRowsRemoved": 0,
+              "allRemovalsTimeMs": 0,
+              "commitTimeMs": 960,
+              "memoryUsedBytes": 2288,
+              "numRowsDroppedByWatermark": 0,
+              "numShufflePartitions": 4,
+              "numStateStoreInstances": 4,
+              "customMetrics": {
+                "loadedMapCacheHitCount": 12,
+                "loadedMapCacheMissCount": 0,
+                "numDroppedDuplicateRows": 0,
+                "stateOnCurrentVersionSizeBytes": 912
+              }
+            }
+          ],
+          "sources": [
+            {
+              "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab20/input]",
+              "startOffset": {
+                "logOffset": 1
+              },
+              "endOffset": {
+                "logOffset": 1
+              },
+              "latestOffset": null,
+              "numInputRows": 0,
+              "inputRowsPerSecond": 0.0,
+              "processedRowsPerSecond": 0.0
+            }
+          ],
+          "sink": {
+            "description": "DeltaSink[/evidence/tests-streaming/20261011T040856Z-6f8487be/lab20/target]",
+            "numOutputRows": -1
+          }
+        },
+        {
+          "id": "dddbecb0-9f84-46bc-8522-401a9c716fdb",
+          "runId": "82b69a9b-6c8c-4d11-8687-32029379d69d",
+          "name": null,
+          "timestamp": "2026-10-11T04:13:11.000Z",
+          "batchId": 4,
+          "batchDuration": 1602,
+          "numInputRows": 1,
+          "inputRowsPerSecond": 1.0,
+          "processedRowsPerSecond": 0.6242197253433208,
+          "durationMs": {
+            "addBatch": 1001,
+            "commitOffsets": 174,
+            "getBatch": 49,
+            "latestOffset": 220,
+            "queryPlanning": 4,
+            "triggerExecution": 1602,
+            "walCommit": 150
+          },
+          "eventTime": {
+            "avg": "2026-10-01T11:00:00.000Z",
+            "max": "2026-10-01T11:00:00.000Z",
+            "min": "2026-10-01T11:00:00.000Z",
+            "watermark": "2026-10-01T09:52:00.000Z"
+          },
+          "stateOperators": [
+            {
+              "operatorName": "dedupeWithinWatermark",
+              "numRowsTotal": 3,
+              "numRowsUpdated": 1,
+              "allUpdatesTimeMs": 193,
+              "numRowsRemoved": 0,
+              "allRemovalsTimeMs": 0,
+              "commitTimeMs": 674,
+              "memoryUsedBytes": 2504,
+              "numRowsDroppedByWatermark": 0,
+              "numShufflePartitions": 4,
+              "numStateStoreInstances": 4,
+              "customMetrics": {
+                "loadedMapCacheHitCount": 16,
+                "loadedMapCacheMissCount": 0,
+                "numDroppedDuplicateRows": 0,
+                "stateOnCurrentVersionSizeBytes": 1128
+              }
+            }
+          ],
+          "sources": [
+            {
+              "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab20/input]",
+              "startOffset": {
+                "logOffset": 1
+              },
+              "endOffset": {
+                "logOffset": 2
+              },
+              "latestOffset": null,
+              "numInputRows": 1,
+              "inputRowsPerSecond": 1.0,
+              "processedRowsPerSecond": 0.6242197253433208
+            }
+          ],
+          "sink": {
+            "description": "DeltaSink[/evidence/tests-streaming/20261011T040856Z-6f8487be/lab20/target]",
+            "numOutputRows": -1
+          }
+        },
+        {
+          "id": "dddbecb0-9f84-46bc-8522-401a9c716fdb",
+          "runId": "82b69a9b-6c8c-4d11-8687-32029379d69d",
+          "name": null,
+          "timestamp": "2026-10-11T04:13:12.603Z",
+          "batchId": 5,
+          "batchDuration": 3801,
+          "numInputRows": 0,
+          "inputRowsPerSecond": 0.0,
+          "processedRowsPerSecond": 0.0,
+          "durationMs": {
+            "addBatch": 3448,
+            "commitOffsets": 132,
+            "getBatch": 0,
+            "latestOffset": 27,
+            "queryPlanning": 6,
+            "triggerExecution": 3801,
+            "walCommit": 186
+          },
+          "eventTime": {
+            "watermark": "2026-10-01T10:50:00.000Z"
+          },
+          "stateOperators": [
+            {
+              "operatorName": "dedupeWithinWatermark",
+              "numRowsTotal": 1,
+              "numRowsUpdated": 0,
+              "allUpdatesTimeMs": 39,
+              "numRowsRemoved": 2,
+              "allRemovalsTimeMs": 53,
+              "commitTimeMs": 566,
+              "memoryUsedBytes": 2472,
+              "numRowsDroppedByWatermark": 0,
+              "numShufflePartitions": 4,
+              "numStateStoreInstances": 4,
+              "customMetrics": {
+                "loadedMapCacheHitCount": 20,
+                "loadedMapCacheMissCount": 0,
+                "numDroppedDuplicateRows": 0,
+                "stateOnCurrentVersionSizeBytes": 696
+              }
+            }
+          ],
+          "sources": [
+            {
+              "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab20/input]",
+              "startOffset": {
+                "logOffset": 2
+              },
+              "endOffset": {
+                "logOffset": 2
+              },
+              "latestOffset": null,
+              "numInputRows": 0,
+              "inputRowsPerSecond": 0.0,
+              "processedRowsPerSecond": 0.0
+            }
+          ],
+          "sink": {
+            "description": "DeltaSink[/evidence/tests-streaming/20261011T040856Z-6f8487be/lab20/target]",
+            "numOutputRows": -1
+          }
+        }
+      ],
+      "target": [
+        {
+          "source_system": "callback",
+          "app_id": "app1",
+          "event_id": "ADVANCE",
+          "user_id": "U1",
+          "event_time": "2026-10-01T11:00:00Z",
+          "amount": 100,
+          "status": "COMPLETED",
+          "platform": "google"
+        },
+        {
+          "source_system": "callback",
+          "app_id": "app1",
+          "event_id": "E123",
+          "user_id": "U1",
+          "event_time": "2026-10-01T10:00:00Z",
+          "amount": 100,
+          "status": "COMPLETED",
+          "platform": "google"
+        },
+        {
+          "source_system": "callback",
+          "app_id": "app1",
+          "event_id": "E124",
+          "user_id": "U1",
+          "event_time": "2026-10-01T10:02:00Z",
+          "amount": 100,
+          "status": "COMPLETED",
+          "platform": "google"
+        }
+      ],
+      "targetHash": "5cebf2330f51df673d3635abcf4b2db4fd507da02848284bddd4de8fbc4f2581"
+    },
+    {
+      "queryId": "dddbecb0-9f84-46bc-8522-401a9c716fdb",
+      "runId": "82b69a9b-6c8c-4d11-8687-32029379d69d",
+      "active": true,
+      "progress": [
+        {
+          "id": "dddbecb0-9f84-46bc-8522-401a9c716fdb",
+          "runId": "82b69a9b-6c8c-4d11-8687-32029379d69d",
+          "name": null,
+          "timestamp": "2026-10-11T04:12:48.930Z",
+          "batchId": 0,
+          "batchDuration": 2314,
+          "numInputRows": 1,
+          "inputRowsPerSecond": 0.0,
+          "processedRowsPerSecond": 0.43215211754537597,
+          "durationMs": {
+            "addBatch": 1147,
+            "commitOffsets": 149,
+            "getBatch": 52,
+            "latestOffset": 217,
+            "queryPlanning": 593,
+            "triggerExecution": 2314,
+            "walCommit": 155
+          },
+          "eventTime": {
+            "avg": "2026-10-01T10:00:00.000Z",
+            "max": "2026-10-01T10:00:00.000Z",
+            "min": "2026-10-01T10:00:00.000Z",
+            "watermark": "1970-01-01T00:00:00.000Z"
+          },
+          "stateOperators": [
+            {
+              "operatorName": "dedupeWithinWatermark",
+              "numRowsTotal": 1,
+              "numRowsUpdated": 1,
+              "allUpdatesTimeMs": 248,
+              "numRowsRemoved": 0,
+              "allRemovalsTimeMs": 1,
+              "commitTimeMs": 924,
+              "memoryUsedBytes": 1256,
+              "numRowsDroppedByWatermark": 0,
+              "numShufflePartitions": 4,
+              "numStateStoreInstances": 4,
+              "customMetrics": {
+                "loadedMapCacheHitCount": 0,
+                "loadedMapCacheMissCount": 0,
+                "numDroppedDuplicateRows": 0,
+                "stateOnCurrentVersionSizeBytes": 680
+              }
+            }
+          ],
+          "sources": [
+            {
+              "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab20/input]",
+              "startOffset": null,
+              "endOffset": {
+                "logOffset": 0
+              },
+              "latestOffset": null,
+              "numInputRows": 1,
+              "inputRowsPerSecond": 0.0,
+              "processedRowsPerSecond": 0.43215211754537597
+            }
+          ],
+          "sink": {
+            "description": "DeltaSink[/evidence/tests-streaming/20261011T040856Z-6f8487be/lab20/target]",
+            "numOutputRows": -1
+          }
+        },
+        {
+          "id": "dddbecb0-9f84-46bc-8522-401a9c716fdb",
+          "runId": "82b69a9b-6c8c-4d11-8687-32029379d69d",
+          "name": null,
+          "timestamp": "2026-10-11T04:12:51.246Z",
+          "batchId": 1,
+          "batchDuration": 4707,
+          "numInputRows": 0,
+          "inputRowsPerSecond": 0.0,
+          "processedRowsPerSecond": 0.0,
+          "durationMs": {
+            "addBatch": 4398,
+            "commitOffsets": 136,
+            "getBatch": 0,
+            "latestOffset": 11,
+            "queryPlanning": 4,
+            "triggerExecution": 4707,
+            "walCommit": 155
+          },
+          "eventTime": {
+            "watermark": "2026-10-01T09:50:00.000Z"
+          },
+          "stateOperators": [
+            {
+              "operatorName": "dedupeWithinWatermark",
+              "numRowsTotal": 1,
+              "numRowsUpdated": 0,
+              "allUpdatesTimeMs": 102,
+              "numRowsRemoved": 0,
+              "allRemovalsTimeMs": 0,
+              "commitTimeMs": 1551,
+              "memoryUsedBytes": 2024,
+              "numRowsDroppedByWatermark": 0,
+              "numShufflePartitions": 4,
+              "numStateStoreInstances": 4,
+              "customMetrics": {
+                "loadedMapCacheHitCount": 4,
+                "loadedMapCacheMissCount": 0,
+                "numDroppedDuplicateRows": 0,
+                "stateOnCurrentVersionSizeBytes": 696
+              }
+            }
+          ],
+          "sources": [
+            {
+              "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab20/input]",
+              "startOffset": {
+                "logOffset": 0
+              },
+              "endOffset": {
+                "logOffset": 0
+              },
+              "latestOffset": null,
+              "numInputRows": 0,
+              "inputRowsPerSecond": 0.0,
+              "processedRowsPerSecond": 0.0
+            }
+          ],
+          "sink": {
+            "description": "DeltaSink[/evidence/tests-streaming/20261011T040856Z-6f8487be/lab20/target]",
+            "numOutputRows": -1
+          }
+        },
+        {
+          "id": "dddbecb0-9f84-46bc-8522-401a9c716fdb",
+          "runId": "82b69a9b-6c8c-4d11-8687-32029379d69d",
+          "name": null,
+          "timestamp": "2026-10-11T04:13:00.000Z",
+          "batchId": 2,
+          "batchDuration": 1648,
+          "numInputRows": 2,
+          "inputRowsPerSecond": 2.1834061135371177,
+          "processedRowsPerSecond": 1.2135922330097089,
+          "durationMs": {
+            "addBatch": 869,
+            "commitOffsets": 157,
+            "getBatch": 48,
+            "latestOffset": 415,
+            "queryPlanning": 5,
+            "triggerExecution": 1648,
+            "walCommit": 151
+          },
+          "eventTime": {
+            "avg": "2026-10-01T10:01:30.000Z",
+            "max": "2026-10-01T10:02:00.000Z",
+            "min": "2026-10-01T10:01:00.000Z",
+            "watermark": "2026-10-01T09:50:00.000Z"
+          },
+          "stateOperators": [
+            {
+              "operatorName": "dedupeWithinWatermark",
+              "numRowsTotal": 2,
+              "numRowsUpdated": 1,
+              "allUpdatesTimeMs": 173,
+              "numRowsRemoved": 0,
+              "allRemovalsTimeMs": 0,
+              "commitTimeMs": 631,
+              "memoryUsedBytes": 2256,
+              "numRowsDroppedByWatermark": 0,
+              "numShufflePartitions": 4,
+              "numStateStoreInstances": 4,
+              "customMetrics": {
+                "loadedMapCacheHitCount": 8,
+                "loadedMapCacheMissCount": 0,
+                "numDroppedDuplicateRows": 1,
+                "stateOnCurrentVersionSizeBytes": 912
+              }
+            }
+          ],
+          "sources": [
+            {
+              "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab20/input]",
+              "startOffset": {
+                "logOffset": 0
+              },
+              "endOffset": {
+                "logOffset": 1
+              },
+              "latestOffset": null,
+              "numInputRows": 2,
+              "inputRowsPerSecond": 2.1834061135371177,
+              "processedRowsPerSecond": 1.2135922330097089
+            }
+          ],
+          "sink": {
+            "description": "DeltaSink[/evidence/tests-streaming/20261011T040856Z-6f8487be/lab20/target]",
+            "numOutputRows": -1
+          }
+        },
+        {
+          "id": "dddbecb0-9f84-46bc-8522-401a9c716fdb",
+          "runId": "82b69a9b-6c8c-4d11-8687-32029379d69d",
+          "name": null,
+          "timestamp": "2026-10-11T04:13:01.649Z",
+          "batchId": 3,
+          "batchDuration": 5006,
+          "numInputRows": 0,
+          "inputRowsPerSecond": 0.0,
+          "processedRowsPerSecond": 0.0,
+          "durationMs": {
+            "addBatch": 4685,
+            "commitOffsets": 142,
+            "getBatch": 0,
+            "latestOffset": 21,
+            "queryPlanning": 4,
+            "triggerExecution": 5006,
+            "walCommit": 152
+          },
+          "eventTime": {
+            "watermark": "2026-10-01T09:52:00.000Z"
+          },
+          "stateOperators": [
+            {
+              "operatorName": "dedupeWithinWatermark",
+              "numRowsTotal": 2,
+              "numRowsUpdated": 0,
+              "allUpdatesTimeMs": 49,
+              "numRowsRemoved": 0,
+              "allRemovalsTimeMs": 0,
+              "commitTimeMs": 960,
+              "memoryUsedBytes": 2288,
+              "numRowsDroppedByWatermark": 0,
+              "numShufflePartitions": 4,
+              "numStateStoreInstances": 4,
+              "customMetrics": {
+                "loadedMapCacheHitCount": 12,
+                "loadedMapCacheMissCount": 0,
+                "numDroppedDuplicateRows": 0,
+                "stateOnCurrentVersionSizeBytes": 912
+              }
+            }
+          ],
+          "sources": [
+            {
+              "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab20/input]",
+              "startOffset": {
+                "logOffset": 1
+              },
+              "endOffset": {
+                "logOffset": 1
+              },
+              "latestOffset": null,
+              "numInputRows": 0,
+              "inputRowsPerSecond": 0.0,
+              "processedRowsPerSecond": 0.0
+            }
+          ],
+          "sink": {
+            "description": "DeltaSink[/evidence/tests-streaming/20261011T040856Z-6f8487be/lab20/target]",
+            "numOutputRows": -1
+          }
+        },
+        {
+          "id": "dddbecb0-9f84-46bc-8522-401a9c716fdb",
+          "runId": "82b69a9b-6c8c-4d11-8687-32029379d69d",
+          "name": null,
+          "timestamp": "2026-10-11T04:13:11.000Z",
+          "batchId": 4,
+          "batchDuration": 1602,
+          "numInputRows": 1,
+          "inputRowsPerSecond": 1.0,
+          "processedRowsPerSecond": 0.6242197253433208,
+          "durationMs": {
+            "addBatch": 1001,
+            "commitOffsets": 174,
+            "getBatch": 49,
+            "latestOffset": 220,
+            "queryPlanning": 4,
+            "triggerExecution": 1602,
+            "walCommit": 150
+          },
+          "eventTime": {
+            "avg": "2026-10-01T11:00:00.000Z",
+            "max": "2026-10-01T11:00:00.000Z",
+            "min": "2026-10-01T11:00:00.000Z",
+            "watermark": "2026-10-01T09:52:00.000Z"
+          },
+          "stateOperators": [
+            {
+              "operatorName": "dedupeWithinWatermark",
+              "numRowsTotal": 3,
+              "numRowsUpdated": 1,
+              "allUpdatesTimeMs": 193,
+              "numRowsRemoved": 0,
+              "allRemovalsTimeMs": 0,
+              "commitTimeMs": 674,
+              "memoryUsedBytes": 2504,
+              "numRowsDroppedByWatermark": 0,
+              "numShufflePartitions": 4,
+              "numStateStoreInstances": 4,
+              "customMetrics": {
+                "loadedMapCacheHitCount": 16,
+                "loadedMapCacheMissCount": 0,
+                "numDroppedDuplicateRows": 0,
+                "stateOnCurrentVersionSizeBytes": 1128
+              }
+            }
+          ],
+          "sources": [
+            {
+              "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab20/input]",
+              "startOffset": {
+                "logOffset": 1
+              },
+              "endOffset": {
+                "logOffset": 2
+              },
+              "latestOffset": null,
+              "numInputRows": 1,
+              "inputRowsPerSecond": 1.0,
+              "processedRowsPerSecond": 0.6242197253433208
+            }
+          ],
+          "sink": {
+            "description": "DeltaSink[/evidence/tests-streaming/20261011T040856Z-6f8487be/lab20/target]",
+            "numOutputRows": -1
+          }
+        },
+        {
+          "id": "dddbecb0-9f84-46bc-8522-401a9c716fdb",
+          "runId": "82b69a9b-6c8c-4d11-8687-32029379d69d",
+          "name": null,
+          "timestamp": "2026-10-11T04:13:12.603Z",
+          "batchId": 5,
+          "batchDuration": 3801,
+          "numInputRows": 0,
+          "inputRowsPerSecond": 0.0,
+          "processedRowsPerSecond": 0.0,
+          "durationMs": {
+            "addBatch": 3448,
+            "commitOffsets": 132,
+            "getBatch": 0,
+            "latestOffset": 27,
+            "queryPlanning": 6,
+            "triggerExecution": 3801,
+            "walCommit": 186
+          },
+          "eventTime": {
+            "watermark": "2026-10-01T10:50:00.000Z"
+          },
+          "stateOperators": [
+            {
+              "operatorName": "dedupeWithinWatermark",
+              "numRowsTotal": 1,
+              "numRowsUpdated": 0,
+              "allUpdatesTimeMs": 39,
+              "numRowsRemoved": 2,
+              "allRemovalsTimeMs": 53,
+              "commitTimeMs": 566,
+              "memoryUsedBytes": 2472,
+              "numRowsDroppedByWatermark": 0,
+              "numShufflePartitions": 4,
+              "numStateStoreInstances": 4,
+              "customMetrics": {
+                "loadedMapCacheHitCount": 20,
+                "loadedMapCacheMissCount": 0,
+                "numDroppedDuplicateRows": 0,
+                "stateOnCurrentVersionSizeBytes": 696
+              }
+            }
+          ],
+          "sources": [
+            {
+              "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab20/input]",
+              "startOffset": {
+                "logOffset": 2
+              },
+              "endOffset": {
+                "logOffset": 2
+              },
+              "latestOffset": null,
+              "numInputRows": 0,
+              "inputRowsPerSecond": 0.0,
+              "processedRowsPerSecond": 0.0
+            }
+          ],
+          "sink": {
+            "description": "DeltaSink[/evidence/tests-streaming/20261011T040856Z-6f8487be/lab20/target]",
+            "numOutputRows": -1
+          }
+        },
+        {
+          "id": "dddbecb0-9f84-46bc-8522-401a9c716fdb",
+          "runId": "82b69a9b-6c8c-4d11-8687-32029379d69d",
+          "name": null,
+          "timestamp": "2026-10-11T04:13:21.000Z",
+          "batchId": 6,
+          "batchDuration": 1637,
+          "numInputRows": 1,
+          "inputRowsPerSecond": 1.0,
+          "processedRowsPerSecond": 0.6108735491753207,
+          "durationMs": {
+            "addBatch": 977,
+            "commitOffsets": 259,
+            "getBatch": 46,
+            "latestOffset": 194,
+            "queryPlanning": 7,
+            "triggerExecution": 1637,
+            "walCommit": 153
+          },
+          "eventTime": {
+            "avg": "2026-10-01T10:00:00.000Z",
+            "max": "2026-10-01T10:00:00.000Z",
+            "min": "2026-10-01T10:00:00.000Z",
+            "watermark": "2026-10-01T10:50:00.000Z"
+          },
+          "stateOperators": [
+            {
+              "operatorName": "dedupeWithinWatermark",
+              "numRowsTotal": 1,
+              "numRowsUpdated": 0,
+              "allUpdatesTimeMs": 55,
+              "numRowsRemoved": 0,
+              "allRemovalsTimeMs": 0,
+              "commitTimeMs": 641,
+              "memoryUsedBytes": 2040,
+              "numRowsDroppedByWatermark": 1,
+              "numShufflePartitions": 4,
+              "numStateStoreInstances": 4,
+              "customMetrics": {
+                "loadedMapCacheHitCount": 24,
+                "loadedMapCacheMissCount": 0,
+                "numDroppedDuplicateRows": 0,
+                "stateOnCurrentVersionSizeBytes": 696
+              }
+            }
+          ],
+          "sources": [
+            {
+              "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab20/input]",
+              "startOffset": {
+                "logOffset": 2
+              },
+              "endOffset": {
+                "logOffset": 3
+              },
+              "latestOffset": null,
+              "numInputRows": 1,
+              "inputRowsPerSecond": 1.0,
+              "processedRowsPerSecond": 0.6108735491753207
+            }
+          ],
+          "sink": {
+            "description": "DeltaSink[/evidence/tests-streaming/20261011T040856Z-6f8487be/lab20/target]",
+            "numOutputRows": -1
+          }
+        }
+      ],
+      "target": [
+        {
+          "source_system": "callback",
+          "app_id": "app1",
+          "event_id": "ADVANCE",
+          "user_id": "U1",
+          "event_time": "2026-10-01T11:00:00Z",
+          "amount": 100,
+          "status": "COMPLETED",
+          "platform": "google"
+        },
+        {
+          "source_system": "callback",
+          "app_id": "app1",
+          "event_id": "E123",
+          "user_id": "U1",
+          "event_time": "2026-10-01T10:00:00Z",
+          "amount": 100,
+          "status": "COMPLETED",
+          "platform": "google"
+        },
+        {
+          "source_system": "callback",
+          "app_id": "app1",
+          "event_id": "E124",
+          "user_id": "U1",
+          "event_time": "2026-10-01T10:02:00Z",
+          "amount": 100,
+          "status": "COMPLETED",
+          "platform": "google"
+        }
+      ],
+      "targetHash": "5cebf2330f51df673d3635abcf4b2db4fd507da02848284bddd4de8fbc4f2581"
+    },
+    {
+      "queryId": "dddbecb0-9f84-46bc-8522-401a9c716fdb",
+      "runId": "82b69a9b-6c8c-4d11-8687-32029379d69d",
+      "active": true,
+      "progress": [
+        {
+          "id": "dddbecb0-9f84-46bc-8522-401a9c716fdb",
+          "runId": "82b69a9b-6c8c-4d11-8687-32029379d69d",
+          "name": null,
+          "timestamp": "2026-10-11T04:12:48.930Z",
+          "batchId": 0,
+          "batchDuration": 2314,
+          "numInputRows": 1,
+          "inputRowsPerSecond": 0.0,
+          "processedRowsPerSecond": 0.43215211754537597,
+          "durationMs": {
+            "addBatch": 1147,
+            "commitOffsets": 149,
+            "getBatch": 52,
+            "latestOffset": 217,
+            "queryPlanning": 593,
+            "triggerExecution": 2314,
+            "walCommit": 155
+          },
+          "eventTime": {
+            "avg": "2026-10-01T10:00:00.000Z",
+            "max": "2026-10-01T10:00:00.000Z",
+            "min": "2026-10-01T10:00:00.000Z",
+            "watermark": "1970-01-01T00:00:00.000Z"
+          },
+          "stateOperators": [
+            {
+              "operatorName": "dedupeWithinWatermark",
+              "numRowsTotal": 1,
+              "numRowsUpdated": 1,
+              "allUpdatesTimeMs": 248,
+              "numRowsRemoved": 0,
+              "allRemovalsTimeMs": 1,
+              "commitTimeMs": 924,
+              "memoryUsedBytes": 1256,
+              "numRowsDroppedByWatermark": 0,
+              "numShufflePartitions": 4,
+              "numStateStoreInstances": 4,
+              "customMetrics": {
+                "loadedMapCacheHitCount": 0,
+                "loadedMapCacheMissCount": 0,
+                "numDroppedDuplicateRows": 0,
+                "stateOnCurrentVersionSizeBytes": 680
+              }
+            }
+          ],
+          "sources": [
+            {
+              "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab20/input]",
+              "startOffset": null,
+              "endOffset": {
+                "logOffset": 0
+              },
+              "latestOffset": null,
+              "numInputRows": 1,
+              "inputRowsPerSecond": 0.0,
+              "processedRowsPerSecond": 0.43215211754537597
+            }
+          ],
+          "sink": {
+            "description": "DeltaSink[/evidence/tests-streaming/20261011T040856Z-6f8487be/lab20/target]",
+            "numOutputRows": -1
+          }
+        },
+        {
+          "id": "dddbecb0-9f84-46bc-8522-401a9c716fdb",
+          "runId": "82b69a9b-6c8c-4d11-8687-32029379d69d",
+          "name": null,
+          "timestamp": "2026-10-11T04:12:51.246Z",
+          "batchId": 1,
+          "batchDuration": 4707,
+          "numInputRows": 0,
+          "inputRowsPerSecond": 0.0,
+          "processedRowsPerSecond": 0.0,
+          "durationMs": {
+            "addBatch": 4398,
+            "commitOffsets": 136,
+            "getBatch": 0,
+            "latestOffset": 11,
+            "queryPlanning": 4,
+            "triggerExecution": 4707,
+            "walCommit": 155
+          },
+          "eventTime": {
+            "watermark": "2026-10-01T09:50:00.000Z"
+          },
+          "stateOperators": [
+            {
+              "operatorName": "dedupeWithinWatermark",
+              "numRowsTotal": 1,
+              "numRowsUpdated": 0,
+              "allUpdatesTimeMs": 102,
+              "numRowsRemoved": 0,
+              "allRemovalsTimeMs": 0,
+              "commitTimeMs": 1551,
+              "memoryUsedBytes": 2024,
+              "numRowsDroppedByWatermark": 0,
+              "numShufflePartitions": 4,
+              "numStateStoreInstances": 4,
+              "customMetrics": {
+                "loadedMapCacheHitCount": 4,
+                "loadedMapCacheMissCount": 0,
+                "numDroppedDuplicateRows": 0,
+                "stateOnCurrentVersionSizeBytes": 696
+              }
+            }
+          ],
+          "sources": [
+            {
+              "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab20/input]",
+              "startOffset": {
+                "logOffset": 0
+              },
+              "endOffset": {
+                "logOffset": 0
+              },
+              "latestOffset": null,
+              "numInputRows": 0,
+              "inputRowsPerSecond": 0.0,
+              "processedRowsPerSecond": 0.0
+            }
+          ],
+          "sink": {
+            "description": "DeltaSink[/evidence/tests-streaming/20261011T040856Z-6f8487be/lab20/target]",
+            "numOutputRows": -1
+          }
+        },
+        {
+          "id": "dddbecb0-9f84-46bc-8522-401a9c716fdb",
+          "runId": "82b69a9b-6c8c-4d11-8687-32029379d69d",
+          "name": null,
+          "timestamp": "2026-10-11T04:13:00.000Z",
+          "batchId": 2,
+          "batchDuration": 1648,
+          "numInputRows": 2,
+          "inputRowsPerSecond": 2.1834061135371177,
+          "processedRowsPerSecond": 1.2135922330097089,
+          "durationMs": {
+            "addBatch": 869,
+            "commitOffsets": 157,
+            "getBatch": 48,
+            "latestOffset": 415,
+            "queryPlanning": 5,
+            "triggerExecution": 1648,
+            "walCommit": 151
+          },
+          "eventTime": {
+            "avg": "2026-10-01T10:01:30.000Z",
+            "max": "2026-10-01T10:02:00.000Z",
+            "min": "2026-10-01T10:01:00.000Z",
+            "watermark": "2026-10-01T09:50:00.000Z"
+          },
+          "stateOperators": [
+            {
+              "operatorName": "dedupeWithinWatermark",
+              "numRowsTotal": 2,
+              "numRowsUpdated": 1,
+              "allUpdatesTimeMs": 173,
+              "numRowsRemoved": 0,
+              "allRemovalsTimeMs": 0,
+              "commitTimeMs": 631,
+              "memoryUsedBytes": 2256,
+              "numRowsDroppedByWatermark": 0,
+              "numShufflePartitions": 4,
+              "numStateStoreInstances": 4,
+              "customMetrics": {
+                "loadedMapCacheHitCount": 8,
+                "loadedMapCacheMissCount": 0,
+                "numDroppedDuplicateRows": 1,
+                "stateOnCurrentVersionSizeBytes": 912
+              }
+            }
+          ],
+          "sources": [
+            {
+              "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab20/input]",
+              "startOffset": {
+                "logOffset": 0
+              },
+              "endOffset": {
+                "logOffset": 1
+              },
+              "latestOffset": null,
+              "numInputRows": 2,
+              "inputRowsPerSecond": 2.1834061135371177,
+              "processedRowsPerSecond": 1.2135922330097089
+            }
+          ],
+          "sink": {
+            "description": "DeltaSink[/evidence/tests-streaming/20261011T040856Z-6f8487be/lab20/target]",
+            "numOutputRows": -1
+          }
+        },
+        {
+          "id": "dddbecb0-9f84-46bc-8522-401a9c716fdb",
+          "runId": "82b69a9b-6c8c-4d11-8687-32029379d69d",
+          "name": null,
+          "timestamp": "2026-10-11T04:13:01.649Z",
+          "batchId": 3,
+          "batchDuration": 5006,
+          "numInputRows": 0,
+          "inputRowsPerSecond": 0.0,
+          "processedRowsPerSecond": 0.0,
+          "durationMs": {
+            "addBatch": 4685,
+            "commitOffsets": 142,
+            "getBatch": 0,
+            "latestOffset": 21,
+            "queryPlanning": 4,
+            "triggerExecution": 5006,
+            "walCommit": 152
+          },
+          "eventTime": {
+            "watermark": "2026-10-01T09:52:00.000Z"
+          },
+          "stateOperators": [
+            {
+              "operatorName": "dedupeWithinWatermark",
+              "numRowsTotal": 2,
+              "numRowsUpdated": 0,
+              "allUpdatesTimeMs": 49,
+              "numRowsRemoved": 0,
+              "allRemovalsTimeMs": 0,
+              "commitTimeMs": 960,
+              "memoryUsedBytes": 2288,
+              "numRowsDroppedByWatermark": 0,
+              "numShufflePartitions": 4,
+              "numStateStoreInstances": 4,
+              "customMetrics": {
+                "loadedMapCacheHitCount": 12,
+                "loadedMapCacheMissCount": 0,
+                "numDroppedDuplicateRows": 0,
+                "stateOnCurrentVersionSizeBytes": 912
+              }
+            }
+          ],
+          "sources": [
+            {
+              "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab20/input]",
+              "startOffset": {
+                "logOffset": 1
+              },
+              "endOffset": {
+                "logOffset": 1
+              },
+              "latestOffset": null,
+              "numInputRows": 0,
+              "inputRowsPerSecond": 0.0,
+              "processedRowsPerSecond": 0.0
+            }
+          ],
+          "sink": {
+            "description": "DeltaSink[/evidence/tests-streaming/20261011T040856Z-6f8487be/lab20/target]",
+            "numOutputRows": -1
+          }
+        },
+        {
+          "id": "dddbecb0-9f84-46bc-8522-401a9c716fdb",
+          "runId": "82b69a9b-6c8c-4d11-8687-32029379d69d",
+          "name": null,
+          "timestamp": "2026-10-11T04:13:11.000Z",
+          "batchId": 4,
+          "batchDuration": 1602,
+          "numInputRows": 1,
+          "inputRowsPerSecond": 1.0,
+          "processedRowsPerSecond": 0.6242197253433208,
+          "durationMs": {
+            "addBatch": 1001,
+            "commitOffsets": 174,
+            "getBatch": 49,
+            "latestOffset": 220,
+            "queryPlanning": 4,
+            "triggerExecution": 1602,
+            "walCommit": 150
+          },
+          "eventTime": {
+            "avg": "2026-10-01T11:00:00.000Z",
+            "max": "2026-10-01T11:00:00.000Z",
+            "min": "2026-10-01T11:00:00.000Z",
+            "watermark": "2026-10-01T09:52:00.000Z"
+          },
+          "stateOperators": [
+            {
+              "operatorName": "dedupeWithinWatermark",
+              "numRowsTotal": 3,
+              "numRowsUpdated": 1,
+              "allUpdatesTimeMs": 193,
+              "numRowsRemoved": 0,
+              "allRemovalsTimeMs": 0,
+              "commitTimeMs": 674,
+              "memoryUsedBytes": 2504,
+              "numRowsDroppedByWatermark": 0,
+              "numShufflePartitions": 4,
+              "numStateStoreInstances": 4,
+              "customMetrics": {
+                "loadedMapCacheHitCount": 16,
+                "loadedMapCacheMissCount": 0,
+                "numDroppedDuplicateRows": 0,
+                "stateOnCurrentVersionSizeBytes": 1128
+              }
+            }
+          ],
+          "sources": [
+            {
+              "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab20/input]",
+              "startOffset": {
+                "logOffset": 1
+              },
+              "endOffset": {
+                "logOffset": 2
+              },
+              "latestOffset": null,
+              "numInputRows": 1,
+              "inputRowsPerSecond": 1.0,
+              "processedRowsPerSecond": 0.6242197253433208
+            }
+          ],
+          "sink": {
+            "description": "DeltaSink[/evidence/tests-streaming/20261011T040856Z-6f8487be/lab20/target]",
+            "numOutputRows": -1
+          }
+        },
+        {
+          "id": "dddbecb0-9f84-46bc-8522-401a9c716fdb",
+          "runId": "82b69a9b-6c8c-4d11-8687-32029379d69d",
+          "name": null,
+          "timestamp": "2026-10-11T04:13:12.603Z",
+          "batchId": 5,
+          "batchDuration": 3801,
+          "numInputRows": 0,
+          "inputRowsPerSecond": 0.0,
+          "processedRowsPerSecond": 0.0,
+          "durationMs": {
+            "addBatch": 3448,
+            "commitOffsets": 132,
+            "getBatch": 0,
+            "latestOffset": 27,
+            "queryPlanning": 6,
+            "triggerExecution": 3801,
+            "walCommit": 186
+          },
+          "eventTime": {
+            "watermark": "2026-10-01T10:50:00.000Z"
+          },
+          "stateOperators": [
+            {
+              "operatorName": "dedupeWithinWatermark",
+              "numRowsTotal": 1,
+              "numRowsUpdated": 0,
+              "allUpdatesTimeMs": 39,
+              "numRowsRemoved": 2,
+              "allRemovalsTimeMs": 53,
+              "commitTimeMs": 566,
+              "memoryUsedBytes": 2472,
+              "numRowsDroppedByWatermark": 0,
+              "numShufflePartitions": 4,
+              "numStateStoreInstances": 4,
+              "customMetrics": {
+                "loadedMapCacheHitCount": 20,
+                "loadedMapCacheMissCount": 0,
+                "numDroppedDuplicateRows": 0,
+                "stateOnCurrentVersionSizeBytes": 696
+              }
+            }
+          ],
+          "sources": [
+            {
+              "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab20/input]",
+              "startOffset": {
+                "logOffset": 2
+              },
+              "endOffset": {
+                "logOffset": 2
+              },
+              "latestOffset": null,
+              "numInputRows": 0,
+              "inputRowsPerSecond": 0.0,
+              "processedRowsPerSecond": 0.0
+            }
+          ],
+          "sink": {
+            "description": "DeltaSink[/evidence/tests-streaming/20261011T040856Z-6f8487be/lab20/target]",
+            "numOutputRows": -1
+          }
+        },
+        {
+          "id": "dddbecb0-9f84-46bc-8522-401a9c716fdb",
+          "runId": "82b69a9b-6c8c-4d11-8687-32029379d69d",
+          "name": null,
+          "timestamp": "2026-10-11T04:13:21.000Z",
+          "batchId": 6,
+          "batchDuration": 1637,
+          "numInputRows": 1,
+          "inputRowsPerSecond": 1.0,
+          "processedRowsPerSecond": 0.6108735491753207,
+          "durationMs": {
+            "addBatch": 977,
+            "commitOffsets": 259,
+            "getBatch": 46,
+            "latestOffset": 194,
+            "queryPlanning": 7,
+            "triggerExecution": 1637,
+            "walCommit": 153
+          },
+          "eventTime": {
+            "avg": "2026-10-01T10:00:00.000Z",
+            "max": "2026-10-01T10:00:00.000Z",
+            "min": "2026-10-01T10:00:00.000Z",
+            "watermark": "2026-10-01T10:50:00.000Z"
+          },
+          "stateOperators": [
+            {
+              "operatorName": "dedupeWithinWatermark",
+              "numRowsTotal": 1,
+              "numRowsUpdated": 0,
+              "allUpdatesTimeMs": 55,
+              "numRowsRemoved": 0,
+              "allRemovalsTimeMs": 0,
+              "commitTimeMs": 641,
+              "memoryUsedBytes": 2040,
+              "numRowsDroppedByWatermark": 1,
+              "numShufflePartitions": 4,
+              "numStateStoreInstances": 4,
+              "customMetrics": {
+                "loadedMapCacheHitCount": 24,
+                "loadedMapCacheMissCount": 0,
+                "numDroppedDuplicateRows": 0,
+                "stateOnCurrentVersionSizeBytes": 696
+              }
+            }
+          ],
+          "sources": [
+            {
+              "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab20/input]",
+              "startOffset": {
+                "logOffset": 2
+              },
+              "endOffset": {
+                "logOffset": 3
+              },
+              "latestOffset": null,
+              "numInputRows": 1,
+              "inputRowsPerSecond": 1.0,
+              "processedRowsPerSecond": 0.6108735491753207
+            }
+          ],
+          "sink": {
+            "description": "DeltaSink[/evidence/tests-streaming/20261011T040856Z-6f8487be/lab20/target]",
+            "numOutputRows": -1
+          }
+        },
+        {
+          "id": "dddbecb0-9f84-46bc-8522-401a9c716fdb",
+          "runId": "82b69a9b-6c8c-4d11-8687-32029379d69d",
+          "name": null,
+          "timestamp": "2026-10-11T04:13:28.000Z",
+          "batchId": 7,
+          "batchDuration": 1491,
+          "numInputRows": 1,
+          "inputRowsPerSecond": 1.0,
+          "processedRowsPerSecond": 0.670690811535882,
+          "durationMs": {
+            "addBatch": 952,
+            "commitOffsets": 136,
+            "getBatch": 46,
+            "latestOffset": 206,
+            "queryPlanning": 5,
+            "triggerExecution": 1490,
+            "walCommit": 143
+          },
+          "eventTime": {
+            "avg": "2026-10-01T11:02:00.000Z",
+            "max": "2026-10-01T11:02:00.000Z",
+            "min": "2026-10-01T11:02:00.000Z",
+            "watermark": "2026-10-01T10:50:00.000Z"
+          },
+          "stateOperators": [
+            {
+              "operatorName": "dedupeWithinWatermark",
+              "numRowsTotal": 2,
+              "numRowsUpdated": 1,
+              "allUpdatesTimeMs": 92,
+              "numRowsRemoved": 0,
+              "allRemovalsTimeMs": 0,
+              "commitTimeMs": 586,
+              "memoryUsedBytes": 2256,
+              "numRowsDroppedByWatermark": 0,
+              "numShufflePartitions": 4,
+              "numStateStoreInstances": 4,
+              "customMetrics": {
+                "loadedMapCacheHitCount": 28,
+                "loadedMapCacheMissCount": 0,
+                "numDroppedDuplicateRows": 0,
+                "stateOnCurrentVersionSizeBytes": 912
+              }
+            }
+          ],
+          "sources": [
+            {
+              "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab20/input]",
+              "startOffset": {
+                "logOffset": 3
+              },
+              "endOffset": {
+                "logOffset": 4
+              },
+              "latestOffset": null,
+              "numInputRows": 1,
+              "inputRowsPerSecond": 1.0,
+              "processedRowsPerSecond": 0.670690811535882
+            }
+          ],
+          "sink": {
+            "description": "DeltaSink[/evidence/tests-streaming/20261011T040856Z-6f8487be/lab20/target]",
+            "numOutputRows": -1
+          }
+        },
+        {
+          "id": "dddbecb0-9f84-46bc-8522-401a9c716fdb",
+          "runId": "82b69a9b-6c8c-4d11-8687-32029379d69d",
+          "name": null,
+          "timestamp": "2026-10-11T04:13:29.491Z",
+          "batchId": 8,
+          "batchDuration": 5138,
+          "numInputRows": 0,
+          "inputRowsPerSecond": 0.0,
+          "processedRowsPerSecond": 0.0,
+          "durationMs": {
+            "addBatch": 4805,
+            "commitOffsets": 146,
+            "getBatch": 1,
+            "latestOffset": 36,
+            "queryPlanning": 3,
+            "triggerExecution": 5138,
+            "walCommit": 147
+          },
+          "eventTime": {
+            "watermark": "2026-10-01T10:52:00.000Z"
+          },
+          "stateOperators": [
+            {
+              "operatorName": "dedupeWithinWatermark",
+              "numRowsTotal": 2,
+              "numRowsUpdated": 0,
+              "allUpdatesTimeMs": 46,
+              "numRowsRemoved": 0,
+              "allRemovalsTimeMs": 0,
+              "commitTimeMs": 616,
+              "memoryUsedBytes": 2288,
+              "numRowsDroppedByWatermark": 0,
+              "numShufflePartitions": 4,
+              "numStateStoreInstances": 4,
+              "customMetrics": {
+                "loadedMapCacheHitCount": 32,
+                "loadedMapCacheMissCount": 0,
+                "numDroppedDuplicateRows": 0,
+                "stateOnCurrentVersionSizeBytes": 912
+              }
+            }
+          ],
+          "sources": [
+            {
+              "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab20/input]",
+              "startOffset": {
+                "logOffset": 4
+              },
+              "endOffset": {
+                "logOffset": 4
+              },
+              "latestOffset": null,
+              "numInputRows": 0,
+              "inputRowsPerSecond": 0.0,
+              "processedRowsPerSecond": 0.0
+            }
+          ],
+          "sink": {
+            "description": "DeltaSink[/evidence/tests-streaming/20261011T040856Z-6f8487be/lab20/target]",
+            "numOutputRows": -1
+          }
+        }
+      ],
+      "target": [
+        {
+          "source_system": "callback",
+          "app_id": "app1",
+          "event_id": "ADVANCE",
+          "user_id": "U1",
+          "event_time": "2026-10-01T11:00:00Z",
+          "amount": 100,
+          "status": "COMPLETED",
+          "platform": "google"
+        },
+        {
+          "source_system": "callback",
+          "app_id": "app1",
+          "event_id": "E123",
+          "user_id": "U1",
+          "event_time": "2026-10-01T10:00:00Z",
+          "amount": 100,
+          "status": "COMPLETED",
+          "platform": "google"
+        },
+        {
+          "source_system": "callback",
+          "app_id": "app1",
+          "event_id": "E123",
+          "user_id": "U1",
+          "event_time": "2026-10-01T11:02:00Z",
+          "amount": 100,
+          "status": "COMPLETED",
+          "platform": "google"
+        },
+        {
+          "source_system": "callback",
+          "app_id": "app1",
+          "event_id": "E124",
+          "user_id": "U1",
+          "event_time": "2026-10-01T10:02:00Z",
+          "amount": 100,
+          "status": "COMPLETED",
+          "platform": "google"
+        }
+      ],
+      "targetHash": "25e890af523438e6105643875426fb9055a2b55bf0c1ed76f6cac9991713316c"
+    }
+  ],
+  "checkpoint": [
+    ".metadata.crc",
+    "commits/.0.crc",
+    "commits/.1.crc",
+    "commits/.2.crc",
+    "commits/.3.crc",
+    "commits/.4.crc",
+    "commits/.5.crc",
+    "commits/.6.crc",
+    "commits/.7.crc",
+    "commits/.8.crc",
+    "commits/0",
+    "commits/1",
+    "commits/2",
+    "commits/3",
+    "commits/4",
+    "commits/5",
+    "commits/6",
+    "commits/7",
+    "commits/8",
+    "metadata",
+    "offsets/.0.crc",
+    "offsets/.1.crc",
+    "offsets/.2.crc",
+    "offsets/.3.crc",
+    "offsets/.4.crc",
+    "offsets/.5.crc",
+    "offsets/.6.crc",
+    "offsets/.7.crc",
+    "offsets/.8.crc",
+    "offsets/0",
+    "offsets/1",
+    "offsets/2",
+    "offsets/3",
+    "offsets/4",
+    "offsets/5",
+    "offsets/6",
+    "offsets/7",
+    "offsets/8",
+    "sources/0/.0.crc",
+    "sources/0/.1.crc",
+    "sources/0/.2.crc",
+    "sources/0/.3.crc",
+    "sources/0/.4.crc",
+    "sources/0/0",
+    "sources/0/1",
+    "sources/0/2",
+    "sources/0/3",
+    "sources/0/4",
+    "state/0/0/.1.delta.crc",
+    "state/0/0/.2.delta.crc",
+    "state/0/0/.3.delta.crc",
+    "state/0/0/.4.delta.crc",
+    "state/0/0/.5.delta.crc",
+    "state/0/0/.6.delta.crc",
+    "state/0/0/.7.delta.crc",
+    "state/0/0/.8.delta.crc",
+    "state/0/0/.9.delta.crc",
+    "state/0/0/1.delta",
+    "state/0/0/2.delta",
+    "state/0/0/3.delta",
+    "state/0/0/4.delta",
+    "state/0/0/5.delta",
+    "state/0/0/6.delta",
+    "state/0/0/7.delta",
+    "state/0/0/8.delta",
+    "state/0/0/9.delta",
+    "state/0/0/_metadata/.schema.crc",
+    "state/0/0/_metadata/schema",
+    "state/0/1/.1.delta.crc",
+    "state/0/1/.2.delta.crc",
+    "state/0/1/.3.delta.crc",
+    "state/0/1/.4.delta.crc",
+    "state/0/1/.5.delta.crc",
+    "state/0/1/.6.delta.crc",
+    "state/0/1/.7.delta.crc",
+    "state/0/1/.8.delta.crc",
+    "state/0/1/.9.delta.crc",
+    "state/0/1/1.delta",
+    "state/0/1/2.delta",
+    "state/0/1/3.delta",
+    "state/0/1/4.delta",
+    "state/0/1/5.delta",
+    "state/0/1/6.delta",
+    "state/0/1/7.delta",
+    "state/0/1/8.delta",
+    "state/0/1/9.delta",
+    "state/0/2/.1.delta.crc",
+    "state/0/2/.2.delta.crc",
+    "state/0/2/.3.delta.crc",
+    "state/0/2/.4.delta.crc",
+    "state/0/2/.5.delta.crc",
+    "state/0/2/.6.delta.crc",
+    "state/0/2/.7.delta.crc",
+    "state/0/2/.8.delta.crc",
+    "state/0/2/.9.delta.crc",
+    "state/0/2/1.delta",
+    "state/0/2/2.delta",
+    "state/0/2/3.delta",
+    "state/0/2/4.delta",
+    "state/0/2/5.delta",
+    "state/0/2/6.delta",
+    "state/0/2/7.delta",
+    "state/0/2/8.delta",
+    "state/0/2/9.delta",
+    "state/0/3/.1.delta.crc",
+    "state/0/3/.2.delta.crc",
+    "state/0/3/.3.delta.crc",
+    "state/0/3/.4.delta.crc",
+    "state/0/3/.5.delta.crc",
+    "state/0/3/.6.delta.crc",
+    "state/0/3/.7.delta.crc",
+    "state/0/3/.8.delta.crc",
+    "state/0/3/.9.delta.crc",
+    "state/0/3/1.delta",
+    "state/0/3/2.delta",
+    "state/0/3/3.delta",
+    "state/0/3/4.delta",
+    "state/0/3/5.delta",
+    "state/0/3/6.delta",
+    "state/0/3/7.delta",
+    "state/0/3/8.delta",
+    "state/0/3/9.delta",
+    "state/0/_metadata/.metadata.crc",
+    "state/0/_metadata/metadata"
+  ],
+  "immutableEventClockViolated": true
+}

@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 1,
+  "installedDate": "2026-10-10",
+  "timezone": "Asia/Saigon",
+  "installationScope": "project",
+  "installationDirectory": ".agents/skills",
+  "skills": {
+    "databricks-core": {
+      "source": "https://github.com/databricks/databricks-agent-skills",
+      "sourcePath": "skills/databricks-core",
+      "commit": "c1964266c7aa6063d89036691d0594420ffa0129",
+      "upstreamVersion": "0.1.0",
+      "localModifications": [],
+      "files": {
+        "databricks-cli-auth.md": "d30d52889e183b35f957b0ae62e0c2d22b33ad4c2f6dfa87f5aefc66edeacfac",
+        "databricks-cli-install.md": "e96ba3cdba8c5aa7192cd9fcde4e5a1395d8636f3675c7416e1bc89e82ef85fa",
+        "manual-data-exploration.md": "511fbd3bd703eef9898835d7136d1bbadf6764ef19b5d430c4261a49adfae57f",
+        "SKILL.md": "688ac41f1044c392c1c2de2fe49426cdf8b8e19763c85fe926945c143fea2551",
+        "UPSTREAM_LICENSE": "df8afbfd34830a45f85dff044550a913a3355be1c61ab756417e7670cb48fa1c",
+        "UPSTREAM_NOTICE": "0c4c03b0de159e6308cfbb17a96c708b742e3c85887e9debb84dcd270315371e",
+        "agents/openai.yaml": "8c6cc7d4ea613427f5c460357f6dda4c6de340fdf1fa0077ebfefb7afe8b82be",
+        "assets/databricks.png": "06873c31ebda49d6ec5a730749c3dd1d0a140495f235cb1c0256cb2a3d1de850",
+        "assets/databricks.svg": "00e528e4d5e665dbb5784e3d028b74ecf74405e5ff5a9c75a4d8661f05bda91c"
+      }
+    },
+    "databricks-jobs": {
+      "source": "https://github.com/databricks/databricks-agent-skills",
+      "sourcePath": "skills/databricks-jobs",
+      "commit": "c1964266c7aa6063d89036691d0594420ffa0129",
+      "upstreamVersion": "0.2.0",
+      "localModifications": [],
+      "files": {
+        "SKILL.md": "5293473c510665bf7393ea1d0a8d1d9297ed06bf94bb56ce6f4488bfd1e2cd32",
+        "UPSTREAM_LICENSE": "df8afbfd34830a45f85dff044550a913a3355be1c61ab756417e7670cb48fa1c",
+        "UPSTREAM_NOTICE": "0c4c03b0de159e6308cfbb17a96c708b742e3c85887e9debb84dcd270315371e",
+        "agents/openai.yaml": "61e879cea71a422e32a5a27b06ea43705db0264cb99e92b62bb8db77f0a5d865",
+        "assets/databricks.png": "06873c31ebda49d6ec5a730749c3dd1d0a140495f235cb1c0256cb2a3d1de850",
+        "assets/databricks.svg": "00e528e4d5e665dbb5784e3d028b74ecf74405e5ff5a9c75a4d8661f05bda91c",
+        "references/examples.md": "9312338bc1d2c0c576c7ca95fb4b6b3faf5ff668b48c789d1027846ecf8847a2",
+        "references/notifications-monitoring.md": "742b3be99d863d601e3d4a70ccd94abef7fc3aa0f2a6b6c92940c0d8d563065c",
+        "references/task-types.md": "681f49dc36436d3d3a7e4fa781b393375e1da3c0eaa4013abf906a534d5df9a0",
+        "references/triggers-schedules.md": "95c46b401f9b2bfbb1ab92a129b4250d70fae0568e19d144ce63bb2ed298f7a5"
+      }
+    },
+    "databricks-unity-catalog": {
+      "source": "https://github.com/databricks/databricks-agent-skills",
+      "sourcePath": "skills/databricks-unity-catalog",
+      "commit": "c1964266c7aa6063d89036691d0594420ffa0129",
+      "upstreamVersion": "0.3.0",
+      "localModifications": [],
+      "files": {
+        "SKILL.md": "f7c19ee1ed74fcd0ed800b4f5d5dedd39b6c48de67559a38994d77b205f2341b",
+        "UPSTREAM_LICENSE": "df8afbfd34830a45f85dff044550a913a3355be1c61ab756417e7670cb48fa1c",
+        "UPSTREAM_NOTICE": "0c4c03b0de159e6308cfbb17a96c708b742e3c85887e9debb84dcd270315371e",
+        "agents/openai.yaml": "9a745ac030120b59a47a5092cbdb105b07034396fa47966e7a5b71656aacd873",
+        "assets/databricks.png": "06873c31ebda49d6ec5a730749c3dd1d0a140495f235cb1c0256cb2a3d1de850",
+        "assets/databricks.svg": "00e528e4d5e665dbb5784e3d028b74ecf74405e5ff5a9c75a4d8661f05bda91c",
+        "references/1-access-control.md": "b89b9e97b6c41a7fad10bff16fbdb7f328c9eca22568c2622a3bde276c485516",
+        "references/2-external-locations.md": "dca8f7443d3ef563f495e4ed859e9eed69aac0cc81ea87650dda5ffda6c76cf7",
+        "references/3-securables-ddl.md": "8199b93d15198135b83f43a62d37986a9daa7c791ec854f724b0805b59ae5575",
+        "references/4-fine-grained-access.md": "2cbbf51bbe305ee5bde9fc0a0ffb23fbadd568e0a8989d4adcff925629d8a1c4",
+        "references/5-system-tables.md": "19e652a94a8b3250ff845e324f309975bc6df7b39adf16926322960409e2efab",
+        "references/6-volumes.md": "f2b488f21f7cbe19da494ff14d4a9764732423379cb412c40361a32562b96880",
+        "references/7-data-profiling.md": "35baa78c6caf94342ee5bb4991daba16536d21f3ccc644a0d2fb5095c50603a6"
+      }
+    },
+    "databricks-dabs": {
+      "source": "https://github.com/databricks/databricks-agent-skills",
+      "sourcePath": "skills/databricks-dabs",
+      "commit": "c1964266c7aa6063d89036691d0594420ffa0129",
+      "upstreamVersion": "unknown",
+      "localModifications": [],
+      "files": {
+        "SKILL.md": "1e79d460dd49b7eafcb24a470d37274c79731e83220d76b5272b30d486b1f55c",
+        "UPSTREAM_LICENSE": "df8afbfd34830a45f85dff044550a913a3355be1c61ab756417e7670cb48fa1c",
+        "UPSTREAM_NOTICE": "0c4c03b0de159e6308cfbb17a96c708b742e3c85887e9debb84dcd270315371e",
+        "agents/openai.yaml": "52f6b4aa18c3b2b0e51ee0f2bc5c5013926d88b72774059969cc4d2db749aef9",
+        "assets/databricks.png": "06873c31ebda49d6ec5a730749c3dd1d0a140495f235cb1c0256cb2a3d1de850",
+        "assets/databricks.svg": "00e528e4d5e665dbb5784e3d028b74ecf74405e5ff5a9c75a4d8661f05bda91c",
+        "references/alerts.md": "3f56a627099be135e15606fe9bb5d84b8fa935195b9a4f99b53dd8a132ab616e",
+        "references/bundle-structure.md": "ab134ed8c627ef304b4ead0d577f60d4d6ce2fda5c2681b8e3c4b4a8cf32ccfd",
+        "references/deploy-and-run.md": "b82229e9ab4eff73ab2c8a8073170aa6305c9ca6d986e4838761e0c66c6bf491",
+        "references/resource-permissions.md": "8bd92af4b51a21822b417782817bd5e196b9916473d1c206c99fa7f18008c601",
+        "references/sdp-pipelines.md": "3f10ba4c10a318f80c2365e0538355e1800e509bc9cecc00eab8073a13f0dfa6"
+      }
+    },
+    "research-online": {
+      "source": "https://github.com/gg-skills/research-online",
+      "sourcePath": ".",
+      "commit": "52d1f89b0223d305d79948bab36c7da78d254ef1",
+      "upstreamVersion": "unknown",
+      "localModifications": [
+        "scripts/consolidate-research.ts: resolve missing shared helper via ./local-publish-policy; include source URLs in Markdown",
+        "scripts/finalize-research-session.ts: resolve missing shared helper via ./local-publish-policy",
+        "scripts/local-publish-policy.ts: local adapter, publication disabled"
+      ],
+      "files": {
+        ".gitignore": "8377971f483807e73478fb3a90089687c679355d7be6a1d2e68224b79bc2f5e5",
+        "README.md": "70d7d6872ededccb6d0b2365a437690880ce74e90f49c9a1a7bded848a11709d",
+        "SKILL.md": "5dea2cee357067382f1b84856de06d29cd722a216587692b0217417ab72e72b6",
+        "tsconfig.json": "21432135da64d16e682951c4f207e53dbba9d00ffd17d19fd96d83a1dd3686c4",
+        "agents/openai.yaml": "15e63c5ed81d331ea82c79ea6c8c8263789b671fa602b5ad2889e44496753201",
+        "assets/icon-large.png": "07be0f6107adadd5279c13175ec4a830a89b71036defcc8849402286ebff9d56",
+        "assets/icon-large.svg": "6cd9266387fa65fbf3a8fb91903f09b0413d5ef2c83c172e2e0b12d7767a949e",
+        "assets/icon-master.png": "75b190874e706c1892681635aa785f4a6f649c8689fb052ec0b98a758cf5315b",
+        "assets/icon-small.svg": "f09d1ece1fa0cf7dff6d98741202237feced665d7fecc516e942dee3794bc385",
+        "references/consolidation-patterns.md": "5279b30c30461f0440b3c5a80716d2ece97ae8142a7e7ecd50ae4729e5df69e7",
+        "references/github-repository-doc-archival.md": "b5fe74dc7e87b552acf5a3ffa239101b2e7d30cbae98fa768ca7f4c5a2b37348",
+        "references/harness-patterns.md": "08bee702347c2b2825da1f495f6d56505548965e6d6ae8621e28cf838de86d03",
+        "references/query-formulation.md": "9815a20efc0dabbfe2ee9916c23c585761e749cba76bbb8cf48279386ef584a1",
+        "references/source-evaluation.md": "3fc510b686f6f2b95c37956689a69ec10686097d66b9b182e481f0cd07faad2d",
+        "references/tool-selection.md": "f32f3774bc9405c571714dfbeb88a4a7c3310a7c09df18c0f68b4d4986f057cd",
+        "scripts/archive-github-repo-docs.ts": "6f2ea65295588068ffd089bd3a9c9e82eed9bd9020075f03c96af07b1754ffc0",
+        "scripts/clean-web-content.test.ts": "23a9c55c7ea3abde12470e44cb9a47c3f3eca279346762dbd932abb828e4ded1",
+        "scripts/clean-web-content.ts": "031c44052e63a860514883e4a7a55984503393f4e200af7b629cb7f0a195178b",
+        "scripts/consolidate-research.ts": "eb393f4256255524605675d72c10e875d811c2c9038fb770f0788e984c4a6dfa",
+        "scripts/finalize-research-session.ts": "3addc104d693c145d98b9bf35087af0ae66dc8798331c61dedbd9177524996c9",
+        "scripts/init-research-session.ts": "9c0f138f480360ad93da8aece2d98aaed7fed506f76093b77af72127ddc6acb8",
+        "scripts/local-publish-policy.ts": "99522c0f85fae0275326c367d03434cc6ab73405a1218ef0b583d86bf2067917",
+        "scripts/research-session.ts": "0575694d6b11643ff629136bb26036be056ae173a04eeae64d59c7890f850b7f",
+        "scripts/save-research.ts": "5e07054971b85d443abe9c9ee759ed5cd55c591bdb1dea8de7f2ef83a533e536",
+        "scripts/save-web-research.ts": "be22b19969506c6536b4ff3a717debcb18e5b082d06521dda67080e528288adf"
+      }
+    },
+    "technical-writing": {
+      "source": "https://github.com/riekelt/technical-writer",
+      "sourcePath": "plugins/technical-writer/skills/technical-writing",
+      "commit": "85e53729dd959a2795d593d6769068e342cf3486",
+      "upstreamVersion": "unknown",
+      "localModifications": [],
+      "files": {
+        "SKILL.md": "0b69cbe3c79cd8d68ba9f411a80a006e3970eb1d47d95b98903dfef05818ed55",
+        "UPSTREAM_LICENSE": "596de79bba18ad5370b07346f8d323ef711e26350fa6b0dab56110938e8efbe6",
+        "references/style.md": "bec9f9413f001acb14e48b993c0f63bae879f5bfbca5957899bc4156acf3ebdc",
+        "references/truth.md": "5e9ee3b9e749f948451d43af5e4d98ec2af2b95cd2609898cd7c5900d64846e8"
+      }
+    },
+    "mermaid-diagrams": {
+      "source": "https://github.com/softaworks/agent-toolkit",
+      "sourcePath": "skills/mermaid-diagrams",
+      "commit": "3027f20f3181758385a1bb8c022d4041dfb4de84",
+      "upstreamVersion": "unknown",
+      "localModifications": [],
+      "files": {
+        "README.md": "696640b6520d581b27a888ee0df786745a918845c74c94e92f329bc3f48008c2",
+        "SKILL.md": "27ccb714c44f567b8c77727d257a86c398e9f3dee7a9129c7fb42b8ec7d37ea0",
+        "UPSTREAM_LICENSE": "4b4447da5344f8b2d3a8a19ba8366d1ac7a24d9ab4690bd04576dc772ddf8321",
+        "references/advanced-features.md": "d0bb3e12e00fd18a81245b5c54d3a88341b3e4b677d2a2aa21a957941966bc9f",
+        "references/architecture-diagrams.md": "2cc9629ae4f3c82f7495937bf0d3c426c2e20f5b325fc5b3998d32a98d839d54",
+        "references/c4-diagrams.md": "9c3201b41e700be254fa3bac65c8812ce978e37d19ff354c33c660c078b5361d",
+        "references/class-diagrams.md": "98095b49c3491a462d9d6979f4fd20bebbe97da383ca1e6d80628f290eed5045",
+        "references/erd-diagrams.md": "315bc9c2379d2913791a8102e15ac7cd74b1bfe1ac768961a74e46056432dc34",
+        "references/flowcharts.md": "640152c5272080bcaf8642c6544c21f22814c9df43a9ec8a15c42cb260ceddf8",
+        "references/sequence-diagrams.md": "2b7d58692468eaca1df701fbcbc8d56ce407e0551704d28d7203732fed7cd98d"
+      }
+    },
+    "verification-before-completion": {
+      "source": "https://github.com/obra/superpowers",
+      "sourcePath": "skills/verification-before-completion",
+      "commit": "bb92a77741419a4ab5f06e711a283343f1ada0c3",
+      "upstreamVersion": "unknown",
+      "localModifications": [],
+      "files": {
+        "SKILL.md": "2befe7fc55bcadaa3d97dd9e8efeb633d2561c0ebe74c5a8b17c4d9e7e4520b3",
+        "UPSTREAM_LICENSE": "a37e0e9697144819e1d965176ac4ae5bc3fa02d11e7812036bbcadf6dafe2400"
+      }
+    }
+  }
+}

@@ -1,0 +1,271 @@
+{
+  "format-version": 2,
+  "table-uuid": "b83f82e4-3a88-48b6-b519-95f27d27809b",
+  "location": "file:///evidence/tests-iceberg/20261011T090254Z-ab860623/iceberg-warehouse/course/events",
+  "last-sequence-number": 3,
+  "last-updated-ms": 1791709409423,
+  "last-column-id": 5,
+  "current-schema-id": 2,
+  "schemas": [
+    {
+      "type": "struct",
+      "schema-id": 0,
+      "fields": [
+        {
+          "id": 1,
+          "name": "id",
+          "required": false,
+          "type": "long"
+        },
+        {
+          "id": 2,
+          "name": "event_time",
+          "required": false,
+          "type": "timestamptz"
+        },
+        {
+          "id": 3,
+          "name": "campaign",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "id": 4,
+          "name": "revenue",
+          "required": false,
+          "type": "long"
+        }
+      ]
+    },
+    {
+      "type": "struct",
+      "schema-id": 1,
+      "fields": [
+        {
+          "id": 1,
+          "name": "id",
+          "required": false,
+          "type": "long"
+        },
+        {
+          "id": 2,
+          "name": "event_time",
+          "required": false,
+          "type": "timestamptz"
+        },
+        {
+          "id": 3,
+          "name": "campaign",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "id": 4,
+          "name": "revenue",
+          "required": false,
+          "type": "long"
+        },
+        {
+          "id": 5,
+          "name": "country",
+          "required": false,
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "type": "struct",
+      "schema-id": 2,
+      "fields": [
+        {
+          "id": 1,
+          "name": "id",
+          "required": false,
+          "type": "long"
+        },
+        {
+          "id": 2,
+          "name": "event_time",
+          "required": false,
+          "type": "timestamptz"
+        },
+        {
+          "id": 3,
+          "name": "campaign_id",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "id": 4,
+          "name": "revenue",
+          "required": false,
+          "type": "long"
+        },
+        {
+          "id": 5,
+          "name": "country",
+          "required": false,
+          "type": "string"
+        }
+      ]
+    }
+  ],
+  "default-spec-id": 0,
+  "partition-specs": [
+    {
+      "spec-id": 0,
+      "fields": []
+    }
+  ],
+  "last-partition-id": 999,
+  "default-sort-order-id": 0,
+  "sort-orders": [
+    {
+      "order-id": 0,
+      "fields": []
+    }
+  ],
+  "properties": {
+    "owner": "root",
+    "write.merge.mode": "copy-on-write",
+    "write.update.mode": "copy-on-write",
+    "write.delete.mode": "copy-on-write",
+    "write.parquet.compression-codec": "zstd"
+  },
+  "current-snapshot-id": 7288907117030622282,
+  "refs": {
+    "main": {
+      "snapshot-id": 7288907117030622282,
+      "type": "branch"
+    }
+  },
+  "snapshots": [
+    {
+      "sequence-number": 1,
+      "snapshot-id": 1188463604688640897,
+      "timestamp-ms": 1791709397861,
+      "summary": {
+        "operation": "append",
+        "spark.app.id": "local-1791709377522",
+        "manifests-created": "1",
+        "manifests-kept": "0",
+        "manifests-replaced": "0",
+        "added-data-files": "2",
+        "added-records": "2",
+        "added-files-size": "2390",
+        "changed-partition-count": "1",
+        "total-records": "2",
+        "total-files-size": "2390",
+        "total-data-files": "2",
+        "total-delete-files": "0",
+        "total-position-deletes": "0",
+        "total-equality-deletes": "0",
+        "engine-version": "4.0.4",
+        "app-id": "local-1791709377522",
+        "engine-name": "spark",
+        "iceberg-version": "Apache Iceberg 1.12.0 (commit 212aa894e919ff9fdf89160da4aadcbe6858ac01)",
+        "app-name": "iceberg-semantics"
+      },
+      "manifest-list": "file:/evidence/tests-iceberg/20261011T090254Z-ab860623/iceberg-warehouse/course/events/metadata/snap-1188463604688640897-1-a4b73fc3-46e4-4656-8fa3-d49ef462be32.avro",
+      "schema-id": 0
+    },
+    {
+      "sequence-number": 2,
+      "snapshot-id": 3561995890687308440,
+      "parent-snapshot-id": 1188463604688640897,
+      "timestamp-ms": 1791709405570,
+      "summary": {
+        "operation": "append",
+        "spark.app.id": "local-1791709377522",
+        "manifests-created": "1",
+        "manifests-kept": "1",
+        "manifests-replaced": "0",
+        "added-data-files": "1",
+        "added-records": "1",
+        "added-files-size": "1195",
+        "changed-partition-count": "1",
+        "total-records": "3",
+        "total-files-size": "3585",
+        "total-data-files": "3",
+        "total-delete-files": "0",
+        "total-position-deletes": "0",
+        "total-equality-deletes": "0",
+        "engine-version": "4.0.4",
+        "app-id": "local-1791709377522",
+        "engine-name": "spark",
+        "iceberg-version": "Apache Iceberg 1.12.0 (commit 212aa894e919ff9fdf89160da4aadcbe6858ac01)",
+        "app-name": "iceberg-semantics"
+      },
+      "manifest-list": "file:/evidence/tests-iceberg/20261011T090254Z-ab860623/iceberg-warehouse/course/events/metadata/snap-3561995890687308440-1-eb27636b-7092-45ff-89d9-1bc8c5a30df3.avro",
+      "schema-id": 0
+    },
+    {
+      "sequence-number": 3,
+      "snapshot-id": 7288907117030622282,
+      "parent-snapshot-id": 3561995890687308440,
+      "timestamp-ms": 1791709409423,
+      "summary": {
+        "operation": "append",
+        "spark.app.id": "local-1791709377522",
+        "manifests-created": "1",
+        "manifests-kept": "2",
+        "manifests-replaced": "0",
+        "added-data-files": "1",
+        "added-records": "1",
+        "added-files-size": "1436",
+        "changed-partition-count": "1",
+        "total-records": "4",
+        "total-files-size": "5021",
+        "total-data-files": "4",
+        "total-delete-files": "0",
+        "total-position-deletes": "0",
+        "total-equality-deletes": "0",
+        "engine-version": "4.0.4",
+        "app-id": "local-1791709377522",
+        "engine-name": "spark",
+        "iceberg-version": "Apache Iceberg 1.12.0 (commit 212aa894e919ff9fdf89160da4aadcbe6858ac01)",
+        "app-name": "iceberg-semantics"
+      },
+      "manifest-list": "file:/evidence/tests-iceberg/20261011T090254Z-ab860623/iceberg-warehouse/course/events/metadata/snap-7288907117030622282-1-b7c16eff-2aa7-4ff4-a9a0-74241108d0d8.avro",
+      "schema-id": 2
+    }
+  ],
+  "statistics": [],
+  "partition-statistics": [],
+  "snapshot-log": [
+    {
+      "timestamp-ms": 1791709397861,
+      "snapshot-id": 1188463604688640897
+    },
+    {
+      "timestamp-ms": 1791709405570,
+      "snapshot-id": 3561995890687308440
+    },
+    {
+      "timestamp-ms": 1791709409423,
+      "snapshot-id": 7288907117030622282
+    }
+  ],
+  "metadata-log": [
+    {
+      "timestamp-ms": 1791709389280,
+      "metadata-file": "file:/evidence/tests-iceberg/20261011T090254Z-ab860623/iceberg-warehouse/course/events/metadata/v1.metadata.json"
+    },
+    {
+      "timestamp-ms": 1791709397870,
+      "metadata-file": "file:/evidence/tests-iceberg/20261011T090254Z-ab860623/iceberg-warehouse/course/events/metadata/v2.metadata.json"
+    },
+    {
+      "timestamp-ms": 1791709405570,
+      "metadata-file": "file:/evidence/tests-iceberg/20261011T090254Z-ab860623/iceberg-warehouse/course/events/metadata/v3.metadata.json"
+    },
+    {
+      "timestamp-ms": 1791709408443,
+      "metadata-file": "file:/evidence/tests-iceberg/20261011T090254Z-ab860623/iceberg-warehouse/course/events/metadata/v4.metadata.json"
+    },
+    {
+      "timestamp-ms": 1791709408759,
+      "metadata-file": "file:/evidence/tests-iceberg/20261011T090254Z-ab860623/iceberg-warehouse/course/events/metadata/v5.metadata.json"
+    }
+  ]
+}

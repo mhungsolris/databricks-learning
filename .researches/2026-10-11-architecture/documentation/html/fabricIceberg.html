@@ -1,0 +1,2027 @@
+ <!DOCTYPE html>
+		<html
+			class="layout layout-holy-grail   show-table-of-contents conceptual show-breadcrumb default-focus"
+			lang="en-us"
+			dir="ltr"
+			data-authenticated="false"
+			data-auth-status-determined="false"
+			data-target="docs"
+			x-ms-format-detection="none"
+		>
+			
+		<head>
+			<title>Use Iceberg tables with OneLake - Microsoft Fabric | Microsoft Learn</title>
+			<meta charset="utf-8" />
+			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+			<meta name="color-scheme" content="light dark" />
+
+			<meta name="description" content="Discover how to leverage table format virtualization in OneLake to seamlessly read Delta Lake tables as Iceberg or create shortcuts to Iceberg tables in storage. Explore how OneLake automatically virtualizes Iceberg tables into the Delta Lake format for use across Fabric workloads, and Delta Lake tables into the Iceberg format for compatibility with Iceberg readers." />
+			<link rel="canonical" href="https://learn.microsoft.com/en-us/fabric/onelake/onelake-iceberg-tables" /> 
+
+			<!-- Non-customizable open graph and sharing-related metadata -->
+			<meta name="twitter:card" content="summary_large_image" />
+			<meta name="twitter:site" content="@MicrosoftLearn" />
+			<meta property="og:type" content="website" />
+			<meta property="og:image:alt" content="Microsoft Learn" />
+			<meta property="og:image" content="https://learn.microsoft.com/en-us/media/open-graph-image.png" />
+			<!-- Page specific open graph and sharing-related metadata -->
+			<meta property="og:title" content="Use Iceberg tables with OneLake - Microsoft Fabric" />
+			<meta property="og:url" content="https://learn.microsoft.com/en-us/fabric/onelake/onelake-iceberg-tables" />
+			<meta property="og:description" content="Discover how to leverage table format virtualization in OneLake to seamlessly read Delta Lake tables as Iceberg or create shortcuts to Iceberg tables in storage. Explore how OneLake automatically virtualizes Iceberg tables into the Delta Lake format for use across Fabric workloads, and Delta Lake tables into the Iceberg format for compatibility with Iceberg readers." />
+			<meta name="platform_id" content="2a55e9ec-d3b8-2424-ec23-1af97a650b43" /> <meta name="scope" content="Microsoft Fabric" />
+			<meta name="locale" content="en-us" />
+			 
+			<meta name="uhfHeaderId" content="MSDocsHeader-Fabric" />
+
+			<meta name="page_type" content="conceptual" />
+
+			<!--page specific meta tags-->
+			
+
+			<!-- custom meta tags -->
+			
+		<meta name="breadcrumb_path" content="/fabric/breadcrumb/toc.json" />
+	
+		<meta name="show_latex" content="false" />
+	
+		<meta name="feedback_system" content="Standard" />
+	
+		<meta name="feedback_help_link_url" content="https://community.fabric.microsoft.com/powerbi" />
+	
+		<meta name="feedback_help_link_type" content="ask-the-community" />
+	
+		<meta name="feedback_product_url" content="https://ideas.fabric.microsoft.com/?forum=bbb1936d-44f9-ed11-8849-000d3a4ef41d&amp;category=a81db3f3-43be-ed11-83ff-00224827e905" />
+	
+		<meta name="ms.service" content="fabric" />
+	
+		<meta name="author" content="kgremban" />
+	
+		<meta name="ms.author" content="kgremban" />
+	
+		<meta name="ms.subservice" content="onelake" />
+	
+		<meta name="ms.reviewer" content="mahi" />
+	
+		<meta name="ms.topic" content="how-to" />
+	
+		<meta name="ms.date" content="2026-07-30T00:00:00Z" />
+	
+		<meta name="ai-usage" content="ai-assisted" />
+	
+		<meta name="document_id" content="bb0252d3-d755-1552-a8e5-8dcbccf61907" />
+	
+		<meta name="document_version_independent_id" content="bb0252d3-d755-1552-a8e5-8dcbccf61907" />
+	
+		<meta name="updated_at" content="2026-09-16T05:03:00Z" />
+	
+		<meta name="original_content_git_url" content="https://github.com/MicrosoftDocs/fabric-docs-pr/blob/live/docs/onelake/onelake-iceberg-tables.md" />
+	
+		<meta name="gitcommit" content="https://github.com/MicrosoftDocs/fabric-docs-pr/blob/ce8cc91491f5127dbb89ba3cf1618e9bbe28bc91/docs/onelake/onelake-iceberg-tables.md" />
+	
+		<meta name="git_commit_id" content="ce8cc91491f5127dbb89ba3cf1618e9bbe28bc91" />
+	
+		<meta name="site_name" content="Docs" />
+	
+		<meta name="depot_name" content="MSDN.fabric-docs" />
+	
+		<meta name="schema" content="Conceptual" />
+	
+		<meta name="toc_rel" content="toc.json" />
+	
+		<meta name="pdf_url_template" content="https://learn.microsoft.com/pdfstore/en-us/MSDN.fabric-docs/{branchName}{pdfName}" />
+	
+		<meta name="word_count" content="3512" />
+	
+		<meta name="asset_id" content="onelake/onelake-iceberg-tables" />
+	
+		<meta name="moniker_range_name" content="" />
+	
+		<meta name="item_type" content="Content" />
+	
+		<meta name="source_path" content="docs/onelake/onelake-iceberg-tables.md" />
+	
+		<meta name="previous_tlsh_hash" content="87C7B9A2751C8600EAC11D12B85A7320E4F0D45ABBB02D953A193A75D2553FF36BA759B7B70EB350B3B2010362A26A5F62E6DF36D0681B7505FD682C880C27E4D5DA3BFFB5" />
+	
+		<meta name="github_feedback_content_git_url" content="https://github.com/MicrosoftDocs/fabric-docs/blob/main/docs/onelake/onelake-iceberg-tables.md" />
+	
+		<meta name="markdown_url" content="https://learn.microsoft.com/en-us/fabric/onelake/onelake-iceberg-tables?accept=text/markdown" />
+	 
+		<meta name="cmProducts" content="https://authoring-docs-microsoft.poolparty.biz/devrel/766f70ec-319f-4c35-872d-89afd8c4d224" data-source="generated" />
+	
+		<meta name="cmProducts" content="https://authoring-docs-microsoft.poolparty.biz/devrel/5c1f3bfc-fced-4ad1-b4e6-b7200832734d" data-source="generated" />
+	
+		<meta name="cmProducts" content="https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/e7cd09c2-9e9a-4f0d-b160-c15783f45b1f" data-source="generated" />
+	
+		<meta name="spProducts" content="https://authoring-docs-microsoft.poolparty.biz/devrel/66c6e6fb-a5a6-4608-a629-b6e94e89ef4d" data-source="generated" />
+	
+		<meta name="spProducts" content="https://authoring-docs-microsoft.poolparty.biz/devrel/5017978e-5a12-4c31-bdfd-1880eb1a780b" data-source="generated" />
+	
+		<meta name="spProducts" content="https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/1d337399-0ca4-4b4c-acef-8df37820e018" data-source="generated" />
+	
+
+			<!-- Apply persisted/system theme before first paint to prevent wrong-theme flash when scripts are deferred. -->
+			<script id="theme-preference">
+				(function () {
+			try {
+				var stored = localStorage.getItem('theme');
+				var theme = /^(light|dark|high-contrast)$/.test(stored)
+					? stored
+					: matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+				document.documentElement.classList.add('theme-' + theme);
+			} catch (e) {}
+		})();;
+			</script>
+
+			<script id="atlas-layout-preferences">
+				(function () {
+			try {
+				var state = JSON.parse(localStorage.getItem('atlas-layout-preferences') || '{}');
+				var view = state["docs-layout-persistence"] || {};
+				var excludesKey = "";
+				var blocked = {};
+				if (excludesKey) {
+					var exclusions = JSON.parse(localStorage.getItem('atlas-layout-exclusions') || '{}');
+					if (Object.prototype.hasOwnProperty.call(exclusions, excludesKey)) {
+						var scoped = exclusions[excludesKey];
+						if (scoped) {
+							if (typeof scoped === 'object') blocked = scoped;
+						}
+					}
+				}
+				var html = document.documentElement;
+				for (var c in view) {
+					if (Object.prototype.hasOwnProperty.call(blocked, c)) continue;
+					if (view[c]) html.classList.add(c);
+					else html.classList.remove(c);
+				}
+			} catch (e) {}
+		})();;
+			</script>
+
+			<!-- assets and js globals -->
+			
+			<link rel="stylesheet" href="/static/assets/0.4.03568.8292-0a6c2196/styles/site.css" />
+			
+			<script src="https://wcpstatic.microsoft.com/mscc/lib/v2/wcp-consent.js"></script>
+			<!-- Keep this URL in sync with oneDSScriptSelector in instrumentation/one-ds.ts. -->
+			<script async src="https://js.monitor.azure.com/scripts/c/ms.jsll-4.min.js"></script>
+			
+
+			<!-- msdocs global object -->
+			<script id="msdocs-script">
+		var msDocs = {
+  "environment": {
+    "accessLevel": "online",
+    "azurePortalHostname": "portal.azure.com",
+    "reviewFeatures": false,
+    "supportLevel": "production",
+    "systemContent": true,
+    "siteName": "learn",
+    "legacyHosting": false
+  },
+  "data": {
+    "contentLocale": "en-us",
+    "contentDir": "ltr",
+    "userLocale": "en-us",
+    "userDir": "ltr",
+    "pageTemplate": "Conceptual",
+    "layoutStateStorageKey": "docs-layout-persistence",
+    "brand": "",
+    "context": {},
+    "standardFeedback": true,
+    "showFeedbackReport": false,
+    "feedbackHelpLinkType": "ask-the-community",
+    "feedbackHelpLinkUrl": "https://community.fabric.microsoft.com/powerbi",
+    "feedbackSystem": "Standard",
+    "feedbackGitHubRepo": "",
+    "feedbackProductUrl": "https://ideas.fabric.microsoft.com/?forum=bbb1936d-44f9-ed11-8849-000d3a4ef41d\u0026category=a81db3f3-43be-ed11-83ff-00224827e905",
+    "extendBreadcrumb": false,
+    "isEditDisplayable": false,
+    "isPrivateUnauthorized": false,
+    "hideViewSource": false,
+    "isPermissioned": false,
+    "hasRecommendations": true
+  },
+  "functions": {}
+};;
+	</script>
+
+			<!-- base scripts, msdocs global should be before this -->
+			<script
+				src="/static/assets/0.4.03568.8292-0a6c2196/scripts/en-us/index-docs.js"
+				async
+			></script>
+			
+
+			<!-- json-ld -->
+			
+		<script >bazadebezolkohpepadr="564385581"</script><script type="text/javascript" src="https://learn.microsoft.com/akam/13/21a3d7fc"  defer></script></head>
+	
+			<body
+				id="body"
+				data-bi-name="body"
+				class="layout-body "
+				lang="en-us"
+				dir="ltr"
+			>
+				<header class="layout-body-header background-color-body-medium">
+		<div class="header-holder has-default-focus">
+			
+		<a
+			href="#main"
+			
+			style="z-index: 1070"
+			class="outline-color-text visually-hidden-until-focused position-fixed inner-focus focus-visible top-0 left-0 right-0 padding-xs text-align-center background-color-body"
+			
+		>
+			Skip to main content
+		</a>
+	
+		<a
+			href="#"
+			data-skip-to-ask-learn
+			style="z-index: 1070"
+			class="outline-color-text visually-hidden-until-focused position-fixed inner-focus focus-visible top-0 left-0 right-0 padding-xs text-align-center background-color-body"
+			hidden
+		>
+			Skip to Ask Learn chat experience
+		</a>
+	
+
+			<div hidden id="cookie-consent-holder" data-test-id="cookie-consent-container"></div>
+			<!-- Unsupported browser warning -->
+			<div
+				id="unsupported-browser"
+				style="background-color: white; color: black; padding: 16px; border-bottom: 1px solid grey;"
+				hidden
+			>
+				<div style="max-width: 800px; margin: 0 auto;">
+					<p style="font-size: 24px">This browser is no longer supported.</p>
+					<p style="font-size: 16px; margin-top: 16px;">
+						Upgrade to Microsoft Edge to take advantage of the latest features, security updates, and technical support.
+					</p>
+					<div style="margin-top: 12px;">
+						<a
+							href="https://go.microsoft.com/fwlink/p/?LinkID=2092881 "
+							style="background-color: #0078d4; border: 1px solid #0078d4; color: white; padding: 6px 12px; border-radius: 2px; display: inline-block;"
+						>
+							Download Microsoft Edge
+						</a>
+						<a
+							href="https://learn.microsoft.com/en-us/lifecycle/faq/internet-explorer-microsoft-edge"
+							style="background-color: white; padding: 6px 12px; border: 1px solid #505050; color: #171717; border-radius: 2px; display: inline-block;"
+						>
+							More info about Internet Explorer and Microsoft Edge
+						</a>
+					</div>
+				</div>
+			</div>
+			<!-- site header -->
+			<div
+				id="ms--site-header"
+				data-test-id="site-header-wrapper"
+				itemscope="itemscope"
+				itemtype="http://schema.org/Organization"
+			>
+				<div
+					id="ms--mobile-nav"
+					class="site-header display-none-tablet padding-inline-none gap-none"
+					data-bi-name="mobile-header"
+					data-test-id="mobile-header"
+				></div>
+				<div
+					id="ms--primary-nav"
+					class="site-header display-none display-flex-tablet"
+					data-bi-name="L1-header"
+					data-test-id="primary-header"
+				></div>
+				<div
+					id="ms--secondary-nav"
+					class="site-header display-none display-flex-tablet"
+					data-bi-name="L2-header"
+					data-test-id="secondary-header"
+					
+				></div>
+			</div>
+			
+		<!-- banner -->
+		<div data-banner>
+			<div id="disclaimer-holder"></div>
+			
+		</div>
+		<!-- banner end -->
+	
+		</div>
+	</header>
+				 <section
+					id="layout-body-menu"
+					class="layout-body-menu border-right display-flex background-color-body-medium"
+					data-bi-name="menu"
+			  >
+					
+		<div
+			id="left-container"
+			class="left-container display-none padding-none display-block-tablet width-full display-none-until-layout-restored"
+			data-toc-container="true"
+		>
+			<div
+				id="ms--toc-content"
+				class="padding-left-sm padding-right-none padding-bottom-sm height-full"
+			>
+				<nav
+					id="affixed-left-container"
+					class="margin-top-xxs-tablet position-sticky display-flex flex-direction-column width-full"
+					aria-label="Primary"
+					data-bi-name="left-toc"
+					role="navigation"
+				>
+					<div
+						id="ms--collapsible-toc-header"
+						class="display-flex flex-direction-row-reverse justify-content-center align-items-center margin-bottom-xxs margin-right-xxs"
+					>
+						<button
+							type="button"
+							class="button button-clear button-sm inner-focus"
+							data-collapsible-toc-toggle
+							aria-expanded="true"
+							hidden
+							aria-controls="ms--toc-content"
+							aria-label="Table of contents"
+						>
+							<span class="icon icon-mirrored-rtl" aria-hidden="true">
+								<span
+									class="docon docon-panel-left-contract display-none-layout-menu-collapsed"
+								></span>
+								<span
+									class="docon docon-panel-left-expand display-none display-inline-layout-menu-collapsed"
+								></span>
+							</span>
+						</button>
+						<div
+							id="ms--collapsible-toc-moniker-slot"
+							class="flex-grow-1 display-none-layout-menu-collapsed"
+						></div>
+					</div>
+				</nav>
+			</div>
+		</div>
+	
+			  </section>
+
+				<main
+					id="main"
+					role="main"
+					class="layout-body-main "
+					data-bi-name="content"
+					lang="en-us"
+					dir="ltr"
+				>
+					
+			<div
+		id="ms--content-header"
+		class="content-header default-focus border-bottom-none"
+		data-bi-name="content-header"
+	>
+		<div class="content-header-controls margin-xxs margin-inline-sm-tablet">
+			<button
+				type="button"
+				class="contents-button button button-sm margin-right-xxs"
+				data-bi-name="contents-expand"
+				aria-haspopup="true"
+				data-contents-button
+			>
+				<span class="icon" aria-hidden="true"><span class="docon docon-menu"></span></span>
+				<span class="contents-expand-title"> Table of contents </span>
+			</button>
+			<button
+				type="button"
+				class="ap-collapse-behavior ap-expanded button button-sm"
+				data-bi-name="ap-collapse"
+				aria-controls="action-panel"
+			>
+				<span class="icon" aria-hidden="true"><span class="docon docon-exit-mode"></span></span>
+				<span>Exit editor mode</span>
+			</button>
+		</div>
+	</div> 
+		<div
+			id="action-panel"
+			role="region"
+			aria-label="Action Panel"
+			class="action-panel"
+			tabindex="-1"
+		></div>
+	
+			<div
+				data-main-column
+				class="reading-width margin-inline-auto layout-padding padding-top-none padding-top-sm-tablet padding-bottom-sm"
+			>
+				<div>
+					
+		<div id="article-header" class="background-color-body margin-bottom-xs display-none-print">
+			<div class="display-flex align-items-center justify-content-space-between">
+				
+		<details
+			id="article-header-breadcrumbs-overflow-popover"
+			class="popover popover-left"
+			data-for="article-header-breadcrumbs"
+		>
+			<summary
+				class="button button-clear button-primary button-sm inner-focus"
+				aria-label="All breadcrumbs"
+			>
+				<span class="icon" aria-hidden="true">
+					<span class="docon docon-more"></span>
+				</span>
+			</summary>
+			<div id="article-header-breadcrumbs-overflow" class="popover-content"></div>
+		</details>
+
+		<bread-crumbs
+			id="article-header-breadcrumbs"
+			role="group"
+			aria-label="Breadcrumbs"
+			data-test-id="article-header-breadcrumbs"
+			class="overflow-hidden flex-grow-1 margin-right-sm margin-right-md-tablet margin-right-lg-desktop margin-left-negative-xxs padding-left-xxs"
+		></bread-crumbs>
+	 
+		<div
+			id="article-header-page-actions"
+			class="opacity-none margin-left-auto display-flex flex-wrap-no-wrap align-items-stretch"
+		>
+			
+		<button
+			class="button button-sm border-none inner-focus display-none-tablet flex-shrink-0 "
+			data-bi-name="ask-learn-assistant-entry"
+			data-test-id="ask-learn-assistant-modal-entry-mobile"
+			data-ask-learn-modal-entry
+			
+			type="button"
+			style="min-width: max-content;"
+			aria-expanded="false"
+			aria-label="Ask Learn"
+			hidden
+		>
+			<span class="icon" aria-hidden="true">
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
+			</span>
+		</button>
+		<button
+			class="button button-sm display-none display-inline-flex-tablet display-none-desktop flex-shrink-0 margin-right-xxs border-color-ask-learn "
+			data-bi-name="ask-learn-assistant-entry"
+			
+			data-test-id="ask-learn-assistant-modal-entry-tablet"
+			data-ask-learn-modal-entry
+			type="button"
+			style="min-width: max-content;"
+			aria-expanded="false"
+			hidden
+		>
+			<span class="icon font-size-lg" aria-hidden="true">
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
+			</span>
+			<span>Ask Learn</span>
+		</button>
+		<button
+			class="button button-sm display-none flex-shrink-0 display-inline-flex-desktop margin-right-xxs border-color-ask-learn "
+			data-bi-name="ask-learn-assistant-entry"
+			
+			data-test-id="ask-learn-assistant-flyout-entry"
+			data-ask-learn-flyout-entry
+			data-flyout-button="toggle"
+			type="button"
+			style="min-width: max-content;"
+			aria-expanded="false"
+			aria-controls="ask-learn-flyout"
+			hidden
+		>
+			<span class="icon font-size-lg" aria-hidden="true">
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
+			</span>
+			<span>Ask Learn</span>
+		</button>
+	 
+
+			<details class="popover popover-right" id="article-header-page-actions-overflow">
+				<summary
+					class="justify-content-flex-start button button-clear button-sm button-primary inner-focus"
+					aria-label="More actions"
+					aria-expanded="false"
+					title="More actions"
+				>
+					<span class="icon" aria-hidden="true">
+						<span class="docon docon-more-vertical"></span>
+					</span>
+				</summary>
+				<div class="popover-content">
+					
+		<button
+			type="button"
+			id="ms--focus-mode-button"
+			data-focus-mode
+			data-bi-name="focus-mode-entry"
+			data-page-action-item="overflow-all"
+			data-popover-close
+			class="button button-clear button-sm button-block justify-content-flex-start text-align-left inner-focus display-none display-inline-flex-tablet"
+		>
+			<span class="icon" aria-hidden="true">
+				<span class="docon docon-glasses"></span>
+			</span>
+			<span>Reading mode</span>
+		</button>
+	 
+		<button
+			data-page-action-item="overflow-mobile"
+			type="button"
+			class="display-block-layout-menu-collapsed button-block button-sm inner-focus button button-clear display-none-tablet justify-content-flex-start text-align-left"
+			data-bi-name="contents-expand"
+			data-contents-button
+			data-popover-close
+		>
+			<span class="icon" aria-hidden="true"
+				><span class="docon docon-editor-list-bullet"></span
+			></span>
+			<span class="contents-expand-title">Table of contents</span>
+		</button>
+	 
+		<a
+			id="lang-link-overflow"
+			class="button-sm inner-focus button button-clear button-block justify-content-flex-start text-align-left"
+			data-bi-name="language-toggle"
+			data-page-action-item="overflow-all"
+			data-check-hidden="true"
+			data-read-in-link
+			href="#"
+			hidden
+		>
+			<span class="icon" aria-hidden="true" data-read-in-link-icon>
+				<span class="docon docon-locale-globe"></span>
+			</span>
+			<span data-read-in-link-text>Read in English</span>
+		</a>
+	
+					
+		<button
+			type="button"
+			class="collection button button-clear button-sm button-block justify-content-flex-start text-align-left inner-focus"
+			data-list-type="collection"
+			data-bi-name="collection"
+			data-page-action-item="overflow-all"
+			data-check-hidden="true"
+			data-popover-close
+		>
+			<span class="icon" aria-hidden="true">
+				<span class="docon docon-circle-addition"></span>
+			</span>
+			<span class="collection-status">Add</span>
+		</button>
+	 
+		<button
+			type="button"
+			class="collection button button-block button-clear button-sm justify-content-flex-start text-align-left inner-focus"
+			data-list-type="plan"
+			data-bi-name="plan"
+			data-page-action-item="overflow-all"
+			data-check-hidden="true"
+			data-popover-close
+			hidden
+		>
+			<span class="icon" aria-hidden="true">
+				<span class="docon docon-circle-addition"></span>
+			</span>
+			<span class="plan-status">Add to Plans</span>
+		</button>
+	 
+					
+		<a
+			data-contenteditbtn
+			class="button button-clear button-block button-sm inner-focus justify-content-flex-start text-align-left text-decoration-none"
+			data-bi-name="edit"
+			data-page-action-item="overflow-all"
+			data-check-hidden="true"
+			hidden
+			href="https://github.com/MicrosoftDocs/fabric-docs/blob/main/docs/onelake/onelake-iceberg-tables.md"
+			data-original_content_git_url="https://github.com/MicrosoftDocs/fabric-docs-pr/blob/live/docs/onelake/onelake-iceberg-tables.md"
+			data-original_content_git_url_template="{repo}/blob/{branch}/docs/onelake/onelake-iceberg-tables.md"
+			data-pr_repo=""
+			data-pr_branch=""
+		>
+			<span class="icon" aria-hidden="true">
+				<span class="docon docon-edit-outline"></span>
+			</span>
+			<span>Edit</span>
+		</a>
+	  
+		<hr class="margin-block-xxs" />
+		
+				<button
+					class="button button-block button-clear button-sm justify-content-flex-start text-align-left inner-focus"
+					type="button"
+					data-bi-name="copy-markdown"
+					data-page-action-item="overflow-all"
+					data-copy-markdown
+					data-copy-state="idle"
+					data-check-hidden="true"
+				>
+					<span class="icon color-primary" aria-hidden="true">
+						<span data-show-when="idle" class="docon docon-code-lang"></span>
+						<span data-show-when="loading" class="loader" hidden></span>
+						<span data-show-when="success" class="docon docon-check-mark" hidden></span>
+					</span>
+					<span>Copy Markdown</span>
+				</button>
+		   
+				<button
+					class="button button-block button-clear button-sm justify-content-flex-start text-align-left inner-focus"
+					type="button"
+					data-bi-name="print"
+					data-page-action-item="overflow-all"
+					data-popover-close
+					data-print-page
+					data-check-hidden="true"
+				>
+					<span class="icon color-primary" aria-hidden="true">
+						<span class="docon docon-print"></span>
+					</span>
+					<span>Print</span>
+				</button>
+		  
+	
+				</div>
+			</details>
+		</div>
+	
+			</div>
+		</div>
+	  
+		<!-- privateUnauthorizedTemplate is hidden by default -->
+		<div unauthorized-private-section data-bi-name="permission-content-unauthorized-private" hidden>
+			<hr class="hr margin-top-xs margin-bottom-sm" />
+			<div class="notification notification-info">
+				<div class="notification-content">
+					<p class="margin-top-none notification-title">
+						<span class="icon" aria-hidden="true"
+							><span class="docon docon-exclamation-circle-solid"></span
+						></span>
+						<span>Note</span>
+					</p>
+					<p class="margin-top-none authentication-determined not-authenticated">
+						Access to this page requires authorization. You can try <a class="docs-sign-in" href="#" data-bi-name="permission-content-sign-in">signing in</a> or <a  class="docs-change-directory" data-bi-name="permisson-content-change-directory">changing directories</a>.
+					</p>
+					<p class="margin-top-none authentication-determined authenticated">
+						Access to this page requires authorization. You can try <a class="docs-change-directory" data-bi-name="permisson-content-change-directory">changing directories</a>.
+					</p>
+				</div>
+			</div>
+		</div>
+	
+					<div class="content"><h1 id="use-iceberg-tables-with-onelake">Use Iceberg tables with OneLake</h1></div>
+					
+		<div
+			id="article-metadata"
+			data-bi-name="article-metadata"
+			data-test-id="article-metadata"
+			class="page-metadata-container display-flex gap-xxs justify-content-space-between align-items-center flex-wrap-wrap"
+		>
+			 
+				<div
+					id="user-feedback"
+					class="margin-block-xxs display-none display-none-print"
+					hidden
+					data-hide-on-archived
+				>
+					
+		<button
+			id="user-feedback-button"
+			data-test-id="conceptual-feedback-button"
+			class="button button-sm button-clear button-primary display-none"
+			type="button"
+			data-bi-name="user-feedback-button"
+			data-user-feedback-button
+			hidden
+		>
+			<span class="icon" aria-hidden="true">
+				<span class="docon docon-like"></span>
+			</span>
+			<span>Feedback</span>
+		</button>
+	
+				</div>
+		  
+		</div>
+	 
+		<div data-id="ai-summary" class="display-none-print">
+			<div id="ms--ai-summary-cta" class="margin-top-xs display-flex align-items-center">
+				<span class="icon" aria-hidden="true">
+					<span class="docon docon-sparkle-fill gradient-text-vivid"></span>
+				</span>
+				<button
+					id="ms--ai-summary"
+					type="button"
+					class="tag tag-sm tag-suggestion margin-left-xxs"
+					data-test-id="ai-summary-cta"
+					data-bi-name="ai-summary-cta"
+					data-an="ai-summary"
+				>
+					<span class="ai-summary-cta-text">
+						Summarize this article for me
+					</span>
+				</button>
+			</div>
+			<!-- Slot where the client will render the summary card after the user clicks the CTA -->
+			<div id="ms--ai-summary-header" class="margin-top-xs"></div>
+		</div>
+	 
+		<nav
+			id="center-doc-outline"
+			class="doc-outline display-none-desktop display-none-print margin-bottom-sm"
+			data-bi-name="intopic toc"
+			aria-label="In this article"
+		>
+			<h2 id="ms--in-this-article" class="title is-6 margin-block-xs">
+				In this article
+			</h2>
+		</nav>
+	 <div class="content"><p>In OneLake, you can seamlessly work with tables in both Delta Lake and Apache Iceberg formats.</p>
+<p>This flexibility is enabled through <strong>metadata virtualization</strong>, a feature that allows Iceberg tables to be interpreted as Delta Lake tables, and vice versa. You can directly write Iceberg tables or create shortcuts to them, making these tables accessible across various Fabric workloads. Similarly, Fabric tables written in the Delta Lake format can be read using Iceberg readers.</p>
+<p>When you write or create a shortcut to an Iceberg table folder, OneLake automatically generates virtual Delta Lake metadata (Delta log) for the table, enabling its use with Fabric workloads. Conversely, Delta Lake tables now include virtual Iceberg metadata, allowing compatibility with Iceberg readers.</p>
+<p><span class="mx-imgBorder">
+<img src="media/onelake-iceberg-table-shortcut/iceberg-shortcut-diagram.png" alt="Diagram showing table virtualization from Iceberg to Delta Lake." data-linktype="relative-path">
+</span>
+</p>
+<p>While this article includes guidance for using Iceberg tables with Snowflake, this feature is intended to work with any Iceberg tables with Parquet-formatted data files in storage.</p>
+<h2 id="virtualize-delta-lake-tables-as-iceberg">Virtualize Delta Lake tables as Iceberg</h2>
+<p>To set up the automatic conversion and virtualization of tables from Delta Lake format to Iceberg format, follow these steps.</p>
+<ol>
+<li><p>Ensure your Delta Lake table, or a shortcut to it, is located in the <code>Tables</code> section of your data item. The data item might be a lakehouse or another Fabric data item.</p>
+<div class="TIP">
+<p>Tip</p>
+<p>If your lakehouse is schema-enabled, then your table directory will be located directly within a schema such as <code>dbo</code>. If your lakehouse is not schema-enabled, then your table directory will be directly within the <code>Tables</code> directory.</p>
+</div>
+</li>
+<li><p>Confirm that your Delta Lake table has converted successfully to the  virtual Iceberg format. You can do this by examining the directory behind the table.</p>
+<p>To view the directory if your table is in a lakehouse, you can right-click the table in the Fabric UI and select <strong>View files</strong>.</p>
+<p>If your table is in another data item type, such as a warehouse, a database, or a mirrored database, you will need to use a client like Azure Storage Explorer or OneLake File Explorer, rather than the Fabric UI, to view the files behind the table.</p>
+</li>
+<li><p>You should see a directory named <code>metadata</code> inside the table folder, and it should contain multiple files, including the conversion log file. Open the conversion log file to see more info about the Delta Lake to Iceberg conversion, including the timestamp of the most recent conversion and any error details.</p>
+</li>
+<li><p>If the conversion log file shows that the table was successfully converted, read the Iceberg table using your service, app, or library of choice.</p>
+<p>Depending on what Iceberg reader you use, you will need to know either the path to the table directory or to the most recent <code>.metadata.json</code> file shown in the <code>metadata</code> directory.</p>
+<p>You can see the HTTP path to the latest metadata file of your table by opening the <strong>Properties</strong> view for the <code>*.metadata.json</code> file with the highest version number. Take note of this path.</p>
+<p>The path to your data item's <code>Tables</code> folder might look like this:</p>
+<pre><code>https://onelake.dfs.fabric.microsoft.com/83896315-c5ba-4777-8d1c-e4ab3a7016bc/a95f62fa-2826-49f8-b561-a163ba537828/Tables/
+</code></pre>
+<p>Within that folder, the relative path to the latest metadata file might look like <code>dbo/MyTable/metadata/321.metadata.json</code>.</p>
+<p>To read your virtual Iceberg table using Snowflake, <a href="onelake-iceberg-snowflake#read-a-virtual-iceberg-table-from-onelake-using-snowflake-on-azure" data-linktype="relative-path">follow the steps in this guide</a>.</p>
+</li>
+</ol>
+<h2 id="create-a-table-shortcut-to-an-iceberg-table">Create a table shortcut to an Iceberg table</h2>
+<p>If you already have an Iceberg table in a storage location supported by <a href="onelake-shortcuts#types-of-shortcuts" data-linktype="relative-path">OneLake shortcuts</a>, follow these steps to create a shortcut and have your Iceberg table appear with the Delta Lake format.</p>
+<ol>
+<li><p><strong>Locate your Iceberg table.</strong> Find where your Iceberg table is stored, which could be in Azure Data Lake Storage, OneLake, Amazon S3, Google Cloud Storage, or an S3 compatible storage service.</p>
+<div class="NOTE">
+<p>Note</p>
+<p>If you're using Snowflake and aren't sure where your Iceberg table is stored, you can run the following statement to see the storage location of your Iceberg table.</p>
+<p><code>SELECT SYSTEM$GET_ICEBERG_TABLE_INFORMATION('&lt;table_name&gt;');</code></p>
+<p>Running this statement returns a path to the metadata file for the Iceberg table. This path tells you which storage account contains the Iceberg table. For example, here's the relevant info to find the path of an Iceberg table stored in Azure Data Lake Storage:</p>
+<p><code>{"metadataLocation":"azure://&lt;storage_account_path&gt;/&lt;path_within_storage&gt;/&lt;table_name&gt;/metadata/00001-389700a2-977f-47a2-9f5f-7fd80a0d41b2.metadata.json","status":"success"}</code></p>
+</div>
+<p>Your Iceberg table folder needs to contain a <code>metadata</code> folder, which itself contains at least one file ending in <code>.metadata.json</code>.</p>
+</li>
+<li><p>In your Fabric lakehouse, create a new table shortcut in the Tables area of a lakehouse.</p>
+<div class="TIP">
+<p>Tip</p>
+<p>If you see schemas such as dbo under the Tables folder of your lakehouse, then the lakehouse is schema-enabled. In this case, right-click on the schema and create a table shortcut under the schema.</p>
+</div>
+<p><span class="mx-imgBorder">
+<img src="media/onelake-iceberg-table-shortcut/new-shortcut.png" alt="Screenshot showing new shortcut action." data-linktype="relative-path">
+</span>
+</p>
+</li>
+<li><p>For the target path of your shortcut, select the Iceberg table folder. The Iceberg table folder contains the <code>metadata</code> and <code>data</code> folders.</p>
+</li>
+<li><p>Once your shortcut is created, you should automatically see this table reflected as a Delta Lake table in your lakehouse, ready for you to use throughout Fabric.</p>
+<p><span class="mx-imgBorder">
+<img src="media/onelake-iceberg-table-shortcut/shortcut-placement.png" alt="Screenshot showing created shortcut." data-linktype="relative-path">
+</span>
+</p>
+<p>If your new Iceberg table shortcut doesn't appear as a usable table, check the <a href="#troubleshooting" data-linktype="self-bookmark">Troubleshooting</a> section.</p>
+</li>
+</ol>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<p>The following tips can help make sure your Iceberg tables are compatible with this feature:</p>
+<h3 id="check-the-folder-structure-of-your-iceberg-table">Check the folder structure of your Iceberg table</h3>
+<p>Open your Iceberg folder in your preferred storage explorer tool, and check the directory listing of your Iceberg folder in its original location. You should see a folder structure like the following example.</p>
+<pre><code>../
+|-- MyIcebergTable123/
+    |-- data/
+        |-- A5WYPKGO_2o_APgwTeNOAxg_0_1_002.parquet
+        |-- A5WYPKGO_2o_AAIBON_h9Rc_0_1_003.parquet
+    |-- metadata/
+        |-- 00000-1bdf7d4c-dc90-488e-9dd9-2e44de30a465.metadata.json
+        |-- 00001-08bf3227-b5d2-40e2-a8c7-2934ea97e6da.metadata.json
+        |-- 00002-0f6303de-382e-4ebc-b9ed-6195bd0fb0e7.metadata.json
+        |-- 1730313479898000000-Kws8nlgCX2QxoDHYHm4uMQ.avro
+        |-- 1730313479898000000-OdsKRrRogW_PVK9njHIqAA.avro
+        |-- snap-1730313479898000000-9029d7a2-b3cc-46af-96c1-ac92356e93e9.avro
+        |-- snap-1730313479898000000-913546ba-bb04-4c8e-81be-342b0cbc5b50.avro
+</code></pre>
+<p>If you don't see the metadata folder, or if you don't see files with the extensions shown in this example, then you might not have a properly generated Iceberg table.</p>
+<h3 id="check-the-conversion-log">Check the conversion log</h3>
+<p>When an Iceberg table is virtualized as a Delta Lake table, a folder named <code>_delta_log/</code> can be found inside the shortcut folder. This folder contains the Delta Lake format's metadata (the Delta log) after successful conversion.</p>
+<p>This folder also includes the <code>latest_conversion_log.txt</code> file, which contains the latest attempted conversion's success or failure details.</p>
+<p>To see the contents of this file after creating your shortcut, open the menu for the Iceberg table shortcut under Tables area of your lakehouse and select <strong>View files</strong>.</p>
+<p><span class="mx-imgBorder">
+<img src="media/onelake-iceberg-table-shortcut/view-files.png" alt="Screenshot View files menu item." data-linktype="relative-path">
+</span>
+</p>
+<p>You should see a structure like the following example:</p>
+<pre><code>Tables/
+|-- MyIcebergTable123/
+    |-- data/
+        |-- &lt;data files&gt;
+    |-- metadata/
+        |-- &lt;metadata files&gt;
+    |-- _delta_log/   &lt;-- Virtual folder. This folder doesn't exist in the original location.
+        |-- 00000000000000000000.json
+        |-- latest_conversion_log.txt   &lt;-- Conversion log with latest success/failure details.
+</code></pre>
+<p>Open the conversion log file to see the latest conversion time or failure details. If you don't see a conversion log file, <a href="#if-conversion-wasnt-attempted" data-linktype="self-bookmark">conversion wasn't attempted</a>.</p>
+<h3 id="understand-the-conversion-log-and-error-categories">Understand the conversion log and error categories</h3>
+<p>The <code>latest_conversion_log.txt</code> file records the latest conversion attempt. When you virtualize an Iceberg table as Delta Lake, you find this file in the table's <code>_delta_log/</code> folder. When you virtualize a Delta Lake table as Iceberg, it's in the table's <code>metadata/</code> folder. The file is plain text. When a conversion fails, <code>latest_conversion_log.txt</code> contains a structured block similar to the following:</p>
+<pre><code>Status:             Failed
+Timestamp (UTC):    2025-07-29T19:04:11Z
+Latest Metadata:    00000000000000000012.metadata.json
+Invocation Id:      6f1c...e2
+Root Activity Id:   9a3d...b7
+Error Code:         &lt;code&gt;
+Error Category:     USER | SYSTEM
+Error Details:      &lt;message&gt;
+</code></pre>
+<p>Use the <strong>Error Category</strong> to decide what to do next:</p>
+<ul>
+<li><p><strong><code>USER</code></strong> means the source table contains something this feature can't convert. <strong>Error Details</strong> describes what to fix. Adjust the source table (see <a href="#limitations-and-considerations" data-linktype="self-bookmark">Limitations and considerations</a>), and then commit a change to the source table. Conversion re-attempts automatically after the next commit.</p>
+</li>
+<li><p><strong><code>SYSTEM</code></strong> means an internal or transient error occurred, and there's nothing to fix in the source table. To trigger another conversion attempt, commit a change to the source table. If failures persist, contact support and provide the entire <code>latest_conversion_log.txt</code> file.</p>
+</li>
+</ul>
+<h3 id="if-conversion-wasnt-attempted">If conversion wasn't attempted</h3>
+<p>If you don't see a conversion log file, then the conversion wasn't attempted. Here are two common reasons why conversion isn't attempted:</p>
+<ul>
+<li><p><strong>The shortcut wasn't created in the right place.</strong></p>
+<p>In order for a shortcut to an Iceberg table to get converted to the Delta Lake format, the shortcut must be placed directly under the Tables folder of a non-schema-enabled lakehouse. You shouldn't place the shortcut in the Files section or under another folder if you want the table to be automatically virtualized as a Delta Lake table.</p>
+<p><span class="mx-imgBorder">
+<img src="media/onelake-iceberg-table-shortcut/shortcut-placement.png" alt="Screenshot showing the correct placement of a shortcut in the Tables folder." data-linktype="relative-path">
+</span>
+</p>
+</li>
+<li><p><strong>The shortcut's target path is not the Iceberg folder path.</strong></p>
+<p>When you create the shortcut, the folder path you select in the target storage location must only be the Iceberg table folder. This folder <em>contains</em> the <code>metadata</code> and <code>data</code> folders.</p>
+<p><span class="mx-imgBorder">
+<img src="media/onelake-iceberg-table-shortcut/shortcut-target.png" alt="Screenshot showing the contents of a shortcut target path during shortcut creation." data-linktype="relative-path">
+</span>
+</p>
+</li>
+</ul>
+<h3 id="fabric-capacity-region-cannot-be-validated-error-message-in-snowflake">"Fabric capacity region cannot be validated" error message in Snowflake</h3>
+<p>If you are using Snowflake to write a new Iceberg table to OneLake, you might see the following error message:</p>
+<blockquote>
+<p>Fabric capacity region cannot be validated. Reason: 'Invalid access token. This may be due to authentication and scoping. Please verify delegated scopes.'</p>
+</blockquote>
+<p>If you see this error, have your Fabric tenant admin double-check that you've enabled both tenant settings mentioned in the <a href="onelake-iceberg-snowflake#write-an-iceberg-table-to-onelake-using-snowflake-on-azure" data-linktype="relative-path">Write an Iceberg table to OneLake using Snowflake</a> section:</p>
+<ol>
+<li>In the upper-right corner of the Fabric UI, open <strong>Settings</strong>, and select <strong>Admin portal</strong>.</li>
+<li>Under <strong>Tenant settings</strong>, in the <strong>Developer settings</strong> section, enable the setting labeled <a href="../admin/service-admin-portal-developer#service-principals-can-use-fabric-apis" data-linktype="relative-path"><strong>Service principals can use Fabric APIs</strong></a>.</li>
+<li>In the same area, in the <strong>OneLake settings</strong> section, enable the setting labeled <a href="../admin/service-admin-portal-onelake#users-can-access-data-stored-in-onelake-with-apps-external-to-fabric" data-linktype="relative-path"><strong>Users can access data stored in OneLake with apps external to Fabric</strong></a>.</li>
+</ol>
+<h2 id="limitations-and-considerations">Limitations and considerations</h2>
+<p>Keep in mind the following limitations when you use this feature. Some limitations apply to both conversion directions. Others are specific to converting <strong>Delta Lake to Iceberg</strong> or <strong>Iceberg to Delta Lake</strong>.</p>
+<h3 id="how-conversion-issues-surface">How conversion issues surface</h3>
+<p>When a source feature can't be fully translated, one of two things happens. Both outcomes are reported in the conversion log.</p>
+<table>
+<thead>
+<tr>
+<th>Outcome</th>
+<th>What happens</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Conversion fails</strong></td>
+<td>No new target metadata is produced. The table keeps its last successfully converted version.</td>
+</tr>
+<tr>
+<td><strong>Feature dropped</strong></td>
+<td>Conversion succeeds, but an unsupported column or partitioning is omitted from the output table format.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="general-limitations">General limitations</h3>
+<ul>
+<li><p><strong>Apache Iceberg version support</strong></p>
+<p>The supported Iceberg version depends on the conversion direction:</p>
+<table>
+<thead>
+<tr>
+<th>Conversion direction</th>
+<th>Iceberg version behavior</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Delta Lake to Iceberg</td>
+<td>Produces Iceberg V2 metadata.</td>
+</tr>
+<tr>
+<td>Iceberg to Delta Lake</td>
+<td>Supports Iceberg V2 source tables. Iceberg V3 source tables are partially supported; see <a href="#iceberg-v3-features" data-linktype="self-bookmark">Iceberg V3 features</a>.</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li><p><strong>Parquet data files only</strong></p>
+<p>This feature supports only Parquet as the underlying data file format for metadata translation, in both conversion directions.</p>
+</li>
+<li><p><strong>Latest metadata version converted</strong></p>
+<p>The table format virtualization feature currently converts the latest table metadata version in the original table format. If multiple versions are written to the original table format, only the most recent table metadata version will be converted to the virtual table format.</p>
+</li>
+<li><p><strong>Maximum number of input transactions</strong></p>
+<p>Source tables must have fewer than 5,000 transactions or commits for the table format conversion to take place. Be sure to compact your transaction logs or manifests to reduce the number of transactions or commits.</p>
+</li>
+<li><p><strong>Conversion latency and update frequency</strong></p>
+<p>Generation of table format metadata can take between 5 seconds and 2 minutes. Ensure the updates you make to your source table are less frequent than once per 2 minutes. Otherwise, you might see an inconsistent view of the output table format.</p>
+</li>
+<li><p><strong>Schema evolution</strong></p>
+<p>In both conversion directions, widening type changes (for example, <code>int</code> to <code>long</code>) are supported. A narrowing or otherwise incompatible type change causes conversion to fail.</p>
+</li>
+</ul>
+<h3 id="delta-lake-to-iceberg">Delta Lake to Iceberg</h3>
+<p>These limitations apply when you virtualize a Delta Lake table as Iceberg.</p>
+<div class="TIP">
+<p>Tip</p>
+<p>For the most complete conversion to Iceberg V2, use <code>IcebergCompatV2</code> when the source table doesn't use deletion vectors. If the table uses deletion vectors, use <code>IcebergCompatV3</code>; OneLake converts them to Iceberg V2 position deletes. Because this feature produces Iceberg V2 metadata, Iceberg V3-only features aren't converted.</p>
+</div>
+<p>The following considerations apply, especially to Delta Lake tables that <em>aren't</em> written with an <code>IcebergCompat</code> writer feature:</p>
+<ul>
+<li><p><strong>Nested <code>array</code> and <code>map</code> columns</strong> require stable field IDs on their element, key, and value. Without them, the nested collection column is dropped from the Iceberg output (noted in the conversion log). <code>IcebergCompat</code> assigns these IDs.</p>
+</li>
+<li><p><strong>Timestamps</strong> must be stored as INT64 microseconds. A table whose timestamps are physically stored as INT96 (legacy) converts, but its timestamp columns can't be read by Iceberg engines. <code>IcebergCompat</code> enforces INT64 timestamps.</p>
+</li>
+<li><p><strong>Column renames</strong> — Preserved when the Delta Lake table uses column mapping (<code>id</code> or <code>name</code> mode), which <code>IcebergCompat</code> requires. With column mapping mode <code>none</code>, a rename appears as dropping and adding a column.</p>
+</li>
+<li><p><strong>Column types</strong> — Only Iceberg-compatible types are converted; other columns are dropped (noted in the conversion log). For example, <code>void</code> has no Iceberg equivalent. <code>IcebergCompat</code> restricts the schema to a convertible type set.</p>
+</li>
+<li><p><strong>Partitioning</strong> — Identity and temporal (year, month, day, hour) partitions are converted. Delta Lake has a single table-wide partitioning.</p>
+</li>
+</ul>
+<h3 id="iceberg-to-delta-lake">Iceberg to Delta Lake</h3>
+<p>These limitations apply when you virtualize an Iceberg table as Delta Lake.</p>
+<ul>
+<li><p><strong>Column renames aren't supported.</strong> You can't rename a column in the source Iceberg table. Instead, recreate the table with the new column names. When you recreate the table, remove any leftover metadata files, as described in the <strong>Iceberg table folders must contain only one set of metadata files</strong> limitation.</p>
+</li>
+<li><p><strong>Partition transforms</strong> — Only identity and temporal (year, month, day, hour) transforms are supported. The <code>bucket[N]</code>, <code>truncate[W]</code>, and <code>void</code> transforms are ignored: the table still converts, but without that partitioning. The underlying column is preserved as a regular, non-partition column.</p>
+</li>
+<li><p><strong>Partition evolution</strong> — If the source table's live data files span more than one partition spec, or a previously converted table's partition columns change, conversion is rejected. Delta Lake has a single table-wide partitioning, and converting mixed-spec files would incorrectly produce null partition values for the older files. Keep a single partition spec.</p>
+</li>
+<li><p><strong>Row-level deletes</strong> — Iceberg V2 position deletes and V3 deletion vectors are converted to Delta Lake deletion vectors. Equality deletes cause conversion to fail.</p>
+</li>
+<li><p><strong>Unsupported types</strong> — Types with no Delta Lake equivalent (for example, <code>time</code>, and the Iceberg V3 extended types) are dropped; <code>uuid</code> is mapped to binary. See <a href="#iceberg-v3-features" data-linktype="self-bookmark">Iceberg V3 features</a>.</p>
+</li>
+<li><p><strong>Type width issue</strong></p>
+<p>If you use Snowflake to write your Iceberg table and the table contains column types <code>INT64</code>, <code>double</code>, or <code>Decimal</code> with precision &gt;= 10, the resulting virtual Delta Lake table might not be consumable by all Fabric engines. You might see errors such as:</p>
+<pre><code>Parquet column cannot be converted in file ... Column: [ColumnA], Expected: decimal(18,4), Found: INT32.
+</code></pre>
+<p>We're working on a fix for this issue.</p>
+<p><strong>Workaround:</strong>
+If you're using the Lakehouse table preview UI and see this issue, you can resolve this error by switching to the SQL analytics endpoint view (top right corner, select Lakehouse view, switch to SQL analytics endpoint) and previewing the table from there. If you then switch back to the Lakehouse view, the table preview should display properly.</p>
+<p>If you're running a Spark notebook or job and encounter this issue, you can resolve this error by setting the <code>spark.sql.parquet.enableVectorizedReader</code> Spark configuration to <code>false</code>. Here's an example PySpark command to run in a Spark notebook:</p>
+<pre><code>spark.conf.set("spark.sql.parquet.enableVectorizedReader","false")
+</code></pre>
+</li>
+<li><p><strong>Iceberg table metadata storage isn't portable</strong></p>
+<p>The metadata files of an Iceberg table refer to each other using absolute path references. If you copy or move an Iceberg table's folder contents to another location without rewriting the Iceberg metadata files, the table becomes unreadable by Iceberg readers, including this OneLake feature.</p>
+<p><strong>Workaround:</strong></p>
+<p>If you need to move your Iceberg table to another location to use this feature, use the tool that originally wrote the Iceberg table to write a new Iceberg table in the desired location.</p>
+</li>
+<li><p><strong>Iceberg table folders must contain only one set of metadata files</strong></p>
+<p>If you drop and recreate an Iceberg table in Snowflake, the metadata files aren't cleaned up. This behavior is by design, in support of the <code>UNDROP</code> feature in Snowflake. However, because your shortcut points directly to a folder and that folder now has multiple sets of metadata files within it, we can't convert the table until you remove the old table’s metadata files.</p>
+<p>Conversion will fail if more than one set of metadata files are found in the Iceberg table's metadata folder.</p>
+<p><strong>Workaround:</strong></p>
+<p>To ensure the converted table reflects the correct version of the table:</p>
+<ul>
+<li>Ensure you aren’t storing more than one Iceberg table in the same folder.</li>
+<li>Clean up any contents of an Iceberg table folder after dropping it, before recreating the table.</li>
+</ul>
+</li>
+<li><p><strong>Metadata changes not immediately reflected</strong></p>
+<p>If you make metadata changes to your Iceberg table, such as adding a column, deleting a column, renaming a column, or changing a column type, the table might not be reconverted until a data change is made, such as adding a row of data.</p>
+<p>We're working on a fix that picks up the correct latest metadata file that includes the latest metadata change.</p>
+<p><strong>Workaround:</strong></p>
+<p>After making the schema change to your Iceberg table, add a row of data or make any other change to the data. After that change, you should be able to refresh and see the latest view of your table in Fabric.</p>
+</li>
+</ul>
+<h4 id="iceberg-v3-features">Iceberg V3 features</h4>
+<p>This feature produces and reads Iceberg V2 metadata; it doesn't write Iceberg V3 metadata. When the source is an Iceberg V3 table, its features are translated as described in the following table. Dropped columns and other translation notes are recorded in the conversion log.</p>
+<table>
+<thead>
+<tr>
+<th>Iceberg V3 feature</th>
+<th>Supported</th>
+<th>Translation behavior</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Deletion vectors</td>
+<td>Yes</td>
+<td>Read and converted to Delta Lake deletion vectors.</td>
+</tr>
+<tr>
+<td>Row lineage</td>
+<td>No</td>
+<td>Row-lineage metadata isn't translated to Delta Lake. The table still converts, and its row data is unchanged.</td>
+</tr>
+<tr>
+<td>Default column values</td>
+<td>No</td>
+<td>A column that has a reader default is dropped. Write defaults aren't translated.</td>
+</tr>
+<tr>
+<td>New data types (<code>variant</code>, geospatial, nanosecond timestamps, <code>unknown</code>)</td>
+<td>No</td>
+<td>Columns that use new Iceberg V3 data types are dropped. For the full list, see <a href="#supported-data-types" data-linktype="self-bookmark">Supported data types</a>.</td>
+</tr>
+<tr>
+<td>Multi-argument partition transforms</td>
+<td>No</td>
+<td>Not supported.</td>
+</tr>
+<tr>
+<td>Table encryption keys</td>
+<td>No</td>
+<td>Not supported.</td>
+</tr>
+</tbody>
+</table>
+<div class="IMPORTANT">
+<p>Important</p>
+<p>Even when the conversion drops columns with new Iceberg V3 data types, some Fabric engines can't read a table if the data files use Iceberg V3 types. The data files still carry that type information.</p>
+<p><strong>Workaround:</strong> For the broadest compatibility across Fabric, avoid using Iceberg V3 columns in tables you virtualize.</p>
+</div>
+<h3 id="supported-data-types">Supported data types</h3>
+<p>The following table shows how column data types map between formats. Unless noted, a type is converted in both directions.</p>
+<table>
+<thead>
+<tr>
+<th>Delta Lake type</th>
+<th>Iceberg type</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>string</code></td>
+<td><code>string</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>integer</code></td>
+<td><code>int</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>long</code></td>
+<td><code>long</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>short</code>, <code>byte</code></td>
+<td><code>int</code></td>
+<td>Delta Lake <code>short</code> and <code>byte</code> widen to Iceberg <code>int</code></td>
+</tr>
+<tr>
+<td><code>float</code></td>
+<td><code>float</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>double</code></td>
+<td><code>double</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>decimal(P, S)</code></td>
+<td><code>decimal(P, S)</code></td>
+<td>Precision up to 38</td>
+</tr>
+<tr>
+<td><code>boolean</code></td>
+<td><code>boolean</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>binary</code></td>
+<td><code>binary</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>date</code></td>
+<td><code>date</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>timestamp</code></td>
+<td><code>timestamptz</code></td>
+<td>UTC; stored as INT64 microseconds. In Snowflake, specify <code>timestamp_ltz</code> to produce this type.</td>
+</tr>
+<tr>
+<td><code>timestamp_ntz</code></td>
+<td><code>timestamp</code></td>
+<td>No time zone. <code>timestamp_ntz</code> isn't fully supported across all Fabric workloads; prefer time zone-aware timestamps.</td>
+</tr>
+<tr>
+<td><code>struct</code>, <code>array</code>, <code>map</code></td>
+<td><code>struct</code>, <code>list</code>, <code>map</code></td>
+<td>Delta Lake to Iceberg: nested <code>array</code> and <code>map</code> require IcebergCompat</td>
+</tr>
+<tr>
+<td><code>void</code></td>
+<td>—</td>
+<td>Delta Lake only; dropped during conversion</td>
+</tr>
+<tr>
+<td>—</td>
+<td><code>time</code></td>
+<td>Iceberg only; no Delta Lake equivalent, dropped</td>
+</tr>
+<tr>
+<td>—</td>
+<td><code>uuid</code></td>
+<td>Iceberg only; mapped to <code>binary</code></td>
+</tr>
+<tr>
+<td>—</td>
+<td><code>variant</code></td>
+<td>Iceberg only (V3); dropped. See <a href="#iceberg-v3-features" data-linktype="self-bookmark">Iceberg V3 features</a></td>
+</tr>
+<tr>
+<td>—</td>
+<td><code>geometry</code>, <code>geography</code></td>
+<td>Iceberg only (V3); dropped. See <a href="#iceberg-v3-features" data-linktype="self-bookmark">Iceberg V3 features</a></td>
+</tr>
+<tr>
+<td>—</td>
+<td><code>timestamp_ns</code>, <code>timestamptz_ns</code></td>
+<td>Iceberg only (V3); dropped. See <a href="#iceberg-v3-features" data-linktype="self-bookmark">Iceberg V3 features</a></td>
+</tr>
+<tr>
+<td>—</td>
+<td><code>unknown</code></td>
+<td>Iceberg only (V3); dropped. See <a href="#iceberg-v3-features" data-linktype="self-bookmark">Iceberg V3 features</a></td>
+</tr>
+</tbody>
+</table>
+<p>For Snowflake-written Iceberg tables, wide <code>long</code>, <code>double</code>, or <code>decimal</code> columns can also be affected by the Type width issue described in the <a href="#iceberg-to-delta-lake" data-linktype="self-bookmark">Iceberg to Delta Lake</a> section.</p>
+<h3 id="supported-partition-transforms">Supported partition transforms</h3>
+<table>
+<thead>
+<tr>
+<th>Transform</th>
+<th>Iceberg to Delta Lake</th>
+<th>Delta Lake to Iceberg</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>identity</td>
+<td>Supported</td>
+<td>Supported</td>
+</tr>
+<tr>
+<td>year, month, day, hour</td>
+<td>Supported</td>
+<td>Supported</td>
+</tr>
+<tr>
+<td><code>bucket[N]</code></td>
+<td>Ignored (partitioning dropped)</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td><code>truncate[W]</code></td>
+<td>Ignored (partitioning dropped)</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td><code>void</code></td>
+<td>Ignored (partitioning dropped)</td>
+<td>N/A</td>
+</tr>
+</tbody>
+</table>
+<h3 id="schema-and-partition-evolution">Schema and partition evolution</h3>
+<table>
+<thead>
+<tr>
+<th>Capability</th>
+<th>Iceberg to Delta Lake</th>
+<th>Delta Lake to Iceberg</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Add column</td>
+<td>Supported</td>
+<td>Supported</td>
+<td></td>
+</tr>
+<tr>
+<td>Drop column</td>
+<td>Supported</td>
+<td>Supported</td>
+<td></td>
+</tr>
+<tr>
+<td>Rename column</td>
+<td>Not supported</td>
+<td>Supported</td>
+<td>Delta Lake to Iceberg requires column mapping (<code>id</code> or <code>name</code> mode)</td>
+</tr>
+<tr>
+<td>Widening type change</td>
+<td>Supported</td>
+<td>Supported</td>
+<td>For example, <code>int</code> to <code>long</code></td>
+</tr>
+<tr>
+<td>Narrowing or incompatible type change</td>
+<td>Fails</td>
+<td>Fails</td>
+<td></td>
+</tr>
+<tr>
+<td>Partition evolution (multiple specs)</td>
+<td>Fails</td>
+<td>N/A</td>
+<td>Delta Lake has a single table-wide partitioning</td>
+</tr>
+</tbody>
+</table>
+<h3 id="row-level-deletes">Row-level deletes</h3>
+<p>When you virtualize an Iceberg table as Delta Lake:</p>
+<table>
+<thead>
+<tr>
+<th>Delete kind</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Iceberg V2 position deletes</td>
+<td>Converted to Delta Lake deletion vectors.</td>
+</tr>
+<tr>
+<td>Iceberg V3 deletion vectors</td>
+<td>Read and converted to Delta Lake deletion vectors.</td>
+</tr>
+<tr>
+<td>Equality deletes</td>
+<td>Conversion fails.</td>
+</tr>
+</tbody>
+</table>
+<p>When you virtualize a Delta Lake table as Iceberg:</p>
+<table>
+<thead>
+<tr>
+<th>Delete kind</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Delta Lake deletion vectors</td>
+<td>Written as Iceberg V2 position deletes.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="availability-and-platform-limitations">Availability and platform limitations</h3>
+<ul>
+<li><p><strong>Region availability limitation</strong></p>
+<p>The feature isn't yet available in the following regions:</p>
+<ul>
+<li>Qatar Central</li>
+<li>Norway West</li>
+</ul>
+<p><strong>Workaround:</strong></p>
+<p>Workspaces attached to Fabric capacities in other regions can use this feature. <a href="../admin/region-availability" data-linktype="relative-path">See the full list of regions where Fabric is available.</a></p>
+</li>
+<li><p><strong>Private links not supported</strong></p>
+<p>This feature isn't currently supported for tenants or workspaces that have private links enabled.</p>
+<p>We're working on an improvement to remove this limitation.</p>
+</li>
+<li><p><strong>OneLake shortcuts must be same-region</strong></p>
+<p>We have a temporary limitation on the use of this feature with shortcuts that point to OneLake locations:  the target location of the shortcut must be in the same region as the shortcut itself.</p>
+<p>We're working on an improvement to remove this requirement.</p>
+<p><strong>Workaround:</strong></p>
+<p>If you have a OneLake shortcut to an Iceberg table in another lakehouse, be sure that the other lakehouse is associated with a capacity in the same region.</p>
+</li>
+</ul>
+<h2 id="related-content">Related content</h2>
+<ul>
+<li><a href="onelake-iceberg-snowflake" data-linktype="relative-path">Use Snowflake to write or read Iceberg tables in OneLake</a>.</li>
+<li>Learn more about <a href="onelake-shortcuts" data-linktype="relative-path">OneLake shortcuts</a>.</li>
+</ul>
+</div>
+					
+		<div
+			id="ms--inline-notifications"
+			class="margin-block-xs"
+			data-bi-name="inline-notification"
+		></div>
+	 
+		<div
+			id="assertive-live-region"
+			role="alert"
+			aria-live="assertive"
+			class="visually-hidden"
+			aria-relevant="additions"
+			aria-atomic="true"
+		></div>
+		<div
+			id="polite-live-region"
+			role="status"
+			aria-live="polite"
+			class="visually-hidden"
+			aria-relevant="additions"
+			aria-atomic="true"
+		></div>
+	
+					
+		<!-- feedback section -->
+		<section
+			id="site-user-feedback-footer"
+			class="font-size-sm margin-top-md display-none-print display-none-desktop"
+			data-test-id="site-user-feedback-footer"
+			data-bi-name="site-feedback-section"
+		>
+			<hr class="hr" />
+			<h2 id="ms--feedback" class="title is-3">Feedback</h2>
+			<div class="display-flex flex-wrap-wrap align-items-center">
+				<p class="font-weight-semibold margin-xxs margin-left-none">
+					Was this page helpful?
+				</p>
+				<div class="buttons">
+					<button
+						class="thumb-rating-button like button button-primary button-sm"
+						data-test-id="footer-rating-yes"
+						data-binary-rating-response="rating-yes"
+						type="button"
+						title="This article is helpful"
+						data-bi-name="button-rating-yes"
+						aria-pressed="false"
+					>
+						<span class="icon" aria-hidden="true">
+							<span class="docon docon-like"></span>
+						</span>
+						<span>Yes</span>
+					</button>
+					<button
+						class="thumb-rating-button dislike button button-primary button-sm"
+						id="standard-rating-no-button"
+						hidden
+						data-test-id="footer-rating-no"
+						data-binary-rating-response="rating-no"
+						type="button"
+						title="This article is not helpful"
+						data-bi-name="button-rating-no"
+						aria-pressed="false"
+					>
+						<span class="icon" aria-hidden="true">
+							<span class="docon docon-dislike"></span>
+						</span>
+						<span>No</span>
+					</button>
+					<details
+						class="popover popover-top"
+						id="mobile-help-popover"
+						data-test-id="footer-feedback-popover"
+					>
+						<summary
+							class="thumb-rating-button dislike button button-primary button-sm"
+							data-test-id="details-footer-rating-no"
+							data-binary-rating-response="rating-no"
+							title="This article is not helpful"
+							data-bi-name="button-rating-no"
+							aria-pressed="false"
+							data-bi-an="feedback-unhelpful-popover"
+						>
+							<span class="icon" aria-hidden="true">
+								<span class="docon docon-dislike"></span>
+							</span>
+							<span>No</span>
+						</summary>
+						<div
+							class="popover-content width-200 width-300-tablet"
+							role="dialog"
+							aria-labelledby="popover-heading"
+							aria-describedby="popover-description"
+						>
+							<p id="popover-heading" class="font-size-lg margin-bottom-xxs font-weight-semibold">
+								Need help with this topic?
+							</p>
+							<p id="popover-description" class="font-size-sm margin-bottom-xs">
+								Want to try using Ask Learn to clarify or guide you through this topic?
+							</p>
+							
+		<div class="buttons flex-direction-row flex-wrap justify-content-center gap-xxs">
+			<div>
+		<button
+			class="button button-sm border inner-focus display-none margin-right-xxs"
+			data-bi-name="ask-learn-assistant-entry-troubleshoot"
+			data-test-id="ask-learn-assistant-modal-entry-mobile-feedback"
+			data-ask-learn-modal-entry-feedback
+			data-bi-an=feedback-unhelpful-popover
+			type="button"
+			style="min-width: max-content;"
+			aria-expanded="false"
+			aria-label="Ask Learn"
+			hidden
+		>
+			<span class="icon" aria-hidden="true">
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
+			</span>
+		</button>
+		<button
+			class="button button-sm display-inline-flex display-none-desktop flex-shrink-0 margin-right-xxs border-color-ask-learn margin-right-xxs"
+			data-bi-name="ask-learn-assistant-entry-troubleshoot"
+			data-bi-an=feedback-unhelpful-popover
+			data-test-id="ask-learn-assistant-modal-entry-tablet-feedback"
+			data-ask-learn-modal-entry-feedback
+			type="button"
+			style="min-width: max-content;"
+			aria-expanded="false"
+			hidden
+		>
+			<span class="icon font-size-lg" aria-hidden="true">
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
+			</span>
+			<span>Ask Learn</span>
+		</button>
+		<button
+			class="button button-sm display-none flex-shrink-0 display-inline-flex-desktop margin-right-xxs border-color-ask-learn margin-right-xxs"
+			data-bi-name="ask-learn-assistant-entry-troubleshoot"
+			data-bi-an=feedback-unhelpful-popover
+			data-test-id="ask-learn-assistant-flyout-entry-feedback"
+			data-ask-learn-flyout-entry-show-only
+			data-flyout-button="toggle"
+			type="button"
+			style="min-width: max-content;"
+			aria-expanded="false"
+			aria-controls="ask-learn-flyout"
+			hidden
+		>
+			<span class="icon font-size-lg" aria-hidden="true">
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
+			</span>
+			<span>Ask Learn</span>
+		</button>
+	</div>
+			<button
+				type="button"
+				class="button button-sm margin-right-xxs"
+				data-help-option="suggest-fix"
+				data-bi-name="feedback-suggest"
+				data-bi-an="feedback-unhelpful-popover"
+				data-test-id="suggest-fix"
+			>
+				<span class="icon" aria-hidden="true">
+					<span class="docon docon-feedback"></span>
+				</span>
+				<span> Suggest a fix? </span>
+			</button>
+		</div>
+	
+						</div>
+					</details>
+				</div>
+			</div>
+		</section>
+		<!-- end feedback section -->
+	
+				</div>
+				
+		<div id="ms--additional-resources-mobile" class="display-none-print">
+			<hr class="hr" hidden />
+			<h2 id="ms--additional-resources-mobile-heading" class="title is-3" hidden>
+				Additional resources
+			</h2>
+			
+		<section
+			id="right-rail-recommendations-mobile"
+			class=""
+			data-bi-name="recommendations"
+			hidden
+		></section>
+	 
+		<section
+			id="right-rail-training-mobile"
+			class=""
+			data-bi-name="learning-resource-card"
+			hidden
+		></section>
+	 
+		<section
+			id="right-rail-events-mobile"
+			class=""
+			data-bi-name="events-card"
+			hidden
+		></section>
+	
+		</div>
+	 
+		<div
+			id="article-metadata-footer"
+			data-bi-name="article-metadata-footer"
+			data-test-id="article-metadata-footer"
+			class="page-metadata-container"
+		>
+			<hr class="hr" />
+			<ul class="metadata page-metadata" data-bi-name="page info" lang="en-us" dir="ltr">
+				<li class="visibility-hidden-visual-diff">
+			<span class="badge badge-sm text-wrap-pretty">
+				<span>Last updated on <local-time format="twoDigitNumeric"
+		datetime="2026-09-16T05:03:00.000Z"
+		data-article-date-source="calculated"
+		class="is-invisible"
+	>
+		2026-09-16
+	</local-time></span>
+			</span>
+		</li>
+			</ul>
+		</div>
+	
+			</div>
+		
+				</main>
+				<aside
+					id="layout-body-aside"
+					class="layout-body-aside  "
+					data-bi-name="aside"
+					aria-label="Additional resources"
+			  >
+					
+		<div
+			id="ms--additional-resources"
+			class="right-container padding-sm display-none display-block-desktop height-full"
+			data-bi-name="pageactions"
+		>
+			<div id="affixed-right-container" data-bi-name="right-column">
+				
+		<nav
+			id="side-doc-outline"
+			class="doc-outline border-bottom padding-bottom-xs margin-bottom-xs scrollbar-width-thin"
+			data-bi-name="intopic toc"
+			aria-label="In this article"
+		>
+			<h3>In this article</h3>
+		</nav>
+	
+				<!-- Feedback -->
+				
+		<section
+			id="ms--site-user-feedback-right-rail"
+			class="font-size-sm display-none-print"
+			data-test-id="site-user-feedback-right-rail"
+			data-bi-name="site-feedback-right-rail"
+		>
+			<div class="display-flex flex-wrap-wrap align-items-center">
+				<p class="font-weight-semibold margin-xxs margin-left-none">
+					Was this page helpful?
+				</p>
+				<div class="display-flex flex-wrap-nowrap">
+					<button
+						class="thumb-rating-button like inner-focus"
+						data-test-id="right-rail-rating-yes"
+						data-binary-rating-response="rating-yes"
+						type="button"
+						title="This article is helpful"
+						aria-label="This article is helpful"
+						data-bi-name="button-rating-yes"
+						aria-pressed="false"
+					>
+						<span class="icon" aria-hidden="true">
+							<span class="docon docon-like"></span>
+						</span>
+					</button>
+					<button
+						class="thumb-rating-button dislike inner-focus"
+						id="right-rail-no-button"
+						hidden
+						data-test-id="right-rail-rating-no"
+						data-binary-rating-response="rating-no"
+						type="button"
+						title="This article is not helpful"
+						aria-label="This article is not helpful"
+						data-bi-name="button-rating-no"
+						aria-pressed="false"
+					>
+						<span class="icon" aria-hidden="true">
+							<span class="docon docon-dislike"></span>
+						</span>
+					</button>
+					<details class="popover popover-right" id="help-popover" data-test-id="feedback-popover">
+						<summary
+							tabindex="0"
+							class="thumb-rating-button dislike inner-focus"
+							data-test-id="details-right-rail-rating-no"
+							data-binary-rating-response="rating-no"
+							title="This article is not helpful"
+							aria-label="This article is not helpful"
+							data-bi-name="button-rating-no"
+							aria-pressed="false"
+							data-bi-an="feedback-unhelpful-popover"
+						>
+							<span class="icon" aria-hidden="true">
+								<span class="docon docon-dislike"></span>
+							</span>
+						</summary>
+						<div
+							class="popover-content width-200 width-300-tablet"
+							role="dialog"
+							aria-labelledby="popover-heading-right-rail"
+							aria-describedby="popover-description-right-rail"
+						>
+							<p
+								id="popover-heading-right-rail"
+								class="font-size-lg margin-bottom-xxs font-weight-semibold"
+							>
+								Need help with this topic?
+							</p>
+							<p id="popover-description-right-rail" class="font-size-sm margin-bottom-xs">
+								Want to try using Ask Learn to clarify or guide you through this topic?
+							</p>
+							
+		<div class="buttons flex-direction-row flex-wrap justify-content-center gap-xxs">
+			<div>
+		<button
+			class="button button-sm border inner-focus display-none margin-right-xxs"
+			data-bi-name="ask-learn-assistant-entry-troubleshoot"
+			data-test-id="ask-learn-assistant-modal-entry-mobile-feedback"
+			data-ask-learn-modal-entry-feedback
+			data-bi-an=feedback-unhelpful-popover
+			type="button"
+			style="min-width: max-content;"
+			aria-expanded="false"
+			aria-label="Ask Learn"
+			hidden
+		>
+			<span class="icon" aria-hidden="true">
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
+			</span>
+		</button>
+		<button
+			class="button button-sm display-inline-flex display-none-desktop flex-shrink-0 margin-right-xxs border-color-ask-learn margin-right-xxs"
+			data-bi-name="ask-learn-assistant-entry-troubleshoot"
+			data-bi-an=feedback-unhelpful-popover
+			data-test-id="ask-learn-assistant-modal-entry-tablet-feedback"
+			data-ask-learn-modal-entry-feedback
+			type="button"
+			style="min-width: max-content;"
+			aria-expanded="false"
+			hidden
+		>
+			<span class="icon font-size-lg" aria-hidden="true">
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
+			</span>
+			<span>Ask Learn</span>
+		</button>
+		<button
+			class="button button-sm display-none flex-shrink-0 display-inline-flex-desktop margin-right-xxs border-color-ask-learn margin-right-xxs"
+			data-bi-name="ask-learn-assistant-entry-troubleshoot"
+			data-bi-an=feedback-unhelpful-popover
+			data-test-id="ask-learn-assistant-flyout-entry-feedback"
+			data-ask-learn-flyout-entry-show-only
+			data-flyout-button="toggle"
+			type="button"
+			style="min-width: max-content;"
+			aria-expanded="false"
+			aria-controls="ask-learn-flyout"
+			hidden
+		>
+			<span class="icon font-size-lg" aria-hidden="true">
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
+			</span>
+			<span>Ask Learn</span>
+		</button>
+	</div>
+			<button
+				type="button"
+				class="button button-sm margin-right-xxs"
+				data-help-option="suggest-fix"
+				data-bi-name="feedback-suggest"
+				data-bi-an="feedback-unhelpful-popover"
+				data-test-id="suggest-fix"
+			>
+				<span class="icon" aria-hidden="true">
+					<span class="docon docon-feedback"></span>
+				</span>
+				<span> Suggest a fix? </span>
+			</button>
+		</div>
+	
+						</div>
+					</details>
+				</div>
+			</div>
+		</section>
+	
+			</div>
+		</div>
+	
+			  </aside> <section
+					id="layout-body-flyout"
+					class="layout-body-flyout "
+					data-bi-name="flyout"
+			  >
+					 <div
+	class="height-full border-left background-color-body-medium"
+	id="ask-learn-flyout"
+></div>
+			  </section> <div class="layout-body-footer " data-bi-name="layout-footer">
+		<footer
+			id="footer"
+			data-test-id="footer"
+			data-bi-name="footer"
+			class="footer-layout padding-xs padding-sm-desktop has-default-focus border-top"
+			role="contentinfo"
+		>
+			<div class="display-flex gap-xs flex-wrap-wrap is-full-height padding-right-lg-desktop">
+				
+		<a
+			data-mscc-ic="false"
+			href="#"
+			data-bi-name="select-locale"
+			class="locale-selector-link flex-shrink-0 button button-sm button-clear external-link-indicator"
+			id=""
+			title=""
+			><span class="icon" aria-hidden="true"
+				><span class="docon docon-world"></span></span
+			><span class="local-selector-link-text">en-us</span></a
+		>
+	 <div class="ccpa-privacy-link" data-ccpa-privacy-link hidden>
+		
+		<a
+			data-mscc-ic="false"
+			href="https://aka.ms/yourcaliforniaprivacychoices"
+			data-bi-name="your-privacy-choices"
+			class="button button-sm button-clear flex-shrink-0 external-link-indicator"
+			id=""
+			title=""
+			>
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			viewBox="0 0 30 14"
+			xml:space="preserve"
+			height="16"
+			width="43"
+			aria-hidden="true"
+			focusable="false"
+		>
+			<path
+				d="M7.4 12.8h6.8l3.1-11.6H7.4C4.2 1.2 1.6 3.8 1.6 7s2.6 5.8 5.8 5.8z"
+				style="fill-rule:evenodd;clip-rule:evenodd;fill:#fff"
+			></path>
+			<path
+				d="M22.6 0H7.4c-3.9 0-7 3.1-7 7s3.1 7 7 7h15.2c3.9 0 7-3.1 7-7s-3.2-7-7-7zm-21 7c0-3.2 2.6-5.8 5.8-5.8h9.9l-3.1 11.6H7.4c-3.2 0-5.8-2.6-5.8-5.8z"
+				style="fill-rule:evenodd;clip-rule:evenodd;fill:#06f"
+			></path>
+			<path
+				d="M24.6 4c.2.2.2.6 0 .8L22.5 7l2.2 2.2c.2.2.2.6 0 .8-.2.2-.6.2-.8 0l-2.2-2.2-2.2 2.2c-.2.2-.6.2-.8 0-.2-.2-.2-.6 0-.8L20.8 7l-2.2-2.2c-.2-.2-.2-.6 0-.8.2-.2.6-.2.8 0l2.2 2.2L23.8 4c.2-.2.6-.2.8 0z"
+				style="fill:#fff"
+			></path>
+			<path
+				d="M12.7 4.1c.2.2.3.6.1.8L8.6 9.8c-.1.1-.2.2-.3.2-.2.1-.5.1-.7-.1L5.4 7.7c-.2-.2-.2-.6 0-.8.2-.2.6-.2.8 0L8 8.6l3.8-4.5c.2-.2.6-.2.9 0z"
+				style="fill:#06f"
+			></path>
+		</svg>
+	
+			<span>Your Privacy Choices</span></a
+		>
+	
+	</div>
+				<div class="flex-shrink-0">
+		<div class="dropdown has-caret-up">
+			<button
+				data-test-id="theme-selector-button"
+				class="dropdown-trigger button button-clear button-sm inner-focus theme-dropdown-trigger"
+				aria-controls="{{ themeMenuId }}"
+				aria-haspopup="true"
+				aria-expanded="false"
+				data-bi-name="theme"
+			>
+				<span class="icon" aria-hidden="true"><span class="docon docon-sun"></span></span>
+				<span>Theme</span>
+				<span class="icon expanded-indicator" aria-hidden="true">
+					<span class="docon docon-chevron-down-light"></span>
+				</span>
+			</button>
+			<div class="dropdown-menu" id="{{ themeMenuId }}" role="menu">
+				<ul class="theme-selector padding-xxs" data-test-id="theme-dropdown-menu" role="none">
+					<li class="theme display-block" role="none">
+						<button
+							class="button button-clear button-sm theme-control button-block justify-content-flex-start text-align-left"
+							role="menuitemradio"
+							aria-checked="false"
+							data-theme-to="light"
+							tabindex="-1"
+						>
+							<span class="theme-light margin-right-xxs">
+								<span
+									class="theme-selector-icon border display-inline-block has-body-background"
+									aria-hidden="true"
+								>
+									<svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 14">
+										<rect width="22" height="14" class="has-fill-body-background" />
+										<rect x="5" y="5" width="12" height="4" class="has-fill-secondary" />
+										<rect x="5" y="2" width="2" height="1" class="has-fill-secondary" />
+										<rect x="8" y="2" width="2" height="1" class="has-fill-secondary" />
+										<rect x="11" y="2" width="3" height="1" class="has-fill-secondary" />
+										<rect x="1" y="1" width="2" height="2" class="has-fill-secondary" />
+										<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary" />
+										<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary" />
+									</svg>
+								</span>
+							</span>
+							<span> Light </span>
+						</button>
+					</li>
+					<li class="theme display-block" role="none">
+						<button
+							class="button button-clear button-sm theme-control button-block justify-content-flex-start text-align-left"
+							role="menuitemradio"
+							aria-checked="false"
+							data-theme-to="dark"
+							tabindex="-1"
+						>
+							<span class="theme-dark margin-right-xxs">
+								<span
+									class="border theme-selector-icon display-inline-block has-body-background"
+									aria-hidden="true"
+								>
+									<svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 14">
+										<rect width="22" height="14" class="has-fill-body-background" />
+										<rect x="5" y="5" width="12" height="4" class="has-fill-secondary" />
+										<rect x="5" y="2" width="2" height="1" class="has-fill-secondary" />
+										<rect x="8" y="2" width="2" height="1" class="has-fill-secondary" />
+										<rect x="11" y="2" width="3" height="1" class="has-fill-secondary" />
+										<rect x="1" y="1" width="2" height="2" class="has-fill-secondary" />
+										<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary" />
+										<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary" />
+									</svg>
+								</span>
+							</span>
+							<span> Dark </span>
+						</button>
+					</li>
+					<li class="theme display-block" role="none">
+						<button
+							class="button button-clear button-sm theme-control button-block justify-content-flex-start text-align-left"
+							role="menuitemradio"
+							aria-checked="false"
+							data-theme-to="high-contrast"
+							tabindex="-1"
+						>
+							<span class="theme-high-contrast margin-right-xxs">
+								<span
+									class="border theme-selector-icon display-inline-block has-body-background"
+									aria-hidden="true"
+								>
+									<svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 14">
+										<rect width="22" height="14" class="has-fill-body-background" />
+										<rect x="5" y="5" width="12" height="4" class="has-fill-secondary" />
+										<rect x="5" y="2" width="2" height="1" class="has-fill-secondary" />
+										<rect x="8" y="2" width="2" height="1" class="has-fill-secondary" />
+										<rect x="11" y="2" width="3" height="1" class="has-fill-secondary" />
+										<rect x="1" y="1" width="2" height="2" class="has-fill-secondary" />
+										<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary" />
+										<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary" />
+									</svg>
+								</span>
+							</span>
+							<span> High contrast </span>
+						</button>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+			</div>
+			<ul class="links" data-bi-name="footerlinks">
+				<li class="manage-cookies-holder" hidden=""></li>
+				<li>
+		
+		<a
+			data-mscc-ic="false"
+			href="https://learn.microsoft.com/en-us/principles-for-ai-generated-content"
+			data-bi-name="aiDisclaimer"
+			class=" external-link-indicator"
+			id=""
+			title=""
+			>AI Disclaimer</a
+		>
+	
+	</li><li>
+		
+		<a
+			data-mscc-ic="false"
+			href="https://learn.microsoft.com/en-us/previous-versions/"
+			data-bi-name="archivelink"
+			class=" external-link-indicator"
+			id=""
+			title=""
+			>Previous Versions</a
+		>
+	
+	</li> <li>
+		
+		<a
+			data-mscc-ic="false"
+			href="https://techcommunity.microsoft.com/t5/microsoft-learn-blog/bg-p/MicrosoftLearnBlog"
+			data-bi-name="bloglink"
+			class=" external-link-indicator"
+			id=""
+			title=""
+			>Blog</a
+		>
+	
+	</li> <li>
+		
+		<a
+			data-mscc-ic="false"
+			href="https://learn.microsoft.com/en-us/contribute"
+			data-bi-name="contributorGuide"
+			class=" external-link-indicator"
+			id=""
+			title=""
+			>Contribute</a
+		>
+	
+	</li><li>
+		
+		<a
+			data-mscc-ic="false"
+			href="https://go.microsoft.com/fwlink/?LinkId=521839"
+			data-bi-name="privacy"
+			class=" external-link-indicator"
+			id=""
+			title=""
+			>Privacy</a
+		>
+	
+	</li><li>
+		
+		<a
+			data-mscc-ic="false"
+			href="https://go.microsoft.com/fwlink/?linkid=2259814"
+			data-bi-name="consumer-health-privacy"
+			class=" external-link-indicator"
+			id=""
+			title=""
+			>Consumer Health Privacy</a
+		>
+	
+	</li><li>
+		
+		<a
+			data-mscc-ic="false"
+			href="https://learn.microsoft.com/en-us/legal/termsofuse"
+			data-bi-name="termsofuse"
+			class=" external-link-indicator"
+			id=""
+			title=""
+			>Terms of Use</a
+		>
+	
+	</li><li>
+		
+		<a
+			data-mscc-ic="false"
+			href="https://www.microsoft.com/legal/intellectualproperty/Trademarks/"
+			data-bi-name="trademarks"
+			class=" external-link-indicator"
+			id=""
+			title=""
+			>Trademarks</a
+		>
+	
+	</li>
+				<li>&copy; Microsoft 2026</li>
+			</ul>
+		</footer>
+	</footer>
+			<noscript><img src="https://learn.microsoft.com/akam/13/pixel_21a3d7fc?a=dD1hZWJkOTg5NTMwMGIxYTUyODMwYzM2ZjNmMmQwMTAzODkzOTJhOTY2JmpzPW9mZg==" style="visibility: hidden; position: absolute; left: -999px; top: -999px;" /></noscript></body>
+		</html>

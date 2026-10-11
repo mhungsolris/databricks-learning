@@ -1,0 +1,35 @@
+{
+  "evidenceTier": "LOCAL SPARK TEST",
+  "workspaceStatus": "PENDING USER WORKSPACE",
+  "verifiedDate": "2026-10-11",
+  "timezone": "Asia/Saigon",
+  "sourceRun": ".skills-test/spark/tests-platform/20261011T051456Z-42929e3f",
+  "sourceEncoding": "UTF-8 LF",
+  "sourceHashes": {
+    "labs/platform/fixtures.json": "5869732a06adfe3fa0567e2d07f5e218b7333a275a9a281480213fc5d53584ab",
+    "labs/platform/contracts.py": "0325044dee4991896797203df4722392326fa1e5d343d45e7437257568f31cbd",
+    "labs/platform/src/roas_task.py": "985bdd4ca7182a9e5895b311ae44131152b9f6e170657020438ce17694c642c5",
+    "labs/platform/src/medallion.py": "d97ef1861f6cd1608d35ae90eb568b89f4c88a507b10052e9d9dbc3474bf5ca4",
+    "labs/platform/databricks.yml": "3a98e6690b1a73187ef8539e6b2e8777b0bf73928a01eb41643702434a08a872",
+    "labs/platform/resources/roas.job.yml": "599fc514c38c05eabdde4dae84c360700a58ab2945941c63609f55eafea9234c",
+    "labs/platform/resources/medallion.pipeline.yml": "c8dea9d34750b8566a48a14bc46e19fc4747725fbfb4108fd57c8c2a0efa2139",
+    "labs/platform/governance-policy.json": "d36452aa9c44171b62d2f7d9dc357e1e846a39cd5d8335b04c62558ff8547f6f",
+    "labs/platform/sql/silver.sql": "89b7f9a1152cec04a9db57a65a8c5935c6c06f7c82f438b300ad8f2193aad3d4",
+    "labs/platform/sql/gold.sql": "9feb92d2890091a68ddc9e78d06da4ac8c905bf5f345bdd0cab3838dc958bdfc",
+    "labs/platform/sql/serving.sql": "d4e948a4c22e66c06a51630f33a23889a8bec78952d0f8ea6d995fc8a496b96f",
+    "labs/platform/sql/governance.sql": "bc27b79ef3aa0d73917ca86c0cbe7838d0ff57e31aa73a7a16738e93dc2feb1d",
+    "tests/test_platform_artifacts.py": "bda3093eb82097f9ef46f34ae8270bf7dcbfa8e7dd046919c8e7ee5ed0e9faf8",
+    "scripts/test_platform.py": "42c02d3934acc8c81db94ebb2c4245c44e30fd66f9b4eff6d647a3d1daccef85",
+    "scripts/platform_evidence.py": "6ae33ec3813aa8431c34f23ac189b2a93bbdb2bce91bca0c18f8fe535b8ca7b7",
+    "scripts/spark_runtime.py": "4cf8448396e6ca9cc44bdf7950cb8e077f37c9029484561e12e70a58392856e9",
+    "labs/spark/common.py": "29b796c57287f03bd43ad689119000b5d00d9d3eef33c109da4ca45a55d1aabf",
+    "runtime/spark.json": "cf4a020d3ab4d1bb0290ca086f2f7e57a97f8ed58881a04c185ca93d3afbe844"
+  },
+  "files": {
+    "runtime.json": "7956a99f5db2bd5aa40b7da9eb2747d56091636442edc92aa3e2ecb47e7bb683",
+    "shutdown.json": "995b859531438e449c3901e8ef45dcbd8a9e476ec73d1f0fded746f738b6b99b",
+    "test-summary.json": "66f374c390cca16d098f940e7c603f193507ef47608c606543b93a10497e5e68",
+    "result.json": "c3949d16682f5c6ef05cf35bdb7b1e7ed1c8425781c4cab29ffc9e9ac9888dcc",
+    "stages.json": "ae56b2f77483290c0525c7e32a70c8aa83850550b341d36e9e5afd96bd2348dd"
+  }
+}

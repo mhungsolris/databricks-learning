@@ -1,0 +1,30 @@
+{
+  "session": ".researches/2026-10-10T020000Z",
+  "metadata": {
+    "query": "Grain/cardinality contracts, BigQuery-Databricks operating boundaries, and Spark execution concepts",
+    "known": "Chapter 00 baseline accepted; Python 3.12 available; PySpark absent and java absent from PATH",
+    "stoppingRule": "Official evidence for each load-bearing claim; both vendor perspectives; deterministic local examples",
+    "date": "2026-10-10", "timezone": "Asia/Saigon", "publication": "disabled"
+  },
+  "urls": {
+    "star-schema": "https://learn.microsoft.com/en-us/power-bi/guidance/star-schema",
+    "bq-keys": "https://docs.cloud.google.com/bigquery/docs/primary-foreign-keys",
+    "db-constraints": "https://docs.databricks.com/aws/en/tables/constraints",
+    "bq-overview": "https://docs.cloud.google.com/bigquery/docs/introduction",
+    "bq-storage": "https://docs.cloud.google.com/bigquery/docs/storage_overview",
+    "bq-external": "https://docs.cloud.google.com/bigquery/docs/external-tables",
+    "bq-pricing": "https://cloud.google.com/bigquery/pricing",
+    "db-lakehouse": "https://docs.databricks.com/aws/en/lakehouse/",
+    "db-tables": "https://docs.databricks.com/aws/en/tables/",
+    "db-compute": "https://docs.databricks.com/aws/en/compute/",
+    "db-architecture": "https://docs.databricks.com/aws/en/getting-started/high-level-architecture",
+    "delta": "https://docs.delta.io/",
+    "spark-cluster": "https://spark.apache.org/docs/latest/cluster-overview.html",
+    "spark-lazy": "https://spark.apache.org/docs/latest/rdd-programming-guide.html",
+    "spark-sql": "https://spark.apache.org/docs/latest/sql-programming-guide.html",
+    "spark-dataframes": "https://spark.apache.org/docs/latest/sql-getting-started.html",
+    "spark-explain": "https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/api/pyspark.sql.DataFrame.explain.html",
+    "spark-monitoring": "https://spark.apache.org/docs/latest/monitoring.html",
+    "spark-install": "https://spark.apache.org/docs/latest/api/python/getting_started/install.html"
+  }
+}

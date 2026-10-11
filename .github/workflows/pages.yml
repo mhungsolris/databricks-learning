@@ -1,0 +1,102 @@
+name: Handbook checks and Pages
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      # Pages root repositories have no project prefix; project repositories do.
+      DOCS_BASE: ${{ endsWith(github.event.repository.name, '.github.io') && '/' || format('/{0}/', github.event.repository.name) }}
+      SITE_ORIGIN: https://${{ github.repository_owner }}.github.io
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: npm ci --ignore-scripts
+      - run: npm run skills:verify
+      - run: npm run docs:check
+      - run: python -m unittest discover -s tests -v
+      - run: python -m pip install -r labs/production/requirements-test.txt
+      - run: python -m compileall -q labs/production scripts/test_production.py scripts/check_production_config.py scripts/check_bundle_schema.py
+      - run: python -m pytest labs/production/tests -q
+      - run: python scripts/check_production_config.py
+      - uses: databricks/setup-cli@9b64c94a6d2b2e830592d80e9f14c26d32b42ad7
+        with:
+          version: '1.20.0'
+      - run: databricks bundle schema > /tmp/roas-bundle-schema.json
+      - run: python scripts/check_bundle_schema.py /tmp/roas-bundle-schema.json
+      - run: python -m scripts.run_labs
+      - run: npm run docs:build
+      - run: npx --no-install playwright install --with-deps chromium
+      - run: npm run docs:test-ui
+      - name: Keep browser evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: browser-evidence
+          path: .skills-test/screenshots
+          if-no-files-found: ignore
+      - uses: actions/upload-pages-artifact@v4
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        with:
+          path: docs/.vitepress/dist
+
+  spark:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python scripts/verify_spark.py
+      - run: python scripts/test_spark.py
+      - run: python scripts/test_spark.py --delta
+      - run: python scripts/test_correctness.py
+      - run: python scripts/test_streaming.py
+      - run: python scripts/test_platform.py
+      - run: python scripts/test_production.py
+      - run: python scripts/verify_iceberg.py
+      - run: python scripts/test_iceberg.py
+      - name: Keep Spark evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: spark-evidence
+          path: .skills-test/spark
+
+  deploy:
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    needs: [build, spark]
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/configure-pages@v5
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4

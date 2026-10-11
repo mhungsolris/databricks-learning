@@ -1,0 +1,216 @@
+{
+  "evidenceTier": "LOCAL SPARK / LOCAL DELTA",
+  "workspaceStatus": "PENDING USER WORKSPACE",
+  "scope": "Tiny controlled datasets; no production speedup or managed engine proof",
+  "plans": {
+    "filter-select": {
+      "exchange": false,
+      "broadcast": false
+    },
+    "aggregate": {
+      "exchange": true,
+      "broadcast": false
+    },
+    "shuffle-join": {
+      "exchange": true,
+      "broadcast": false
+    },
+    "broadcast-join": {
+      "exchange": true,
+      "broadcast": true
+    }
+  },
+  "adaptive": {
+    "finalPlan": true,
+    "configured": true
+  },
+  "skew": {
+    "distribution": [
+      {
+        "partition": 0,
+        "rows": 9200
+      },
+      {
+        "partition": 1,
+        "rows": 300
+      },
+      {
+        "partition": 2,
+        "rows": 200
+      },
+      {
+        "partition": 3,
+        "rows": 300
+      }
+    ],
+    "hotKeyRows": 9000,
+    "total": 10000,
+    "algebraPreserved": true,
+    "productionSpeedupProven": false
+  },
+  "layouts": {
+    "tiny": {
+      "files": 32,
+      "sizesBytes": [
+        1416,
+        1420,
+        1420,
+        1416,
+        1418,
+        1416,
+        1417,
+        1415,
+        1416,
+        1414,
+        1416,
+        1419,
+        1422,
+        1416,
+        1418,
+        1418,
+        1416,
+        1418,
+        1418,
+        1420,
+        1412,
+        1414,
+        1419,
+        1416,
+        1415,
+        1416,
+        1411,
+        1419,
+        1413,
+        1416,
+        1417,
+        1419
+      ],
+      "planningPartitions": 8,
+      "selectedRows": 512,
+      "addStatsPresent": true
+    },
+    "compact": {
+      "files": 2,
+      "sizesBytes": [
+        9835,
+        9821
+      ],
+      "planningPartitions": 2,
+      "selectedRows": 512,
+      "addStatsPresent": true
+    }
+  },
+  "gold": [
+    {
+      "source_system": "callback",
+      "app_id": "a",
+      "event_date": "2026-10-01",
+      "campaign_id": "A",
+      "currency": "USD",
+      "revenue_cents": 1100,
+      "cost_cents": 400,
+      "roas": 2.75
+    },
+    {
+      "source_system": "callback",
+      "app_id": "a",
+      "event_date": "2026-10-01",
+      "campaign_id": "B",
+      "currency": "USD",
+      "revenue_cents": 100,
+      "cost_cents": 200,
+      "roas": 0.5
+    },
+    {
+      "source_system": "callback",
+      "app_id": "b",
+      "event_date": "2026-10-01",
+      "campaign_id": "A",
+      "currency": "USD",
+      "revenue_cents": 50,
+      "cost_cents": 100,
+      "roas": 0.5
+    }
+  ],
+  "schema": {
+    "type": "struct",
+    "fields": [
+      {
+        "name": "source_system",
+        "type": "string",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "app_id",
+        "type": "string",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "event_date",
+        "type": "string",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "campaign_id",
+        "type": "string",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "currency",
+        "type": "string",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "revenue_cents",
+        "type": "long",
+        "nullable": false,
+        "metadata": {}
+      },
+      {
+        "name": "cost_cents",
+        "type": "long",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "roas",
+        "type": "double",
+        "nullable": true,
+        "metadata": {}
+      }
+    ]
+  },
+  "quality": {
+    "inputRows": 9,
+    "validRows": 6,
+    "quarantineRows": 3,
+    "predicateViolations": {
+      "country <> 'UNKNOWN'": 9,
+      "amount_cents IS NOT NULL AND amount_cents >= 0": 1,
+      "event_id IS NOT NULL": 1
+    },
+    "platformExpectationExecuted": false
+  },
+  "failures": {
+    "unknownCostRows": 1,
+    "fanoutRows": 6,
+    "fanoutRevenue": 2500
+  },
+  "rollback": {
+    "before": 1250,
+    "badCommit": 2500,
+    "afterRestore": 1250,
+    "newVersion": 2,
+    "scope": "Local Delta files retained; no VACUUM, no downstream streaming"
+  },
+  "publication": {
+    "rejectedCandidate": 2500,
+    "servingRevenue": 1250,
+    "originalPreserved": true
+  }
+}

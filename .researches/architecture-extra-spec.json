@@ -1,0 +1,16 @@
+{
+  "session": ".researches/2026-10-11-architecture-extra",
+  "metadata": {
+    "query": "Catalog implementation and current Snowflake account availability",
+    "known": "Core runtime and platform sources archived",
+    "stoppingRule": "Official implementation/account documentation",
+    "date": "2026-10-11",
+    "timezone": "Asia/Saigon",
+    "publication": "disabled"
+  },
+  "urls": {
+    "openCatalog": "https://docs.snowflake.com/en/user-guide/opencatalog/overview",
+    "hadoop": "https://iceberg.apache.org/javadoc/nightly/org/apache/iceberg/hadoop/HadoopCatalog.html",
+    "icebergStreaming": "https://iceberg.apache.org/docs/latest/spark-structured-streaming/"
+  }
+}

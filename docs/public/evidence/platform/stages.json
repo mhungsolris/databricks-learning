@@ -1,0 +1,417 @@
+[
+  {
+    "stageId": 0,
+    "tasks": 8,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 1,
+    "tasks": 4,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 2,
+    "tasks": 1,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 3,
+    "tasks": 8,
+    "name": "first at /workspace/scripts/test_platform.py:43"
+  },
+  {
+    "stageId": 4,
+    "tasks": 4,
+    "name": "first at /workspace/scripts/test_platform.py:43"
+  },
+  {
+    "stageId": 5,
+    "tasks": 1,
+    "name": "first at /workspace/scripts/test_platform.py:43"
+  },
+  {
+    "stageId": 6,
+    "tasks": 8,
+    "name": "collect at /workspace/scripts/test_platform.py:38"
+  },
+  {
+    "stageId": 7,
+    "tasks": 8,
+    "name": "collect at /workspace/scripts/test_platform.py:38"
+  },
+  {
+    "stageId": 8,
+    "tasks": 4,
+    "name": "collect at /workspace/scripts/test_platform.py:38"
+  },
+  {
+    "stageId": 9,
+    "tasks": 4,
+    "name": "collect at /workspace/scripts/test_platform.py:38"
+  },
+  {
+    "stageId": 10,
+    "tasks": 8,
+    "name": "collect at /workspace/scripts/test_platform.py:38"
+  },
+  {
+    "stageId": 12,
+    "tasks": 8,
+    "name": "collect at /workspace/scripts/test_platform.py:38"
+  },
+  {
+    "stageId": 11,
+    "tasks": 4,
+    "name": "collect at /workspace/scripts/test_platform.py:38"
+  },
+  {
+    "stageId": 13,
+    "tasks": 4,
+    "name": "collect at /workspace/scripts/test_platform.py:38"
+  },
+  {
+    "stageId": 14,
+    "tasks": 8,
+    "name": "collect at /workspace/scripts/test_platform.py:38"
+  },
+  {
+    "stageId": 15,
+    "tasks": 4,
+    "name": "collect at /workspace/scripts/test_platform.py:38"
+  },
+  {
+    "stageId": 16,
+    "tasks": 8,
+    "name": "collect at /workspace/scripts/test_platform.py:38"
+  },
+  {
+    "stageId": 17,
+    "tasks": 4,
+    "name": "collect at /workspace/scripts/test_platform.py:38"
+  },
+  {
+    "stageId": 18,
+    "tasks": 8,
+    "name": "collect at /workspace/scripts/test_platform.py:38"
+  },
+  {
+    "stageId": 19,
+    "tasks": 4,
+    "name": "collect at /workspace/scripts/test_platform.py:38"
+  },
+  {
+    "stageId": 20,
+    "tasks": 4,
+    "name": "collect at /workspace/scripts/test_platform.py:38"
+  },
+  {
+    "stageId": 21,
+    "tasks": 8,
+    "name": "collect at /workspace/scripts/test_platform.py:38"
+  },
+  {
+    "stageId": 23,
+    "tasks": 8,
+    "name": "collect at /workspace/scripts/test_platform.py:38"
+  },
+  {
+    "stageId": 22,
+    "tasks": 4,
+    "name": "collect at /workspace/scripts/test_platform.py:38"
+  },
+  {
+    "stageId": 24,
+    "tasks": 4,
+    "name": "collect at /workspace/scripts/test_platform.py:38"
+  },
+  {
+    "stageId": 25,
+    "tasks": 8,
+    "name": "collect at /workspace/scripts/test_platform.py:38"
+  },
+  {
+    "stageId": 26,
+    "tasks": 4,
+    "name": "collect at /workspace/scripts/test_platform.py:38"
+  },
+  {
+    "stageId": 27,
+    "tasks": 8,
+    "name": "collect at /workspace/scripts/test_platform.py:38"
+  },
+  {
+    "stageId": 28,
+    "tasks": 4,
+    "name": "collect at /workspace/scripts/test_platform.py:38"
+  },
+  {
+    "stageId": 29,
+    "tasks": 8,
+    "name": "collect at /workspace/scripts/test_platform.py:38"
+  },
+  {
+    "stageId": 30,
+    "tasks": 4,
+    "name": "collect at /workspace/scripts/test_platform.py:38"
+  },
+  {
+    "stageId": 31,
+    "tasks": 8,
+    "name": "collect at /workspace/scripts/test_platform.py:38"
+  },
+  {
+    "stageId": 32,
+    "tasks": 4,
+    "name": "collect at /workspace/scripts/test_platform.py:38"
+  },
+  {
+    "stageId": 33,
+    "tasks": 8,
+    "name": "collect at /workspace/scripts/test_platform.py:38"
+  },
+  {
+    "stageId": 34,
+    "tasks": 4,
+    "name": "collect at /workspace/scripts/test_platform.py:38"
+  },
+  {
+    "stageId": 35,
+    "tasks": 4,
+    "name": "collect at /workspace/scripts/test_platform.py:38"
+  },
+  {
+    "stageId": 40,
+    "tasks": 4,
+    "name": "collect at /workspace/scripts/test_platform.py:38"
+  },
+  {
+    "stageId": 41,
+    "tasks": 2,
+    "name": "collect at /workspace/scripts/test_platform.py:38"
+  },
+  {
+    "stageId": 42,
+    "tasks": 8,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 43,
+    "tasks": 16,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 44,
+    "tasks": 4,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 45,
+    "tasks": 1,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 46,
+    "tasks": 8,
+    "name": "first at /workspace/scripts/test_platform.py:63"
+  },
+  {
+    "stageId": 48,
+    "tasks": 8,
+    "name": "first at /workspace/scripts/test_platform.py:63"
+  },
+  {
+    "stageId": 47,
+    "tasks": 4,
+    "name": "first at /workspace/scripts/test_platform.py:63"
+  },
+  {
+    "stageId": 49,
+    "tasks": 4,
+    "name": "first at /workspace/scripts/test_platform.py:63"
+  },
+  {
+    "stageId": 50,
+    "tasks": 16,
+    "name": "first at /workspace/scripts/test_platform.py:63"
+  },
+  {
+    "stageId": 51,
+    "tasks": 4,
+    "name": "first at /workspace/scripts/test_platform.py:63"
+  },
+  {
+    "stageId": 52,
+    "tasks": 1,
+    "name": "first at /workspace/scripts/test_platform.py:63"
+  },
+  {
+    "stageId": 53,
+    "tasks": 8,
+    "name": "collect at /workspace/scripts/test_platform.py:71"
+  },
+  {
+    "stageId": 55,
+    "tasks": 8,
+    "name": "collect at /workspace/scripts/test_platform.py:71"
+  },
+  {
+    "stageId": 54,
+    "tasks": 4,
+    "name": "collect at /workspace/scripts/test_platform.py:71"
+  },
+  {
+    "stageId": 56,
+    "tasks": 4,
+    "name": "collect at /workspace/scripts/test_platform.py:71"
+  },
+  {
+    "stageId": 57,
+    "tasks": 6,
+    "name": "collect at /workspace/scripts/test_platform.py:38"
+  },
+  {
+    "stageId": 58,
+    "tasks": 4,
+    "name": "collect at /workspace/scripts/test_platform.py:38"
+  },
+  {
+    "stageId": 59,
+    "tasks": 4,
+    "name": "collect at /workspace/scripts/test_platform.py:38"
+  },
+  {
+    "stageId": 60,
+    "tasks": 3,
+    "name": "collect at /workspace/scripts/test_platform.py:38"
+  },
+  {
+    "stageId": 61,
+    "tasks": 6,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 62,
+    "tasks": 4,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 63,
+    "tasks": 4,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 64,
+    "tasks": 1,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 65,
+    "tasks": 3,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 66,
+    "tasks": 4,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 67,
+    "tasks": 1,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 68,
+    "tasks": 16,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 69,
+    "tasks": 4,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 70,
+    "tasks": 4,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 71,
+    "tasks": 1,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 72,
+    "tasks": 8,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 73,
+    "tasks": 4,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 74,
+    "tasks": 4,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 75,
+    "tasks": 1,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 76,
+    "tasks": 8,
+    "name": "first at /workspace/scripts/test_platform.py:101"
+  },
+  {
+    "stageId": 77,
+    "tasks": 4,
+    "name": "first at /workspace/scripts/test_platform.py:101"
+  },
+  {
+    "stageId": 78,
+    "tasks": 4,
+    "name": "first at /workspace/scripts/test_platform.py:101"
+  },
+  {
+    "stageId": 79,
+    "tasks": 1,
+    "name": "first at /workspace/scripts/test_platform.py:101"
+  },
+  {
+    "stageId": 80,
+    "tasks": 8,
+    "name": "collect at /workspace/scripts/test_platform.py:38"
+  },
+  {
+    "stageId": 81,
+    "tasks": 4,
+    "name": "collect at /workspace/scripts/test_platform.py:38"
+  },
+  {
+    "stageId": 82,
+    "tasks": 4,
+    "name": "collect at /workspace/scripts/test_platform.py:38"
+  },
+  {
+    "stageId": 83,
+    "tasks": 8,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 84,
+    "tasks": 1,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 85,
+    "tasks": 8,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  },
+  {
+    "stageId": 86,
+    "tasks": 1,
+    "name": "count at NativeMethodAccessorImpl.java:0"
+  }
+]

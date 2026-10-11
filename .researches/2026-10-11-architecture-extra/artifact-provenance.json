@@ -1,0 +1,8 @@
+{
+  "artifact": "https://repo.maven.apache.org/maven2/org/apache/iceberg/iceberg-spark-runtime-4.0_2.13/1.12.0/iceberg-spark-runtime-4.0_2.13-1.12.0.jar",
+  "officialChecksumURL": "https://repo.maven.apache.org/maven2/org/apache/iceberg/iceberg-spark-runtime-4.0_2.13/1.12.0/iceberg-spark-runtime-4.0_2.13-1.12.0.jar.sha1",
+  "officialSHA1": "72ff4d5759385c282113dc36235ad8b0e4d007cc",
+  "observedSHA256": "3f50e93e8ed322ae0da0e380f1b6c27116404329c62e55f0586697b1b8378306",
+  "verified": "2026-10-11",
+  "cloud": "local"
+}

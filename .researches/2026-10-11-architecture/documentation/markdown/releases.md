@@ -1,0 +1,3351 @@
+# releases
+
+Source: https://iceberg.apache.org/releases/
+Retrieved: 2026-10-11
+
+Releases - Apache Iceberg™ Skip to content Apache Iceberg™ Apache Iceberg™ Initializing search 
+Home 
+Quickstart 
+Docs 
+Releases 
+Project 
+Community 
+Blog 
+Specification Apache Iceberg™ 
+Home 
+Quickstart Quickstart 
+Spark 
+Flink 
+Hive 
+Docs Docs 
+Java Java 
+Latest (1.12.0) Latest (1.12.0) 
+Introduction 
+Concepts Concepts 
+Tables Tables 
+Branching and Tagging 
+Configuration 
+Encryption 
+Evolution 
+Maintenance 
+Metrics Reporting 
+Partitioning 
+Performance 
+Reliability 
+Schemas 
+Views Views 
+Configuration 
+Catalogs Catalogs 
+REST Catalog Protocol 
+API API 
+Quickstart 
+API 
+File I/O 
+Javadoc 
+Integrations Integrations 
+Apache Spark Apache Spark 
+Getting Started 
+Configuration 
+DDL 
+Procedures 
+Queries 
+Structured Streaming 
+Writes 
+Apache Flink Apache Flink 
+Getting Started 
+Flink Connector 
+Flink DDL 
+Flink Queries 
+Flink Writes 
+Flink TableMaintenance 
+Flink Configuration 
+Kafka Connect 
+Apache Hive 
+Migration Migration 
+Overview 
+Hive Migration 
+Delta Lake Migration 
+Catalogs Catalogs 
+Catalog properties 
+REST Compatible Catalog 
+AWS Glue 
+AWS DynamoDB 
+HadoopCatalog 
+HiveCatalog 
+JDBC 
+Java Custom Catalog 
+Nessie 
+Storage Storage 
+AWS S3 
+Dell ECS 
+Nightly Nightly 
+Introduction 
+Concepts Concepts 
+Tables Tables 
+Branching and Tagging 
+Configuration 
+Encryption 
+Evolution 
+Maintenance 
+Metrics Reporting 
+Partitioning 
+Performance 
+Reliability 
+Schemas 
+Views Views 
+Configuration 
+Catalogs Catalogs 
+REST Catalog Protocol 
+API API 
+Quickstart 
+API 
+File I/O 
+Javadoc 
+Integrations Integrations 
+Apache Spark Apache Spark 
+Getting Started 
+Configuration 
+DDL 
+Procedures 
+Queries 
+Structured Streaming 
+Writes 
+Apache Flink Apache Flink 
+Getting Started 
+Flink Connector 
+Flink DDL 
+Flink Queries 
+Flink Writes 
+Flink TableMaintenance 
+Flink Configuration 
+Kafka Connect 
+Apache Hive 
+Migration Migration 
+Overview 
+Hive Migration 
+Delta Lake Migration 
+Catalogs Catalogs 
+Catalog properties 
+REST Compatible Catalog 
+AWS Glue 
+AWS DynamoDB 
+HadoopCatalog 
+HiveCatalog 
+JDBC 
+Java Custom Catalog 
+Nessie 
+Storage Storage 
+AWS S3 
+Dell ECS 
+Previous Previous 
+1.11.0 1.11.0 
+Introduction 
+Concepts Concepts 
+Tables Tables 
+Branching and Tagging 
+Configuration 
+Encryption 
+Evolution 
+Maintenance 
+Metrics Reporting 
+Partitioning 
+Performance 
+Reliability 
+Schemas 
+Views Views 
+Configuration 
+API API 
+Quickstart 
+API 
+File I/O 
+Javadoc 
+Integrations Integrations 
+Apache Spark Apache Spark 
+Getting Started 
+Configuration 
+DDL 
+Procedures 
+Queries 
+Structured Streaming 
+Writes 
+Apache Flink Apache Flink 
+Getting Started 
+Flink Connector 
+Flink DDL 
+Flink Queries 
+Flink Writes 
+Flink TableMaintenance 
+Flink Configuration 
+Kafka Connect 
+Apache Hive 
+Migration Migration 
+Overview 
+Hive Migration 
+Delta Lake Migration 
+Catalogs Catalogs 
+Catalog properties 
+AWS Glue 
+AWS DynamoDB 
+HadoopCatalog 
+HiveCatalog 
+JDBC 
+Java Custom Catalog 
+Nessie 
+Storage Storage 
+AWS S3 
+Dell ECS 
+1.10.2 1.10.2 
+Introduction 
+Concepts Concepts 
+Tables Tables 
+Branching and Tagging 
+Configuration 
+Evolution 
+Maintenance 
+Metrics Reporting 
+Partitioning 
+Performance 
+Reliability 
+Schemas 
+Views Views 
+Configuration 
+API API 
+Quickstart 
+API 
+Javadoc 
+Integrations Integrations 
+Apache Spark Apache Spark 
+Getting Started 
+Configuration 
+DDL 
+Procedures 
+Queries 
+Structured Streaming 
+Writes 
+Apache Flink Apache Flink 
+Flink Getting Started 
+Flink Connector 
+Flink DDL 
+Flink Queries 
+Flink Writes 
+Flink TableMaintenance 
+Flink Configuration 
+Kafka Connect 
+Apache Hive 
+Third-party Third-party 
+Apache Amoro 
+Amazon Athena 
+Amazon Data Firehose 
+Amazon EMR 
+Amazon Redshift 
+Apache Doris 
+Apache Druid 
+BladePipe 
+ClickHouse 
+Daft 
+Databend 
+Dremio 
+DuckDB 
+Estuary 
+Firebolt 
+Google BigQuery 
+Impala 
+Memiiso Debezium 
+OLake 
+Presto 
+Redpanda 
+RisingWave 
+Snowflake 
+Starrocks 
+Tinybird 
+Trino 
+Catalogs Catalogs 
+AWS Glue 
+AWS DynamoDB 
+Java Custom Catalog 
+JDBC 
+Nessie 
+Storage Storage 
+AWS S3 
+Dell ECS 
+1.10.1 1.10.1 
+Introduction 
+Concepts Concepts 
+Tables Tables 
+Branching and Tagging 
+Configuration 
+Evolution 
+Maintenance 
+Metrics Reporting 
+Partitioning 
+Performance 
+Reliability 
+Schemas 
+Views Views 
+Configuration 
+API API 
+Quickstart 
+API 
+Javadoc 
+Integrations Integrations 
+Apache Spark Apache Spark 
+Getting Started 
+Configuration 
+DDL 
+Procedures 
+Queries 
+Structured Streaming 
+Writes 
+Apache Flink Apache Flink 
+Flink Getting Started 
+Flink Connector 
+Flink DDL 
+Flink Queries 
+Flink Writes 
+Flink TableMaintenance 
+Flink Configuration 
+Kafka Connect 
+Apache Hive 
+Third-party Third-party 
+Apache Amoro 
+Amazon Athena 
+Amazon Data Firehose 
+Amazon EMR 
+Amazon Redshift 
+Apache Doris 
+Apache Druid 
+BladePipe 
+ClickHouse 
+Daft 
+Databend 
+Dremio 
+DuckDB 
+Estuary 
+Firebolt 
+Google BigQuery 
+Impala 
+Memiiso Debezium 
+OLake 
+Presto 
+Redpanda 
+RisingWave 
+Snowflake 
+Starrocks 
+Tinybird 
+Trino 
+Catalogs Catalogs 
+AWS Glue 
+AWS DynamoDB 
+Java Custom Catalog 
+JDBC 
+Nessie 
+Storage Storage 
+AWS S3 
+Dell ECS 
+1.10.0 1.10.0 
+Introduction 
+Concepts Concepts 
+Tables Tables 
+Branching and Tagging 
+Configuration 
+Evolution 
+Maintenance 
+Metrics Reporting 
+Partitioning 
+Performance 
+Reliability 
+Schemas 
+Views Views 
+Configuration 
+API API 
+Quickstart 
+API 
+Javadoc 
+Integrations Integrations 
+Apache Spark Apache Spark 
+Getting Started 
+Configuration 
+DDL 
+Procedures 
+Queries 
+Structured Streaming 
+Writes 
+Apache Flink Apache Flink 
+Flink Getting Started 
+Flink Connector 
+Flink DDL 
+Flink Queries 
+Flink Writes 
+Flink TableMaintenance 
+Flink Configuration 
+Kafka Connect 
+Apache Hive 
+Third-party Third-party 
+Apache Amoro 
+Amazon Athena 
+Amazon Data Firehose 
+Amazon EMR 
+Amazon Redshift 
+Apache Doris 
+Apache Druid 
+BladePipe 
+ClickHouse 
+Daft 
+Databend 
+Dremio 
+DuckDB 
+Estuary 
+Firebolt 
+Google BigQuery 
+Impala 
+Memiiso Debezium 
+OLake 
+Presto 
+Redpanda 
+RisingWave 
+Snowflake 
+Starrocks 
+Tinybird 
+Trino 
+Catalogs Catalogs 
+AWS Glue 
+AWS DynamoDB 
+Java Custom Catalog 
+JDBC 
+Nessie 
+Storage Storage 
+AWS S3 
+Dell ECS 
+1.9.2 1.9.2 
+Introduction 
+Tables Tables 
+Branching and Tagging 
+Configuration 
+Evolution 
+Maintenance 
+Metrics Reporting 
+Partitioning 
+Performance 
+Reliability 
+Schemas 
+Views Views 
+Configuration 
+Spark Spark 
+Getting Started 
+Configuration 
+DDL 
+Procedures 
+Queries 
+Structured Streaming 
+Writes 
+Flink Flink 
+Flink Getting Started 
+Flink Connector 
+Flink DDL 
+Flink Queries 
+Flink Writes 
+Flink Actions 
+Flink Configuration 
+Hive 
+Trino 
+Daft 
+Estuary 
+RisingWave 
+ClickHouse 
+Presto 
+Dremio 
+Starrocks 
+Amoro 
+Amazon Athena 
+Amazon EMR 
+Amazon Data Firehose 
+Amazon Redshift 
+Google BigQuery 
+Snowflake 
+Impala 
+Doris 
+Druid 
+Kafka Connect 
+Integrations Integrations 
+AWS 
+Dell 
+JDBC 
+Nessie 
+API API 
+Java Quickstart 
+Java API 
+Java Custom Catalog 
+Javadoc 
+PyIceberg 
+IcebergRust 
+IcebergGo 
+1.9.1 1.9.1 
+Introduction 
+Tables Tables 
+Branching and Tagging 
+Configuration 
+Evolution 
+Maintenance 
+Metrics Reporting 
+Partitioning 
+Performance 
+Reliability 
+Schemas 
+Views Views 
+Configuration 
+Spark Spark 
+Getting Started 
+Configuration 
+DDL 
+Procedures 
+Queries 
+Structured Streaming 
+Writes 
+Flink Flink 
+Flink Getting Started 
+Flink Connector 
+Flink DDL 
+Flink Queries 
+Flink Writes 
+Flink Actions 
+Flink Configuration 
+Hive 
+Trino 
+Daft 
+Estuary 
+RisingWave 
+ClickHouse 
+Presto 
+Dremio 
+Starrocks 
+Amoro 
+Amazon Athena 
+Amazon EMR 
+Amazon Data Firehose 
+Amazon Redshift 
+Google BigQuery 
+Snowflake 
+Impala 
+Doris 
+Druid 
+Kafka Connect 
+Integrations Integrations 
+AWS 
+Dell 
+JDBC 
+Nessie 
+API API 
+Java Quickstart 
+Java API 
+Java Custom Catalog 
+Javadoc 
+PyIceberg 
+IcebergRust 
+IcebergGo 
+1.9.0 1.9.0 
+Introduction 
+Tables Tables 
+Branching and Tagging 
+Configuration 
+Evolution 
+Maintenance 
+Metrics Reporting 
+Partitioning 
+Performance 
+Reliability 
+Schemas 
+Views Views 
+Configuration 
+Spark Spark 
+Getting Started 
+Configuration 
+DDL 
+Procedures 
+Queries 
+Structured Streaming 
+Writes 
+Flink Flink 
+Flink Getting Started 
+Flink Connector 
+Flink DDL 
+Flink Queries 
+Flink Writes 
+Flink Actions 
+Flink Configuration 
+Hive 
+Trino 
+Daft 
+Estuary 
+RisingWave 
+ClickHouse 
+Presto 
+Dremio 
+Starrocks 
+Amoro 
+Amazon Athena 
+Amazon EMR 
+Amazon Data Firehose 
+Amazon Redshift 
+Google BigQuery 
+Snowflake 
+Impala 
+Doris 
+Druid 
+Kafka Connect 
+Integrations Integrations 
+AWS 
+Dell 
+JDBC 
+Nessie 
+API API 
+Java Quickstart 
+Java API 
+Java Custom Catalog 
+Javadoc 
+PyIceberg 
+IcebergRust 
+IcebergGo 
+1.8.1 1.8.1 
+Introduction 
+Tables Tables 
+Branching and Tagging 
+Configuration 
+Evolution 
+Maintenance 
+Metrics Reporting 
+Partitioning 
+Performance 
+Reliability 
+Schemas 
+Views Views 
+Configuration 
+Spark Spark 
+Getting Started 
+Configuration 
+DDL 
+Procedures 
+Queries 
+Structured Streaming 
+Writes 
+Flink Flink 
+Flink Getting Started 
+Flink Connector 
+Flink DDL 
+Flink Queries 
+Flink Writes 
+Flink Actions 
+Flink Configuration 
+Hive 
+Trino 
+Daft 
+RisingWave 
+ClickHouse 
+Presto 
+Dremio 
+Starrocks 
+Amazon Athena 
+Amazon EMR 
+Amazon Data Firehose 
+Amazon Redshift 
+Google BigQuery 
+Snowflake 
+Impala 
+Doris 
+Druid 
+Kafka Connect 
+Integrations Integrations 
+AWS 
+Dell 
+JDBC 
+Nessie 
+API API 
+Java Quickstart 
+Java API 
+Java Custom Catalog 
+Javadoc 
+PyIceberg 
+IcebergRust 
+IcebergGo 
+1.8.0 1.8.0 
+Introduction 
+Tables Tables 
+Branching and Tagging 
+Configuration 
+Evolution 
+Maintenance 
+Metrics Reporting 
+Partitioning 
+Performance 
+Reliability 
+Schemas 
+Views Views 
+Configuration 
+Spark Spark 
+Getting Started 
+Configuration 
+DDL 
+Procedures 
+Queries 
+Structured Streaming 
+Writes 
+Flink Flink 
+Flink Getting Started 
+Flink Connector 
+Flink DDL 
+Flink Queries 
+Flink Writes 
+Flink Actions 
+Flink Configuration 
+Hive 
+Trino 
+Daft 
+RisingWave 
+ClickHouse 
+Presto 
+Dremio 
+Starrocks 
+Amazon Athena 
+Amazon EMR 
+Amazon Data Firehose 
+Amazon Redshift 
+Google BigQuery 
+Snowflake 
+Impala 
+Doris 
+Druid 
+Kafka Connect 
+Integrations Integrations 
+AWS 
+Dell 
+JDBC 
+Nessie 
+API API 
+Java Quickstart 
+Java API 
+Java Custom Catalog 
+Javadoc 
+PyIceberg 
+IcebergRust 
+IcebergGo 
+1.7.2 1.7.2 
+Introduction 
+Tables Tables 
+Branching and Tagging 
+Configuration 
+Evolution 
+Maintenance 
+Metrics Reporting 
+Partitioning 
+Performance 
+Reliability 
+Schemas 
+Views Views 
+Configuration 
+Spark Spark 
+Getting Started 
+Configuration 
+DDL 
+Procedures 
+Queries 
+Structured Streaming 
+Writes 
+Flink Flink 
+Flink Getting Started 
+Flink Connector 
+Flink DDL 
+Flink Queries 
+Flink Writes 
+Flink Actions 
+Flink Configuration 
+Hive 
+Trino 
+Daft 
+ClickHouse 
+Presto 
+Dremio 
+Starrocks 
+Amazon Athena 
+Amazon EMR 
+Amazon Data Firehose 
+Amazon Redshift 
+Google BigQuery 
+Snowflake 
+Impala 
+Doris 
+Druid 
+Kafka Connect 
+Integrations Integrations 
+AWS 
+Dell 
+JDBC 
+Nessie 
+API API 
+Java Quickstart 
+Java API 
+Java Custom Catalog 
+Javadoc 
+PyIceberg 
+IcebergRust 
+1.7.1 1.7.1 
+Introduction 
+Tables Tables 
+Branching and Tagging 
+Configuration 
+Evolution 
+Maintenance 
+Metrics Reporting 
+Partitioning 
+Performance 
+Reliability 
+Schemas 
+Views Views 
+Configuration 
+Spark Spark 
+Getting Started 
+Configuration 
+DDL 
+Procedures 
+Queries 
+Structured Streaming 
+Writes 
+Flink Flink 
+Flink Getting Started 
+Flink Connector 
+Flink DDL 
+Flink Queries 
+Flink Writes 
+Flink Actions 
+Flink Configuration 
+Hive 
+Trino 
+Daft 
+ClickHouse 
+Presto 
+Dremio 
+Starrocks 
+Amazon Athena 
+Amazon EMR 
+Amazon Data Firehose 
+Amazon Redshift 
+Google BigQuery 
+Snowflake 
+Impala 
+Doris 
+Druid 
+Kafka Connect 
+Integrations Integrations 
+AWS 
+Dell 
+JDBC 
+Nessie 
+API API 
+Java Quickstart 
+Java API 
+Java Custom Catalog 
+Javadoc 
+PyIceberg 
+IcebergRust 
+1.7.0 1.7.0 
+Introduction 
+Tables Tables 
+Branching and Tagging 
+Configuration 
+Evolution 
+Maintenance 
+Metrics Reporting 
+Partitioning 
+Performance 
+Reliability 
+Schemas 
+Views Views 
+Configuration 
+Spark Spark 
+Getting Started 
+Configuration 
+DDL 
+Procedures 
+Queries 
+Structured Streaming 
+Writes 
+Flink Flink 
+Flink Getting Started 
+Flink Connector 
+Flink DDL 
+Flink Queries 
+Flink Writes 
+Flink Actions 
+Flink Configuration 
+Hive 
+Trino 
+Daft 
+ClickHouse 
+Presto 
+Dremio 
+Starrocks 
+Amazon Athena 
+Amazon EMR 
+Amazon Data Firehose 
+Amazon Redshift 
+Google BigQuery 
+Snowflake 
+Impala 
+Doris 
+Druid 
+Kafka Connect 
+Integrations Integrations 
+AWS 
+Dell 
+JDBC 
+Nessie 
+API API 
+Java Quickstart 
+Java API 
+Java Custom Catalog 
+Javadoc 
+PyIceberg 
+IcebergRust 
+1.6.1 1.6.1 
+Introduction 
+Tables Tables 
+Branching and Tagging 
+Configuration 
+Evolution 
+Maintenance 
+Metrics Reporting 
+Partitioning 
+Performance 
+Reliability 
+Schemas 
+Views Views 
+Configuration 
+Spark Spark 
+Getting Started 
+Configuration 
+DDL 
+Procedures 
+Queries 
+Structured Streaming 
+Writes 
+Flink Flink 
+Flink Getting Started 
+Flink Connector 
+Flink DDL 
+Flink Queries 
+Flink Writes 
+Flink Actions 
+Flink Configuration 
+Hive 
+Trino 
+Daft 
+Clickhouse 
+Presto 
+Dremio 
+Starrocks 
+Amazon Athena 
+Amazon EMR 
+Google BigQuery 
+Snowflake 
+Impala 
+Doris 
+Integrations Integrations 
+AWS 
+Dell 
+JDBC 
+Nessie 
+API API 
+Java Quickstart 
+Java API 
+Java Custom Catalog 
+Javadoc 
+PyIceberg 
+IcebergRust 
+1.6.0 1.6.0 
+Introduction 
+Tables Tables 
+Branching and Tagging 
+Configuration 
+Evolution 
+Maintenance 
+Metrics Reporting 
+Partitioning 
+Performance 
+Reliability 
+Schemas 
+Views Views 
+Configuration 
+Spark Spark 
+Getting Started 
+Configuration 
+DDL 
+Procedures 
+Queries 
+Structured Streaming 
+Writes 
+Flink Flink 
+Flink Getting Started 
+Flink Connector 
+Flink DDL 
+Flink Queries 
+Flink Writes 
+Flink Actions 
+Flink Configuration 
+Hive 
+Trino 
+Daft 
+Clickhouse 
+Presto 
+Dremio 
+Starrocks 
+Amazon Athena 
+Amazon EMR 
+Google BigQuery 
+Snowflake 
+Impala 
+Doris 
+Integrations Integrations 
+AWS 
+Dell 
+JDBC 
+Nessie 
+API API 
+Java Quickstart 
+Java API 
+Java Custom Catalog 
+Javadoc 
+PyIceberg 
+IcebergRust 
+1.5.2 1.5.2 
+Introduction 
+Tables Tables 
+Branching and Tagging 
+Configuration 
+Evolution 
+Maintenance 
+Partitioning 
+Performance 
+Reliability 
+Schemas 
+Views Views 
+Configuration 
+Spark Spark 
+Getting Started 
+Configuration 
+DDL 
+Procedures 
+Queries 
+Structured Streaming 
+Writes 
+Flink Flink 
+Flink Getting Started 
+Flink Connector 
+Flink DDL 
+Flink Queries 
+Flink Writes 
+Flink Actions 
+Flink Configuration 
+Hive 
+Trino 
+Clickhouse 
+Presto 
+Dremio 
+Starrocks 
+Amazon Athena 
+Amazon EMR 
+Snowflake 
+Impala 
+Doris 
+Integrations Integrations 
+AWS 
+Dell 
+JDBC 
+Nessie 
+API API 
+Java Quickstart 
+Java API 
+Java Custom Catalog 
+Javadoc 
+PyIceberg 
+IcebergRust 
+1.5.1 1.5.1 
+Introduction 
+Tables Tables 
+Branching and Tagging 
+Configuration 
+Evolution 
+Maintenance 
+Partitioning 
+Performance 
+Reliability 
+Schemas 
+Views Views 
+Configuration 
+Spark Spark 
+Getting Started 
+Configuration 
+DDL 
+Procedures 
+Queries 
+Structured Streaming 
+Writes 
+Flink Flink 
+Flink Getting Started 
+Flink Connector 
+Flink DDL 
+Flink Queries 
+Flink Writes 
+Flink Actions 
+Flink Configuration 
+Hive 
+Trino 
+Clickhouse 
+Presto 
+Dremio 
+Starrocks 
+Amazon Athena 
+Amazon EMR 
+Snowflake 
+Impala 
+Doris 
+Integrations Integrations 
+AWS 
+Dell 
+JDBC 
+Nessie 
+API API 
+Java Quickstart 
+Java API 
+Java Custom Catalog 
+Javadoc 
+PyIceberg 
+IcebergRust 
+1.5.0 1.5.0 
+Introduction 
+Tables Tables 
+Branching and Tagging 
+Configuration 
+Evolution 
+Maintenance 
+Partitioning 
+Performance 
+Reliability 
+Schemas 
+Views Views 
+Configuration 
+Spark Spark 
+Getting Started 
+Configuration 
+DDL 
+Procedures 
+Queries 
+Structured Streaming 
+Writes 
+Flink Flink 
+Flink Getting Started 
+Flink Connector 
+Flink DDL 
+Flink Queries 
+Flink Writes 
+Flink Actions 
+Flink Configuration 
+Hive 
+Trino 
+Clickhouse 
+Presto 
+Dremio 
+Starrocks 
+Amazon Athena 
+Amazon EMR 
+Snowflake 
+Impala 
+Doris 
+Integrations Integrations 
+AWS 
+Dell 
+JDBC 
+Nessie 
+API API 
+Java Quickstart 
+Java API 
+Java Custom Catalog 
+Javadoc 
+PyIceberg 
+IcebergRust 
+1.4.3 1.4.3 
+Introduction 
+Tables Tables 
+Branching and Tagging 
+Configuration 
+Evolution 
+Maintenance 
+Metrics Reporting 
+Partitioning 
+Performance 
+Reliability 
+Schemas 
+Spark Spark 
+Getting Started 
+Configuration 
+DDL 
+Procedures 
+Queries 
+Structured Streaming 
+Writes 
+Flink Flink 
+Flink Getting Started 
+Flink Connector 
+Flink DDL 
+Flink Queries 
+Flink Writes 
+Flink Actions 
+Flink Configuration 
+Hive 
+Trino 
+Clickhouse 
+Presto 
+Dremio 
+Starrocks 
+Amazon Athena 
+Amazon EMR 
+Impala 
+Doris 
+Integrations Integrations 
+AWS 
+Dell 
+JDBC 
+Nessie 
+API API 
+Java Quickstart 
+Java API 
+Java Custom Catalog 
+Migration Migration 
+Overview 
+Hive Migration 
+Delta Lake Migration 
+Javadoc 
+PyIceberg 
+1.4.2 1.4.2 
+Introduction 
+Tables Tables 
+Branching and Tagging 
+Configuration 
+Evolution 
+Maintenance 
+Metrics Reporting 
+Partitioning 
+Performance 
+Reliability 
+Schemas 
+Spark Spark 
+Getting Started 
+Configuration 
+DDL 
+Procedures 
+Queries 
+Structured Streaming 
+Writes 
+Flink Flink 
+Flink Getting Started 
+Flink Connector 
+Flink DDL 
+Flink Queries 
+Flink Writes 
+Flink Actions 
+Flink Configuration 
+Hive 
+Trino 
+Clickhouse 
+Presto 
+Dremio 
+Starrocks 
+Amazon Athena 
+Amazon EMR 
+Impala 
+Doris 
+Integrations Integrations 
+AWS 
+Dell 
+JDBC 
+Nessie 
+API API 
+Java Quickstart 
+Java API 
+Java Custom Catalog 
+Migration Migration 
+Overview 
+Hive Migration 
+Delta Lake Migration 
+Javadoc 
+PyIceberg 
+1.4.1 1.4.1 
+Introduction 
+Tables Tables 
+Branching and Tagging 
+Configuration 
+Evolution 
+Maintenance 
+Metrics Reporting 
+Partitioning 
+Performance 
+Reliability 
+Schemas 
+Spark Spark 
+Getting Started 
+Configuration 
+DDL 
+Procedures 
+Queries 
+Structured Streaming 
+Writes 
+Flink Flink 
+Flink Getting Started 
+Flink Connector 
+Flink DDL 
+Flink Queries 
+Flink Writes 
+Flink Actions 
+Flink Configuration 
+Hive 
+Trino 
+Clickhouse 
+Presto 
+Dremio 
+Starrocks 
+Amazon Athena 
+Amazon EMR 
+Impala 
+Doris 
+Integrations Integrations 
+AWS 
+Dell 
+JDBC 
+Nessie 
+API API 
+Java Quickstart 
+Java API 
+Java Custom Catalog 
+Migration Migration 
+Overview 
+Hive Migration 
+Delta Lake Migration 
+Javadoc 
+PyIceberg 
+1.4.0 1.4.0 
+Introduction 
+Tables Tables 
+Branching and Tagging 
+Configuration 
+Evolution 
+Maintenance 
+Metrics Reporting 
+Partitioning 
+Performance 
+Reliability 
+Schemas 
+Spark Spark 
+Getting Started 
+Configuration 
+DDL 
+Procedures 
+Queries 
+Structured Streaming 
+Writes 
+Flink Flink 
+Flink Getting Started 
+Flink Connector 
+Flink DDL 
+Flink Queries 
+Flink Writes 
+Flink Actions 
+Flink Configuration 
+Hive 
+Trino 
+Clickhouse 
+Presto 
+Dremio 
+Starrocks 
+Amazon Athena 
+Amazon EMR 
+Impala 
+Doris 
+Integrations Integrations 
+AWS 
+Dell 
+JDBC 
+Nessie 
+API API 
+Java Quickstart 
+Java API 
+Java Custom Catalog 
+Migration Migration 
+Overview 
+Hive Migration 
+Delta Lake Migration 
+Javadoc 
+PyIceberg 
+archive 
+Other Implementations Other Implementations 
+Python 
+Rust 
+Go 
+C++ 
+Third-party Third-party 
+Catalogs Catalogs 
+Apache Gravitino 
+Apache Polaris 
+Boring Catalog 
+DataHub 
+Google BigLake metastore 
+Lakekeeper 
+SeaweedFS 
+Integrations Integrations 
+Amazon Athena 
+Amazon Data Firehose 
+Amazon EMR 
+Amazon Redshift 
+Apache Amoro 
+Apache Doris 
+Apache Druid 
+Apache Fluss 
+BladePipe 
+ClickHouse 
+Daft 
+Databend 
+Dremio 
+DuckDB 
+Estuary 
+Firebolt 
+Fivetran 
+Google BigQuery 
+Impala 
+Memiiso Debezium 
+Microsoft OneLake 
+Nimtable 
+OLake 
+Presto 
+Redpanda 
+RisingWave 
+Ryft 
+Sail 
+Snowflake 
+Stackable 
+Starburst 
+Starrocks 
+Tinybird 
+Trino 
+Releases Releases Table of contents 
+Downloads 
+Gradle 
+Maven 
+1.12.0 release 
+1.11.0 release 
+Past releases 
+1.10.2 release 
+1.10.1 release 
+1.10.0 release 
+1.9.2 release 
+1.9.1 release 
+1.9.0 release 
+1.8.1 release 
+1.8.0 release 
+1.7.2 release 
+1.7.1 release 
+1.7.0 release 
+1.6.1 release 
+1.6.0 release 
+1.5.2 release 
+1.5.1 release 
+1.5.0 release 
+1.4.3 Release 
+1.4.2 Release 
+1.4.1 Release 
+1.4.0 release 
+1.3.1 release 
+1.3.0 release 
+1.2.1 release 
+1.2.0 release 
+1.1.0 release 
+1.0.0 release 
+0.14.1 release 
+Notable bug fixes 
+0.14.0 release 
+Highlights 
+High-level features 
+Performance improvements 
+Notable bug fixes 
+Dependency changes 
+0.13.2 
+0.13.1 
+0.13.0 
+0.12.1 
+0.12.0 
+0.11.1 
+0.11.0 
+0.10.0 
+0.9.1 
+0.9.0 
+0.8.0 
+0.7.0 
+Project Project 
+Contributing 
+Multi-engine support 
+Developer snapshot testing 
+Benchmarks 
+Security 
+How to release 
+ASF ASF 
+Sponsorship 
+Events 
+Privacy 
+License 
+Security 
+Sponsors 
+Community Community 
+Community 
+Talks 
+Vendors 
+Blog 
+Specification Specification 
+Terms 
+REST Catalog Spec 
+Table Spec 
+View spec 
+Puffin spec 
+AES GCM Stream spec 
+UDF spec 
+Mumbling spec 
+Expressions spec 
+Implementation status Table of contents 
+Downloads 
+Gradle 
+Maven 
+1.12.0 release 
+1.11.0 release 
+Past releases 
+1.10.2 release 
+1.10.1 release 
+1.10.0 release 
+1.9.2 release 
+1.9.1 release 
+1.9.0 release 
+1.8.1 release 
+1.8.0 release 
+1.7.2 release 
+1.7.1 release 
+1.7.0 release 
+1.6.1 release 
+1.6.0 release 
+1.5.2 release 
+1.5.1 release 
+1.5.0 release 
+1.4.3 Release 
+1.4.2 Release 
+1.4.1 Release 
+1.4.0 release 
+1.3.1 release 
+1.3.0 release 
+1.2.1 release 
+1.2.0 release 
+1.1.0 release 
+1.0.0 release 
+0.14.1 release 
+Notable bug fixes 
+0.14.0 release 
+Highlights 
+High-level features 
+Performance improvements 
+Notable bug fixes 
+Dependency changes 
+0.13.2 
+0.13.1 
+0.13.0 
+0.12.1 
+0.12.0 
+0.11.1 
+0.11.0 
+0.10.0 
+0.9.1 
+0.9.0 
+0.8.0 
+0.7.0 
+Releases 
+Downloads 🔗 
+The latest version of Iceberg is 1.12.0 . 
+1.12.0 source tar.gz -- signature -- sha512 
+1.12.0 Spark 4.1_with Scala 2.13 runtime Jar 
+1.12.0 Spark 4.0_with Scala 2.13 runtime Jar 
+1.12.0 Spark 3.5_with Scala 2.12 runtime Jar 
+1.12.0 Spark 3.5_with Scala 2.13 runtime Jar 
+1.12.0 Flink 2.3 runtime Jar 
+1.12.0 Flink 2.2 runtime Jar 
+1.12.0 Flink 2.1 runtime Jar 
+1.12.0 Flink 1.20 runtime Jar 
+1.12.0 aws-bundle Jar 
+1.12.0 gcp-bundle Jar 
+1.12.0 azure-bundle Jar 
+To use Iceberg in Spark or Flink, download the runtime JAR for your engine version and add it to the jars folder of your installation. 
+Gradle 🔗 
+To add a dependency on Iceberg in Gradle, add the following to build.gradle : 
+dependencies { implementation 'org.apache.iceberg:iceberg-core:1.12.0' } 
+You may also want to include iceberg-parquet for Parquet file support. 
+Maven 🔗 
+To add a dependency on Iceberg in Maven, add the following to your pom.xml : 
+<dependencies> ... <dependency> <groupId>org.apache.iceberg</groupId> <artifactId>iceberg-core</artifactId> <version>1.12.0</version> </dependency> ... </dependencies> 
+1.12.0 release 🔗 
+Apache Iceberg 1.12.0 was released on September 29, 2026. 
+The 1.12.0 release contains bug fixes and new features. For full release notes visit Github 
+Deprecation / End of Support 
+Spark: Remove Spark 3.4 support ( #14122 ) 
+Spark: Remove deprecated SparkFilters ( #17702 ) 
+Spark 4.0, 4.1: Remove deprecated SparkTableUtil methods ( #17703 ) 
+Spark: Remove deprecated SparkReadConf , SparkWriteConf , and SparkSchemaUtil methods ( #17626 ) 
+Flink: Remove support for Flink 2.0 
+Flink: Remove deprecated RewriteDataFiles.Builder.filter(Expression) ( #17624 ) 
+Core: Remove deprecated REST namespace encoding helpers ( #17697 ) 
+Core: Remove deprecated HadoopFileIO(SerializableSupplier) constructor ( #17704 ) 
+Core, ORC: Remove deprecated partition stats read functionality ( #14998 ) 
+Remove deprecated DataReader in favor of PlannedDataReader ( #17699 ) 
+Remove deprecated methods and fields scheduled for 1.12.0 removal ( #17700 ) 
+Data: Remove deprecated GenericAppenderFactory and BaseFileWriterFactory ( #17696 ) 
+AWS: Remove deprecated S3 signer classes and properties ( #17627 ) 
+Kafka Connect: Remove deprecated TableReference and IcebergWriterResult members ( #17623 ) 
+BigQuery: Remove deprecated catalog property constants ( #17625 ) 
+Core, Data, Spark, Flink: Remove position delete files with row data ( #17706 ) 
+Behavior change 
+GeometryType and GeographyType toString() now always include the resolved CRS, and for geography the edge algorithm: geometry prints as geometry(OGC:CRS84) and geography as geography(OGC:CRS84, spherical) ( #16765 ).
+Previously, default instances printed the bare type name ( geometry / geography ). 
+The default AWS SDK HTTP client migrated to Apache HttpClient 5. Users who provide AWS dependencies separately must switch from software.amazon.awssdk:apache-client to software.amazon.awssdk:apache5-client ( #18195 ). 
+The REST client now retries POST requests carrying an Idempotency-Key on retriable errors (408, 500, 502, 503, 504) ( #17947 ). 
+Spec 
+Add spec for expressions ( #16652 ) 
+Add finer grained read restrictions as part of loadTable ( #13879 ) 
+Add relative paths to the v4 spec ( #15630 ) 
+Add content stats to the spec ( #14234 ) 
+Add optional specific-name to UDF definition model ( #16727 ) 
+Clarify variant type classification and primitive type scoping ( #16836 ) 
+Clarify decimal type serialization ( #16798 ) 
+Clarify content file uniqueness within a snapshot ( #17198 ) 
+API 
+Single-value binary serialization for geometry and geography ( #16607 ) 
+Define RepairTable action interface ( #17399 ) 
+Make variant classes serializable ( #17260 ) 
+Harden variant binary parsing against malformed input ( #16568 ) 
+Add CatalogObjectIdentifier ( #16160 ) 
+Implement project() for partition statistics scan API ( #16569 ) 
+Implement filter() for partition statistics scan API ( #16582 ) 
+Guard against null in IN/NOT_IN predicates to avoid NPE ( #17014 ) 
+Core 
+Read and write geometry and geography values in Avro ( #17119 ) 
+Add a read-only Mumbling bitmap implementation ( #16747 ) 
+Add v4 manifest reader ( #16958 ) 
+Resolve relative paths in V4 manifest reader ( #17434 ) 
+Add V4 location relativization utilities ( #16174 ) 
+Add v4 TrackedFileAdapters to bridge Data and Delete Files ( #16100 ) 
+Add format_version field to TrackedFile ( #16952 ) 
+Extend V4 DeletionVector with key_metadata field ( #17438 ) 
+Expose co-located deletion vector through DataFile ( #17928 ) 
+Allow writing Parquet and Avro manifests in the V4 layout ( #15634 ) 
+Add ManifestFile adapter for v4 tracked files ( #17932 ) 
+Add EagerInputFile and EagerInputStream to buffer files below a size threshold ( #16729 ) 
+Cache manifest list files in manifest content cache ( #16762 ) 
+Parquet per column dictionary encoding ( #16713 ) 
+Disallow setting main branch ref to a tag ( #16753 ) 
+Encrypting IO as a DelegateFileIO ( #14876 ) 
+Preserve DV encryption metadata in merges ( #15911 ) 
+Commit manifest list encryption keys with the snapshot that uses them ( #17984 ) 
+Add a scan-based action to remove dangling delete files ( #15727 ) 
+Fix thread conflict when deleting duplicate files in manifest ( #16686 ) 
+Fix row lineage last updated sequence inheritance ( #17039 ) 
+Fix time-travel snapshot lookup to not assume snapshot-log order ( #17360 ) 
+Fix pruning for negated all_manifests filters ( #17346 ) 
+Fix incorrect delete manifest pruning in entries metadata tables ( #17440 ) 
+Fix delete file references for DVs in the same Puffin file ( #17497 ) 
+Fix commit validation when a data file has multiple DVs across snapshots ( #17764 ) 
+Read delete manifests correctly during snapshot expiration ( #17763 ) 
+Fail scans when position deletes or DVs don't match the data file partition ( #16957 ) 
+Fix Z-order byte encoding for floating-point values ( #17071 ) 
+Preserve manifest content pruning when ignoring residuals ( #17443 ) 
+Fix SerializableTable.sortOrders() throwing on historical sort orders with dropped fields ( #16521 ) 
+Fix RESTMetricsReporter.report() blocking the calling thread ( #16695 ) 
+Read catalog labels on the load table and view responses ( #18045 ) 
+Expose catalog labels on the loaded table via SupportsLabels ( #18046 ) 
+Add max-file-group-input-files to valid rewrite options ( #17544 ) 
+Arrow 
+Fix dict-encoded VARCHAR/VARBINARY read for direct ByteBuffers ( #17055 ) 
+Fix direct memory leak in row lineage vectorized readers ( #17296 ) 
+Fix ClassCastException in the vectorized reader on int-to-long promotion ( #16343 ) 
+Fix vectorized reads of decimal columns with default values ( #16501 ) 
+Fix truncation of decimals with precision larger than 18 ( #16627 ) 
+Fix vectorized read of all-null DELTA-encoded Parquet pages ( #17017 ) 
+Fix int96 timestamp offset in the Arrow dictionary decode ( #16435 ) 
+Parquet 
+Type uniformity for variant shredding ( #17424 ) 
+Read and write geometry and geography WKB values ( #16982 ) 
+Honor column metrics truncate length for variant shredded bounds ( #17342 ) 
+Fix variant STRING metrics bounds to use UTF-8 byte order ( #17397 ) 
+Fix variant BINARY upper bound to truncate up ( #16880 ) 
+Fix variant metrics crash when value column has no stats ( #16585 ) 
+Fix variant shredding of large decimals (precision > 18) ( #17002 ) 
+Add adaptive bloom filter sizing (PARQUET-2254) ( #16363 ) 
+Add opt-in uncompressed row group size tracking ( #16327 ) 
+Fix timestamp_ns and timestamptz_ns predicate pushdown ( #16619 ) 
+Fix nested initial default applied when ancestor struct is null ( #17320 ) 
+Fix incorrect pruning for nested fields in optional structs ( #18069 ) 
+Fix notStartsWith skipping row groups with null values ( #17656 ) 
+Fix null counting for Parquet files without null_count stats ( #17557 ) 
+Fix initial-default rows dropped when filtering on the defaulted column ( #16692 ) 
+ORC 
+Fix lower/upper bounds for timestamp_ns columns in OrcMetrics ( #16922 ) 
+Fix garbled exception message for invalid timestamp unit attribute ( #17098 ) 
+Fix timestamp nano predicate pushdown ( #17750 ) 
+Fix filter pushdown on tables with a variant column ( #17998 ) 
+Spark 
+Spark 4.0, 4.1: Add vectorized Parquet reads for unshredded variant columns ( #16292 ) 
+Spark 4.1: Add Hilbert-curve clustering strategy for rewrite_data_files ( #16827 ) 
+Spark 4.1: Read and write geometry and geography values in Parquet ( #17073 ) 
+Spark 4.1: Map geometry and geography Spark types ( #16851 ) 
+Add rest-catalog-purge property to delegate DROP TABLE PURGE to REST catalogs ( #15614 ) 
+Add session-level split size override ( #16154 ) 
+Add ignore_missing_files to migrate procedure ( #16643 ) 
+Add ignore_missing_files to snapshot procedure ( #16710 ) 
+Return session catalog views ( #16845 ) 
+Spark 4.1: Implement listTableSummaries ( #16891 ) 
+Spark 3.5, 4.0, 4.1: Add streaming merge-append write config ( #17347 , #17403 ) 
+Spark 3.5, 4.0, 4.1: Add rewrite option to enable executor cache for delete files ( #17868 ) 
+Fix Z-order NPE on null booleans and case-insensitive column resolution ( #17669 ) 
+Fix time-travel filter on renamed columns in distributed planning mode ( #16523 ) 
+Fix first row ID carry-over for manifest rewrite ( #16699 ) 
+Spark 3.5, 4.0: Add sort_by parameter to the rewrite_manifests procedure ( #18065 ) 
+Encrypt manifests written by rewrite_manifests ( #17987 ) 
+Flink 
+Add Flink 2.2 and 2.3 support ( #17849 ) 
+Add a Flink maintenance task to convert equality deletes into deletion vectors ( ConvertEqualityDeletes ) ( #16831 , #16844 , #16858 , #16874 , #16889 , #16948 ) 
+Integrate ConvertEqualityDeletes with IcebergSink ( #17142 ) 
+Fix deleted rows reappearing after a failed equality-delete conversion cycle ( #17630 ) 
+Resolve unpartitioned equality deletes across all partitions ( #17018 ) 
+Flink 2.1, 2.2, 2.3: Support variant for Avro readers and writers ( #17737 ) 
+Flink 2.1, 2.2, 2.3: Support writing shredded variant ( #15596 ) 
+Flink 2.1, 2.2, 2.3: Add SQL variant Avro dynamic record generator ( #16450 ) 
+Support reading Iceberg views in SQL ( #17859 ) 
+Support CREATE VIEW, DROP VIEW and ALTER VIEW RENAME in FlinkCatalog ( #17873 ) 
+Allow setting slot sharing group for fine-grained resource management in DynamicSink ( #16065 ) 
+Fix ALTER TABLE to add column to specific position ( #16419 ) 
+Handle table comments in FlinkSQL ( #16423 ) 
+Fix duplicate commits in DynamicCommitter when Flink jobId changes on restart ( #16011 ) 
+Honor schema identifier fields in dynamic-sink record routing ( #16243 ) 
+Implement wakeup method to fix thread/memory leak ( #16545 ) 
+Fix TableMaintenance operator uid instability that breaks savepoint restore ( #17210 ) 
+Fix RANGE distribution ignoring user-specified equality fields ( #17276 ) 
+Fix file offset mismatch in DataIterator.seek() when files are skipped ( #16929 ) 
+Fix microsecond truncation for timestamps in arrays and maps ( #18001 ) 
+Preserve RowKind in DynamicIcebergSink's DataConverter ( #18101 ) 
+Fix timestamp-micros conversion in AvroToRowDataConverters ( #17194 ) 
+Fix read split table properties being ignored ( #17445 ) 
+Fix NPE in ExpireSnapshots config when retain-last is unset ( #17277 ) 
+Hive 
+Fix integer overflow in HMS createTime and lastAccessTime ( #16620 ) 
+Use server-side filter to list Iceberg tables in HiveCatalog ( #17317 ) 
+Kafka Connect 
+Enable Parquet variant shredding for Kafka Connect and generic Record writes ( #17520 ) 
+Only commit offsets when greater than existing offsets ( #17552 ) 
+Surface commit failures instead of silently swallowing them ( #16237 ) 
+Add bounded retry for transient commit exceptions ( #16434 ) 
+Fix invalid decimal type inferred for some BigDecimal values ( #16606 ) 
+Evolve table schema when record schema is updated but value is null ( #16826 ) 
+Fix ConcurrentModificationException in IcebergSinkConfig ( #16438 ) 
+Fix Avro schema conversion for UUID ( #16828 ) 
+Fix idColumns not read correctly from table config ( #17152 ) 
+Track control topic offsets as a high-water mark ( #17933 ) 
+Add metric for partial commit failures ( #16433 ) 
+Fix coordinator committing files from a prior commit in certain rebalance scenarios ( #17713 ) 
+Open API / REST 
+Add VariantType to the REST catalog spec ( #17256 ) 
+Add unregister table endpoint ( #16400 ) 
+Add list and load function endpoints to the OpenAPI spec ( #15180 ) 
+Formalize remote signing configuration ( #16822 ) 
+Update REST spec expressions to match the new expressions spec ( #17138 ) 
+Fix path segment encoding to use RFC 3986 percent-encoding ( #15989 ) 
+Fix schema of data-access object in REST spec ( #16594 ) 
+Add specific-name to UDF definition ( #17364 ) 
+Add a labels field for catalog metadata enrichment ( #15750 ) 
+Vendor integrations 
+AWS: Use assumed-role credentials for REST SigV4 signing ( #16794 ) 
+AWS: Handle duplicate column names in IcebergToGlueConverter comment map ( #16853 ) 
+AWS, Core: Implement RemoteSigningConfig ( #17709 ) 
+Core, AWS, GCP, Dell, Hive: Fix FileIO leaks and standardize close() across catalog implementations ( #16862 ) 
+API, AWS, Azure, GCP: Track read metrics for positioned, vectored, and accelerated reads ( #17236 ) 
+Core, AWS: Fix case-insensitive handling of REST response header field names ( #17979 ) 
+GCP: Reject invalid GCS buffered read ranges ( #17961 ) 
+GCS, S3, ADLS: Handle EOF in input streams ( #16055 ) 
+Dell: Preserve known ECS input file lengths ( #17870 ) 
+Aliyun: Pass known file length through OSSFileIO.newInputFile ( #16870 ) 
+Dependencies 
+Removed Spark 3.4 support 
+Added Flink 2.2 and 2.3 support 
+Removed Flink 2.0 support 
+Align Jackson versions to fix CVE ( #16954 ) 
+Bump Jackson to fix CVE GHSA-r7wm-3cxj-wff9 ( #17336 ) 
+ORC: 1.9.8 -> 1.9.9 
+Jackson: 2.21.3 -> 2.22.2 
+AWS SDK: 2.44.4 -> 2.54.17 
+Azure SDK: 1.3.6 -> 1.3.8 
+Nessie: 0.107.5 -> 0.108.8 
+Netty: 4.2.13.Final -> 4.2.18.Final 
+Guava: 33.6.0-jre -> 33.7.1-jre 
+Caffeine: 2.9.3 -> 3.2.4 
+Calcite: 1.41.0 -> 1.42.0 
+Avro: 1.12.1 -> 1.12.2 
+Bouncycastle: 1.84 -> 1.86 
+Delta: 3.3.2 -> 3.3.3 
+Jetty: 12.1.8 -> 12.1.13 
+LICENSE / NOTICE 
+Clean up shaded-jar LICENSE/NOTICE and add missing third-party notices ( #16543 ) 
+1.11.0 release 🔗 
+Apache Iceberg 1.11.0 was released on May 19, 2026. 
+The 1.11.0 release contains bug fixes and new features. For full release notes visit Github 
+Deprecation / End of Support 
+Spec: Deprecate Position delete files with row data ( #14045 ) 
+Drop support for Java 11 ( #14400 ) 
+Spark 3.4: Deprecate support ( #14099 ) 
+Flink: Remove Flink 1.19 support ( #13714 ) 
+AWS, Core, Data, Spark: Remove deprecations for 1.11.0 ( #14059 ) 
+Spec 
+Introduce SQL UDF specification ( #14117 ) 
+Bring back added-rows in snapshot fields ( #14048 ) 
+Clarify restrictions for geometry types in V3 ( #14250 ) 
+API 
+Add geospatial bounding box types and implement intersects checking ( #12667 ) 
+Introduce foundational types for V4 manifest support ( #15049 ) 
+Introduce classes for content stats ( #13933 ) 
+Support cleanupMode in snapshot expiration ( #14287 ) 
+Detect whether required fields nested within optionals can produce nulls ( #14270 ) 
+required nested fields within optional structs can produce null ( #13804 ) 
+Optimize NOT IN and != predicate evaluation for fields containing a single-value ( #14593 ) 
+Scan API for partition stats ( #14640 ) 
+Support registerView for view catalog ( #14868 ) 
+Support StringLiteral to Fixed and StringLiteral to Binary Conversions ( #14882 ) 
+Add overwrite-aware table registration ( #15525 ) 
+Add FileIO to Scan API ( #15561 ) 
+Handle 404 from /v1/config for missing warehouses ( #16059 ) 
+Core 
+File Format API interfaces ( #12774 ) 
+Add builders for v4 structs ( #16092 ) 
+Add partition to TrackedFile ( #16253 ) 
+Add implementations of v4 TrackedFile interfaces ( #15854 ) 
+Add support for unique table locations via catalog property ( #12892 ) 
+Freshness-aware table loading in REST catalog ( #14398 ) 
+Implement register view for REST catalog ( #14870 ) 
+REST Scan Planning Task Implementation ( #13400 ) 
+Support reading Avro logical timestamp-millis ( #14401 ) 
+Fix data loss in partial variant shredding ( #15087 ) 
+Do not cleanup when CREATE transactions fail with 503 ( #15051 ) 
+Make sequence number conflicts retryable when there are concurrent commits ( #15126 ) 
+Validate v2 deletes against concurrent format upgrade ( #16146 ) 
+Fix row ID assignment for EXISTING entry during a manifest merge ( #16263 ) 
+Support Custom Table/View Operations in RESTCatalog ( #14465 ) 
+Detect and merge duplicate DVs for a data file and merge them before committing ( #15006 ) 
+Add support for encryption.kms-type with aws/azure/gcp ( #15272 ) 
+Load snapshot after it has been committed to prevent accidental cleanup of files ( #15511 ) 
+Fix BinPackRewriteFilePlanner producing incorrect output file count with max-files-to-rewrite ( #15576 ) 
+Fix child AuthSession inheriting parent's expiresAtMillis ( #15999 ) 
+Arrow 
+Fix vectorized reads for Parquet TIMESTAMP_MILLIS types ( #14499 ) 
+Align vectorized reader handling of unsigned Parquet integers with BaseParquetReaders ( #16006 ) 
+Implementation of ArrowFormatModel ( #15258 ) 
+Add vectorized parquet read support for DELTA_LENGTH_BYTE_ARRAY & DELTA_BYTE_ARRAY encodings ( #15362 ) 
+Add vectorized read support for parquet BYTE_STREAM_SPLIT encoding ( #15373 ) 
+Fix for vectorized builder variant handling ( #16087 ) 
+Parquet 
+Expose variantShreddingFunc() in Parquet.DataWriteBuilder ( #14153 ) 
+Treat VARIANT like nested for eq/in in ParquetMetricsRowGroupFilter ( #14279 ) 
+Add vectorized parquet read support for DELTA_LENGTH_BYTE_ARRAY & DELTA_BYTE_ARRAY encodings ( #15362 ) 
+Add vectorized read support for parquet BYTE_STREAM_SPLIT encoding ( #15373 ) 
+Add write.parquet.page-version table property ( #15700 ) 
+Allows Internal Parquet Readers to use Custom Types ( #14040 ) 
+Implementation of ParquetFormatModel ( #15253 ) 
+ORC 
+Add _row_id and _last_updated_sequence_number reader in ORC to support row lineage ( #15776 ) 
+Fix connection leak in OrcIterable ( #16086 ) 
+Implementation of ORCFormatModel ( #15255 ) 
+Spark 
+Support Spark 4.1 ( #14155 ) 
+Add Limit pushdown to Scan ( #14615 ) 
+ORC vectorized reader to use the delete filter ( #14746 ) 
+Enable remote scan planning ( #14963 ) 
+Add branch support to rewrite_data_files procedure ( #14964 ) 
+Spark 4.1: Initial support for MERGE INTO schema evolution ( #14970 ) 
+Add sort_by parameter to rewrite_manifests procedure ( #15467 ) 
+fix delete from branch for canDeleteWhere where it does not resolve to the correct branch ( #15512 ) 
+Spark 4.1: Control merge schema evolution by table property ( #15825 ) 
+Spark 4.1: Add session configs for adaptive split sizing and parallelism ( #16088 ) 
+Disable min/max aggregation push down for string under any mode ( #16320 ) 
+Fix equality deletes non-deterministic schema ordering ( #15514 ) 
+Add Support for PartitionStatistics Files in RewriteTablePath. ( #13956 ) 
+enable stream-results option for remove orphan files ( #14278 ) 
+Support writing shredded variant in Iceberg-Spark ( #14297 ) 
+Add schema conversion support for default values ( #14407 ) 
+expire-snapshots with cleanupLevel=None ( #14695 ) 
+Add location overlap validation for SnapshotTableAction ( #14933 ) 
+Include key metadata in manifest tables (Spark 4.1) ( #15041 ) 
+Don't Use table FileIO for Spark Checkpoints ( #15239 ) 
+Fix distributed planning for CoW operations ( #15246 ) 
+Fix querying equality deletes with schema evolution ( #15268 ) 
+New Async Spark Micro Batch Planner ( #15299 ) 
+Adds a Table Property for Relying on Identifier Fields ( #15372 ) 
+Explicitly disallow migrating bucketed tables ( #15429 ) 
+Fix async microbatch plan bugs ( #15670 ) 
+Support TimestampNTZ in SparkZOrderUDF ( #15778 ) 
+Also disable min/max aggregation push down for binary ( #16328 ) 
+Flink 
+Add support for Flink 2.1 ( #13714 ) 
+Add uid-suffix write option to prevent operator UID hash collisions ( #14063 ) 
+Add _row_id and _last_updated_sequence_number readers ( #14148 ) 
+Ensure DynamicCommitter idempotence in the presence of failures ( #14182 ) 
+DynamicSink support dvs ( #14414 ) 
+Dynamic Sink: Add support for dropping columns ( #14728 ) 
+Dynamic Sink: Add case-insensitive field matching ( #14729 ) 
+TableMaintenance Support Coordinator Lock ( #15151 ) 
+Support Variant to Flink 2.1 ( #15265 ) 
+SQL support for dynamic iceberg sink ( #15279 ) 
+Add Nanosecond Precision Support for Flink-Iceberg Integration ( #15475 ) 
+Allow arbitrary post-commit maintenance tasks via IcebergSink Builder ( #15566 ) 
+Add branch support to RewriteDataFiles maintenance task ( #15672 ) 
+Fix non-deterministic operator UIDs in DynamicIcebergSink ( #15687 ) 
+RewriteDataFile support dynamic filter ( #15865 ) 
+Add UUID type support in Avro and Parquet readers and writers ( #16097 ) 
+Preserve row lineage in RewriteDataFiles ( #14149 ) 
+Support writing DVs in IcebergSink ( #14197 ) 
+Fix commit duplication in DynamicIcebergSink ( #14517 ) 
+Fix writeDataFiles with hardcoded formatVersion ( #14570 ) 
+Dynamic Sink: Fix serialization issues with schemas larger than 2^16 bytes ( #14880 ) 
+Fix equalityFieldColumns always null in IcebergSink ( #14952 ) 
+Dynamic Sink: Fix partition field check in non-immediate update path ( #15190 ) 
+Add the possibility to use Coordinator Lock when using Flink SQL ( #15459 ) 
+Fix HashKeyGenerator SelectorKey cache ignoring writeParallelism and distributionMode ( #15740 ) 
+SQL: Make Dynamic sink options to be configurable in SQL ( #15780 ) 
+Fix forward-writer chaining regression in DynamicIcebergSink ( #16026 ) 
+Refresh table in ListMetadataFiles to prevent incorrect orphan file deletion ( #16324 ) 
+Hive 
+Fix lock selection during table creation to respect table properties ( #14236 ) 
+Metadata integrity check for encrypted tables ( #14685 ) 
+Update view query in HMS when replacing view ( #14831 ) 
+Fix newly added encryption keys getting lost in transactions ( #14427 ) 
+Fix snapshot procedure for tables with Variant columns ( #15964 ) 
+Kafka Connect 
+Use GenericFileWriterFactory instead of GenericAppenderFactory ( #14328 ) 
+Don't check that consumer group is stable for coordinator leader election ( #14395 ) 
+validate offsets for refreshed table state on commit ( #14510 ) 
+validate table uuid on commit ( #14979 ) 
+Fix CVE-2025-55163 in grpc-netty-shaded ( #14985 ) 
+fix table UUID check ( #15011 ) 
+Support VARIANT when record convert ( #15283 ) 
+Fix CVE-2025-67721 in io.airlift:aircompressor by bumping to 2.0.3 ( #15440 ) 
+Fix source offset tracking when SMTs modify the record topic ( #15880 ) 
+Do not fail if no partitions assigned ( #15955 ) 
+Open API 
+Remove runtime Jar from build and deploy ( #16163 ) 
+Vendor integrations 
+AWS: Set retry policy on glue and dynamo clients ( #15094 ) 
+AWS: Add proxy system property and environment variable configuration for HTTP clients ( #15506 ) 
+AWS: Add scheduled refresh for the S3FileIO held storage credentials ( #15678 ) 
+Azure: Don't fetch credential from endpoint if properties contain a valid credential ( #13966 ) 
+Azure: Add support to specify token credential provider ( #14136 ) 
+GCP: Add service account impersonation support for BigQueryMetastoreCatalog ( #14447 ) 
+GCP: Add scheduled refresh for storage credentials held by GCSFileIO ( #15696 ) 
+BigQuery: Add table validity check for BigQueryMetastoreCatalog ( #14113 ) 
+Aliyun: Add RRSA support for OSS authentication ( #14443 ) 
+Dependencies 
+Added Spark 4.1 support 
+Added Flink 2.1 support 
+Parquet: 1.16.0 -> 1.17.1 
+ORC: 1.9.6 -> 1.9.8 
+Hadoop: 3.4.1 -> 3.4.2 
+Jackson: 2.19.1 -> 2.20.0 
+AWS SDK: 2.31.63 -> 2.33.4 
+Nessie: 0.103.6 -> 0.105.3 
+Netty: 4.2.2.Final -> 4.2.5.Final 
+Guava: 33.4.8-jre -> 33.5.0-jre 
+Comet: 0.8.1 -> 0.12.0 
+Past releases 🔗 
+1.10.2 release 🔗 
+Apache Iceberg 1.10.2 was released on May 18, 2026. 
+The 1.10.2 release contains bug fixes and security fixes. For full release notes visit Github 
+Core 
+Fix equality deletes non-deterministic schema ordering ( #15605 ) 
+Load snapshot after commit to prevent accidental file cleanup ( #15650 ) 
+Always merge deletion vectors on commit path ( #15654 ) 
+Do not clean up files when CREATE transactions fail with 503 ( #15662 ) 
+Validate v2 deletes against concurrent format upgrade ( #16161 ) 
+Fix row ID assignment for EXISTING entries during manifest merge ( #16304 ) 
+Flink 
+Fix non-deterministic operator UIDs in DynamicIcebergSink ( #15738 ) 
+Fix LICENSE and NOTICE files ( #16175 , #16130 ) 
+Hive 
+Fix trailing slash issue for database paths in HMS ( #16010 ) 
+Spark 
+Fix LICENSE and NOTICE files ( #16255 , #16162 ) 
+AWS 
+Fix LICENSE and NOTICE files ( #16236 ) 
+Azure 
+Fix LICENSE and NOTICE files ( #16242 , #16260 ) 
+GCP 
+Fix LICENSE and NOTICE files ( #16244 ) 
+Open API 
+Stop publishing the Open API runtime Jar due to license compliance issues ( #16188 ). Users who depended on the shadow JAR must now use the test-fixtures classifier and explicitly add iceberg-core , iceberg-core:tests , jetty-server , jetty-servlet , sqlite-jdbc , and hadoop-common . 
+Build 
+Fix CVE-2025-67721 in io.airlift:aircompressor ( #15829 ) 
+Bump Jackson to 2.21.2 to fix GHSA-72hv-8253-57qq ( #15847 ) 
+Bump Apache Avro from 1.12.0 to 1.12.1 ( #15607 ) 
+1.10.1 release 🔗 
+Apache Iceberg 1.10.1 was released on Dec 22, 2025. 
+The 1.10.1 release contains bug fixes. For full release notes visit Github 
+API 
+API: required nested fields within optional structs can produce null ( #13804 ) 
+API: Detect whether required fields nested within optionals can produce nulls ( #14270 ) 
+Core 
+Prevent dropping a namespace when it contains views ( #14456 ) 
+Fix overflow due to default value on timestamp nanos ( #14359 ) 
+Fix the unpartitioned check in replace partitions ( #14186 ) 
+Fix for respecting custom location providers in SerializableTable and actions ( #14280 ) 
+Fix NAN_VALUE_COUNTS serialization for ContentFile ( #14721 ) 
+Handle unknown type during deletes ( #14356 ) 
+REST: Fix validation of PlanTableScanRequest ( #14561 ) 
+REST: Fix validation of PlanTableScanResponse ( #14562 ) 
+REST: Fix RESTFileScanTaskParser to handle empty delete file references list ( #14568 ) 
+REST: Fix serde of tasks with multiple deletes ( #14573 ) 
+REST: Align PlanTableScanRequest filter with the OpenAPI spec ( #14658 ) 
+REST: Make plan status consistent with the REST spec ( #14643 ) 
+Parquet 
+Fix NameMapping loss in ParquetUtil.footerMetrics ( #14617 ) 
+Add variant type support to ParquetTypeVisitor ( #14588 ) 
+Fix variant type filtering in ParquetMetricsRowGroupFilter ( #14081 ) 
+handle NPE for VariantLogicalType in TypeWithSchemaVisitor ( #14261 ) 
+Fix UUID ClassCastException when reading Parquet files with UUIDs ( #14027 ) 
+Flink 
+Ensure DynamicCommitter idempotence in the presence of failures ( #14182 ) 
+Backport Ensure DynamicCommitter idempotence in the presence of failures ( #14213 ) 
+Prevent recreation of ManifestOutputFileFactory during flushing ( #14358 ) 
+Backport Prevent recreation of ManifestOutputFileFactory during flushing ( #14385 ) 
+Fix cache refreshing in DynamicIcebergSink ( #14406 ) 
+Port fix cache refreshing in DynamicIcebergSink ( #14765 ) 
+Spark 
+3.4: Pass format-version when creating a snapshot ( #14170 ) 
+3.5: Pass format-version when creating a snapshot ( #14169 ) 
+4.0: Pass format-version when creating a snapshot in table migration actions ( #14163 ) 
+Fix Z-order UDF to correctly handle DateType ( #14108 ) 
+Kafka Connect 
+Merge control topic and last persisted offsets ( #14525 ) 
+Vendor integrations 
+AWS: Configure builder for reuse of HTTP connection pool in SDK v2 ( #14161 ) 
+AWS: Fix leaked credentials when contacting multiple catalogs ( #14178 ) 
+AWS: Exclude logging dependencies from the bundle ( #14225 ) 
+1.10.0 release 🔗 
+Apache Iceberg 1.10.0 was released on September 11, 2025. 
+The 1.10.0 release contains bug fixes and new features. For full release notes visit Github 
+Deprecation / End of Support 
+Flink: Remove Flink 1.18 support ( #12527 ) 
+Common: Remove public visibility for deprecated methods in DynConstructors and DynMethods since 1.7.0 ( #13053 ) 
+AWS, Core, Flink, Parquet: Remove deprecations targeted for 1.10.0 ( #12909 ) 
+Behavior change 
+Hive: Throw NoSuchNamespaceException when listing a non-exist namespace ( #13130 ).
+Previously, an empty list was returned. 
+Core: fix spec non-confirming field ids for partition stats files ( #13329 ) 
+Spec 
+Table: Clarify write requirement to prevent orphaned DVs ( #13042 ) 
+Table: Clarify behavior of special geo objects for lower and upper bounds ( #12956 ) 
+Table: Add encryption keys ( #12162 ) 
+Table: Avoid struct field conflicts in default values ( #12841 ) 
+REST: Add row lineage fields ( #13010 ) 
+REST: Add encryption keys ( #12987 ) 
+REST: remove update to enable row lineage as it is always on for V3 table ( #12986 ) 
+REST: mark 503 as non retryable ( #13619 ) 
+API 
+Add table metadata keys for encryption ( #12927 ) 
+Add deleteFile to RowDelta API ( #12861 ) 
+Expose cleanExpiredMetadata in ExpireSnapshots ( #13509 ) 
+Preserve original type for upper/lower bounds in metrics ( #13695 ) 
+Fix timestamp(9) with identity partitioning ( #13746 ) 
+Add expression factory methods for timestamp literals ( #13747 ) 
+Core 
+Fix a race condition in the JDBC catalog initialization with creating system tables ( #13345 ) 
+Properly close resources when REST catalog initialization fails ( #13384 ) 
+Fix spec non-confirming field ids for partition stats files ( #13329 ) 
+Partitions metadata returns incomplete list in case of partition evolution and null partition value ( #12528 ) 
+Support incremental refresh for partition stats  ( #12629 ) 
+Add max number of files rewrite option ( #12824 ) 
+Add table property of column prefix to enable Parquet column statistics ( #12770 ) 
+Ignore partition fields that are dropped from current schema ( #11868 ) 
+Propagate and delete dangling DVs when rewriting data files ( #13245 ) 
+Support DV in partition stats ( #13425 ) 
+Track data files to be removed for orphaned DV cleanup ( #13222 ) 
+Use bulk deletion for cleaning up uncommitted files in BaseTransaction ( #13653 ) 
+Use zero copy wrapper for equalityFieldIds in BaseFile ( #13212 ) 
+Prevent empty Puffin file creation in DV writer ( #13666 ) 
+Fix incorrect selection of incremental cleanup in ExpireSnapshots ( #13614 ) 
+Fix metrics column limit with nested column ( #13039 ) 
+Support timestamp(9) in single value parser ( #13487 ) 
+Batch load new files for validation of cherry-pick replace partition ( #13556 ) 
+Add planWith to FindFiles to leverage ParallelIterable ( #13836 ) 
+REST: Add context aware response parsing ( #13191 ) 
+REST: Add property to configure user agent in http client ( #13234 ) 
+REST: add option to configure TLS settings in REST client ( #13190 ) 
+REST: Avoid table corruption by stop retrying on 502 and 504 ( #13352 ) 
+REST: Add HTTP proxy support for REST client ( #12406 ) 
+REST: make metrics reporting async ( #13507 ) 
+REST: allow retries for idempotent requests with some status codes ( #13449 ) 
+REST: introduce shared auth refresh executor ( #12563 ) 
+REST: allow disabling token exchange as refresh ( #13809 ) 
+REST: request/response models and parsers for scan planning ( #13004 ) 
+Arrow 
+Refactor Parquet readers for v2 support ( #13290 ) 
+Add support for DELTA_BINARY_PACKED Parquet encoding ( #13391 ) 
+Add nano timestamp support  ( #13562 ) 
+Fix direct memory leak with mixed encoding pages ( #13935 ) 
+Parquet 
+Use variant logical annotation added in Parquet 1.16.0 ( #13941 ) 
+Spark 
+Support Spark 4.0 ( #12494 ) 
+V3: Add row lineage support in Avro reader ( #13070 ) 
+V3: Add row lineage support in Parquet vectorized Arrow reader ( #12928 ) 
+Streaming: make maxRecordPerMicrobatch a soft limit ( #12988 ) 
+V3: Fix row lineage inheritance for distributed planning ( #13061 ) 
+Storage partitioned join: add bucket reducer ( #13167 ) and hour to day reducer ( #13166 ) 
+Rewrite table path action: filter content files by snapshot id in incremental mode ( #12885 ) 
+Fix DML query failure with identifier fields ( #13535 ) 
+Add action and procedure to compute partition stats ( #12450 )( #13480 ) 
+Throw unsupported exception for ADD COLUMN with default value ( #13464 ) 
+4.0: migrate Iceberg stored procedures to Spark built-in implementation ( #13106 ) 
+Use Iceberg FileIO (instead of Hadoop) when writing file list in RewriteTablePathSparkAction ( #13459 ) 
+Support Parquet dictionary encoded UUIDs ( #13324 ) 
+4.0: Add row lineage support using conditional nullification mechanism introduced in Spark 4.0 ( #13310 ) 
+Use bulk deletion operation for deleting manifests when importing files from partitions ( #13620 ) 
+Preserve row lineage on compaction ( #13555 ) 
+Refactor DeleteOrphanFilesSparkAction to use common code from core ( #13429 ) 
+Add variant read support ( #13219 ) 
+Add config to disable executor cache for deleting files  ( #12893 ) 
+Accept custom partition order in RewriteManifest  ( #12840 ) 
+4.0: read and write unknown type ( #13445 ) 
+Flink 
+Support Flink 2.0 ( #12527 ) 
+Dynamic sink that supports dynamic schema and partition evolution, fan out write to and creation of tables ( #12424 ) 
+Migrate from deprecated TableSchema to ResolvedSchema ( #13072 ) 
+IcebergSink v2 sink: default writer task parallelism to input stream parallelism to promote chaining and maintain the same behavior as FlinkSink v1 sink ( #13260 ) 
+Support compaction in v2 sink ( #12979 ) 
+Support rewrite data files in v2 sink ( #11497 ) 
+Port range distribution to v2 sink ( #12071 ) 
+Support Zookeeper lock in table maintenance ( #12810 ) 
+Add filter support in RewriteDataFiles ( #13669 ) 
+Fix ResultSet resource leak in JdbcLockFactory ( #13821 ) 
+Support delete orphan files in table maintenance ( #13302 ) 
+Hive 
+Throw NoSuchNamespaceException when listing a non-exist namespace ( #13130 ) 
+Kafka connect 
+Resolve CVE-2025-48734 ( #13561 ) 
+Vendor integrations 
+AWS/GCP: Fix double checked locking pattern with incomplete initialization of prefixed client ( #13276 ) 
+AWS/GCP: fix FileIO serialization issue with empty immutable collections ( #13216 ) 
+AWS: Support multiple storage credential prefixes ( #12799 ) 
+AWS: add LegacyMd5Plugin to S3 client builder ( #12264 ) 
+AWS: prevent excessive creation of auth sessions in S3V4RestSignerClient ( #13215 ) 
+AWS: KeyManagementClient implementation ( #13136 ) 
+AWS: Fix memory leak by removing deleteOnExit ( #13749 ) 
+AWS: fix connection leak in S3InputStream.readFully ( #13899 ) 
+AWS/Azure: fix connection leak ( #13905 ) 
+Azure: fix concurrent issue in credential refresh ( #13730 ) 
+Azure: support access token auth via the new adls.token property ( #13825 ) 
+GCP: Add BigQuery metastore catalog support ( #12808 ) 
+GCP: Support multiple storage credential prefixes ( #12881 ) 
+GCP: Add Google authentication support ( #13212 ) 
+GCP: KeyManagementClient implementation ( #13334 ) 
+Dependencies 
+Parquet: 1.15.1 -> 1.16.0 
+Jackson: 2.19.0 -> 2.19.1 
+AWS SDK: 2.31.30 -> 2.31.63 
+Netty: 4.2.1.Final -> 4.2.2.Final 
+Comet: 0.5.0 -> 0.8.1 
+Apache httpclient: 5.4.3 -> 5.4.4 
+1.9.2 release 🔗 
+Apache Iceberg 1.9.2 was released on Jul 16, 2025. 
+The 1.9.2 release contains bug fixes. For full release notes visit Github 
+Core 
+Stop retrying on 502 / 504 to avoid table corruption due to self conflicts #12818 , #13352 
+1.9.1 release 🔗 
+Apache Iceberg 1.9.1 was released on May 27, 2025. 
+The 1.9.1 release contains bug fixes. For full release notes visit Github 
+API 
+API, Build: Fix Iceberg Build Version #12949 
+Core 
+Core: Revert #12670 to Temporarily Restore Sending Single Snapshot Changes Rather than in Bulk #13100 
+Core: Ensure reactivated view version uses correct timestamp #12821 
+Dependencies 
+Parquet to 1.15.2 CVE-2025-46762 
+1.9.0 release 🔗 
+Apache Iceberg 1.9.0 was released on April 28, 2025. 
+The 1.9.0 release contains bug fixes and new features. For full release notes visit Github 
+Note - Due to a bug in the build system, Iceberg 1.9.0 will return a version of 'unknown' when queried via
+the API. This is fixed in 1.9.1. 
+Deprecation / End of Support 
+Spark: Remove Spark 3.3 support ( #12279 ) 
+Build: Remove Hadoop 2 ( #12348 ) 
+Spec 
+Spec: Support geo type ( #10981 ) 
+Spec: Allow Equality Deletes with Row Lineage and Define Behavior ( #12230 ) 
+Spec: Add implementation note on current-snapshot-id ( #12334 ) 
+Spec: update to reflect lineage is required ( #12580 ) 
+Spec: Update row lineage requirements for upgrading tables ( #12781 ) 
+Spec: Clarify variant lower/upper bounds ( #12658 ) 
+Spec: Allow the use of source-id in V3 ( #12644 ) 
+API 
+Support default values in UpdateSchema ( #12211 ) 
+Move variant to API and add extract expression ( #12304 ) 
+Implement Variant#toString ( #12531 ) 
+Core 
+Add partition stats writer and reader ( #11216 ) 
+Auth Manager API enablement ( #12197 ) 
+Add InternalData read and write builders ( #12060 ) 
+Enable row lineage for all v3 tables ( #12593 ) 
+FileRewritePlanner implementation ( #12493 ) 
+Interface changes for separating rewrite planner and runner ( #12306 ) 
+Add variant type support to utils and visitors ( #11831 ) 
+Add Variant logical type for Avro ( #12238 ) 
+Add variant readers and writers ( #12457 ) 
+Remove namespace/table/view HEAD endpoints from defaults ( #12351 ) 
+Support nanosecond timestamps and unknown types ( #12455 ) 
+Write null for current-snapshot-id for V3+ ( #12335 ) 
+Apply correct metric configs in GenericAppenderFactory ( #12366 ) 
+Close FileIO instance in JdbcCatalog ( #12540 ) 
+Add view-override catalog property ( #12534 ) 
+Use InternalData with Avro for readers ( #12476 ) 
+Fix missing data when writing unknown ( #12581 ) 
+Bulk deletion in RemoveSnapshots ( #11837 ) 
+Add update event for rewrite manifests ( #12627 ) 
+Add commit metrics for rewriting manifests ( #12630 ) 
+Add geometry and geography types support ( #12346 ) 
+Add MetricsReporter for SnapshotManager ( #12665 ) 
+Parquet 
+Implement Variant readers ( #12139 ) 
+Implement Variant writers ( #12323 ) 
+Support unknown and nanosecond timestamps in internal model and generics ( #12463 ) 
+Implement Variant metrics ( #12496 ) 
+ORC 
+Support nanosecond timestamps, variant, and unknown in generics ( #12567 ) 
+AWS 
+Integrate S3 analytics accelerator library ( #12299 ) 
+Spark 
+Rewrite V2 deletes to V3 DVs ( #12250 ) 
+Detect dangling DVs properly ( #12270 ) 
+Add _row_id and _last_updated_sequence_number readers ( #12836 ) 
+Kafka Connect 
+Add SMTs for Debezium and AWS DMS ( #11936 ) 
+Add config for transactional ID prefix ( #11780 ) 
+Handle no coordinator and data loss in ICR mode ( #12372 ) 
+Flink 
+Support create table like in flink catalog ( #12199 ) 
+Support Avro and Parquet timestamp(9), unknown, and defaults ( #12470 ) 
+Support source watermark for flink sql windows ( #12191 ) 
+Dependencies 
+Netty to 4.2.0.Final 
+Nessie to 0.103.3 
+Parquet to 1.15.1 (Fixes CVE-2025-30065) 
+SQLite JDBC to 3.49.1.0 
+Jackson to 2.18.3 
+downgraded AWS SDK to 2.29.52 ( #12649 ) 
+1.8.1 release 🔗 
+Apache Iceberg 1.8.1 was released on February 28, 2025. 
+The 1.8.1 release contains bug fixes and fixes to LICENSE/NOTICE files. For full release notes visit Github 
+Core 
+Don't remove trailing slash from absolute paths ( #12390 ) 
+Fallback to GET requests for namespace/table/view exists checks ( #12328 ) 
+Remove namespace/table/view HEAD endpoints from defaults ( #12368 ) 
+Adjust Jackson settings to handle large metadata json ( #12330 ) 
+Write "-1" again when there's no current snapshot ( #12313 ) 
+Parquet 
+Fix performance regression in reader init ( #12329 ) 
+Dependencies 
+downgraded AWS SDK to 2.29.52 ( #12339 ) 
+1.8.0 release 🔗 
+Apache Iceberg 1.8.0 was released on February 13, 2025. 
+The 1.8.0 release contains bug fixes and new features. For full release notes visit Github 
+Deprecation / End of Support 
+Spark 3.3 
+Removed Hive Runtime 
+Spec 
+Add Deletion vectors to the table specification ( #11240 ) 
+Document optional snapshot summary fields ( #11660 ) 
+Add Variant Type ( #10831 ) 
+Add EnableRowLineage metadata update ( #12050 ) 
+Add added-rows field to Snapshot ( #11976 ) 
+Reassign row lineage field IDs ( #12100 ) 
+Document S3 cross region enabled configuration in REST spec ( #11260 ) 
+API 
+Define Variant Data type ( #11324 ) 
+Add UnknownType ( #12012 ) 
+Core 
+Support for reading Deletion Vectors ( #11481 ) 
+Support for writing Deletion Vectors ( #11476 ) 
+Add metadataFileLocation API to TableUtil ( #12082 ) 
+Add formatVersion API to TableUtil ( #11620 ) 
+Support removing unused partition specs as part of snapshot expiration ( #10755 ) 
+Allow adding files to multiple partition specs in fast appends ( #11771 ) 
+Add implementation of Variant encoding spec that can read and construct serialized Variant buffers ( #11415 ) 
+REST Auth Manager refactoring ( #11995 ) 
+Fix possible deadlock in ParallelIterable ( #11781 ) 
+Implement table metadata fields for row lineage and enable operations to populate these fields ( #11948 ) 
+Parquet 
+Add default value support when reading Parquet files into Iceberg's data model  ( #11785 ) 
+Avro 
+Add default value support when reading Avro files into Iceberg's data model ( #11786 ) 
+Add writers for internal object model ( #11919 ) 
+AWS 
+Enable RetryMode for KMS Client ( #11420 ) 
+Support for writing Deletion Vectors ( #11476 ) 
+Azure 
+Support WASB scheme in ADLSFileIO ( #11830 ) 
+Spark 
+Add RewriteTablePath procedure ( #11931 ) 
+Support for Comet Vectorized Parquet Reader( #9841 ) 
+Support for reading default values for Parquet ( #11803 ) 
+Add ComputeTableStats procedure ( #10986 ) 
+Fix changelog bug where create_changelog_view procedure would occasionally return records before specified time range ( #11564 ) 
+Support for writing Deletion Vectors for V3 tables ( #11561 ) 
+Surface DVs in position_deletes metadata table ( #11657 ) 
+Support configurable case sensitive filtering in rewrite data files procedure ( #11439 ) 
+Support for configurable delete file ratio ( #12148 ) 
+Add View support to SparkSessionCatalog ( #11388 ) 
+Kafka Connect 
+Add configuration for the control consumer group prefix ( #11599 ) 
+Flink 
+Support Snapshot Expiration ( #11144 ) 
+Support for reading default values for Parquet ( #12072 ) 
+Fix range distribution NPE when partition value is null ( #11662 ) 
+Hive 
+Fix mistakenly deleting table metadata file in case of non-cleanable failures like OOMs ( #11576 ) 
+Optimize tableExists API for HiveCatalog ( #11597 ) 
+Dependencies 
+AWS SDK 2.30.11 
+Netty to 4.1.117.Final 
+Kafka to 3.9.0 
+Nessie to 0.102.2 
+ORC to 1.9.5 
+SQLite JDBC to 3.48.0.0 
+Jackson to 2.18.2 
+1.7.2 release 🔗 
+Apache Iceberg 1.7.2 was released on March 19, 2025. 
+The 1.7.2 release contains bug fixes and new features. For full release notes visit Github 
+AWS 
+Don't fetch credential from endpoint if properties contain a valid credential ( #12504 ) 
+Core 
+REST catalog doesn't return old history if we execute CREATE OR REPLACE TABLE statement ( #11777 ) 
+Retain current view version during expiration ( #12084 ) 
+Fix possible deadlock in ParallelIterable ( #11781 ) 
+Spark 
+Fix empty scan issue when start timestamp retrieves root snapshot and end timestamp is missing ( #11967 ) 
+Hive 
+HiveCatalog incorrectly uses FileIOTracker ( #11783 ) 
+Revert "Hive: close the fileIO client when closing the hive catalog" ( #11858 ) 
+1.7.1 release 🔗 
+Apache Iceberg 1.7.1 was released on December 6, 2024. 
+The 1.7.1 release contains bug fixes and new features. For full release notes visit Github 
+Core 
+Revert "Use encoding/decoding methods for namespaces and deprecate Splitter/Joiner" ( #11574 ) 
+Revert "Update TableMetadataParser to ensure all streams closed" ( #11621 ) 
+Azure 
+Fix ADLSLocation file parsing ( #11395 ) 
+Support WASB scheme in ADLSFileIO ( #11504 ) 
+Spark 
+Fix NotSerializableException when migrating Spark tables ( #11157 ) 
+Fix changelog table bug for start time older than current snapshot ( #11564 ) 
+Kafka Connect 
+Fix Hadoop dependency exclusion ( #11516 ) 
+1.7.0 release 🔗 
+Apache Iceberg 1.7.0 was released on November 8, 2024. 
+The 1.7.0 release contains fixes, dependency updates, and new features. For full release notes please visit Github . An abridged list follows 
+Deprecation / End of Support 
+Java 8 
+Apache Pig 
+API 
+Add SupportsRecoveryOperations mixin for FileIO  ( #10711 ) 
+Add default value APIs and Avro implementation  ( #9502 ) 
+Add compatibility checks for Schemas with default values  ( #11434 ) 
+Implement types timestamp_ns and timestamptz_ns ( #9008 ) 
+Add addNonDefaultSpec to UpdatePartitionSpec to not set the new partition spec as default ( #10736 ) 
+AWS 
+Don't complete multipart upload on finalize for S3OutputStream ( #10874 ) 
+Implement SupportsRecoveryOperations for S3FileIO ( #10721 ) 
+Refresh vended credentials ( #11389 ) 
+Support S3 directory bucket listing ( #11021 ) 
+S3FileIO - Add Cross-Region Bucket Access ( #11259 ) 
+Build 
+Build for Java 11 ( #10849 ) - Removal of Java 8 
+Build: Add checkstyle rule to ban assert usage ( #10886 ) 
+Support building with Java 21 ( #10474 ) 
+Dependencies 
+AWS SDK 2.29.1 
+Apache Avro to 1.12.0 
+Spark 3.4 to 3.4.4 
+Spark 3.5 to 3.5.2 
+Netty to 4.1.114.Final 
+Jetty to 11.0.24 
+Kafka to 3.8.0 
+Nessie to 0.99.0 
+ORC to 1.9.4 
+Roaring Bitmap to 1.3.0 
+Spring to 5.3.39 
+SQLite JDBC to 3.46.0.0 
+Hadoop to 3.4.1 
+Core 
+Remove dangling deletes as part of RewriteDataFilesAction ( #9724 ) 
+Add a util to compute partition stats ( #11146 ) 
+Add estimateRowCount for Files and Entries Metadata Tables ( #10759 ) 
+Add portable Roaring bitmap for row positions ( #11372 ) 
+Add rewritten delete files to write results ( #11203 ) 
+Add Basic Classes for Iceberg Table Version 3 ( #10760 ) 
+Deprecate ContentCache.invalidateAll ( #10494 ) 
+Deprecate legacy ways for loading position deletes ( #11242 ) 
+Parallelize manifest writing for many new files ( #11086 ) 
+Support appending files with different specs ( #9860 ) 
+Flink 
+Introduces the new IcebergSink based on the new V2 Flink Sink Abstraction ( #10179 ) 
+Update Flink to use planned Avro reads ( #11386 ) 
+Infer source parallelism for FLIP-27 source in batch execution mode ( #10832 ) 
+Make FLIP-27 default in SQL and mark the old FlinkSource as deprecated ( #11345 ) 
+Support limit pushdown in FLIP-27 source ( #10748 ) 
+GCS 
+Refresh vended credentials ( #11282 ) 
+Hive 
+Add View support for HIVE catalog ( #9852 ) 
+OpenAPI 
+Add RemovePartitionSpecsUpdate REST update type ( #10846 ) 
+Add endpoint to retrieve valid credentials for a given table ( #11281 ) 
+Standardize credentials in loadTable/loadView responses ( #10722 ) 
+Add Scan Planning Endpoints to open api spec ( #9695 ) 
+Add REST Compatibility Kit ( #10908 ) 
+Spark 
+Parallelize reading files in migrate procedures ( #11043 ) 
+Action to compute table stats ( #11106 ) 
+Action to remove dangling deletes ( #11377 ) 
+Add utility to load table state reliably ( #11115 ) 
+Don't change table distribution when only altering local order ( #10774 ) 
+Update Spark to use planned Avro reads ( #11299 ) 
+Spark Action to Analyze table ( #10288 ) 
+Support Column Stats ( #10659 ) 
+Add RewriteTablePath action interface ( #10920 ) 
+Spec 
+Add v3 types and type promotion ( #10955 ) 
+Adds Row Lineage ( #11130 ) 
+Deprecate the file system table scheme. ( #10833 ) 
+1.6.1 release 🔗 
+Apache Iceberg 1.6.1 was released on August 27, 2024. 
+The 1.6.1 Release contains bug fixes and performance improvements. For full release notes visit Github 
+Core 
+Limit ParallelIterable memory consumption by yielding in tasks ( #10787 ) 
+Drop ParallelIterable's queue low water mark ( #10979 ) 
+Dependencies 
+ORC 1.9.4 
+1.6.0 release 🔗 
+Apache Iceberg 1.6.0 was released on July 23, 2024. 
+The 1.6.0 release contains fixes, dependency updates, and new features (like Kafka Connect commit coordinator and record converters). 
+Build 
+Upgrade to Gradle 8.9 ( #10686 ) 
+Core 
+Add EnvironmentContext to commit summary ( #9273 ) 
+Add explicit JSON parser for ConfigResponse ( #9952 ) 
+Calling rewrite_position_delete_files fails on tables with more than 1k columns ( #10020 ) 
+Expose table incremental scan for appends API in SerializableTable ( #10682 ) 
+Fix NPE during conflict handling of NULL partitions ( #10680 ) 
+Fix ParallelIterable memory leak where queue continues to be populated even after iterator close ( #9402 ) 
+Fix logging table name in scanning metadata table ( #10141 ) 
+Lazily compute & cache hashCode in CharSequenceWrapper ( #10023 ) 
+Pushdown data_file.content when filter manifests in entries table ( #10203 ) 
+Use bulk delete when removing old metadata.json files ( #10679 ) 
+JDBC Catalog: Add property to disable table initialization for JdbcCatalog ( #10124 ) 
+JDBC Catalog: Exclude unexpected namespaces JdbcCatalog.listNamespaces ( #10498 ) 
+JDBC Catalog: Fix JDBC Catalog table commit when migrating from schema V0 to V1 ( #10111 ) 
+JDBC Catalog: Retry connections in JDBC catalog with user configured error code list ( #10140 ) 
+JDBC Catalog: fix namespace SQL statement using ESCAPE character working with MySQL, PostgreSQL, ... ( #10167 ) 
+REST Catalog: Assume issued_token_type is access_token to fully comply with RFC 6749 ( #10314 ) 
+REST Catalog: Fix create v1 table on REST Catalog ( #10369 ) 
+REST Catalog: Handles possible heap data corruption of OAuth2Util.AuthSession#headers ( #10615 ) 
+REST Catalog: Handles potential NPE in RESTSessionCatalog#newSessionCache ( #10607 ) 
+REST Catalog: Introduce AuthConfig ( #10161 ) 
+REST Catalog: Mark 502 and 504 statuses as retryable to the REST exponential retry strategy ( #9885 ) 
+REST Catalog: disallow overriding "credential" in table sessions ( #10345 ) 
+REST Catalog: fix incorrect token refresh thread name ( #10223 ) 
+REST Catalog: fix spurious warning when shutting down refresh executor ( #10087 ) 
+Kafka Connect 
+Commit coordinator ( #10351 ) 
+Record converters ( #9641 ) 
+Handle namespace creation for auto table creation ( #10186 ) 
+Update iceberg.hadoop-conf-dir config description ( #10184 ) 
+Parquet 
+Don't write column sizes when metrics mode is None ( #10440 ) 
+Spark 
+Fix handling of null binary values when sorting with zorder ( #10026 ) 
+Spark writes/actions should only perform cleanup if failure is cleanable ( #10373 ) 
+Use 'delete' if RowDelta only has delete files ( #10123 ) 
+Support read of partition metadata column when table is over 1k ( #10641 ) 
+Fix the setting of equalAuthorities in RemoveOrphanFilesProcedure ( #10342 ) 
+Fix system function pushdown in CoW row-level commands ( #10119 ) 
+Only traverse ancestors of current snapshot when building changelog scan ( #10405 ) 
+Add max allowed failed commits to RewriteDataFiles when partial progress is enabled ( #9611 ) 
+Fix issue when partitioning by UUID ( #8250 ) 
+Use bulk deletes in rewrite manifests action ( #10343 ) 
+Flink 
+Remove Flink 1.16 support ( #10154 ) 
+Add support for Flink 1.19 ( #10112 ) 
+Apply DeleteGranularity for writes ( #10200 ) 
+Move ParquetReader to LogicalTypeAnnotationVisitor ( #9719 ) 
+Pre-create fieldGetters to avoid constructing them for each row ( #10565 ) 
+Prevent setting endTag/endSnapshotId for streaming source ( #10207 ) 
+Implement range partitioner for map data statistics ( #9321 ) 
+refactor sink shuffling statistics collection ( #10331 ) 
+Hive 
+Fix metadata file not found ( #10069 ) 
+Use base table metadata to create HiveLock ( #10016 ) 
+Turn off the stats gathering when iceberg.hive.keep.stats is false ( #10148 ) 
+Specs 
+OpenAPI: TableRequirements should use union of subclasses ( #10434 ) 
+OpenAPI: Deprecate oauth/tokens endpoint ( #10603 ) 
+OpenAPI: Fix additionalProperties for SnapshotSummary ( #9838 ) 
+OpenAPI: Fix property names for stats/partition stats ( #10662 ) 
+Vendor Integrations 
+AWS: Make sure Signer + User Agent config are both applied ( #10198 ) 
+AWS: Retain Glue Catalog column comment after updating Iceberg table ( #10276 ) 
+AWS: Retain Glue Catalog table description after updating Iceberg table ( #10199 ) 
+AWS: Support S3 DSSE-KMS encryption ( #8370 ) 
+AWS: Close underlying executor for DynamoDb LockManager ( #10132 ) 
+AWS: Add Iceberg version to UserAgent in S3 requests ( #9963 ) 
+Azure: Make AzureProperties w/ shared-key creds serializable ( #10045 ) 
+Dependencies 
+Bump Nessie to 0.92.1 
+Bump Spark 3.5 to 3.5.1 
+Bump Apache Arrow to 15.0.2 
+Bump Azure SDK to 1.2.25 
+Bump Kryo to 4.0.3 
+Bump Netty to 4.1.111.Final 
+Bump Jetty to 9.4.55.v20240627 
+Bump Kafka to 3.7.1 
+Bump Apache ORC to 1.9.3 
+Bump AWS SDK to 2.26.12 
+Bump Google Cloud Libraries to 26.43.0 
+For more details, please visit Github . 
+1.5.2 release 🔗 
+Apache Iceberg 1.5.2 was released on May 9, 2024. 
+The 1.5.2 release has the same changes that the 1.5.1 release (see directly below)
+has. The 1.5.1 release had issues with the spark runtime artifacts; specifically certain artifacts were built with the wrong Scala version.
+It is strongly recommended to upgrade to 1.5.2 for any systems that are using 1.5.1. 
+1.5.1 release 🔗 
+Apache Iceberg 1.5.1 was released on April 25, 2024. 
+The 1.5.1 patch release contains fixes for JDBC Catalog, fixing a FileIO regression
+where an extra head request was performed when reading manifests and REST client retries
+for 5xx failures. The release also includes fixes for system function pushdown for CoW tables
+in Spark 3.4 and 3.5. 
+Core 
+Fix FileIO regression where extra head request was performed when reading manifests ( #10114 ) 
+Mark 502 and 504 HTTP status codes as retryable in REST Client ( #10113 ) 
+Fix JDBC Catalog table commits when migrating from V0 to V1 schema ( #10152 ) 
+Fix JDBC Catalog namespaces SQL to use the proper escape character which generalizes to different database backends like Postgres and MySQL ( #10167 ) 
+Spark 
+Fix system function pushdown in CoW row level commands for Spark 3.5 ( #9873 ) 
+Fix system function pushdown in CoW row level commands for Spark 3.4 ( #10119 ) 
+1.5.0 release 🔗 
+Apache Iceberg 1.5.0 was released on March 11, 2024.
+The 1.5.0 release adds a variety of new features and bug fixes. 
+API 
+Extend FileIO and add EncryptingFileIO. ( #9592 ) 
+Track partition statistics in TableMetadata ( #8502 ) 
+Add sqlFor API to views to handle resolving a representation for a dialect( #9247 ) 
+Core 
+Add view support for REST catalog ( #7913 ) 
+Add view support for JDBC catalog ( #9487 ) 
+Add catalog type for glue,jdbc,nessie ( #9647 ) 
+Support Avro file encryption with AES GCM streams ( #9436 ) 
+Add ApplyNameMapping for Avro ( #9347 ) 
+Add StandardEncryptionManager ( #9277 ) 
+Add REST catalog table session cache ( #8920 ) 
+Support view metadata compression ( #8552 ) 
+Track partition statistics in TableMetadata ( #8502 ) 
+Enable column statistics filtering after planning ( #8803 ) 
+Spark 
+Remove support for Spark 3.2 ( #9295 ) 
+Support views via SQL for Spark 3.4 and 3.5 ( #9423 , #9421 , #9343 ), ( #9513 , ( #9582 
+Support executor cache locality ( #9563 ) 
+Added support for delete manifest rewrites ( #9020 ) 
+Support encrypted output files ( #9435 ) 
+Add Spark UI metrics from Iceberg scan metrics ( #8717 ) 
+Parallelize reading files in add_files procedure ( #9274 ) 
+Support file and partition delete granularity ( #9384 ) 
+Flink 
+Remove Flink 1.15 
+Adds support for 1.18 version #9211 
+Emit watermarks from the IcebergSource ( #8553 ) 
+Watermark read options ( #9346 ) 
+Parquet 
+Support reading INT96 column in row group filter ( #8988 ) 
+Add system config for unsafe Parquet ID fallback. ( #9324 ) 
+Kafka-Connect 
+Initial project setup and event data structures ( #8701 ) 
+Sink connector with data writers and converters ( #9466 ) 
+Spec 
+Add partition stats spec ( #7105 ) 
+add nanosecond timestamp types ( #8683 ) 
+Add multi-arg transform ( #8579 ) 
+Vendor Integrations 
+AWS: Support setting description for Glue table ( #9530 ) 
+AWS: Update S3FileIO test to run when CLIENT_FACTORY is not set ( #9541 ) 
+AWS: Add S3 Access Grants Integration ( #9385 ) 
+AWS: Glue catalog strip trailing slash on DB URI ( #8870 ) 
+Azure: Add FileIO that supports ADLSv2 storage ( #8303 ) 
+Azure: Make ADLSFileIO implement DelegateFileIO ( #8563 ) 
+Nessie: Support views for NessieCatalog ( #8909 ) 
+Nessie: Strip trailing slash for warehouse location ( #9415 ) 
+Nessie: Infer default API version from URI ( #9459 ) 
+
+Dependencies 
+Bump Nessie to 0.77.1 
+Bump ORC to 1.9.2 
+Bump Arrow to 15.0.0 
+Bump AWS Java SDK to 2.24.5 
+Bump Azure Java SDK to 1.2.20 
+Bump Google cloud libraries to 26.28.0 
+
+Note: To enable view support for JDBC catalog, configure jdbc.schema-version to V1 in catalog properties. 
+For more details, please visit Github . 
+1.4.3 Release 🔗 
+Apache Iceberg 1.4.3 was released on December 27, 2023. The main issue it solves is missing files from a transaction retry with conflicting manifests. It is recommended to upgrade if you use transactions. 
+Core: Scan only live entries in partitions table (#8969) by @Fokko in #9197 
+Core: Fix missing files from transaction retries with conflicting manifest merges by @nastra in #9337 
+JDBC Catalog: Fix namespaceExists check with special characters by @ismailsimsek in #9291 
+Core: Expired Snapshot files in a transaction should be deleted by @bartash in #9223 
+Core: Fix missing delete files from transaction by @nastra in #9356 
+1.4.2 Release 🔗 
+Apache Iceberg 1.4.2 was released on November 2, 2023.
+The 1.4.2 patch release addresses fixing a remaining case where split offsets
+should be ignored when they are deemed invalid. 
+Core 
+Ignore split offsets array when split offset is past file length ( #8925 ) 
+1.4.1 Release 🔗 
+Apache Iceberg 1.4.1 was released on October 23, 2023.
+The 1.4.1 release addresses various issues identified in the 1.4.0 release. 
+Core 
+Do not use a lazy split offset list in manifests ( #8834 ) 
+Ignore split offsets when the last split offset is past the file length ( #8860 ) 
+AWS 
+Avoid static global credentials provider which doesn't play well with lifecycle management ( #8677 ) 
+Flink 
+Reverting the default custom partitioner for bucket column ( #8848 ) 
+1.4.0 release 🔗 
+Apache Iceberg 1.4.0 was released on October 4, 2023.
+The 1.4.0 release adds a variety of new features and bug fixes. 
+API 
+Implement bound expression sanitization ( #8149 ) 
+Remove overflow checks in DefaultCounter causing performance issues ( #8297 ) 
+Support incremental scanning with branch ( #5984 ) 
+Add a validation API to DeleteFiles which validates files exist ( #8525 ) 
+Core 
+Use V2 format by default in new tables ( #8381 ) 
+Use zstd compression for Parquet by default in new tables ( #8593 ) 
+Add strict metadata cleanup mode and enable it by default ( #8397 ) ( #8599 ) 
+Avoid generating huge manifests during commits ( #6335 ) 
+Add a writer for unordered position deletes ( #7692 ) 
+Optimize DeleteFileIndex ( #8157 ) 
+Optimize lookup in DeleteFileIndex without useful bounds ( #8278 ) 
+Optimize split offsets handling ( #8336 ) 
+Optimize computing user-facing state in data tasks ( #8346 ) 
+Don't persist useless file and position bounds for deletes ( #8360 ) 
+Don't persist counts for paths and positions in position delete files ( #8590 ) 
+Support setting system-level properties via environmental variables ( #5659 ) 
+Add JSON parser for ContentFile and FileScanTask ( #6934 ) 
+Add REST spec and request for commits to multiple tables ( #7741 ) 
+Add REST API for committing changes against multiple tables ( #7569 ) 
+Default to exponential retry strategy in REST client ( #8366 ) 
+Support registering tables with REST session catalog ( #6512 ) 
+Add last updated timestamp and snapshot ID to partitions metadata table ( #7581 ) 
+Add total data size to partitions metadata table ( #7920 ) 
+Extend ResolvingFileIO to support bulk operations ( #7976 ) 
+Key metadata in Avro format ( #6450 ) 
+Add AES GCM encryption stream ( #3231 ) 
+Fix a connection leak in streaming delete filters ( #8132 ) 
+Fix lazy snapshot loading history ( #8470 ) 
+Fix unicode handling in HTTPClient ( #8046 ) 
+Fix paths for unpartitioned specs in writers ( #7685 ) 
+Fix OOM caused by Avro decoder caching ( #7791 ) 
+Spark 
+Added support for Spark 3.5 
+Code for DELETE, UPDATE, and MERGE commands has moved to Spark, and all related extensions have been dropped from Iceberg. 
+Support for WHEN NOT MATCHED BY SOURCE clause in MERGE. 
+Column pruning in merge-on-read operations. 
+Ability to request a bigger advisory partition size for the final write to produce well-sized output files without harming the job parallelism. 
+Dropped support for Spark 3.1 
+Deprecated support for Spark 3.2 
+Support vectorized reads for merge-on-read operations in Spark 3.4 and 3.5 ( #8466 ) 
+Increase default advisory partition size for writes in Spark 3.5 ( #8660 ) 
+Support distributed planning in Spark 3.4 and 3.5 ( #8123 ) 
+Support pushing down system functions by V2 filters in Spark 3.4 and 3.5 ( #7886 ) 
+Support fanout position delta writers in Spark 3.4 and 3.5 ( #7703 ) 
+Use fanout writers for unsorted tables by default in Spark 3.5 ( #8621 ) 
+Support multiple shuffle partitions per file in compaction in Spark 3.4 and 3.5 ( #7897 ) 
+Output net changes across snapshots for carryover rows in CDC ( #7326 ) 
+Display read metrics on Spark SQL UI ( #7447 ) ( #8445 ) 
+Adjust split size to benefit from cluster parallelism in Spark 3.4 and 3.5 ( #7714 ) 
+Add fast_forward procedure ( #8081 ) 
+Support filters when rewriting position deletes ( #7582 ) 
+Support setting current snapshot with ref ( #8163 ) 
+Make backup table name configurable during migration ( #8227 ) 
+Add write and SQL options to override compression config ( #8313 ) 
+Correct partition transform functions to match the spec ( #8192 ) 
+Enable extra commit properties with metadata delete ( #7649 ) 
+Flink 
+Add possibility of ordering the splits based on the file sequence number ( #7661 ) 
+Fix serialization in TableSink with anonymous object ( #7866 ) 
+Switch to FileScanTaskParser for JSON serialization of IcebergSourceSplit ( #7978 ) 
+Custom partitioner for bucket partitions ( #7161 ) 
+Implement data statistics coordinator to aggregate data statistics from operator subtasks ( #7360 ) 
+Support alter table column ( #7628 ) 
+Parquet 
+Add encryption config to read and write builders ( #2639 ) 
+Skip writing bloom filters for deletes ( #7617 ) 
+Cache codecs by name and level ( #8182 ) 
+Fix decimal data reading from ParquetAvroValueReaders ( #8246 ) 
+Handle filters with transforms by assuming data must be scanned ( #8243 ) 
+ORC 
+Handle filters with transforms by assuming the filter matches ( #8244 ) 
+Vendor Integrations 
+GCP: Fix single byte read in GCSInputStream ( #8071 ) 
+GCP: Add properties for OAtuh2 and update library ( #8073 ) 
+GCP: Add prefix and bulk operations to GCSFileIO ( #8168 ) 
+GCP: Add bundle jar for GCP-related dependencies ( #8231 ) 
+GCP: Add range reads to GCSInputStream ( #8301 ) 
+AWS: Add bundle jar for AWS-related dependencies ( #8261 ) 
+AWS: support config storage class for S3FileIO ( #8154 ) 
+AWS: Add FileIO tracker/closer to Glue catalog ( #8315 ) 
+AWS: Update S3 signer spec to allow an optional string body in S3SignRequest ( #8361 ) 
+Azure: Add FileIO that supports ADLSv2 storage ( #8303 ) 
+Azure: Make ADLSFileIO implement DelegateFileIO ( #8563 ) 
+Nessie: Provide better commit message on table registration ( #8385 ) 
+Dependencies 
+Bump Nessie to 0.71.0 
+Bump ORC to 1.9.1 
+Bump Arrow to 12.0.1 
+Bump AWS Java SDK to 2.20.131 
+1.3.1 release 🔗 
+Apache Iceberg 1.3.1 was released on July 25, 2023.
+The 1.3.1 release addresses various issues identified in the 1.3.0 release. 
+Core 
+Table Metadata parser now accepts null for fields: current-snapshot-id, properties, and snapshots ( #8064 ) 
+Hive 
+Fix HiveCatalog deleting metadata on failures in checking lock status ( #7931 ) 
+Spark 
+Fix RewritePositionDeleteFiles failure for certain partition types ( #8059 ) 
+Fix RewriteDataFiles concurrency edge-case on commit timeouts ( #7933 ) 
+Fix partition-level DELETE operations for WAP branches ( #7900 ) 
+Flink 
+FlinkCatalog creation no longer creates the default database ( #8039 ) 
+1.3.0 release 🔗 
+Apache Iceberg 1.3.0 was released on May 30th, 2023.
+The 1.3.0 release adds a variety of new features and bug fixes. 
+Core 
+Expose file and data sequence numbers in ContentFile ( #7555 ) 
+Improve bit density in object storage layout ( #7128 ) 
+Store split offsets for delete files ( #7011 ) 
+Readable metrics in entries metadata table ( #7539 ) 
+Delete file stats in partitions metadata table ( #6661 ) 
+Optimized vectorized reads for Parquet Decimal ( #3249 ) 
+Vectorized reads for Parquet INT96 timestamps in imported data ( #6962 ) 
+Support selected vector with ORC row and batch readers ( #7197 ) 
+Clean up expired metastore clients ( #7310 ) 
+Support for deleting old partition spec columns in V1 tables ( #7398 ) 
+Spark 
+Initial support for Spark 3.4 
+Removed integration for Spark 2.4 
+Support for storage-partitioned joins with mismatching keys in Spark 3.4 (MERGE commands) ( #7424 ) 
+Support for TimestampNTZ in Spark 3.4 ( #7553 ) 
+Ability to handle skew during writes in Spark 3.4 ( #7520 ) 
+Ability to coalesce small tasks during writes in Spark 3.4 ( #7532 ) 
+Distribution and ordering enhancements in Spark 3.4 ( #7637 ) 
+Action for rewriting position deletes ( #7389 ) 
+Procedure for rewriting position deletes ( #7572 ) 
+Avoid local sort for MERGE cardinality check ( #7558 ) 
+Support for rate limits in Structured Streaming ( #4479 ) 
+Read and write support for UUIDs ( #7399 ) 
+Concurrent compaction is enabled by default ( #6907 ) 
+Support for metadata columns in changelog tables ( #7152 ) 
+Add file group failure info for data compaction ( #7361 ) 
+Flink 
+Initial support for Flink 1.17 
+Removed integration for Flink 1.14 
+Data statistics operator to collect traffic distribution for guiding smart shuffling ( #6382 ) 
+Data statistics operator sends local data statistics to coordinator and receives aggregated data statistics from coordinator for smart shuffling ( #7269 ) 
+Exposed write parallelism in SQL hints ( #7039 ) 
+Row-level filtering ( #7109 ) 
+Use starting sequence number by default when rewriting data files ( #7218 ) 
+Config for max allowed consecutive planning failures in IcebergSource before failing the job ( #7571 ) 
+Vendor Integrations 
+AWS: Use Apache HTTP client as default AWS HTTP client ( #7119 ) 
+AWS: Prevent token refresh scheduling on every sign request ( #7270 ) 
+AWS: Disable local credentials if remote signing is enabled ( #7230 ) 
+Dependencies 
+Bump Arrow to 12.0.0 
+Bump ORC to 1.8.3 
+Bump Parquet to 1.13.1 
+Bump Nessie to 0.59.0 
+1.2.1 release 🔗 
+Apache Iceberg 1.2.1 was released on April 11th, 2023.
+The 1.2.1 release is a patch release to address various issues identified in the prior release.
+Here is an overview: 
+CORE 
+REST: fix previous locations for refs-only load #7284 
+Parse snapshot-id as long in remove-statistics update #7235 
+Spark 
+Broadcast table instead of file IO in rewrite manifests #7263 
+Revert "Spark: Add "Iceberg" prefix to SparkTable name string for SparkUI #7273 
+AWS 
+Make AuthSession cache static #7289 
+Abort S3 input stream on close if not EOS #7262 
+Disable local credentials if remote signing is enabled #7230 
+Prevent token refresh scheduling on every sign request #7270 
+S3 Credentials provider support in DefaultAwsClientFactory #7066 
+1.2.0 release 🔗 
+Apache Iceberg 1.2.0 was released on March 20th, 2023.
+The 1.2.0 release adds a variety of new features and bug fixes.
+Here is an overview: 
+Core 
+Added AES GCM encryption stream spec ( #5432 ) 
+Added support for Delta Lake to Iceberg table conversion ( #6449 , #6880 ) 
+Added support for position_deletes metadata table ( #6365 , #6716 ) 
+Added support for scan and commit metrics reporter that is pluggable through catalog ( #6404 , #6246 , #6410 ) 
+Added support for branch commit for all operations ( #4926 , #5010 ) 
+Added FileIO support for ORC readers and writers ( #6293 ) 
+Updated all actions to leverage bulk delete whenever possible ( #6682 ) 
+Updated snapshot ID definition in Puffin spec to support statistics file reuse ( #6272 ) 
+Added human-readable metrics information in files metadata table ( #5376 ) 
+Fixed incorrect Parquet row group skipping when min and max values are NaN ( #6517 ) 
+Fixed a bug that location provider could generate paths with double slash ( // ) which is not compatible in a Hadoop file system ( #6777 ) 
+Fixed metadata table time travel failure for tables that performed schema evolution ( #6980 ) 
+Spark 
+Added time range query support for changelog table ( #6350 ) 
+Added changelog view procedure for v1 table ( #6012 ) 
+Added support for storage partition joins to improve read and write performance ( #6371 ) 
+Updated default Arrow environment settings to improve read performance ( #6550 ) 
+Added aggregate pushdown support for min , max and count to improve read performance ( #6622 ) 
+Updated default distribution mode settings to improve write performance ( #6828 , #6838 ) 
+Updated DELETE to perform metadata-only update whenever possible to improve write performance ( #6899 ) 
+Improved predicate pushdown support for write operations ( #6636 ) 
+Added support for reading a branch or tag through table identifier and VERSION AS OF (a.k.a. FOR SYSTEM_VERSION AS OF ) SQL syntax ( #6717 , #6575 ) 
+Added support for writing to a branch through identifier or through write-audit-publish (WAP) workflow settings ( #6965 , #7050 ) 
+Added DDL SQL extensions to create, replace and drop a branch or tag ( #6638 , #6637 , #6752 , #6807 ) 
+Added UDFs for years , months , days and hours transforms ( #6207 , #6261 , #6300 , #6339 ) 
+Added partition related stats for add_files procedure result ( #6797 ) 
+Fixed a bug that rewrite_manifests procedure produced a new manifest even when there was no rewrite performed ( #6659 ) 
+Fixed a bug that statistics files were not cleaned up in expire_snapshots procedure ( #6090 ) 
+Flink 
+Added support for metadata tables ( #6222 ) 
+Added support for read options in Flink source ( #5967 ) 
+Added support for reading and writing Avro GenericRecord ( #6557 , #6584 ) 
+Added support for reading a branch or tag and write to a branch ( #6660 , #5029 ) 
+Added throttling support for streaming read ( #6299 ) 
+Added support for multiple sinks for the same table in the same job ( #6528 ) 
+Fixed a bug that metrics config was not applied to equality and position deletes ( #6271 , #6313 ) 
+Vendor Integrations 
+Added Snowflake catalog integration ( #6428 ) 
+Added AWS sigV4 authentication support for REST catalog ( #6951 ) 
+Added support for AWS S3 remote signing ( #6169 , #6835 , #7080 ) 
+Updated AWS Glue catalog to skip table version archive by default ( #6919 ) 
+Updated AWS Glue catalog to not require a warehouse location ( #6586 ) 
+Fixed a bug that a bucket-only AWS S3 location such as s3://my-bucket could not be parsed ( #6352 ) 
+Fixed a bug that unnecessary HTTP client dependencies had to be included to use any AWS integration ( #6746 ) 
+Fixed a bug that AWS Glue catalog did not respect custom catalog ID when determining default warehouse location ( #6223 ) 
+Fixes a bug that AWS DynamoDB catalog namespace listing result was incomplete ( #6823 ) 
+Dependencies 
+Upgraded ORC to 1.8.1 ( #6349 ) 
+Upgraded Jackson to 2.14.1 ( #6168 ) 
+Upgraded AWS SDK V2 to 2.20.18 ( #7003 ) 
+Upgraded Nessie to 0.50.0 ( #6875 ) 
+For more details, please visit Github . 
+1.1.0 release 🔗 
+Apache Iceberg 1.1.0 was released on November 28th, 2022.
+The 1.1.0 release deprecates various pre-1.0.0 methods,
+and adds a variety of new features.
+Here is an overview: 
+Core 
+Puffin statistics have been added to the Table API 
+Support for Table scan reporting , which enables collection of statistics of the table scans. 
+Add file sequence number to ManifestEntry 
+Support register table for all the catalogs (previously it was only for Hive) 
+Support performing merge appends and delete files on branches 
+Improved Expire Snapshots FileCleanupStrategy 
+SnapshotProducer supports branch writes 
+Spark 
+Support for aggregate expressions 
+SparkChangelogTable for querying changelogs 
+Dropped support for Apache Spark 3.0 
+Flink 
+FLIP-27 reader is supported in SQL 
+Added support for Flink 1.16, dropped support for Flink 1.13 
+Dependencies 
+AWS SDK: 2.17.257 
+Nessie: 0.44 
+Apache ORC: 1.8.0 (Also, supports setting bloom filters on row groups ) 
+For more details, please visit Github . 
+1.0.0 release 🔗 
+The 1.0.0 release officially guarantees the stability of the Iceberg API. 
+Iceberg's API has been largely stable since very early releases and has been integrated with many processing engines, but was still released under a 0.y.z version number indicating that breaking changes may happen. From 1.0.0 forward, the project will follow semver in the public API module, iceberg-api. 
+This release removes deprecated APIs that are no longer part of the API. To make transitioning to the new release easier, it is based on the 0.14.1 release with only important bug fixes: 
+Increase metrics limit to 100 columns ( #5933 ) 
+Bump Spark patch versions for CVE-2022-33891 ( #5292 ) 
+Exclude Scala from Spark runtime Jars ( #5884 ) 
+0.14.1 release 🔗 
+This release includes all bug fixes from the 0.14.x patch releases. Notable bug fixes 🔗 
+API 
+API: Fix ID assignment in schema merging ( #5395 ) 
+Core 
+Fix snapshot log with intermediate transaction snapshots ( #5568 ) 
+Fix exception handling in BaseTaskWriter ( #5683 ) 
+Support deleting tables without metadata files ( #5510 ) 
+Add CommitStateUnknownException handling to REST ( #5694 ) 
+Spark 
+Spark: Fix stats in rewrite metadata action ( #5691 ) 
+File Formats 
+Parquet: Close zstd input stream early to avoid memory pressure ( #5681 ) 
+Vendor Integrations 
+Core, AWS: Fix Kryo serialization failure for FileIO ( #5437 ) 
+AWS: S3OutputStream - failure to close should persist on subsequent close calls ( #5311 ) 
+0.14.0 release 🔗 
+Apache Iceberg 0.14.0 was released on 16 July 2022. Highlights 🔗 
+Added several performance improvements for scan planning and Spark queries 
+Added a common REST catalog client that uses change-based commits to resolve commit conflicts on the service side 
+Added support for Spark 3.3, including AS OF syntax for SQL time travel queries 
+Added support for Scala 2.13 with Spark 3.2 or later 
+Added merge-on-read support for MERGE and UPDATE queries in Spark 3.2 or later 
+Added support to rewrite partitions using zorder 
+Added support for Flink 1.15 and dropped support for Flink 1.12 
+Added a spec and implementation for Puffin, a format for large stats and index blobs, like Theta sketches or bloom filters 
+Added new interfaces for consuming data incrementally (both append and changelog scans) 
+Added support for bulk operations and ranged reads to FileIO interfaces 
+Added more metadata tables to show delete files in the metadata tree High-level features 🔗 
+API 
+Added IcebergBuild to expose Iceberg version and build information 
+Added binary compatibility checking to the build ( #4638 , #4798 ) 
+Added a new IncrementalAppendScan interface and planner implementation ( #4580 ) 
+Added a new IncrementalChangelogScan interface ( #4870 ) 
+Refactored the ScanTask hierarchy to create new task types for changelog scans ( #5077 ) 
+Added expression sanitizer ( #4672 ) 
+Added utility to check expression equivalence ( #4947 ) 
+Added support for serializing FileIO instances using initialization properties ( #5178 ) 
+Updated Snapshot methods to accept a FileIO to read metadata files, deprecated old methods ( #4873 ) 
+Added optional interfaces to FileIO, for batch deletes ( #4052 ), prefix operations ( #5096 ), and ranged reads ( #4608 ) 
+Core 
+Added a common client for REST-based catalog services that uses a change-based protocol ( #4320 , #4319 ) 
+Added Puffin, a file format for statistics and index payloads or sketches ( #4944 , #4537 ) 
+Added snapshot references to track tags and branches ( #4019 ) 
+ManageSnapshots now supports multiple operations using transactions, and added branch and tag operations ( #4128 , #4071 ) 
+ReplacePartitions and OverwriteFiles now support serializable isolation ( #2925 , #4052 ) 
+Added new metadata tables: data_files ( #4336 ), delete_files ( #4243 ), all_delete_files , and all_files ( #4694 ) 
+Added deleted files to the files metadata table ( #4336 ) and delete file counts to the manifests table ( #4764 ) 
+Added support for predicate pushdown for the all_data_files metadata table ( #4382 ) and the all_manifests table ( #4736 ) 
+Added support for catalogs to default table properties on creation ( #4011 ) 
+Updated sort order construction to ensure all partition fields are added to avoid partition closed failures ( #5131 ) 
+Spark 
+Spark 3.3 is now supported ( #5056 ) 
+Added SQL time travel using AS OF syntax in Spark 3.3 ( #5156 ) 
+Scala 2.13 is now supported for Spark 3.2 and 3.3 ( #4009 ) 
+Added support for the mergeSchema option for DataFrame writes ( #4154 ) 
+MERGE and UPDATE queries now support the lazy / merge-on-read strategy ( #3984 , #4047 ) 
+Added zorder rewrite strategy to the rewrite_data_files stored procedure and action ( #3983 , #4902 ) 
+Added a register_table stored procedure to create tables from metadata JSON files ( #4810 ) 
+Added a publish_changes stored procedure to publish staged commits by ID ( #4715 ) 
+Added CommitMetadata helper class to set snapshot summary properties from SQL ( #4956 ) 
+Added support to supply a file listing to remove orphan data files procedure and action ( #4503 ) 
+Added FileIO metrics to the Spark UI ( #4030 , #4050 ) 
+DROP TABLE now supports the PURGE flag ( #3056 ) 
+Added support for custom isolation level for dynamic partition overwrites ( #2925 ) and filter overwrites ( #4293 ) 
+Schema identifier fields are now shown in table properties ( #4475 ) 
+Abort cleanup now supports parallel execution ( #4704 ) 
+Flink 
+Flink 1.15 is now supported ( #4553 ) 
+Flink 1.12 support was removed ( #4551 ) 
+Added a FLIP-27 source and builder to 1.14 and 1.15 ( #5109 ) 
+Added an option to set the monitor interval ( #4887 ) and an option to limit the number of snapshots in a streaming read planning operation ( #4943 ) 
+Added support for write options, like write-format to Flink sink builder ( #3998 ) 
+Added support for task locality when reading from HDFS ( #3817 ) 
+Use Hadoop configuration files from hadoop-conf-dir property ( #4622 ) 
+Vendor integrations 
+Added Dell ECS integration ( #3376 , #4221 ) 
+JDBC catalog now supports namespace properties ( #3275 ) 
+AWS Glue catalog supports native Glue locking ( #4166 ) 
+AWS S3FileIO supports using S3 access points ( #4334 ), bulk operations ( #4052 , #5096 ), ranged reads ( #4608 ), and tagging at write time or in place of deletes ( #4259 , #4342 ) 
+AWS GlueCatalog supports passing LakeFormation credentials ( #4280 ) 
+AWS DynamoDB catalog and lock supports overriding the DynamoDB endpoint ( #4726 ) 
+Nessie now supports namespaces and namespace properties ( #4385 , #4610 ) 
+Nessie now passes most common catalog tests ( #4392 ) 
+Parquet 
+Added support for row group skipping using Parquet bloom filters ( #4938 ) 
+Added table configuration options for writing Parquet bloom filters ( #5035 ) 
+ORC 
+Support file rolling at a target file size ( #4419 ) 
+Support table compression settings, write.orc.compression-codec and write.orc.compression-strategy ( #4273 ) Performance improvements 🔗 
+Core 
+Fixed manifest file handling in scan planning to open manifests in the planning threadpool ( #5206 ) 
+Avoided an extra S3 HEAD request by passing file length when opening manifest files ( #5207 ) 
+Refactored Arrow vectorized readers to avoid extra dictionary copies ( #5137 ) 
+Improved Arrow decimal handling to improve decimal performance ( #5168 , #5198 ) 
+Added support for Avro files with Zstd compression ( #4083 ) 
+Column metrics are now disabled by default after the first 32 columns ( #3959 , #5215 ) 
+Updated delete filters to copy row wrappers to avoid expensive type analysis ( #5249 ) 
+Snapshot expiration supports parallel execution ( #4148 ) 
+Manifest updates can use a custom thread pool ( #4146 ) 
+Spark 
+Parquet vectorized reads are enabled by default ( #4196 ) 
+Scan statistics now adjust row counts for split data files ( #4446 ) 
+Implemented SupportsReportStatistics in ScanBuilder to work around SPARK-38962 ( #5136 ) 
+Updated Spark tables to avoid expensive (and inaccurate) size estimation ( #5225 ) 
+Flink 
+Operators will now use a worker pool per job ( #4177 ) 
+Fixed ClassCastException thrown when reading arrays from Parquet ( #4432 ) 
+Hive 
+Added vectorized Parquet reads for Hive 3 ( #3980 ) 
+Improved generic reader performance using copy instead of create ( #4218 ) Notable bug fixes 🔗 
+This release includes all bug fixes from the 0.13.x patch releases. 
+Core 
+Fixed an exception thrown when metadata-only deletes encounter delete files that are partially matched ( #4304 ) 
+Fixed transaction retries for changes without validations, like schema updates, that could ignore an update ( #4464 ) 
+Fixed failures when reading metadata tables with evolved partition specs ( #4520 , #4560 ) 
+Fixed delete files dropped when a manifest is rewritten following a format version upgrade ( #4514 ) 
+Fixed missing metadata files resulting from an OOM during commit cleanup ( #4673 ) 
+Updated logging to use sanitized expressions to avoid leaking values ( #4672 ) 
+Spark 
+Fixed Spark to skip calling abort when CommitStateUnknownException is thrown ( #4687 ) 
+Fixed MERGE commands with mixed case identifiers ( #4848 ) 
+Flink 
+Fixed table property update failures when tables have a primary key ( #4561 ) 
+Integrations 
+JDBC catalog behavior has been updated to pass common catalog tests ( #4220 , #4231 ) Dependency changes 🔗 
+Updated Apache Avro to 1.10.2 (previously 1.10.1) 
+Updated Apache Parquet to 1.12.3 (previously 1.12.2) 
+Updated Apache ORC to 1.7.5 (previously 1.7.2) 
+Updated Apache Arrow to 7.0.0 (previously 6.0.0) 
+Updated AWS SDK to 2.17.131 (previously 2.15.7) 
+Updated Nessie to 0.30.0 (previously 0.18.0) 
+Updated Caffeine to 2.9.3 (previously 2.8.4) 
+0.13.2 🔗 
+Apache Iceberg 0.13.2 was released on June 15th, 2022. 
+Git tag: 0.13.2 
+0.13.2 source tar.gz -- signature -- sha512 
+0.13.2 Spark 3.2 runtime Jar 
+0.13.2 Spark 3.1 runtime Jar 
+0.13.2 Spark 3.0 runtime Jar 
+0.13.2 Spark 2.4 runtime Jar 
+0.13.2 Flink 1.14 runtime Jar 
+0.13.2 Flink 1.13 runtime Jar 
+0.13.2 Flink 1.12 runtime Jar 
+0.13.2 Hive runtime Jar 
+Important bug fixes and changes: 
+Core 
+#4673 fixes table corruption from OOM during commit cleanup 
+#4514 row delta delete files were dropped in sequential commits after table format updated to v2 
+#4464 fixes an issue were conflicting transactions have been ignored during a commit 
+#4520 fixes an issue with wrong table predicate filtering with evolved partition specs 
+Spark 
+#4663 fixes NPEs in Spark value converter 
+#4687 fixes an issue with incorrect aborts when non-runtime exceptions were thrown in Spark 
+Flink 
+Note that there's a correctness issue when using upsert mode in Flink 1.12. Given that Flink 1.12 is deprecated, it was decided to not fix this bug but rather log a warning (see also #4754 ). 
+Nessie 
+#4509 fixes a NPE that occurred when accessing refreshed tables in NessieCatalog 
+A more exhaustive list of changes is available under the 0.13.2 release milestone . 
+0.13.1 🔗 
+Apache Iceberg 0.13.1 was released on February 14th, 2022. 
+Git tag: 0.13.1 
+0.13.1 source tar.gz -- signature -- sha512 
+0.13.1 Spark 3.2 runtime Jar 
+0.13.1 Spark 3.1 runtime Jar 
+0.13.1 Spark 3.0 runtime Jar 
+0.13.1 Spark 2.4 runtime Jar 
+0.13.1 Flink 1.14 runtime Jar 
+0.13.1 Flink 1.13 runtime Jar 
+0.13.1 Flink 1.12 runtime Jar 
+0.13.1 Hive runtime Jar 
+Important bug fixes: 
+Spark 
+#4023 fixes predicate pushdown in row-level operations for merge conditions in Spark 3.2.
+  Prior to the fix, filters would not be extracted and targeted merge conditions were not pushed down leading to degraded performance
+  for these targeted merge operations. 
+
+#4024 fixes table creation in the root namespace of a Hadoop Catalog. 
+
+Flink 
+#3986 fixes manifest location collisions when there are multiple committers
+  in the same Flink job. 
+0.13.0 🔗 
+Apache Iceberg 0.13.0 was released on February 4th, 2022. 
+Git tag: 0.13.0 
+0.13.0 source tar.gz -- signature -- sha512 
+0.13.0 Spark 3.2 runtime Jar 
+0.13.0 Spark 3.1 runtime Jar 
+0.13.0 Spark 3.0 runtime Jar 
+0.13.0 Spark 2.4 runtime Jar 
+0.13.0 Flink 1.14 runtime Jar 
+0.13.0 Flink 1.13 runtime Jar 
+0.13.0 Flink 1.12 runtime Jar 
+0.13.0 Hive runtime Jar 
+High-level features: 
+Core 
+Catalog caching now supports cache expiration through catalog property cache.expiration-interval-ms [ #3543 ] 
+Catalog now supports registration of Iceberg table from a given metadata file location [ #3851 ] 
+Hadoop catalog can be used with S3 and other file systems safely by using a lock manager [ #3663 ] 
+Vendor Integrations 
+Google Cloud Storage (GCS) FileIO is supported with optimized read and write using GCS streaming transfer [ #3711 ] 
+Aliyun Object Storage Service (OSS) FileIO is supported [ #3553 ] 
+Any S3-compatible storage (e.g. MinIO) can now be accessed through AWS S3FileIO with custom endpoint and credential configurations [ #3656 ] [ #3658 ] 
+AWS S3FileIO now supports server-side checksum validation [ #3813 ] 
+AWS GlueCatalog now displays more table information including table location, description [ #3467 ] and columns [ #3888 ] 
+Using multiple FileIO s based on file path scheme is supported by configuring a ResolvingFileIO [ #3593 ] 
+Spark 
+Spark 3.2 is supported [ #3335 ] with merge-on-read DELETE [ #3970 ] 
+RewriteDataFiles action now supports sort-based table optimization [ #2829 ] and merge-on-read delete compaction [ #3454 ]. The corresponding Spark call procedure rewrite_data_files is also supported [ #3375 ] 
+Time travel queries now use snapshot schema instead of the table's latest schema [ #3722 ] 
+Spark vectorized reads now support row-level deletes [ #3557 ] [ #3287 ] 
+add_files procedure now skips duplicated files by default (can be turned off with the check_duplicate_files flag) [ #2895 ], skips folder without file [ #2895 ] and partitions with null values [ #2895 ] instead of throwing exception, and supports partition pruning for faster table import [ #3745 ] 
+Flink 
+Flink 1.13 and 1.14 are supported [ #3116 ] [ #3434 ] 
+Flink connector support is supported [ #2666 ] 
+Upsert write option is supported [ #2863 ] 
+Hive 
+Table listing in Hive catalog can now skip non-Iceberg tables by disabling flag list-all-tables [ #3908 ] 
+Hive tables imported to Iceberg can now be read by IcebergInputFormat [ #3312 ] 
+File Formats 
+ORC now supports writing delete file [ #3248 ] [ #3250 ] [ #3366 ] 
+Important bug fixes: 
+Core 
+Iceberg new data file root path is configured through write.data.path going forward. write.folder-storage.path and write.object-storage.path are deprecated [ #3094 ] 
+Catalog commit status is UNKNOWN instead of FAILURE when new metadata location cannot be found in snapshot history [ #3717 ] 
+Dropping table now also deletes old metadata files instead of leaving them strained [ #3622 ] 
+history and snapshots metadata tables can now query tables with no current snapshot instead of returning empty [ #3812 ] 
+Vendor Integrations 
+Using cloud service integrations such as AWS GlueCatalog and S3FileIO no longer fail when missing Hadoop dependencies in the execution environment [ #3590 ] 
+AWS clients are now auto-closed when related FileIO or Catalog is closed. There is no need to close the AWS clients separately [ #2878 ] 
+Spark 
+For Spark >= 3.1, REFRESH TABLE can now be used with Spark session catalog instead of throwing exception [ #3072 ] 
+Insert overwrite mode now skips partition with 0 record instead of failing the write operation [ #2895 ] 
+Spark snapshot expiration action now supports custom FileIO instead of just HadoopFileIO [ #3089 ] 
+REPLACE TABLE AS SELECT can now work with tables with columns that have changed partition transform. Each old partition field of the same column is converted to a void transform with a different name [ #3421 ] 
+Spark SQL filters containing binary or fixed literals can now be pushed down instead of throwing exception [ #3728 ] 
+Flink 
+A ValidationException will be thrown if a user configures both catalog-type and catalog-impl . Previously it chose to use catalog-type . The new behavior brings Flink consistent with Spark and Hive [ #3308 ] 
+Changelog tables can now be queried without RowData serialization issues [ #3240 ] 
+java.sql.Time data type can now be written without data overflow problem [ #3740 ] 
+Avro position delete files can now be read without encountering NullPointerException [ #3540 ] 
+Hive 
+Hive catalog can now be initialized with a null Hadoop configuration instead of throwing exception [ #3252 ] 
+Table creation can now succeed instead of throwing exception when some columns do not have comments [ #3531 ] 
+File Formats 
+Parquet file writing issue is fixed for string data with over 16 unparseable chars (e.g. high/low surrogates) [ #3760 ] 
+ORC vectorized read is now configured using read.orc.vectorization.batch-size instead of read.parquet.vectorization.batch-size [ #3133 ] 
+Other notable changes: 
+The community has finalized the long-term strategy of Spark, Flink and Hive support. See Multi-Engine Support page for more details. 
+0.12.1 🔗 
+Apache Iceberg 0.12.1 was released on November 8th, 2021. 
+Git tag: 0.12.1 
+0.12.1 source tar.gz -- signature -- sha512 
+0.12.1 Spark 3.x runtime Jar 
+0.12.1 Spark 2.4 runtime Jar 
+0.12.1 Flink runtime Jar 
+0.12.1 Hive runtime Jar 
+Important bug fixes and changes: 
+#3264 fixes validation failures that occurred after snapshot expiration when writing Flink CDC streams to Iceberg tables. 
+#3264 fixes reading projected map columns from Parquet files written before Parquet 1.11.1. 
+#3195 allows validating that commits that produce row-level deltas don't conflict with concurrently added files. Ensures users can maintain serializable isolation for update and delete operations, including merge operations. 
+#3199 allows validating that commits that overwrite files don't conflict with concurrently added files. Ensures users can maintain serializable isolation for overwrite operations. 
+#3135 fixes equality-deletes using DATE , TIMESTAMP , and TIME types. 
+#3078 prevents the JDBC catalog from overwriting the jdbc.user property if any property called user exists in the environment. 
+#3035 fixes drop namespace calls with the DyanmoDB catalog. 
+#3273 fixes importing Avro files via add_files by correctly setting the number of records. 
+#3332 fixes importing ORC files with float or double columns in add_files . 
+A more exhaustive list of changes is available under the 0.12.1 release milestone . 
+0.12.0 🔗 
+Apache Iceberg 0.12.0 was released on August 15, 2021. It consists of 395 commits authored by 74 contributors over a 139 day period. 
+Git tag: 0.12.0 
+0.12.0 source tar.gz -- signature -- sha512 
+0.12.0 Spark 3.x runtime Jar 
+0.12.0 Spark 2.4 runtime Jar 
+0.12.0 Flink runtime Jar 
+0.12.0 Hive runtime Jar 
+High-level features: 
+Core 
+Allow Iceberg schemas to specify one or more columns as row identifiers [ #2465 ]. Note that this is a prerequisite for supporting upserts in Flink. 
+Added JDBC [ #1870 ] and DynamoDB [ #2688 ] catalog implementations. 
+Added predicate pushdown for partitions and files metadata tables [ #2358 , #2926 ]. 
+Added a new, more flexible compaction action for Spark that can support different strategies such as bin packing and sorting. [ #2501 , #2609 ]. 
+Added the ability to upgrade to v2 or create a v2 table using the table property format-version=2  [ #2887 ]. 
+Added support for nulls in StructLike collections [ #2929 ]. 
+Added key_metadata field to manifest lists for encryption [ #2675 ]. 
+Flink 
+Added support for SQL primary keys [ #2410 ]. 
+Hive 
+Added the ability to set the catalog at the table level in the Hive Metastore. This makes it possible to write queries that reference tables from multiple catalogs [ #2129 ]. 
+As a result of [ #2129 ], deprecated the configuration property iceberg.mr.catalog which was previously used to configure the Iceberg catalog in MapReduce and Hive [ #2565 ]. 
+Added table-level JVM lock on commits[ #2547 ]. 
+Added support for Hive's vectorized ORC reader [ #2613 ]. 
+Spark 
+Added SET and DROP IDENTIFIER FIELDS clauses to ALTER TABLE so people don't have to look up the DDL [ #2560 ]. 
+Added support for ALTER TABLE REPLACE PARTITION FIELD DDL [ #2365 ]. 
+Added support for micro-batch streaming reads for structured streaming in Spark3 [ #2660 ]. 
+Improved the performance of importing a Hive table by not loading all partitions from Hive and instead pushing the partition filter to the Metastore [ #2777 ]. 
+Added support for UPDATE statements in Spark [ #2193 , #2206 ]. 
+Added support for Spark 3.1 [ #2512 ]. 
+Added RemoveReachableFiles action [ #2415 ]. 
+Added add_files stored procedure [ #2210 ]. 
+Refactored Actions API and added a new entry point. 
+Added support for Hadoop configuration overrides [ #2922 ]. 
+Added support for the TIMESTAMP WITHOUT TIMEZONE type in Spark [ #2757 ]. 
+Added validation that files referenced by row-level deletes are not concurrently rewritten [ #2308 ]. 
+Important bug fixes: 
+Core 
+Fixed string bucketing with non-BMP characters [ #2849 ]. 
+Fixed Parquet dictionary filtering with fixed-length byte arrays and decimals [ #2551 ]. 
+Fixed a problem with the configuration of HiveCatalog [ #2550 ]. 
+Fixed partition field IDs in table replacement [ #2906 ]. 
+Hive 
+Enabled dropping HMS tables even if the metadata on disk gets corrupted [ #2583 ]. 
+Parquet 
+Fixed Parquet row group filters when types are promoted from int to long or from float to double [ #2232 ] 
+Spark 
+Fixed MERGE INTO in Spark when used with SinglePartition partitioning [ #2584 ]. 
+Fixed nested struct pruning in Spark [ #2877 ]. 
+Fixed NaN handling for float and double metrics [ #2464 ]. 
+Fixed Kryo serialization for data and delete files [ #2343 ]. 
+Other notable changes: 
+The Iceberg Community voted to approve version 2 of the Apache Iceberg Format Specification. The differences between version 1 and 2 of the specification are documented here . 
+Bugfixes and stability improvements for NessieCatalog. 
+Improvements and fixes for Iceberg's Python library. 
+Added a vectorized reader for Apache Arrow [ #2286 ]. 
+The following Iceberg dependencies were upgraded: 
+Hive 2.3.8 [ #2110 ]. 
+Avro 1.10.1 [ #1648 ]. 
+Parquet 1.12.0 [ #2441 ]. 
+0.11.1 🔗 
+Git tag: 0.11.1 
+0.11.1 source tar.gz -- signature -- sha512 
+0.11.1 Spark 3.0 runtime Jar 
+0.11.1 Spark 2.4 runtime Jar 
+0.11.1 Flink runtime Jar 
+0.11.1 Hive runtime Jar 
+Important bug fixes: 
+#2367 prohibits deleting data files when tables are dropped if GC is disabled. 
+#2196 fixes data loss after compaction when large files are split into multiple parts and only some parts are combined with other files. 
+#2232 fixes row group filters with promoted types in Parquet. 
+#2267 avoids listing non-Iceberg tables in Glue. 
+#2254 fixes predicate pushdown for Date in Hive. 
+#2126 fixes writing of Date, Decimal, Time, UUID types in Hive. 
+#2241 fixes vectorized ORC reads with metadata columns in Spark. 
+#2154 refreshes the relation cache in DELETE and MERGE operations in Spark. 
+0.11.0 🔗 
+Git tag: 0.11.0 
+0.11.0 source tar.gz -- signature -- sha512 
+0.11.0 Spark 3.0 runtime Jar 
+0.11.0 Spark 2.4 runtime Jar 
+0.11.0 Flink runtime Jar 
+0.11.0 Hive runtime Jar 
+High-level features: 
+Core API now supports partition spec and sort order evolution 
+Spark 3 now supports the following SQL extensions: 
+MERGE INTO (experimental) 
+DELETE FROM (experimental) 
+ALTER TABLE ... ADD/DROP PARTITION 
+ALTER TABLE ... WRITE ORDERED BY 
+Invoke stored procedures using CALL 
+Flink now supports streaming reads, CDC writes (experimental), and filter pushdown 
+AWS module is added to support better integration with AWS, with AWS Glue catalog support and dedicated S3 FileIO implementation 
+Nessie module is added to support integration with project Nessie 
+Important bug fixes: 
+#1981 fixes bug that date and timestamp transforms were producing incorrect values for dates and times before 1970. Before the fix, negative values were incorrectly transformed by date and timestamp transforms to 1 larger than the correct value. For example, day(1969-12-31 10:00:00) produced 0 instead of -1. The fix is backwards compatible, which means predicate projection can still work with the incorrectly transformed partitions written using older versions. 
+#2091 fixes ClassCastException for type promotion int to long and float to double during Parquet vectorized read. Now Arrow vector is created by looking at Parquet file schema instead of Iceberg schema for int and float fields. 
+#1998 fixes bug in HiveTableOperation that unlock is not called if new metadata cannot be deleted. Now it is guaranteed that unlock is always called for Hive catalog users. 
+#1979 fixes table listing failure in Hadoop catalog when user does not have permission to some tables. Now the tables with no permission are ignored in listing. 
+#1798 fixes scan task failure when encountering duplicate entries of data files. Spark and Flink readers can now ignore duplicated entries in data files for each scan task. 
+#1785 fixes invalidation of metadata tables in CachingCatalog . When a table is dropped, all the metadata tables associated with it are also invalidated in the cache. 
+#1960 fixes bug that ORC writer does not read metrics config and always use the default. Now customized metrics config is respected. 
+Other notable changes: 
+NaN counts are now supported in metadata 
+Shared catalog properties are added in core library to standardize catalog level configurations 
+Spark and Flink now support dynamically loading customized Catalog and FileIO implementations 
+Spark 2 now supports loading tables from other catalogs, like Spark 3 
+Spark 3 now supports catalog names in DataFrameReader when using Iceberg as a format 
+Flink now uses the number of Iceberg read splits as its job parallelism to improve performance and save resource. 
+Hive (experimental) now supports INSERT INTO, case insensitive query, projection pushdown, create DDL with schema and auto type conversion 
+ORC now supports reading tinyint, smallint, char, varchar types 
+Avro to Iceberg schema conversion now preserves field docs 
+0.10.0 🔗 
+Git tag: 0.10.0 
+0.10.0 source tar.gz -- signature -- sha512 
+0.10.0 Spark 3.0 runtime Jar 
+0.10.0 Spark 2.4 runtime Jar 
+0.10.0 Flink runtime Jar 
+0.10.0 Hive runtime Jar 
+High-level features: 
+Format v2 support for building row-level operations ( MERGE INTO ) in processing engines 
+Note: format v2 is not yet finalized and does not have a forward-compatibility guarantee 
+Flink integration for writing to Iceberg tables and reading from Iceberg tables (reading supports batch mode only) 
+Hive integration for reading from Iceberg tables, with filter pushdown (experimental; configuration may change) 
+Important bug fixes: 
+#1706 fixes non-vectorized ORC reads in Spark that incorrectly skipped rows 
+#1536 fixes ORC conversion of notIn and notEqual to match null values 
+#1722 fixes Expressions.notNull returning an isNull predicate; API only, method was not used by processing engines 
+#1736 fixes IllegalArgumentException in vectorized Spark reads with negative decimal values 
+#1666 fixes file lengths returned by the ORC writer, using compressed size rather than uncompressed size 
+#1674 removes catalog expiration in HiveCatalogs 
+#1545 automatically refreshes tables in Spark when not caching table instances 
+Other notable changes: 
+The iceberg-hive module has been renamed to iceberg-hive-metastore to avoid confusion 
+Spark 3 is based on 3.0.1 that includes the fix for SPARK-32168 
+Hadoop tables will recover from version hint corruption 
+Tables can be configured with a required sort order 
+Data file locations can be customized with a dynamically loaded LocationProvider 
+ORC file imports can apply a name mapping for stats 
+A more exhaustive list of changes is available under the 0.10.0 release milestone . 
+0.9.1 🔗 
+Git tag: 0.9.1 
+0.9.1 source tar.gz -- signature -- sha512 
+0.9.1 Spark 3.0 runtime Jar 
+0.9.1 Spark 2.4 runtime Jar 
+0.9.0 🔗 
+Git tag: 0.9.0 
+0.9.0 source tar.gz -- signature -- sha512 
+0.9.0 Spark 3.0 runtime Jar 
+0.9.0 Spark 2.4 runtime Jar 
+0.8.0 🔗 
+Git tag: apache-iceberg-0.8.0-incubating 
+0.8.0-incubating source tar.gz -- signature -- sha512 
+0.8.0-incubating Spark 2.4 runtime Jar 
+0.7.0 🔗 
+Git tag: apache-iceberg-0.7.0-incubating Back to top Features 
+Schema Evolution 
+Hidden Partitioning 
+Partition Evolution 
+Serializable Isolation 
+Branching and Tagging 
+Optimistic Concurrency 
+Advanced Filtering 
+Compute Engine Integrations 
+REST Catalog 
+Multiple language APIs Get Started 
+Spark Quickstart 
+Hive Quickstart 
+Open Table Spec 
+Docs 
+Blog 
+Talks Community 
+Support 
+Mailing Lists 
+Iceberg Events 
+Issues 
+Contribute 
+Guidelines ASF 
+Apache Software Foundation 
+Thanks 
+Sponsorship 
+Security 
+License 
+Apache Iceberg, Iceberg, Apache, the Apache feather logo, and the
+          Apache Iceberg project logo are either registered trademarks or
+          trademarks of The Apache Software Foundation. Copyright © 2025 The
+          Apache Software Foundation, Licensed under the Apache License, Version 2.0 . 

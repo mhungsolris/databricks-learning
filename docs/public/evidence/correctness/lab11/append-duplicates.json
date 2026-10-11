@@ -1,0 +1,58 @@
+{
+  "rows": [
+    {
+      "source_system": "adjust",
+      "app_id": "appA",
+      "event_id": "E123",
+      "revision": 1,
+      "revenue": 100,
+      "event_time": "2026-10-01T10:00:00Z",
+      "updated_at": "2026-10-01T10:01:00Z",
+      "platform": "google",
+      "account_id": "account-1",
+      "campaign_id": "C1",
+      "currency": "USD",
+      "is_deleted": false
+    },
+    {
+      "source_system": "adjust",
+      "app_id": "appA",
+      "event_id": "E123",
+      "revision": 1,
+      "revenue": 100,
+      "event_time": "2026-10-01T10:00:00Z",
+      "updated_at": "2026-10-01T10:01:00Z",
+      "platform": "google",
+      "account_id": "account-1",
+      "campaign_id": "C1",
+      "currency": "USD",
+      "is_deleted": false
+    },
+    {
+      "source_system": "adjust",
+      "app_id": "appA",
+      "event_id": "E123",
+      "revision": 1,
+      "revenue": 100,
+      "event_time": "2026-10-01T10:00:00Z",
+      "updated_at": "2026-10-01T10:01:00Z",
+      "platform": "google",
+      "account_id": "account-1",
+      "campaign_id": "C1",
+      "currency": "USD",
+      "is_deleted": false
+    }
+  ],
+  "hash": "c10afdf1a7c828d51dfe1febe22a554152f036993b36c85da13063908b0d72c7",
+  "history": [
+    {
+      "version": 0,
+      "operation": "WRITE",
+      "operationMetrics": {
+        "numOutputRows": "3",
+        "numOutputBytes": "5253",
+        "numFiles": "1"
+      }
+    }
+  ]
+}

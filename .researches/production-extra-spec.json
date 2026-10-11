@@ -1,0 +1,15 @@
+{
+  "session": ".researches/2026-10-11-production-extra",
+  "metadata": {
+    "query": "Current SQL alerts and CLI1.20.0 release",
+    "known": "Main production source findings verified",
+    "stoppingRule": "Official release/alert page",
+    "date": "2026-10-11",
+    "timezone": "Asia/Saigon",
+    "publication": "disabled"
+  },
+  "urls": {
+    "alerts": "https://docs.databricks.com/aws/en/sql/user/alerts/",
+    "cliRelease": "https://github.com/databricks/cli/releases/tag/v1.20.0"
+  }
+}

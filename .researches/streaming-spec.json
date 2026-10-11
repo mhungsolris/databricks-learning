@@ -1,0 +1,25 @@
+{
+  "session": ".researches/2026-10-11T034500Z",
+  "metadata": {
+    "query": "Spark 4.0.4 and current Databricks streaming recovery, state, watermarks, joins and sink guarantees",
+    "known": "Accepted Spark 4.0.4 and Delta 4.0.1 local Docker runtime",
+    "stoppingRule": "Official version-qualified source for each sensitive claim and actual deterministic execution for local claims",
+    "date": "2026-10-11",
+    "timezone": "Asia/Saigon",
+    "publication": "disabled"
+  },
+  "urls": {
+    "spark-streaming-api": "https://spark.apache.org/docs/4.0.4/streaming/apis-on-dataframes-and-datasets.html",
+    "spark-streaming-overview": "https://spark.apache.org/docs/4.0.4/streaming/index.html",
+    "databricks-checkpoints": "https://docs.databricks.com/aws/en/structured-streaming/checkpoints",
+    "databricks-stateful": "https://docs.databricks.com/aws/en/structured-streaming/stateful-streaming",
+    "databricks-watermarks": "https://docs.databricks.com/aws/en/structured-streaming/watermarks",
+    "databricks-output-mode": "https://docs.databricks.com/aws/en/structured-streaming/output-mode",
+    "databricks-foreachbatch": "https://docs.databricks.com/aws/en/structured-streaming/foreach",
+    "databricks-production": "https://docs.databricks.com/aws/en/structured-streaming/production",
+    "databricks-realtime": "https://docs.databricks.com/aws/en/structured-streaming/real-time/setup",
+    "delta-streaming": "https://docs.delta.io/delta-streaming/",
+    "databricks-pipeline-updates": "https://docs.databricks.com/aws/en/ldp/updates",
+    "databricks-full-refresh": "https://docs.databricks.com/aws/en/ldp/full-refresh-st"
+  }
+}

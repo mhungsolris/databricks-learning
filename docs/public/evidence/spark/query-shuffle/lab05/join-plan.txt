@@ -1,0 +1,38 @@
+== Parsed Logical Plan ==
+'Join UsingJoin(Inner, [key])
+:- Project [id#0L, (id#0L % cast(3 as bigint)) AS key#1L]
+:  +- Range (0, 120, step=1, splits=Some(4))
++- Project [id#6L AS key#7L]
+   +- Range (0, 3, step=1, splits=Some(8))
+
+== Analyzed Logical Plan ==
+key: bigint, id: bigint
+Project [key#1L, id#0L]
++- Join Inner, (key#1L = key#7L)
+   :- Project [id#0L, (id#0L % cast(3 as bigint)) AS key#1L]
+   :  +- Range (0, 120, step=1, splits=Some(4))
+   +- Project [id#6L AS key#7L]
+      +- Range (0, 3, step=1, splits=Some(8))
+
+== Optimized Logical Plan ==
+Project [key#1L, id#0L]
++- Join Inner, (key#1L = key#7L)
+   :- Project [id#0L, (id#0L % 3) AS key#1L]
+   :  +- Filter isnotnull((id#0L % 3))
+   :     +- Range (0, 120, step=1, splits=Some(4))
+   +- Project [id#6L AS key#7L]
+      +- Range (0, 3, step=1, splits=Some(8))
+
+== Physical Plan ==
+*(5) Project [key#1L, id#0L]
++- *(5) SortMergeJoin [key#1L], [key#7L], Inner
+   :- *(2) Sort [key#1L ASC NULLS FIRST], false, 0
+   :  +- Exchange hashpartitioning(key#1L, 4), ENSURE_REQUIREMENTS, [plan_id=100]
+   :     +- *(1) Project [id#0L, (id#0L % 3) AS key#1L]
+   :        +- *(1) Filter isnotnull((id#0L % 3))
+   :           +- *(1) Range (0, 120, step=1, splits=4)
+   +- *(4) Sort [key#7L ASC NULLS FIRST], false, 0
+      +- Exchange hashpartitioning(key#7L, 4), ENSURE_REQUIREMENTS, [plan_id=106]
+         +- *(3) Project [id#6L AS key#7L]
+            +- *(3) Range (0, 3, step=1, splits=8)
+

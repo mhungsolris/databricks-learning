@@ -1,0 +1,48 @@
+{
+  "format": "thematic",
+  "query": "Databricks event log and CI CD supplemental sources",
+  "results": [
+    {
+      "title": "eventlog",
+      "url": "https://docs.databricks.com/aws/en/ldp/monitor-event-logs",
+      "content": "Pipeline event log | Databricks on AWS Skip to main content Get started Guides Develop Reference Resources Release notes Help \nSupport \nKnowledge Base \nCommunity \nTraining English \nEnglish \n日本語 \nPortuguês \nFrançais AWS \nAzure \nGCP \nSAP Try Databricks \n\nData engineering \nLakeflow pipelines \nMonitor pipelines \nMonitor and query events \nEvent log On this page Last updated on Oct 9, 2026 \nPipeline event log note \nDatabricks recommends querying pipeline events with the pipeline_events system table , which contains events for all pipelines across the workspaces in a region. The system table is in Beta. \nThe pipeline event log contains all information related to a pipeline, including audit logs, data quality checks, pipeline progress, and data lineage. You can use the event log to track, understand, and monitor the state of your data pipelines. \nYou can view event log entries in the pipeline monitoring user interface , the Pipelines REST API , or by directly querying the event log. This section focuses on querying the event log directly. \nYou can also define custom actions to run when events are logged, for example, sending alerts, with event hooks . important \nDo not delete the event log or the parent catalog or schema where the event log is published. Deleting the event log might result in your pipeline failing to update during future runs. \nFor full details of the event log schema, see Pipeline event log schema . \nQuery the event log ​ note \nThis section describes the default behavior and syntax for working with event logs for pipelines configured with Unity Catalog and the default publishing mode. \nFor behavior for Unity Catalog pipelines that use legacy publishing mode, see Work with the event log for Unity Catalog legacy publishing mode pipelines . \nFor behavior and syntax for Hive metastore pipelines, see Work with the event log for Hive metastore pipelines . \nBy default, a pipeline writes the event log to a hidden Delta table in the default catalog and schema confi",
+      "retrieved": "2026-10-11",
+      "status": "fetched",
+      "source": "2026-10-11-production-supplement-search-results"
+    },
+    {
+      "title": "ci",
+      "url": "https://docs.databricks.com/aws/en/dev-tools/ci-cd",
+      "content": "CI/CD on Databricks | Databricks on AWS Skip to main content Get started Guides Develop Reference Resources Release notes Help \nSupport \nKnowledge Base \nCommunity \nTraining English \nEnglish \n日本語 \nPortuguês \nFrançais AWS \nAzure \nGCP \nSAP Try Databricks \n\nCI/CD On this page Last updated on Oct 7, 2026 \nCI/CD on Databricks \nContinuous integration and continuous delivery (CI/CD) refers to the process of developing and delivering software in short, frequent cycles through the use of automation pipelines. CI/CD is common in software development, and is becoming increasingly necessary in data engineering and data science. By automating the building, testing, and deployment of code, development teams deliver releases more reliably than with manual processes. \nDatabricks provides tools for developing CI/CD pipelines that support approaches that may differ between organizations due to unique aspects of their software development lifecycles. This page provides information about available tools for CI/CD pipelines on Databricks. \nFor details about developer and CI/CD recommendations and best practices, see the following: \nCI/CD workflows on Databricks \nDeveloper best practices on Databricks \nHow does Databricks support CI/CD for machine learning? \nHigh-level flow ​ \nA common flow for a Databricks CI/CD pipeline is: \nVersion : Store your Databricks code and notebooks in a version control system like Git. This allows you to track changes over time and collaborate with other team members. \nIndividual users use a Git folder to author and test changes before committing them to a Git repository. See CI/CD with Databricks Git folders . \nOptionally configure bundle Git settings . \nCode : Develop code and unit tests in a Databricks notebook in the workspace or locally using an IDE. \nUse the Lakeflow Pipelines Editor to develop pipelines in the workspace. \nUse the Databricks Visual Studio Code extension to develop and deploy local changes to Databricks workspaces. \nBuild : Use Declarativ",
+      "retrieved": "2026-10-11",
+      "status": "fetched",
+      "source": "2026-10-11-production-supplement-search-results"
+    },
+    {
+      "title": "github",
+      "url": "https://docs.databricks.com/aws/en/dev-tools/ci-cd/github",
+      "content": "GitHub Actions | Databricks on AWS Skip to main content Get started Guides Develop Reference Resources Release notes Help \nSupport \nKnowledge Base \nCommunity \nTraining English \nEnglish \n日本語 \nPortuguês \nFrançais AWS \nAzure \nGCP \nSAP Try Databricks \n\nCI/CD \nGitHub Actions On this page Last updated on Oct 7, 2026 \nGitHub Actions Preview \nThis feature is in Public Preview . \nGitHub Actions trigger runs of your CI/CD flows from your GitHub repositories and allow you to automate your build, test, and deployment CI/CD pipeline. \nThis page provides information about the GitHub Actions developed by Databricks and examples for common use cases. For information about other CI/CD features and best practices on Databricks, see the following: \nCI/CD on Databricks \nCI/CD workflows on Databricks \nDeveloper best practices on Databricks \nDatabricks GitHub Actions ​ \nDatabricks has developed the following GitHub Actions for your CI/CD workflows on GitHub. Add GitHub Actions YAML files to your repo's .github/workflows directory. note \nThis article covers GitHub Actions , which is developed by a third party. To contact the provider, see GitHub Actions Support . \n\nGitHub Action \nDescription \n\ndatabricks/setup-cli \nA composite action that sets up the Databricks CLI in a GitHub Actions workflow. ← ✕ \n\nGitHub Action \nDescription \n\ndatabricks/setup-cli \nA composite action that sets up the Databricks CLI in a GitHub Actions workflow. note \nTo deploy a Databricks app through CI/CD, see CI/CD for Databricks Apps with GitHub Actions . App workflows deploy from the app's Git repository ( git_source ) rather than uploading files. To automatically redeploy the app on every push without maintaining a workflow, use automatic Git deployments . \nRun a CI/CD workflow that updates a Git folder ​ \nThe following example GitHub Actions YAML file updates a workspace Git folder when a remote branch updates. For information about the Git folder approach for CI/CD, see Other tools for source control . \nRequirem",
+      "retrieved": "2026-10-11",
+      "status": "fetched",
+      "source": "2026-10-11-production-supplement-search-results"
+    },
+    {
+      "title": "flows",
+      "url": "https://docs.databricks.com/aws/en/dev-tools/ci-cd/flows",
+      "content": "CI/CD workflows on Databricks | Databricks on AWS Skip to main content Get started Guides Develop Reference Resources Release notes Help \nSupport \nKnowledge Base \nCommunity \nTraining English \nEnglish \n日本語 \nPortuguês \nFrançais AWS \nAzure \nGCP \nSAP Try Databricks \n\nCI/CD \nCI/CD workflows On this page Last updated on Sep 11, 2026 \nCI/CD workflows on Databricks \nCI/CD (Continuous Integration and Continuous Delivery) has become a cornerstone of modern data engineering and analytics, as it ensures that code changes are integrated, tested, and deployed rapidly and reliably. Databricks recognizes that you may have diverse CI/CD requirements shaped by your organizational preferences, existing workflows, and specific technology environment, and provides a flexible framework that supports various CI/CD options. \nThis page describes recommended CI/CD workflows to help you design and build robust, customized CI/CD pipelines that align with your unique needs and constraints. By leveraging these insights, you can accelerate your data engineering and analytics initiatives, improve code quality, and reduce the risk of deployment failures. \nCore principles of CI/CD ​ \nEffective CI/CD pipelines share foundational principles regardless of implementation specifics. The following universal best practices apply across organizational preferences, developer workflows, and cloud environments, and ensure consistency across diverse implementations, whether your team prioritizes notebook-first development or infrastructure-as-code workflows. Adopt these principles as guardrails while tailoring specifics to your organization's technology stack and processes. \nVersion control everything \nStore notebooks, scripts, infrastructure definitions (IaC), and job configurations in Git. \nUse branching strategies, such as Gitflow, that are aligned with standard development, staging, and production deployment environments. \nAutomate testing \nImplement unit tests for business logic using libraries, such as py",
+      "retrieved": "2026-10-11",
+      "status": "fetched",
+      "source": "2026-10-11-production-supplement-search-results"
+    }
+  ],
+  "sources": [
+    "2026-10-11-production-supplement-search-results"
+  ],
+  "totalResults": 4,
+  "cleaningStats": {
+    "originalChars": 8000,
+    "cleanedChars": 7886,
+    "removedChars": 114,
+    "reductionPercent": 1.4
+  }
+}

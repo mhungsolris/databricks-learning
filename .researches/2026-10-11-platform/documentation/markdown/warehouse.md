@@ -1,0 +1,78 @@
+# warehouse
+
+Source: https://docs.databricks.com/aws/en/compute/sql-warehouse
+Retrieved: 2026-10-11
+
+Connect to a SQL warehouse | Databricks on AWS Skip to main content Get started Guides Develop Reference Resources Release notes Help 
+Support 
+Knowledge Base 
+Community 
+Training English 
+English 
+日本語 
+Português 
+Français AWS 
+Azure 
+GCP 
+SAP Try Databricks 
+
+Compute 
+SQL warehouses On this page Last updated on Oct 9, 2026 
+Connect to a SQL warehouse 
+A SQL warehouse is a compute resource that lets you query and explore data on Databricks . 
+Most users have access to SQL warehouses configured by administrators. 
+For information on serverless compute plane architecture, see Serverless compute plane . 
+Databricks recommends using serverless SQL warehouses when available. 
+Use SQL warehouses ​ 
+The SQL warehouses you have access to appear in the compute drop-down menus of workspace UIs that support SQL warehouse compute, including the query editor, Catalog Explorer, and dashboards. 
+You can also view, sort, and search available SQL warehouses by clicking SQL Warehouses in the sidebar. By default, warehouses are sorted by state (running warehouses first), then in alphabetical order. 
+The UI indicates whether or not a warehouse is currently running. Running a query against a stopped warehouse starts it automatically if you have access to the warehouse. See Start a SQL warehouse . note 
+To help you get started, Databricks creates a small SQL warehouse called Starter Warehouse automatically. You can edit or delete this SQL warehouse. important 
+You can also attach a notebook to a pro or serverless SQL warehouse. See Notebooks and SQL warehouses for more information and limitations. 
+What are Serverless SQL warehouses? ​ note 
+Before you can create a serverless SQL warehouse in a region that supports the feature , there might be required steps. See Set up serverless SQL warehouses . 
+Databricks SQL delivers optimal price and performance with serverless SQL warehouses. Key advantages of serverless warehouses over pro and classic models include: 
+Instant and elastic compute : Eliminates waiting for infrastructure resources and avoids resource over-provisioning during usage spikes. Intelligent workload management dynamically handles scaling. See SQL warehouse types for more information on intelligent workload management and other serverless features. 
+Minimal management overhead : Capacity management, patching, upgrades, and performance optimization are all handled by Databricks , simplifying operations and leading to predictable pricing. 
+Lower total cost of ownership (TCO) : Automatic provisioning and scaling of resources as needed helps avoid over-provisioning and reduces idle times, thus lowering TCO. 
+Start a SQL warehouse ​ 
+To manually start a stopped SQL warehouse, click SQL Warehouses in the sidebar then click the start icon next to the warehouse. note 
+You must have at least CAN MONITOR permissions on the SQL warehouse to manually restart it. See SQL warehouse ACLs . 
+A SQL warehouse auto-restarts in the following conditions: 
+A warehouse is stopped and you attempt to run a query. 
+A job assigned to a stopped warehouse is scheduled to run. 
+A connection is established to a stopped warehouse from a JDBC/ODBC interface. 
+A dashboard associated with a dashboard-level warehouse is opened. 
+Create a SQL warehouse ​ 
+Configuring and launching SQL warehouses requires elevated permissions generally restricted to an administrator. See SQL warehouse admin settings and Create a SQL warehouse . 
+Unity Catalog governs data access permissions on SQL warehouses for most assets. Administrators configure most data access permissions. SQL warehouses can have custom data access configured instead of or in addition to Unity Catalog . See Data access configurations . 
+You should contact an administrator in the following situations: 
+You cannot connect to any SQL warehouses. 
+You cannot run queries because a SQL warehouse is stopped. 
+You cannot access tables or data from your SQL warehouse. note 
+Some organizations might allow users to modify privileges on either database objects or SQL warehouses. Check with your teammates and admins to understand how your organization manages data access. 
+Warehouse sizing and autoscaling behavior ​ 
+For information on how classic and pro SQL warehouses are sized and how autoscaling works, see SQL warehouse sizing, scaling, and queuing behavior . 
+SQL warehouses and third party BI tools ​ 
+Databricks SQL supports many third party BI and visualization tools that can connect to SQL warehouses, including the following: 
+Power BI with Databricks 
+Connect Tableau and Databricks 
+Developer tools for SQL warehouses ​ 
+You can use the REST API, CLI, and other drivers and integrations to configure and run commands on SQL warehouses. See the following: 
+Databricks SQL REST API 
+Databricks SQL Connector for Python 
+Databricks SQL CLI 
+Databricks Driver for SQLTools for Visual Studio Code 
+DataGrip integration with Databricks 
+DBeaver integration with Databricks 
+Connect to SQL Workbench/J 
+SQL warehouses vs SQL endpoints ​ 
+SQL warehouses and SQL endpoints both refer to a type of SQL-optimized compute resource that powers Databricks SQL . In 2023, SQL endpoints were renamed as SQL warehouses. On this page 
+Use SQL warehouses 
+What are Serverless SQL warehouses? 
+Start a SQL warehouse 
+Create a SQL warehouse 
+Warehouse sizing and autoscaling behavior 
+SQL warehouses and third party BI tools 
+Developer tools for SQL warehouses 
+SQL warehouses vs SQL endpoints Privacy Notice · Terms of Use · Modern Slavery Statement · California Privacy · Your Privacy Choices © Databricks 2026. All rights reserved. Apache, Apache Spark, Spark and the Spark logo are trademarks of the Apache Software Foundation . 

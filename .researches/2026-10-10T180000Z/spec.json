@@ -1,0 +1,15 @@
+{
+  "session": ".researches/2026-10-10T180000Z",
+  "metadata": {"query": "ROAS correctness: medallion responsibilities, Delta MERGE duplicates/schema, batch boundaries versus streaming watermarks", "known": "Accepted Spark4.0.4 and Delta4.0.1 local evidence", "stoppingRule": "Primary version-qualified docs and deterministic business-state integration contracts", "date": "2026-10-11", "timezone": "Asia/Saigon", "publication": "disabled"},
+  "urls": {
+    "databricks-medallion": "https://docs.databricks.com/aws/en/lakehouse/medallion",
+    "databricks-merge": "https://docs.databricks.com/aws/en/delta/merge",
+    "delta-merge": "https://docs.delta.io/delta-update/",
+    "delta-batch": "https://docs.delta.io/delta-batch/",
+    "delta-concurrency": "https://docs.delta.io/concurrency-control/",
+    "delta-cdf": "https://docs.delta.io/delta-change-data-feed/",
+    "databricks-overwrite": "https://docs.databricks.com/aws/en/delta/selective-overwrite",
+    "databricks-watermarks": "https://docs.databricks.com/aws/en/structured-streaming/watermarks",
+    "spark-watermarks": "https://spark.apache.org/docs/4.0.4/streaming/apis-on-dataframes-and-datasets.html"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "bundle": {
+    "name": "roas-platform-lab"
+  },
+  "include": [
+    "resources/*.yml"
+  ],
+  "variables": {
+    "catalog": {
+      "description": "Existing accessible learning catalog; selected by the learner"
+    },
+    "schema": {
+      "description": "Unique schema owned by this learner; never an existing production schema"
+    }
+  },
+  "targets": {
+    "dev": {
+      "mode": "development",
+      "default": true
+    }
+  }
+}

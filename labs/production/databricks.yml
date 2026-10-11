@@ -1,0 +1,69 @@
+{
+  "bundle": {
+    "name": "course-roas-production",
+    "engine": "direct",
+    "deployment": {"lock": {"enabled": true}}
+  },
+  "include": [
+    "resources/*.yml"
+  ],
+  "variables": {
+    "workspace_host": {
+      "description": "Approved target workspace URL supplied outside Git"
+    },
+    "catalog": {
+      "description": "Approved existing target catalog"
+    },
+    "schema": {
+      "description": "Course-owned sandbox schema"
+    },
+    "run_identity": {
+      "description": "Approved target service principal application ID"
+    },
+    "operator_group": {
+      "description": "Existing approved observer group"
+    }
+  },
+  "targets": {
+    "dev": {
+      "mode": "development",
+      "default": true,
+      "variables": {
+        "schema": "course_roas_dev_sandbox"
+      },
+      "workspace": {
+        "host": "${var.workspace_host}",
+        "root_path": "/Workspace/Shared/course-bundles/${bundle.name}/${bundle.target}"
+      },
+      "run_as": {
+        "service_principal_name": "${var.run_identity}"
+      }
+    },
+    "staging": {
+      "mode": "production",
+      "variables": {
+        "schema": "course_roas_staging_sandbox"
+      },
+      "workspace": {
+        "host": "${var.workspace_host}",
+        "root_path": "/Workspace/Shared/course-bundles/${bundle.name}/${bundle.target}"
+      },
+      "run_as": {
+        "service_principal_name": "${var.run_identity}"
+      }
+    },
+    "prod": {
+      "mode": "production",
+      "variables": {
+        "schema": "course_roas_prod_sandbox"
+      },
+      "workspace": {
+        "host": "${var.workspace_host}",
+        "root_path": "/Workspace/Shared/course-bundles/${bundle.name}/${bundle.target}"
+      },
+      "run_as": {
+        "service_principal_name": "${var.run_identity}"
+      }
+    }
+  }
+}

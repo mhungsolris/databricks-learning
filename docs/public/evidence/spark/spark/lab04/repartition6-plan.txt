@@ -1,0 +1,17 @@
+== Parsed Logical Plan ==
+Repartition 6, true
++- Range (0, 120, step=1, splits=Some(4))
+
+== Analyzed Logical Plan ==
+id: bigint
+Repartition 6, true
++- Range (0, 120, step=1, splits=Some(4))
+
+== Optimized Logical Plan ==
+Repartition 6, true
++- Range (0, 120, step=1, splits=Some(4))
+
+== Physical Plan ==
+Exchange RoundRobinPartitioning(6), REPARTITION_BY_NUM, [plan_id=295]
++- *(1) Range (0, 120, step=1, splits=4)
+

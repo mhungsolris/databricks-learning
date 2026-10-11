@@ -1,0 +1,34 @@
+== Parsed Logical Plan ==
+'Aggregate ['campaign], ['campaign, 'count(1) AS count#26]
++- Project [id#15L, cast((id#15L % cast(20 as bigint)) as int) AS campaign#16]
+   +- Range (0, 4000, step=1, splits=Some(4))
+
+== Analyzed Logical Plan ==
+campaign: int, count: bigint
+Aggregate [campaign#16], [campaign#16, count(1) AS count#26L]
++- Project [id#15L, cast((id#15L % cast(20 as bigint)) as int) AS campaign#16]
+   +- Range (0, 4000, step=1, splits=Some(4))
+
+== Optimized Logical Plan ==
+Aggregate [campaign#16], [campaign#16, count(1) AS count#26L]
++- Project [cast((id#15L % 20) as int) AS campaign#16]
+   +- Range (0, 4000, step=1, splits=Some(4))
+
+== Physical Plan ==
+AdaptiveSparkPlan isFinalPlan=true
++- == Final Plan ==
+   ResultQueryStage 1
+   +- *(2) HashAggregate(keys=[campaign#16], functions=[count(1)], output=[campaign#16, count#26L])
+      +- AQEShuffleRead coalesced
+         +- ShuffleQueryStage 0
+            +- Exchange hashpartitioning(campaign#16, 4), ENSURE_REQUIREMENTS, [plan_id=166]
+               +- *(1) HashAggregate(keys=[campaign#16], functions=[partial_count(1)], output=[campaign#16, count#31L])
+                  +- *(1) Project [cast((id#15L % 20) as int) AS campaign#16]
+                     +- *(1) Range (0, 4000, step=1, splits=4)
++- == Initial Plan ==
+   HashAggregate(keys=[campaign#16], functions=[count(1)], output=[campaign#16, count#26L])
+   +- Exchange hashpartitioning(campaign#16, 4), ENSURE_REQUIREMENTS, [plan_id=156]
+      +- HashAggregate(keys=[campaign#16], functions=[partial_count(1)], output=[campaign#16, count#31L])
+         +- Project [cast((id#15L % 20) as int) AS campaign#16]
+            +- Range (0, 4000, step=1, splits=4)
+

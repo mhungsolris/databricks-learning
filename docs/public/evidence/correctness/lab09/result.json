@@ -1,0 +1,70 @@
+{
+  "bronzeRows": 5,
+  "silverRows": 3,
+  "gold": [
+    {
+      "date": "2026-10-01",
+      "platform": "google",
+      "account_id": "account-1",
+      "app_id": "appA",
+      "campaign_id": "C1",
+      "currency": "USD",
+      "revenue": 100,
+      "cost": 50,
+      "cost_present": true,
+      "roas": 2.0
+    },
+    {
+      "date": "2026-10-01",
+      "platform": "meta",
+      "account_id": "account-1",
+      "app_id": "appA",
+      "campaign_id": "C2",
+      "currency": "USD",
+      "revenue": 50,
+      "cost": 40,
+      "cost_present": true,
+      "roas": 1.25
+    },
+    {
+      "date": "2026-10-01",
+      "platform": "tiktok",
+      "account_id": "account-1",
+      "app_id": "appA",
+      "campaign_id": "C3",
+      "currency": "USD",
+      "revenue": 0,
+      "cost": 30,
+      "cost_present": true,
+      "roas": 0.0
+    },
+    {
+      "date": "2026-10-01",
+      "platform": "unity",
+      "account_id": "account-1",
+      "app_id": "appA",
+      "campaign_id": "C4",
+      "currency": "USD",
+      "revenue": 0,
+      "cost": 20,
+      "cost_present": true,
+      "roas": 0.0
+    },
+    {
+      "date": "2026-10-01",
+      "platform": "unknown",
+      "account_id": "account-1",
+      "app_id": "appA",
+      "campaign_id": "UNKNOWN",
+      "currency": "USD",
+      "revenue": 20,
+      "cost": 0,
+      "cost_present": false,
+      "roas": null
+    }
+  ],
+  "wrongDetailCost": 100,
+  "correctCost": 50,
+  "revenueConserved": 170,
+  "costConserved": 140
+}

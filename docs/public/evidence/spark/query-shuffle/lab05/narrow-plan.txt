@@ -1,0 +1,23 @@
+== Parsed Logical Plan ==
+'Project ['id, 'key]
++- Filter (id#0L >= cast(60 as bigint))
+   +- Project [id#0L, (id#0L % cast(3 as bigint)) AS key#1L]
+      +- Range (0, 120, step=1, splits=Some(4))
+
+== Analyzed Logical Plan ==
+id: bigint, key: bigint
+Project [id#0L, key#1L]
++- Filter (id#0L >= cast(60 as bigint))
+   +- Project [id#0L, (id#0L % cast(3 as bigint)) AS key#1L]
+      +- Range (0, 120, step=1, splits=Some(4))
+
+== Optimized Logical Plan ==
+Project [id#0L, (id#0L % 3) AS key#1L]
++- Filter (id#0L >= 60)
+   +- Range (0, 120, step=1, splits=Some(4))
+
+== Physical Plan ==
+*(1) Project [id#0L, (id#0L % 3) AS key#1L]
++- *(1) Filter (id#0L >= 60)
+   +- *(1) Range (0, 120, step=1, splits=4)
+

@@ -1,0 +1,13 @@
+{
+  "query": "Architecture judgment official sources",
+  "known": "Spark4.0.4 Delta4.0.1 local only",
+  "stoppingRule": "Version-qualified official semantics and each platform ownership boundary",
+  "date": "2026-10-11",
+  "timezone": "Asia/Saigon",
+  "publication": "disabled",
+  "source": "search",
+  "tool": "web-tools",
+  "timestamp": "2026-10-11-architecture",
+  "timestampIso": "2026-10-11T08:47:04.896Z",
+  "createdAt": "2026-10-11T08:47:04.896Z"
+}

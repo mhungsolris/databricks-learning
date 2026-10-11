@@ -1,0 +1,71 @@
+{
+  "smoke": {
+    "rows": 2,
+    "revenue": 300,
+    "snapshotExists": true
+  },
+  "snapshots": {
+    "oldRows": 2,
+    "currentRows": 3,
+    "history": [
+      {
+        "snapshot_id": 1188463604688640897,
+        "parent_id": null,
+        "operation": "append"
+      },
+      {
+        "snapshot_id": 3561995890687308440,
+        "parent_id": 1188463604688640897,
+        "operation": "append"
+      }
+    ]
+  },
+  "schema": {
+    "renamedFieldId": 3,
+    "oldRowsCountryNull": true,
+    "rows": 4
+  },
+  "partition": {
+    "specIds": [
+      0,
+      1
+    ],
+    "oldFilesRetained": true,
+    "rows": 3,
+    "revenue": 350
+  },
+  "mutations": {
+    "strategy": "copy-on-write",
+    "rows": 2,
+    "revenue": 170,
+    "operations": [
+      "UPDATE",
+      "DELETE",
+      "MERGE"
+    ],
+    "dataFilesOnly": true
+  },
+  "mor": {
+    "files": [
+      {
+        "content": 0,
+        "record_count": 2
+      },
+      {
+        "content": 1,
+        "record_count": 1
+      }
+    ],
+    "positionDeleteObserved": true,
+    "rows": 1,
+    "revenue": 200,
+    "equalityDeleteExecuted": false,
+    "v3Executed": false
+  },
+  "metadata": {
+    "snapshotCount": 3,
+    "manifestCount": 3,
+    "dataFileCount": 4,
+    "referencedFilesExist": true
+  }
+}

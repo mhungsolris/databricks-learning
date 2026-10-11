@@ -1,0 +1,114 @@
+{
+  "rows": [
+    {
+      "source_system": "adjust",
+      "app_id": "appA",
+      "event_id": "E1",
+      "revision": 3,
+      "revenue": 120,
+      "event_time": "2026-10-01T10:00:00Z",
+      "updated_at": "2026-10-03T08:00:00Z",
+      "platform": "google",
+      "account_id": "account-1",
+      "campaign_id": "C1",
+      "currency": "USD",
+      "is_deleted": false
+    }
+  ],
+  "hash": "2d0aad4da2ad827a0000ae229600869bd4e6aa72a58c86a1694af5b1bc71b6b9",
+  "history": [
+    {
+      "version": 3,
+      "operation": "MERGE",
+      "operationMetrics": {
+        "numOutputRows": "1",
+        "numTargetBytesAdded": "4764",
+        "numTargetRowsInserted": "0",
+        "numTargetRowsMatchedDeleted": "0",
+        "numTargetFilesAdded": "1",
+        "materializeSourceTimeMs": "2230",
+        "numTargetFilesRemoved": "1",
+        "numTargetRowsMatchedUpdated": "1",
+        "executionTimeMs": "4034",
+        "numTargetDeletionVectorsUpdated": "0",
+        "numTargetRowsCopied": "0",
+        "rewriteTimeMs": "490",
+        "numTargetRowsUpdated": "1",
+        "numTargetDeletionVectorsRemoved": "0",
+        "numTargetRowsDeleted": "0",
+        "scanTimeMs": "1212",
+        "numSourceRows": "1",
+        "numTargetDeletionVectorsAdded": "0",
+        "numTargetChangeFilesAdded": "0",
+        "numTargetRowsNotMatchedBySourceUpdated": "0",
+        "numTargetRowsNotMatchedBySourceDeleted": "0",
+        "numTargetBytesRemoved": "4763"
+      }
+    },
+    {
+      "version": 2,
+      "operation": "MERGE",
+      "operationMetrics": {
+        "numOutputRows": "1",
+        "numTargetBytesAdded": "4763",
+        "numTargetRowsInserted": "0",
+        "numTargetRowsMatchedDeleted": "0",
+        "numTargetFilesAdded": "1",
+        "materializeSourceTimeMs": "1307",
+        "numTargetFilesRemoved": "1",
+        "numTargetRowsMatchedUpdated": "1",
+        "executionTimeMs": "3398",
+        "numTargetDeletionVectorsUpdated": "0",
+        "numTargetRowsCopied": "0",
+        "rewriteTimeMs": "504",
+        "numTargetRowsUpdated": "1",
+        "numTargetDeletionVectorsRemoved": "0",
+        "numTargetRowsDeleted": "0",
+        "scanTimeMs": "1511",
+        "numSourceRows": "1",
+        "numTargetDeletionVectorsAdded": "0",
+        "numTargetChangeFilesAdded": "0",
+        "numTargetRowsNotMatchedBySourceUpdated": "0",
+        "numTargetRowsNotMatchedBySourceDeleted": "0",
+        "numTargetBytesRemoved": "4764"
+      }
+    },
+    {
+      "version": 1,
+      "operation": "MERGE",
+      "operationMetrics": {
+        "numOutputRows": "1",
+        "numTargetBytesAdded": "4764",
+        "numTargetRowsInserted": "1",
+        "numTargetRowsMatchedDeleted": "0",
+        "numTargetFilesAdded": "1",
+        "materializeSourceTimeMs": "2913",
+        "numTargetFilesRemoved": "0",
+        "numTargetRowsMatchedUpdated": "0",
+        "executionTimeMs": "4954",
+        "numTargetDeletionVectorsUpdated": "0",
+        "numTargetRowsCopied": "0",
+        "rewriteTimeMs": "1196",
+        "numTargetRowsUpdated": "0",
+        "numTargetDeletionVectorsRemoved": "0",
+        "numTargetRowsDeleted": "0",
+        "scanTimeMs": "799",
+        "numSourceRows": "1",
+        "numTargetDeletionVectorsAdded": "0",
+        "numTargetChangeFilesAdded": "0",
+        "numTargetRowsNotMatchedBySourceUpdated": "0",
+        "numTargetRowsNotMatchedBySourceDeleted": "0",
+        "numTargetBytesRemoved": "0"
+      }
+    },
+    {
+      "version": 0,
+      "operation": "WRITE",
+      "operationMetrics": {
+        "numOutputRows": "0",
+        "numOutputBytes": "1596",
+        "numFiles": "1"
+      }
+    }
+  ]
+}

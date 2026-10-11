@@ -1,0 +1,16 @@
+{
+  "sourceRun": "20261011T090254Z-ab860623",
+  "verified": "2026-10-11",
+  "tier": "LOCAL ICEBERG",
+  "files": {
+    "runtime.json": "a82471fab7dbc17714a21f48507b95f5c1ce14da1860ffb83e037958ecb93c41",
+    "iceberg-runtime.json": "869e3b4588f9f6af4539a3e1ccef81478ce666d7aa7878f470a3346bffd40a22",
+    "source-hashes.json": "92922150ac0ccf918edbd3611ca7ccfbd231d6ce56faf65e38f56fc421b1e008",
+    "results.json": "9d5134f7b1024d05c9ae077d529731316619ad154e7112748047d7d7ca692f51",
+    "tests.json": "691287cdd65fa92f3fb043ed0b6551a80e604f601f6cb8df4f175d142c91ee19",
+    "shutdown.json": "995b859531438e449c3901e8ef45dcbd8a9e476ec73d1f0fded746f738b6b99b",
+    "stages.json": "670c380bf3620d51450a8ff56c57b8a0821bc2130755d89582a0514d9d4aecb1",
+    "table-metadata.json": "b1f90709a23aa510e4edff1016929bc0ed2f4f13d9dce42bc91d6c6fdee8a817",
+    "metadata-tables.json": "0e05c38b4ae732e62432dead927daf4c094515bda5b48857591bc58135f1c3a4"
+  }
+}

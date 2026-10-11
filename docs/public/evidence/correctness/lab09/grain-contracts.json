@@ -1,0 +1,18 @@
+{
+  "bronze": "one delivery",
+  "silver": [
+    "source_system",
+    "app_id",
+    "event_id"
+  ],
+  "dailyCostAndGold": [
+    "date",
+    "platform",
+    "account_id",
+    "app_id",
+    "campaign_id",
+    "currency"
+  ],
+  "money": "integer USD cents",
+  "timezone": "UTC"
+}

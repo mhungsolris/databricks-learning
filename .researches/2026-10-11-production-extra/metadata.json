@@ -1,0 +1,13 @@
+{
+  "query": "Current SQL alerts and CLI release",
+  "known": "Main production source findings verified",
+  "stoppingRule": "Official release/alert page",
+  "date": "2026-10-11",
+  "timezone": "Asia/Saigon",
+  "publication": "disabled",
+  "source": "search",
+  "tool": "web-tools",
+  "timestamp": "2026-10-11-production-extra",
+  "timestampIso": "2026-10-11T06:21:54.936Z",
+  "createdAt": "2026-10-11T06:21:54.936Z"
+}

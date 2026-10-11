@@ -1,0 +1,37 @@
+== Parsed Logical Plan ==
+'Join UsingJoin(Inner, [campaign])
+:- Project [id#15L, cast((id#15L % cast(20 as bigint)) as int) AS campaign#16]
+:  +- Range (0, 4000, step=1, splits=Some(4))
++- ResolvedHint (strategy=broadcast)
+   +- Project [cast(id#17L as int) AS campaign#18, name AS label#19]
+      +- Range (0, 20, step=1, splits=Some(8))
+
+== Analyzed Logical Plan ==
+campaign: int, id: bigint, label: string
+Project [campaign#16, id#15L, label#19]
++- Join Inner, (campaign#16 = campaign#18)
+   :- Project [id#15L, cast((id#15L % cast(20 as bigint)) as int) AS campaign#16]
+   :  +- Range (0, 4000, step=1, splits=Some(4))
+   +- ResolvedHint (strategy=broadcast)
+      +- Project [cast(id#17L as int) AS campaign#18, name AS label#19]
+         +- Range (0, 20, step=1, splits=Some(8))
+
+== Optimized Logical Plan ==
+Project [campaign#16, id#15L, name AS label#19]
++- Join Inner, (campaign#16 = campaign#18), rightHint=(strategy=broadcast)
+   :- Project [id#15L, cast((id#15L % 20) as int) AS campaign#16]
+   :  +- Filter isnotnull(cast((id#15L % 20) as int))
+   :     +- Range (0, 4000, step=1, splits=Some(4))
+   +- Project [cast(id#17L as int) AS campaign#18]
+      +- Range (0, 20, step=1, splits=Some(8))
+
+== Physical Plan ==
+*(2) Project [campaign#16, id#15L, name AS label#19]
++- *(2) BroadcastHashJoin [campaign#16], [campaign#18], Inner, BuildRight, false
+   :- *(2) Project [id#15L, cast((id#15L % 20) as int) AS campaign#16]
+   :  +- *(2) Filter isnotnull(cast((id#15L % 20) as int))
+   :     +- *(2) Range (0, 4000, step=1, splits=4)
+   +- BroadcastExchange HashedRelationBroadcastMode(List(cast(input[0, int, false] as bigint)),false), [plan_id=131]
+      +- *(1) Project [cast(id#17L as int) AS campaign#18]
+         +- *(1) Range (0, 20, step=1, splits=8)
+

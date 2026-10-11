@@ -1,0 +1,26 @@
+{
+  "rows": 120,
+  "filteredRows": 60,
+  "files": [
+    {
+      "file": "part-00000-766e252b-1724-4828-a084-be16c28dc69d-c000.snappy.parquet",
+      "bytes": 2322,
+      "footerBytes": 1250,
+      "rowGroups": 1,
+      "rows": 60,
+      "codec": "SNAPPY"
+    },
+    {
+      "file": "part-00001-766e252b-1724-4828-a084-be16c28dc69d-c000.snappy.parquet",
+      "bytes": 2328,
+      "footerBytes": 1250,
+      "rowGroups": 1,
+      "rows": 60,
+      "codec": "SNAPPY"
+    }
+  ],
+  "storageDirectories": [
+    "date=2026-10-01",
+    "date=2026-10-02"
+  ]
+}

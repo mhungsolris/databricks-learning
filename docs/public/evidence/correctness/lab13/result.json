@@ -1,0 +1,27 @@
+{
+  "eventDate": "2026-10-01",
+  "incorrectProcessingDate": "2026-10-02",
+  "event": {
+    "source_system": "adjust",
+    "app_id": "appA",
+    "event_id": "L1",
+    "revision": 1,
+    "revenue": 100,
+    "event_time": "2026-10-01T23:59:00Z",
+    "updated_at": "2026-10-02T08:00:00Z",
+    "ingested_at": "2026-10-02T00:03:00Z",
+    "processed_at": "2026-10-02T00:15:00Z",
+    "platform": "google",
+    "account_id": "account-1",
+    "campaign_id": "C1",
+    "currency": "USD",
+    "is_deleted": false,
+    "channel": "callback"
+  },
+  "businessDateRevenue": {
+    "2026-10-01": 100
+  },
+  "wrongDateRevenue": {
+    "2026-10-02": 100
+  }
+}

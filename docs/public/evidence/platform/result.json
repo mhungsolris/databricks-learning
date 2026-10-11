@@ -1,0 +1,202 @@
+{
+  "evidenceTier": "LOCAL SPARK TEST",
+  "workspaceStatus": "PENDING USER WORKSPACE",
+  "scope": "SELECT semantics only; notebook DDL converted to temporary views",
+  "silver": [
+    {
+      "source_system": "callback",
+      "app_id": "a",
+      "event_id": "E3",
+      "revision": 1,
+      "campaign_id": "B",
+      "event_date": "2026-10-01",
+      "currency": "USD",
+      "amount_cents": 100
+    },
+    {
+      "source_system": "callback",
+      "app_id": "a",
+      "event_id": "E1",
+      "revision": 1,
+      "campaign_id": "A",
+      "event_date": "2026-10-01",
+      "currency": "USD",
+      "amount_cents": 300
+    },
+    {
+      "source_system": "callback",
+      "app_id": "b",
+      "event_id": "E1",
+      "revision": 1,
+      "campaign_id": "A",
+      "event_date": "2026-10-01",
+      "currency": "USD",
+      "amount_cents": 50
+    },
+    {
+      "source_system": "callback",
+      "app_id": "a",
+      "event_id": "E2",
+      "revision": 2,
+      "campaign_id": "A",
+      "event_date": "2026-10-01",
+      "currency": "USD",
+      "amount_cents": 800
+    }
+  ],
+  "gold": [
+    {
+      "source_system": "callback",
+      "app_id": "a",
+      "event_date": "2026-10-01",
+      "campaign_id": "A",
+      "currency": "USD",
+      "revenue_cents": 1100,
+      "cost_cents": 400,
+      "events": 2,
+      "roas": 2.75
+    },
+    {
+      "source_system": "callback",
+      "app_id": "a",
+      "event_date": "2026-10-01",
+      "campaign_id": "B",
+      "currency": "USD",
+      "revenue_cents": 100,
+      "cost_cents": 200,
+      "events": 1,
+      "roas": 0.5
+    },
+    {
+      "source_system": "callback",
+      "app_id": "b",
+      "event_date": "2026-10-01",
+      "campaign_id": "A",
+      "currency": "USD",
+      "revenue_cents": 50,
+      "cost_cents": 100,
+      "events": 1,
+      "roas": 0.5
+    }
+  ],
+  "serving": [
+    [
+      {
+        "event_date": "2026-10-01",
+        "currency": "USD",
+        "revenue_cents": 1250,
+        "cost_cents": 700,
+        "roas": 1.7857142857142858
+      }
+    ],
+    [
+      {
+        "source_system": "callback",
+        "app_id": "a",
+        "event_date": "2026-10-01",
+        "campaign_id": "A",
+        "currency": "USD",
+        "revenue_cents": 1100,
+        "cost_cents": 400,
+        "events": 2,
+        "roas": 2.75
+      }
+    ],
+    [
+      {
+        "source_system": "callback",
+        "app_id": "a",
+        "campaign_id": "A",
+        "event_date": "2026-10-01",
+        "currency": "USD",
+        "revenue_cents": 1100,
+        "cost_cents": 400,
+        "events": 2,
+        "roas": 2.75,
+        "campaign_name": "Acquisition A"
+      },
+      {
+        "source_system": "callback",
+        "app_id": "a",
+        "campaign_id": "B",
+        "event_date": "2026-10-01",
+        "currency": "USD",
+        "revenue_cents": 100,
+        "cost_cents": 200,
+        "events": 1,
+        "roas": 0.5,
+        "campaign_name": "Retention B"
+      },
+      {
+        "source_system": "callback",
+        "app_id": "b",
+        "campaign_id": "A",
+        "event_date": "2026-10-01",
+        "currency": "USD",
+        "revenue_cents": 50,
+        "cost_cents": 100,
+        "events": 1,
+        "roas": 0.5,
+        "campaign_name": "App B acquisition"
+      }
+    ],
+    [
+      {
+        "campaign_id": "A",
+        "currency": "USD",
+        "revenue_cents": 1150,
+        "cost_cents": 500
+      },
+      {
+        "campaign_id": "B",
+        "currency": "USD",
+        "revenue_cents": 100,
+        "cost_cents": 200
+      }
+    ]
+  ],
+  "failureFanout": {
+    "rows": 6,
+    "revenueCents": 2500
+  },
+  "zeroCost": {
+    "rows": 3,
+    "allRoasNull": true
+  },
+  "equalRevisionConflict": {
+    "groupsRejected": 1
+  },
+  "pipelineQuery": [
+    {
+      "source_system": "callback",
+      "app_id": "a",
+      "event_date": "2026-10-01",
+      "campaign_id": "A",
+      "currency": "USD",
+      "revenue_cents": 1100,
+      "events": 2
+    },
+    {
+      "source_system": "callback",
+      "app_id": "a",
+      "event_date": "2026-10-01",
+      "campaign_id": "B",
+      "currency": "USD",
+      "revenue_cents": 100,
+      "events": 1
+    },
+    {
+      "source_system": "callback",
+      "app_id": "b",
+      "event_date": "2026-10-01",
+      "campaign_id": "A",
+      "currency": "USD",
+      "revenue_cents": 50,
+      "events": 1
+    }
+  ],
+  "expectationInputCounterexample": {
+    "invalidRows": 1,
+    "platformExpectationExecuted": false
+  }
+}

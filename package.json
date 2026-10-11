@@ -1,0 +1,21 @@
+{
+  "name": "databricks-learning-agent-skills",
+  "private": true,
+  "scripts": {
+    "skills:verify": "python scripts/verify_skills.py",
+    "research:session:init": "tsx .agents/skills/research-online/scripts/init-research-session.ts",
+    "research:save": "tsx .agents/skills/research-online/scripts/save-web-research.ts",
+    "research:consolidate": "tsx .agents/skills/research-online/scripts/consolidate-research.ts --no-publish",
+    "docs:dev": "vitepress dev docs --host 127.0.0.1",
+    "docs:check": "node scripts/check_docs.mjs",
+    "docs:build": "vitepress build docs && python scripts/check_built_links.py && node scripts/check_private_material.mjs && python scripts/check_correctness_evidence.py && python scripts/check_streaming_evidence.py && python scripts/check_platform_evidence.py && python scripts/check_production_evidence.py && python scripts/check_iceberg_evidence.py",
+    "docs:preview": "vitepress preview docs --host 127.0.0.1",
+    "docs:test-ui": "node scripts/browser_check.mjs"
+  },
+  "devDependencies": {
+    "mermaid": "12.1.0",
+    "playwright": "1.64.0",
+    "tsx": "4.20.6",
+    "vitepress": "1.6.4"
+  }
+}

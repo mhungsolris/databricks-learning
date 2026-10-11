@@ -1,0 +1,11 @@
+{
+  "version": "1.12.0",
+  "spark": "4.0",
+  "scala": "2.13",
+  "artifact": "org.apache.iceberg:iceberg-spark-runtime-4.0_2.13:1.12.0",
+  "catalog": "local",
+  "type": "hadoop",
+  "formatVersion": 2,
+  "verified": "2026-10-11",
+  "source": "https://iceberg.apache.org/releases/"
+}

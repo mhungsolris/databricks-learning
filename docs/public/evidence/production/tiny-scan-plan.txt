@@ -1,0 +1,22 @@
+== Parsed Logical Plan ==
+'Project ['id]
++- Filter (event_day#561 = 1)
+   +- Relation [id#560L,event_day#561] parquet
+
+== Analyzed Logical Plan ==
+id: bigint
+Project [id#560L]
++- Filter (event_day#561 = 1)
+   +- Relation [id#560L,event_day#561] parquet
+
+== Optimized Logical Plan ==
+Project [id#560L]
++- Filter (isnotnull(event_day#561) AND (event_day#561 = 1))
+   +- Relation [id#560L,event_day#561] parquet
+
+== Physical Plan ==
+*(1) Project [id#560L]
++- *(1) Filter (isnotnull(event_day#561) AND (event_day#561 = 1))
+   +- *(1) ColumnarToRow
+      +- FileScan parquet [id#560L,event_day#561] Batched: true, DataFilters: [isnotnull(event_day#561), (event_day#561 = 1)], Format: Parquet, Location: PreparedDeltaFileIndex(1 paths)[file:/evidence/tests-production/20261011T062450Z-30a3ef62/tiny-de..., PartitionFilters: [], PushedFilters: [IsNotNull(event_day), EqualTo(event_day,1)], ReadSchema: struct<id:bigint,event_day:int>
+

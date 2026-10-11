@@ -1,0 +1,13 @@
+{
+  "evidenceTier": "PORTABLE",
+  "contract": "Completed non-refund USD events; source_system/app_id/event_id identity",
+  "rows": [
+    {"case": "null_identity", "event_id": null, "amount_cents": 100, "event_time": "2026-10-01T12:00:00Z", "country": "VN"},
+    {"case": "negative_completed_amount", "event_id": "E2", "amount_cents": -100, "event_time": "2026-10-01T12:00:00Z", "country": "VN"},
+    {"case": "delivery_retry", "event_id": "E3", "amount_cents": 100, "event_time": "2026-10-01T12:00:00Z", "country": "VN"},
+    {"case": "delivery_retry", "event_id": "E3", "amount_cents": 100, "event_time": "2026-10-01T12:00:00Z", "country": "VN"},
+    {"case": "unknown_country", "event_id": "E4", "amount_cents": 100, "event_time": "2026-10-01T12:00:00Z", "country": "UNKNOWN"},
+    {"case": "invalid_timestamp", "event_id": "E5", "amount_cents": 100, "event_time": "not-a-timestamp", "country": "VN"}
+  ],
+  "task": "Propose WARN/DROP/FAIL/QUARANTINE and justify alternatives; add source/app/revision semantics before dedup. No universal policy answer."
+}

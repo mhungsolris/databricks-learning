@@ -1,0 +1,112 @@
+{
+  "matrixHashes": {
+    "insert": "9aa890451390b0f508514dd9843a9c76225be6ced6b3b6bafb75c1ad378e3f57",
+    "update": "1d6a8607e7cedc6d89df95e31a60e0e18bbcaa364f6bf58ae4d3be52c99a9f08",
+    "replay": "1d6a8607e7cedc6d89df95e31a60e0e18bbcaa364f6bf58ae4d3be52c99a9f08",
+    "stale": "1d6a8607e7cedc6d89df95e31a60e0e18bbcaa364f6bf58ae4d3be52c99a9f08",
+    "newer-and-distinct-event": "363572aab63c6a00301d3ea4bd4af71fb4185901b8dd8059ca161a6ba7aa7da7"
+  },
+  "states": {
+    "insert": [
+      {
+        "source_system": "adjust",
+        "app_id": "appA",
+        "event_id": "E123",
+        "revision": 1,
+        "revenue": 0,
+        "event_time": "2026-10-01T10:00:00Z",
+        "updated_at": "2026-10-01T10:01:00Z",
+        "platform": "google",
+        "account_id": "account-1",
+        "campaign_id": "C1",
+        "currency": "USD",
+        "is_deleted": false
+      }
+    ],
+    "update": [
+      {
+        "source_system": "adjust",
+        "app_id": "appA",
+        "event_id": "E123",
+        "revision": 2,
+        "revenue": 100,
+        "event_time": "2026-10-01T10:00:00Z",
+        "updated_at": "2026-10-02T08:00:00Z",
+        "platform": "google",
+        "account_id": "account-1",
+        "campaign_id": "C1",
+        "currency": "USD",
+        "is_deleted": false
+      }
+    ],
+    "replay": [
+      {
+        "source_system": "adjust",
+        "app_id": "appA",
+        "event_id": "E123",
+        "revision": 2,
+        "revenue": 100,
+        "event_time": "2026-10-01T10:00:00Z",
+        "updated_at": "2026-10-02T08:00:00Z",
+        "platform": "google",
+        "account_id": "account-1",
+        "campaign_id": "C1",
+        "currency": "USD",
+        "is_deleted": false
+      }
+    ],
+    "stale": [
+      {
+        "source_system": "adjust",
+        "app_id": "appA",
+        "event_id": "E123",
+        "revision": 2,
+        "revenue": 100,
+        "event_time": "2026-10-01T10:00:00Z",
+        "updated_at": "2026-10-02T08:00:00Z",
+        "platform": "google",
+        "account_id": "account-1",
+        "campaign_id": "C1",
+        "currency": "USD",
+        "is_deleted": false
+      }
+    ],
+    "newer-and-distinct-event": [
+      {
+        "source_system": "adjust",
+        "app_id": "appA",
+        "event_id": "E123",
+        "revision": 3,
+        "revenue": 120,
+        "event_time": "2026-10-01T10:00:00Z",
+        "updated_at": "2026-10-03T08:00:00Z",
+        "platform": "google",
+        "account_id": "account-1",
+        "campaign_id": "C1",
+        "currency": "USD",
+        "is_deleted": false
+      },
+      {
+        "source_system": "adjust",
+        "app_id": "appA",
+        "event_id": "E124",
+        "revision": 1,
+        "revenue": 100,
+        "event_time": "2026-10-01T10:00:00Z",
+        "updated_at": "2026-10-01T10:01:00Z",
+        "platform": "google",
+        "account_id": "account-1",
+        "campaign_id": "C1",
+        "currency": "USD",
+        "is_deleted": false
+      }
+    ]
+  },
+  "duplicateSourceRejected": true,
+  "engineAmbiguityRejected": true,
+  "additiveReplay": [
+    100,
+    200,
+    300
+  ]
+}

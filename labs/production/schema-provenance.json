@@ -1,0 +1,6 @@
+{
+  "cliVersion": "1.20.0",
+  "canonicalSchemaSHA256": "1aa80c7378e45f2193efb4d77031d395ab496555b43ff3a359b59fb9a87b85d0",
+  "source": "https://github.com/databricks/cli/releases/tag/v1.20.0",
+  "capture": ".researches/2026-10-11-production-extra/cli-evidence/schema.json"
+}

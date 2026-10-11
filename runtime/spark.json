@@ -1,0 +1,10 @@
+{
+  "sparkVersion": "4.0.4",
+  "image": "apache/spark@sha256:94ad730f7510002d8a1615de269f27cdeca4d4eef51657384db3fa9246b5a4d8",
+  "sourceTag": "apache/spark:4.0.4-python3",
+  "master": "local[*]",
+  "cpus": "2",
+  "memory": "4g",
+  "driverMemory": "1g",
+  "deltaVersion": "4.0.1"
+}

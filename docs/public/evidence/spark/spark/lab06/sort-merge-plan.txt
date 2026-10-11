@@ -1,0 +1,36 @@
+== Parsed Logical Plan ==
+'Join UsingJoin(Inner, [campaign_id])
+:- Project [id#70L, CASE WHEN (id#70L < cast(7000 as bigint)) THEN UNKNOWN ELSE concat(C, cast((id#70L % cast(100 as bigint)) as string)) END AS campaign_id#71]
+:  +- Range (0, 10000, step=1, splits=Some(4))
++- LogicalRDD [campaign_id#72, category#73], false
+
+== Analyzed Logical Plan ==
+campaign_id: string, id: bigint, category: string
+Project [campaign_id#71, id#70L, category#73]
++- Join Inner, (campaign_id#71 = campaign_id#72)
+   :- Project [id#70L, CASE WHEN (id#70L < cast(7000 as bigint)) THEN UNKNOWN ELSE concat(C, cast((id#70L % cast(100 as bigint)) as string)) END AS campaign_id#71]
+   :  +- Range (0, 10000, step=1, splits=Some(4))
+   +- LogicalRDD [campaign_id#72, category#73], false
+
+== Optimized Logical Plan ==
+Project [campaign_id#71, id#70L, category#73]
++- Join Inner, (campaign_id#71 = campaign_id#72)
+   :- Project [id#70L, CASE WHEN (id#70L < 7000) THEN UNKNOWN ELSE concat(C, cast((id#70L % 100) as string)) END AS campaign_id#71]
+   :  +- Filter CASE WHEN (id#70L < 7000) THEN true ELSE isnotnull(concat(C, cast((id#70L % 100) as string))) END
+   :     +- Range (0, 10000, step=1, splits=Some(4))
+   +- Filter isnotnull(campaign_id#72)
+      +- LogicalRDD [campaign_id#72, category#73], false
+
+== Physical Plan ==
+*(5) Project [campaign_id#71, id#70L, category#73]
++- *(5) SortMergeJoin [campaign_id#71], [campaign_id#72], Inner
+   :- *(2) Sort [campaign_id#71 ASC NULLS FIRST], false, 0
+   :  +- Exchange hashpartitioning(campaign_id#71, 4), ENSURE_REQUIREMENTS, [plan_id=618]
+   :     +- *(1) Project [id#70L, CASE WHEN (id#70L < 7000) THEN UNKNOWN ELSE concat(C, cast((id#70L % 100) as string)) END AS campaign_id#71]
+   :        +- *(1) Filter CASE WHEN (id#70L < 7000) THEN true ELSE isnotnull(concat(C, cast((id#70L % 100) as string))) END
+   :           +- *(1) Range (0, 10000, step=1, splits=4)
+   +- *(4) Sort [campaign_id#72 ASC NULLS FIRST], false, 0
+      +- Exchange hashpartitioning(campaign_id#72, 4), ENSURE_REQUIREMENTS, [plan_id=624]
+         +- *(3) Filter isnotnull(campaign_id#72)
+            +- *(3) Scan ExistingRDD[campaign_id#72,category#73]
+

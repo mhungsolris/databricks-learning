@@ -1,0 +1,212 @@
+{
+  "name": "ROAS sandbox release (manual, workspace required)",
+  "on": {
+    "workflow_dispatch": {
+      "inputs": {
+        "release_prod": {
+          "description": "Promote the same tested commit through dev and staging to the prod sandbox",
+          "type": "boolean",
+          "default": false,
+          "required": true
+        }
+      }
+    }
+  },
+  "permissions": {
+    "contents": "read"
+  },
+  "concurrency": {
+    "group": "roas-sandbox-release",
+    "cancel-in-progress": false
+  },
+  "jobs": {
+    "checks": {
+      "runs-on": "ubuntu-latest",
+      "steps": [
+        {
+          "uses": "actions/checkout@11d5960a326750d5838078e36cf38b85af677262"
+        },
+        {
+          "uses": "actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065",
+          "with": {
+            "python-version": "3.12"
+          }
+        },
+        {
+          "run": "python -m pip install -r labs/production/requirements-test.txt"
+        },
+        {
+          "run": "python -m compileall -q labs/production scripts/test_production.py scripts/check_production_config.py"
+        },
+        {
+          "run": "python -m pytest labs/production/tests -q"
+        },
+        {
+          "run": "python scripts/check_production_config.py"
+        },
+        {
+          "run": "python scripts/test_production.py"
+        }
+      ]
+    },
+    "dev": {
+      "if": "github.ref == 'refs/heads/main'",
+      "needs": [
+        "checks"
+      ],
+      "runs-on": "ubuntu-latest",
+      "environment": "dev",
+      "permissions": {
+        "contents": "read",
+        "id-token": "write"
+      },
+      "env": {
+        "DATABRICKS_AUTH_TYPE": "github-oidc",
+        "DATABRICKS_HOST": "${{ vars.DATABRICKS_HOST }}",
+        "DATABRICKS_CLIENT_ID": "${{ vars.DATABRICKS_CLIENT_ID }}",
+        "BUNDLE_VAR_workspace_host": "${{ vars.DATABRICKS_HOST }}",
+        "BUNDLE_VAR_catalog": "${{ vars.ROAS_CATALOG }}",
+        "BUNDLE_VAR_run_identity": "${{ vars.ROAS_RUN_IDENTITY }}",
+        "BUNDLE_VAR_operator_group": "${{ vars.ROAS_OPERATOR_GROUP }}"
+      },
+      "defaults": {
+        "run": {
+          "working-directory": "labs/production"
+        }
+      },
+      "steps": [
+        {
+          "uses": "actions/checkout@11d5960a326750d5838078e36cf38b85af677262"
+        },
+        {
+          "uses": "databricks/setup-cli@9b64c94a6d2b2e830592d80e9f14c26d32b42ad7",
+          "with": {
+            "version": "1.20.0"
+          }
+        },
+        {
+          "name": "Validate required environment variables",
+          "run": "test -n \"$DATABRICKS_HOST\"\ntest -n \"$DATABRICKS_CLIENT_ID\"\ntest -n \"$BUNDLE_VAR_catalog\"\ntest -n \"$BUNDLE_VAR_run_identity\"\ntest -n \"$BUNDLE_VAR_operator_group\""
+        },
+        {
+          "run": "databricks bundle validate --strict -t dev"
+        },
+        {
+          "run": "databricks bundle plan -t dev -o json > plan.json"
+        },
+        {
+          "run": "databricks bundle deploy -t dev --fail-on-active-runs --plan plan.json"
+        },
+        {
+          "run": "databricks bundle run -t dev roas"
+        }
+      ]
+    },
+    "staging": {
+      "if": "github.ref == 'refs/heads/main'",
+      "needs": [
+        "dev"
+      ],
+      "runs-on": "ubuntu-latest",
+      "environment": "staging",
+      "permissions": {
+        "contents": "read",
+        "id-token": "write"
+      },
+      "env": {
+        "DATABRICKS_AUTH_TYPE": "github-oidc",
+        "DATABRICKS_HOST": "${{ vars.DATABRICKS_HOST }}",
+        "DATABRICKS_CLIENT_ID": "${{ vars.DATABRICKS_CLIENT_ID }}",
+        "BUNDLE_VAR_workspace_host": "${{ vars.DATABRICKS_HOST }}",
+        "BUNDLE_VAR_catalog": "${{ vars.ROAS_CATALOG }}",
+        "BUNDLE_VAR_run_identity": "${{ vars.ROAS_RUN_IDENTITY }}",
+        "BUNDLE_VAR_operator_group": "${{ vars.ROAS_OPERATOR_GROUP }}"
+      },
+      "defaults": {
+        "run": {
+          "working-directory": "labs/production"
+        }
+      },
+      "steps": [
+        {
+          "uses": "actions/checkout@11d5960a326750d5838078e36cf38b85af677262"
+        },
+        {
+          "uses": "databricks/setup-cli@9b64c94a6d2b2e830592d80e9f14c26d32b42ad7",
+          "with": {
+            "version": "1.20.0"
+          }
+        },
+        {
+          "name": "Validate required environment variables",
+          "run": "test -n \"$DATABRICKS_HOST\"\ntest -n \"$DATABRICKS_CLIENT_ID\"\ntest -n \"$BUNDLE_VAR_catalog\"\ntest -n \"$BUNDLE_VAR_run_identity\"\ntest -n \"$BUNDLE_VAR_operator_group\""
+        },
+        {
+          "run": "databricks bundle validate --strict -t staging"
+        },
+        {
+          "run": "databricks bundle plan -t staging -o json > plan.json"
+        },
+        {
+          "run": "databricks bundle deploy -t staging --fail-on-active-runs --plan plan.json"
+        },
+        {
+          "run": "databricks bundle run -t staging roas"
+        }
+      ]
+    },
+    "prod": {
+      "if": "github.ref == 'refs/heads/main' && inputs.release_prod",
+      "needs": [
+        "staging"
+      ],
+      "runs-on": "ubuntu-latest",
+      "environment": "prod",
+      "permissions": {
+        "contents": "read",
+        "id-token": "write"
+      },
+      "env": {
+        "DATABRICKS_AUTH_TYPE": "github-oidc",
+        "DATABRICKS_HOST": "${{ vars.DATABRICKS_HOST }}",
+        "DATABRICKS_CLIENT_ID": "${{ vars.DATABRICKS_CLIENT_ID }}",
+        "BUNDLE_VAR_workspace_host": "${{ vars.DATABRICKS_HOST }}",
+        "BUNDLE_VAR_catalog": "${{ vars.ROAS_CATALOG }}",
+        "BUNDLE_VAR_run_identity": "${{ vars.ROAS_RUN_IDENTITY }}",
+        "BUNDLE_VAR_operator_group": "${{ vars.ROAS_OPERATOR_GROUP }}"
+      },
+      "defaults": {
+        "run": {
+          "working-directory": "labs/production"
+        }
+      },
+      "steps": [
+        {
+          "uses": "actions/checkout@11d5960a326750d5838078e36cf38b85af677262"
+        },
+        {
+          "uses": "databricks/setup-cli@9b64c94a6d2b2e830592d80e9f14c26d32b42ad7",
+          "with": {
+            "version": "1.20.0"
+          }
+        },
+        {
+          "name": "Validate required environment variables",
+          "run": "test -n \"$DATABRICKS_HOST\"\ntest -n \"$DATABRICKS_CLIENT_ID\"\ntest -n \"$BUNDLE_VAR_catalog\"\ntest -n \"$BUNDLE_VAR_run_identity\"\ntest -n \"$BUNDLE_VAR_operator_group\""
+        },
+        {
+          "run": "databricks bundle validate --strict -t prod"
+        },
+        {
+          "run": "databricks bundle plan -t prod -o json > plan.json"
+        },
+        {
+          "run": "databricks bundle deploy -t prod --fail-on-active-runs --plan plan.json"
+        },
+        {
+          "run": "databricks bundle run -t prod roas"
+        }
+      ]
+    }
+  }
+}

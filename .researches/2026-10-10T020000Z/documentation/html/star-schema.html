@@ -1,0 +1,1618 @@
+ <!DOCTYPE html>
+		<html
+			class="layout layout-holy-grail   show-table-of-contents conceptual show-breadcrumb default-focus"
+			lang="en-us"
+			dir="ltr"
+			data-authenticated="false"
+			data-auth-status-determined="false"
+			data-target="docs"
+			x-ms-format-detection="none"
+		>
+			
+		<head>
+			<title>Understand star schema and the importance for Power BI - Power BI | Microsoft Learn</title>
+			<meta charset="utf-8" />
+			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+			<meta name="color-scheme" content="light dark" />
+
+			<meta name="description" content="Understand star schema design and its relevance to developing Power BI semantic models optimized for performance and usability." />
+			<link rel="canonical" href="https://learn.microsoft.com/en-us/power-bi/guidance/star-schema" /> 
+
+			<!-- Non-customizable open graph and sharing-related metadata -->
+			<meta name="twitter:card" content="summary_large_image" />
+			<meta name="twitter:site" content="@MicrosoftLearn" />
+			<meta property="og:type" content="website" />
+			<meta property="og:image:alt" content="Microsoft Learn" />
+			<meta property="og:image" content="https://learn.microsoft.com/en-us/media/open-graph-image.png" />
+			<!-- Page specific open graph and sharing-related metadata -->
+			<meta property="og:title" content="Understand star schema and the importance for Power BI - Power BI" />
+			<meta property="og:url" content="https://learn.microsoft.com/en-us/power-bi/guidance/star-schema" />
+			<meta property="og:description" content="Understand star schema design and its relevance to developing Power BI semantic models optimized for performance and usability." />
+			<meta name="platform_id" content="ca71ac39-64bf-813e-8e88-98f980368860" /> <meta name="scope" content="Power BI" />
+			<meta name="locale" content="en-us" />
+			 
+			<meta name="uhfHeaderId" content="MSDocsHeader-MSPowerBI" />
+
+			<meta name="page_type" content="conceptual" />
+
+			<!--page specific meta tags-->
+			
+
+			<!-- custom meta tags -->
+			
+		<meta name="breadcrumb_path" content="/power-bi/breadcrumb/toc.json" />
+	
+		<meta name="show_latex" content="true" />
+	
+		<meta name="feedback_system" content="Standard" />
+	
+		<meta name="feedback_product_url" content="https://ideas.fabric.microsoft.com/?forum=2d80fd4a-16cb-4189-896b-e0dac5e08b41" />
+	
+		<meta name="feedback_help_link_url" content="https://community.fabric.microsoft.com/powerbi" />
+	
+		<meta name="feedback_help_link_type" content="ask-the-community" />
+	
+		<meta name="ms.service" content="powerbi" />
+	
+		<meta name="search.appverid" content="met150" />
+	
+		<meta name="search.app" content="fabric-powerbi-docs" />
+	
+		<meta name="search.app" content="capaedac-PowerBI" />
+	
+		<meta name="search.app" content="powerbi" />
+	
+		<meta name="search.app" content="powerbipremium-docs" />
+	
+		<meta name="search.app" content="powerbipro-docs" />
+	
+		<meta name="ms.subservice" content="powerbi-resource" />
+	
+		<meta name="author" content="dknappettmsft" />
+	
+		<meta name="ms.author" content="daknappe" />
+	
+		<meta name="ms.reviewer" content="daengli" />
+	
+		<meta name="ms.topic" content="concept-article" />
+	
+		<meta name="ms.date" content="2024-12-30T00:00:00Z" />
+	
+		<meta name="ms.custom" content="fabric-cat" />
+	
+		<meta name="ms.custom" content="sfi-image-nochange" />
+	
+		<meta name="document_id" content="470ca67d-ed62-fbe0-85b2-6b1604f9f946" />
+	
+		<meta name="document_version_independent_id" content="e8c82d66-ad63-3efa-11b2-060b9b16d4ad" />
+	
+		<meta name="updated_at" content="2026-04-01T17:06:00Z" />
+	
+		<meta name="original_content_git_url" content="https://github.com/MicrosoftDocs/powerbi-docs-pr/blob/live/powerbi-docs/guidance/star-schema.md" />
+	
+		<meta name="gitcommit" content="https://github.com/MicrosoftDocs/powerbi-docs-pr/blob/ad2135658919b55b43671935fdd2acdaf00595a5/powerbi-docs/guidance/star-schema.md" />
+	
+		<meta name="git_commit_id" content="ad2135658919b55b43671935fdd2acdaf00595a5" />
+	
+		<meta name="site_name" content="Docs" />
+	
+		<meta name="depot_name" content="MSDN.powerbi-docs" />
+	
+		<meta name="schema" content="Conceptual" />
+	
+		<meta name="toc_rel" content="toc.json" />
+	
+		<meta name="pdf_url_template" content="https://learn.microsoft.com/pdfstore/en-us/MSDN.powerbi-docs/{branchName}{pdfName}" />
+	
+		<meta name="word_count" content="3805" />
+	
+		<meta name="asset_id" content="guidance/star-schema" />
+	
+		<meta name="moniker_range_name" content="" />
+	
+		<meta name="item_type" content="Content" />
+	
+		<meta name="source_path" content="powerbi-docs/guidance/star-schema.md" />
+	
+		<meta name="previous_tlsh_hash" content="F5951AB2430CC915BFC16B666C16AB5195F0C189AA703E8800263762D24F1DE31F5568FBA35BEB6433300A2B11A1EB5CE1EFF73AD0AC376215F5A92CC14C364596993BFBDD" />
+	
+		<meta name="github_feedback_content_git_url" content="https://github.com/MicrosoftDocs/powerbi-docs/blob/main/powerbi-docs/guidance/star-schema.md" />
+	
+		<meta name="markdown_url" content="https://learn.microsoft.com/en-us/power-bi/guidance/star-schema?accept=text/markdown" />
+	 
+		<meta name="cmProducts" content="https://authoring-docs-microsoft.poolparty.biz/devrel/d3197845-b4ce-44c6-a237-cd4be160e76c" data-source="generated" />
+	
+		<meta name="spProducts" content="https://authoring-docs-microsoft.poolparty.biz/devrel/aea905fb-0a9d-4d46-b30f-e9cbaf772d1b" data-source="generated" />
+	
+
+			<!-- Apply persisted/system theme before first paint to prevent wrong-theme flash when scripts are deferred. -->
+			<script id="theme-preference">
+				(function () {
+			try {
+				var stored = localStorage.getItem('theme');
+				var theme = /^(light|dark|high-contrast)$/.test(stored)
+					? stored
+					: matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+				document.documentElement.classList.add('theme-' + theme);
+			} catch (e) {}
+		})();;
+			</script>
+
+			<script id="atlas-layout-preferences">
+				(function () {
+			try {
+				var state = JSON.parse(localStorage.getItem('atlas-layout-preferences') || '{}');
+				var view = state["docs-layout-persistence"] || {};
+				var excludesKey = "";
+				var blocked = {};
+				if (excludesKey) {
+					var exclusions = JSON.parse(localStorage.getItem('atlas-layout-exclusions') || '{}');
+					if (Object.prototype.hasOwnProperty.call(exclusions, excludesKey)) {
+						var scoped = exclusions[excludesKey];
+						if (scoped) {
+							if (typeof scoped === 'object') blocked = scoped;
+						}
+					}
+				}
+				var html = document.documentElement;
+				for (var c in view) {
+					if (Object.prototype.hasOwnProperty.call(blocked, c)) continue;
+					if (view[c]) html.classList.add(c);
+					else html.classList.remove(c);
+				}
+			} catch (e) {}
+		})();;
+			</script>
+
+			<!-- assets and js globals -->
+			
+			<link rel="stylesheet" href="/static/assets/0.4.03568.8292-0a6c2196/styles/site.css" />
+			
+			<script src="https://wcpstatic.microsoft.com/mscc/lib/v2/wcp-consent.js"></script>
+			<!-- Keep this URL in sync with oneDSScriptSelector in instrumentation/one-ds.ts. -->
+			<script async src="https://js.monitor.azure.com/scripts/c/ms.jsll-4.min.js"></script>
+			
+
+			<!-- msdocs global object -->
+			<script id="msdocs-script">
+		var msDocs = {
+  "environment": {
+    "accessLevel": "online",
+    "azurePortalHostname": "portal.azure.com",
+    "reviewFeatures": false,
+    "supportLevel": "production",
+    "systemContent": true,
+    "siteName": "learn",
+    "legacyHosting": false
+  },
+  "data": {
+    "contentLocale": "en-us",
+    "contentDir": "ltr",
+    "userLocale": "en-us",
+    "userDir": "ltr",
+    "pageTemplate": "Conceptual",
+    "layoutStateStorageKey": "docs-layout-persistence",
+    "brand": "",
+    "context": {},
+    "standardFeedback": true,
+    "showFeedbackReport": false,
+    "feedbackHelpLinkType": "ask-the-community",
+    "feedbackHelpLinkUrl": "https://community.fabric.microsoft.com/powerbi",
+    "feedbackSystem": "Standard",
+    "feedbackGitHubRepo": "MicrosoftDocs/powerbi-docs",
+    "feedbackProductUrl": "https://ideas.fabric.microsoft.com/?forum=2d80fd4a-16cb-4189-896b-e0dac5e08b41",
+    "extendBreadcrumb": false,
+    "isEditDisplayable": false,
+    "isPrivateUnauthorized": false,
+    "hideViewSource": false,
+    "isPermissioned": false,
+    "hasRecommendations": true,
+    "mathjax": {}
+  },
+  "functions": {}
+};;
+	</script>
+
+			<!-- base scripts, msdocs global should be before this -->
+			<script
+				src="/static/assets/0.4.03568.8292-0a6c2196/scripts/en-us/index-docs.js"
+				async
+			></script>
+			
+
+			<!-- json-ld -->
+			
+		<script >bazadebezolkohpepadr="673572513"</script><script type="text/javascript" src="https://learn.microsoft.com/akam/13/2825e5f1"  defer></script></head>
+	
+			<body
+				id="body"
+				data-bi-name="body"
+				class="layout-body "
+				lang="en-us"
+				dir="ltr"
+			>
+				<header class="layout-body-header background-color-body-medium">
+		<div class="header-holder has-default-focus">
+			
+		<a
+			href="#main"
+			
+			style="z-index: 1070"
+			class="outline-color-text visually-hidden-until-focused position-fixed inner-focus focus-visible top-0 left-0 right-0 padding-xs text-align-center background-color-body"
+			
+		>
+			Skip to main content
+		</a>
+	
+		<a
+			href="#"
+			data-skip-to-ask-learn
+			style="z-index: 1070"
+			class="outline-color-text visually-hidden-until-focused position-fixed inner-focus focus-visible top-0 left-0 right-0 padding-xs text-align-center background-color-body"
+			hidden
+		>
+			Skip to Ask Learn chat experience
+		</a>
+	
+
+			<div hidden id="cookie-consent-holder" data-test-id="cookie-consent-container"></div>
+			<!-- Unsupported browser warning -->
+			<div
+				id="unsupported-browser"
+				style="background-color: white; color: black; padding: 16px; border-bottom: 1px solid grey;"
+				hidden
+			>
+				<div style="max-width: 800px; margin: 0 auto;">
+					<p style="font-size: 24px">This browser is no longer supported.</p>
+					<p style="font-size: 16px; margin-top: 16px;">
+						Upgrade to Microsoft Edge to take advantage of the latest features, security updates, and technical support.
+					</p>
+					<div style="margin-top: 12px;">
+						<a
+							href="https://go.microsoft.com/fwlink/p/?LinkID=2092881 "
+							style="background-color: #0078d4; border: 1px solid #0078d4; color: white; padding: 6px 12px; border-radius: 2px; display: inline-block;"
+						>
+							Download Microsoft Edge
+						</a>
+						<a
+							href="https://learn.microsoft.com/en-us/lifecycle/faq/internet-explorer-microsoft-edge"
+							style="background-color: white; padding: 6px 12px; border: 1px solid #505050; color: #171717; border-radius: 2px; display: inline-block;"
+						>
+							More info about Internet Explorer and Microsoft Edge
+						</a>
+					</div>
+				</div>
+			</div>
+			<!-- site header -->
+			<div
+				id="ms--site-header"
+				data-test-id="site-header-wrapper"
+				itemscope="itemscope"
+				itemtype="http://schema.org/Organization"
+			>
+				<div
+					id="ms--mobile-nav"
+					class="site-header display-none-tablet padding-inline-none gap-none"
+					data-bi-name="mobile-header"
+					data-test-id="mobile-header"
+				></div>
+				<div
+					id="ms--primary-nav"
+					class="site-header display-none display-flex-tablet"
+					data-bi-name="L1-header"
+					data-test-id="primary-header"
+				></div>
+				<div
+					id="ms--secondary-nav"
+					class="site-header display-none display-flex-tablet"
+					data-bi-name="L2-header"
+					data-test-id="secondary-header"
+					
+				></div>
+			</div>
+			
+		<!-- banner -->
+		<div data-banner>
+			<div id="disclaimer-holder"></div>
+			
+		</div>
+		<!-- banner end -->
+	
+		</div>
+	</header>
+				 <section
+					id="layout-body-menu"
+					class="layout-body-menu border-right display-flex background-color-body-medium"
+					data-bi-name="menu"
+			  >
+					
+		<div
+			id="left-container"
+			class="left-container display-none padding-none display-block-tablet width-full display-none-until-layout-restored"
+			data-toc-container="true"
+		>
+			<div
+				id="ms--toc-content"
+				class="padding-left-sm padding-right-none padding-bottom-sm height-full"
+			>
+				<nav
+					id="affixed-left-container"
+					class="margin-top-xxs-tablet position-sticky display-flex flex-direction-column width-full"
+					aria-label="Primary"
+					data-bi-name="left-toc"
+					role="navigation"
+				>
+					<div
+						id="ms--collapsible-toc-header"
+						class="display-flex flex-direction-row-reverse justify-content-center align-items-center margin-bottom-xxs margin-right-xxs"
+					>
+						<button
+							type="button"
+							class="button button-clear button-sm inner-focus"
+							data-collapsible-toc-toggle
+							aria-expanded="true"
+							hidden
+							aria-controls="ms--toc-content"
+							aria-label="Table of contents"
+						>
+							<span class="icon icon-mirrored-rtl" aria-hidden="true">
+								<span
+									class="docon docon-panel-left-contract display-none-layout-menu-collapsed"
+								></span>
+								<span
+									class="docon docon-panel-left-expand display-none display-inline-layout-menu-collapsed"
+								></span>
+							</span>
+						</button>
+						<div
+							id="ms--collapsible-toc-moniker-slot"
+							class="flex-grow-1 display-none-layout-menu-collapsed"
+						></div>
+					</div>
+				</nav>
+			</div>
+		</div>
+	
+			  </section>
+
+				<main
+					id="main"
+					role="main"
+					class="layout-body-main "
+					data-bi-name="content"
+					lang="en-us"
+					dir="ltr"
+				>
+					
+			<div
+		id="ms--content-header"
+		class="content-header default-focus border-bottom-none"
+		data-bi-name="content-header"
+	>
+		<div class="content-header-controls margin-xxs margin-inline-sm-tablet">
+			<button
+				type="button"
+				class="contents-button button button-sm margin-right-xxs"
+				data-bi-name="contents-expand"
+				aria-haspopup="true"
+				data-contents-button
+			>
+				<span class="icon" aria-hidden="true"><span class="docon docon-menu"></span></span>
+				<span class="contents-expand-title"> Table of contents </span>
+			</button>
+			<button
+				type="button"
+				class="ap-collapse-behavior ap-expanded button button-sm"
+				data-bi-name="ap-collapse"
+				aria-controls="action-panel"
+			>
+				<span class="icon" aria-hidden="true"><span class="docon docon-exit-mode"></span></span>
+				<span>Exit editor mode</span>
+			</button>
+		</div>
+	</div> 
+		<div
+			id="action-panel"
+			role="region"
+			aria-label="Action Panel"
+			class="action-panel"
+			tabindex="-1"
+		></div>
+	
+			<div
+				data-main-column
+				class="reading-width margin-inline-auto layout-padding padding-top-none padding-top-sm-tablet padding-bottom-sm"
+			>
+				<div>
+					
+		<div id="article-header" class="background-color-body margin-bottom-xs display-none-print">
+			<div class="display-flex align-items-center justify-content-space-between">
+				
+		<details
+			id="article-header-breadcrumbs-overflow-popover"
+			class="popover popover-left"
+			data-for="article-header-breadcrumbs"
+		>
+			<summary
+				class="button button-clear button-primary button-sm inner-focus"
+				aria-label="All breadcrumbs"
+			>
+				<span class="icon" aria-hidden="true">
+					<span class="docon docon-more"></span>
+				</span>
+			</summary>
+			<div id="article-header-breadcrumbs-overflow" class="popover-content"></div>
+		</details>
+
+		<bread-crumbs
+			id="article-header-breadcrumbs"
+			role="group"
+			aria-label="Breadcrumbs"
+			data-test-id="article-header-breadcrumbs"
+			class="overflow-hidden flex-grow-1 margin-right-sm margin-right-md-tablet margin-right-lg-desktop margin-left-negative-xxs padding-left-xxs"
+		></bread-crumbs>
+	 
+		<div
+			id="article-header-page-actions"
+			class="opacity-none margin-left-auto display-flex flex-wrap-no-wrap align-items-stretch"
+		>
+			
+		<button
+			class="button button-sm border-none inner-focus display-none-tablet flex-shrink-0 "
+			data-bi-name="ask-learn-assistant-entry"
+			data-test-id="ask-learn-assistant-modal-entry-mobile"
+			data-ask-learn-modal-entry
+			
+			type="button"
+			style="min-width: max-content;"
+			aria-expanded="false"
+			aria-label="Ask Learn"
+			hidden
+		>
+			<span class="icon" aria-hidden="true">
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
+			</span>
+		</button>
+		<button
+			class="button button-sm display-none display-inline-flex-tablet display-none-desktop flex-shrink-0 margin-right-xxs border-color-ask-learn "
+			data-bi-name="ask-learn-assistant-entry"
+			
+			data-test-id="ask-learn-assistant-modal-entry-tablet"
+			data-ask-learn-modal-entry
+			type="button"
+			style="min-width: max-content;"
+			aria-expanded="false"
+			hidden
+		>
+			<span class="icon font-size-lg" aria-hidden="true">
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
+			</span>
+			<span>Ask Learn</span>
+		</button>
+		<button
+			class="button button-sm display-none flex-shrink-0 display-inline-flex-desktop margin-right-xxs border-color-ask-learn "
+			data-bi-name="ask-learn-assistant-entry"
+			
+			data-test-id="ask-learn-assistant-flyout-entry"
+			data-ask-learn-flyout-entry
+			data-flyout-button="toggle"
+			type="button"
+			style="min-width: max-content;"
+			aria-expanded="false"
+			aria-controls="ask-learn-flyout"
+			hidden
+		>
+			<span class="icon font-size-lg" aria-hidden="true">
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
+			</span>
+			<span>Ask Learn</span>
+		</button>
+	 
+
+			<details class="popover popover-right" id="article-header-page-actions-overflow">
+				<summary
+					class="justify-content-flex-start button button-clear button-sm button-primary inner-focus"
+					aria-label="More actions"
+					aria-expanded="false"
+					title="More actions"
+				>
+					<span class="icon" aria-hidden="true">
+						<span class="docon docon-more-vertical"></span>
+					</span>
+				</summary>
+				<div class="popover-content">
+					
+		<button
+			type="button"
+			id="ms--focus-mode-button"
+			data-focus-mode
+			data-bi-name="focus-mode-entry"
+			data-page-action-item="overflow-all"
+			data-popover-close
+			class="button button-clear button-sm button-block justify-content-flex-start text-align-left inner-focus display-none display-inline-flex-tablet"
+		>
+			<span class="icon" aria-hidden="true">
+				<span class="docon docon-glasses"></span>
+			</span>
+			<span>Reading mode</span>
+		</button>
+	 
+		<button
+			data-page-action-item="overflow-mobile"
+			type="button"
+			class="display-block-layout-menu-collapsed button-block button-sm inner-focus button button-clear display-none-tablet justify-content-flex-start text-align-left"
+			data-bi-name="contents-expand"
+			data-contents-button
+			data-popover-close
+		>
+			<span class="icon" aria-hidden="true"
+				><span class="docon docon-editor-list-bullet"></span
+			></span>
+			<span class="contents-expand-title">Table of contents</span>
+		</button>
+	 
+		<a
+			id="lang-link-overflow"
+			class="button-sm inner-focus button button-clear button-block justify-content-flex-start text-align-left"
+			data-bi-name="language-toggle"
+			data-page-action-item="overflow-all"
+			data-check-hidden="true"
+			data-read-in-link
+			href="#"
+			hidden
+		>
+			<span class="icon" aria-hidden="true" data-read-in-link-icon>
+				<span class="docon docon-locale-globe"></span>
+			</span>
+			<span data-read-in-link-text>Read in English</span>
+		</a>
+	
+					
+		<button
+			type="button"
+			class="collection button button-clear button-sm button-block justify-content-flex-start text-align-left inner-focus"
+			data-list-type="collection"
+			data-bi-name="collection"
+			data-page-action-item="overflow-all"
+			data-check-hidden="true"
+			data-popover-close
+		>
+			<span class="icon" aria-hidden="true">
+				<span class="docon docon-circle-addition"></span>
+			</span>
+			<span class="collection-status">Add</span>
+		</button>
+	 
+		<button
+			type="button"
+			class="collection button button-block button-clear button-sm justify-content-flex-start text-align-left inner-focus"
+			data-list-type="plan"
+			data-bi-name="plan"
+			data-page-action-item="overflow-all"
+			data-check-hidden="true"
+			data-popover-close
+			hidden
+		>
+			<span class="icon" aria-hidden="true">
+				<span class="docon docon-circle-addition"></span>
+			</span>
+			<span class="plan-status">Add to Plans</span>
+		</button>
+	 
+					
+		<a
+			data-contenteditbtn
+			class="button button-clear button-block button-sm inner-focus justify-content-flex-start text-align-left text-decoration-none"
+			data-bi-name="edit"
+			data-page-action-item="overflow-all"
+			data-check-hidden="true"
+			hidden
+			href="https://github.com/MicrosoftDocs/powerbi-docs/blob/main/powerbi-docs/guidance/star-schema.md"
+			data-original_content_git_url="https://github.com/MicrosoftDocs/powerbi-docs-pr/blob/live/powerbi-docs/guidance/star-schema.md"
+			data-original_content_git_url_template="{repo}/blob/{branch}/powerbi-docs/guidance/star-schema.md"
+			data-pr_repo=""
+			data-pr_branch=""
+		>
+			<span class="icon" aria-hidden="true">
+				<span class="docon docon-edit-outline"></span>
+			</span>
+			<span>Edit</span>
+		</a>
+	  
+		<hr class="margin-block-xxs" />
+		
+				<button
+					class="button button-block button-clear button-sm justify-content-flex-start text-align-left inner-focus"
+					type="button"
+					data-bi-name="copy-markdown"
+					data-page-action-item="overflow-all"
+					data-copy-markdown
+					data-copy-state="idle"
+					data-check-hidden="true"
+				>
+					<span class="icon color-primary" aria-hidden="true">
+						<span data-show-when="idle" class="docon docon-code-lang"></span>
+						<span data-show-when="loading" class="loader" hidden></span>
+						<span data-show-when="success" class="docon docon-check-mark" hidden></span>
+					</span>
+					<span>Copy Markdown</span>
+				</button>
+		   
+				<button
+					class="button button-block button-clear button-sm justify-content-flex-start text-align-left inner-focus"
+					type="button"
+					data-bi-name="print"
+					data-page-action-item="overflow-all"
+					data-popover-close
+					data-print-page
+					data-check-hidden="true"
+				>
+					<span class="icon color-primary" aria-hidden="true">
+						<span class="docon docon-print"></span>
+					</span>
+					<span>Print</span>
+				</button>
+		  
+	
+				</div>
+			</details>
+		</div>
+	
+			</div>
+		</div>
+	  
+		<!-- privateUnauthorizedTemplate is hidden by default -->
+		<div unauthorized-private-section data-bi-name="permission-content-unauthorized-private" hidden>
+			<hr class="hr margin-top-xs margin-bottom-sm" />
+			<div class="notification notification-info">
+				<div class="notification-content">
+					<p class="margin-top-none notification-title">
+						<span class="icon" aria-hidden="true"
+							><span class="docon docon-exclamation-circle-solid"></span
+						></span>
+						<span>Note</span>
+					</p>
+					<p class="margin-top-none authentication-determined not-authenticated">
+						Access to this page requires authorization. You can try <a class="docs-sign-in" href="#" data-bi-name="permission-content-sign-in">signing in</a> or <a  class="docs-change-directory" data-bi-name="permisson-content-change-directory">changing directories</a>.
+					</p>
+					<p class="margin-top-none authentication-determined authenticated">
+						Access to this page requires authorization. You can try <a class="docs-change-directory" data-bi-name="permisson-content-change-directory">changing directories</a>.
+					</p>
+				</div>
+			</div>
+		</div>
+	
+					<div class="content"><h1 id="understand-star-schema-and-the-importance-for-power-bi">Understand star schema and the importance for Power BI</h1></div>
+					
+		<div
+			id="article-metadata"
+			data-bi-name="article-metadata"
+			data-test-id="article-metadata"
+			class="page-metadata-container display-flex gap-xxs justify-content-space-between align-items-center flex-wrap-wrap"
+		>
+			 
+				<div
+					id="user-feedback"
+					class="margin-block-xxs display-none display-none-print"
+					hidden
+					data-hide-on-archived
+				>
+					
+		<button
+			id="user-feedback-button"
+			data-test-id="conceptual-feedback-button"
+			class="button button-sm button-clear button-primary display-none"
+			type="button"
+			data-bi-name="user-feedback-button"
+			data-user-feedback-button
+			hidden
+		>
+			<span class="icon" aria-hidden="true">
+				<span class="docon docon-like"></span>
+			</span>
+			<span>Feedback</span>
+		</button>
+	
+				</div>
+		  
+		</div>
+	 
+		<div data-id="ai-summary" class="display-none-print">
+			<div id="ms--ai-summary-cta" class="margin-top-xs display-flex align-items-center">
+				<span class="icon" aria-hidden="true">
+					<span class="docon docon-sparkle-fill gradient-text-vivid"></span>
+				</span>
+				<button
+					id="ms--ai-summary"
+					type="button"
+					class="tag tag-sm tag-suggestion margin-left-xxs"
+					data-test-id="ai-summary-cta"
+					data-bi-name="ai-summary-cta"
+					data-an="ai-summary"
+				>
+					<span class="ai-summary-cta-text">
+						Summarize this article for me
+					</span>
+				</button>
+			</div>
+			<!-- Slot where the client will render the summary card after the user clicks the CTA -->
+			<div id="ms--ai-summary-header" class="margin-top-xs"></div>
+		</div>
+	 
+		<nav
+			id="center-doc-outline"
+			class="doc-outline display-none-desktop display-none-print margin-bottom-sm"
+			data-bi-name="intopic toc"
+			aria-label="In this article"
+		>
+			<h2 id="ms--in-this-article" class="title is-6 margin-block-xs">
+				In this article
+			</h2>
+		</nav>
+	 <div class="content"><p>This article targets Power BI Desktop data modelers. It describes star schema design and its relevance to developing Power BI semantic models optimized for performance and usability.</p>
+<div class="IMPORTANT">
+<p>Important</p>
+<p>Power BI semantic models depend on Power Query to import or connect to data. That means you must use <a href="/en-us/power-query/power-query-what-is-power-query" data-linktype="absolute-path">Power Query</a> to transform and prepare the source data, which might be challenging when you have large data volumes or you need to implement advanced concepts like slowly changing dimensions (described <a href="#slowly-changing-dimensions" data-linktype="self-bookmark">later in this article</a>).</p>
+<p>When you're presented with these challenges, we recommend you first develop a data warehouse and Extract, Transform, and Load (ETL) processes to periodically load the data warehouse. Your semantic model can then connect to the data warehouse. For more information, see <a href="/en-us/fabric/data-warehouse/dimensional-modeling-overview" data-linktype="absolute-path">Dimensional modeling in Microsoft Fabric Warehouse</a>.</p>
+</div>
+<div class="TIP">
+<p>Tip</p>
+<p>This article isn't intended to provide a complete discussion on star schema design. For more information, refer directly to widely adopted published content, like <em>The Data Warehouse Toolkit: The Definitive Guide to Dimensional Modeling</em> (3rd edition, 2013) by Ralph Kimball, and others.</p>
+</div>
+<h2 id="star-schema-overview">Star schema overview</h2>
+<p><em>Star schema</em> is a mature modeling approach widely adopted by relational data warehouses. It requires modelers to classify their model tables as either <em>dimension</em> or <em>fact</em>.</p>
+<h3 id="dimension-tables">Dimension tables</h3>
+<p><em>Dimension tables</em> describe business entities—the <em>things</em> you model. Entities can include products, people, places, and concepts including time itself. The most consistent table you'll find in a star schema is a date dimension table. A dimension table contains a key column (or columns) that acts as a unique identifier, and other columns. Other columns support filtering and grouping your data.</p>
+<h3 id="fact-tables">Fact tables</h3>
+<p><em>Fact tables</em> store observations or events, and can be sales orders, stock balances, exchange rates, temperatures, and more. A fact table contains dimension key columns that relate to dimension tables, and numeric measure columns. The dimension key columns determine the <em>dimensionality</em> of a fact table, while the dimension key values determine the <em>granularity</em> of a fact table. For example, consider a fact table designed to store sale targets that has two dimension key columns <code>Date</code> and <code>ProductKey</code>. It's easy to understand that the table has two dimensions. The granularity, however, can't be determined without considering the dimension key values. In this example, consider that the values stored in the <code>Date</code> column are the first day of each month. In this case, the granularity is at month-product level.</p>
+<p>Generally, dimension tables contain a relatively small number of rows. Fact tables, on the other hand, can contain a large number of rows and continue to grow over time.</p>
+<p><img src="media/star-schema/star-schema-example-1.svg" alt="Diagram showing an illustration of a star schema." data-linktype="relative-path">
+</p>
+<h2 id="normalization-vs-denormalization">Normalization vs. denormalization</h2>
+<p>To understand some star schema concepts described in this article, it's important to know two terms: normalization and denormalization.</p>
+<p><em>Normalization</em> is the term used to describe data that's stored in a way that reduces repetitious data. Consider a table of products that has a unique key value column, like the product key, and other columns that describe product characteristics, like product name, category, color, and size. A sales table is considered normalized when it stores only keys, like the product key. In the following image, notice that only the <code>ProductKey</code> column records the product.</p>
+<p><img src="media/star-schema/normalized-data-example.svg" alt="Diagram showing a table of data that includes a Product Key column." data-linktype="relative-path">
+</p>
+<p>If, however, the sales table stores product details beyond the key, it's considered <em>denormalized</em>. In the following image, notice that the <code>ProductKey</code> and other product-related columns record the product.</p>
+<p><img src="media/star-schema/denormalized-data-example.svg" alt="Diagram showing a table of data that includes a Product Key and other product-related columns, including Category, Color, and Size." data-linktype="relative-path">
+</p>
+<p>When you source data from an export file or data extract, it's likely that it represents a denormalized set of data. In this case, use <a href="/en-us/training/modules/clean-data-power-bi/" data-linktype="absolute-path">Power Query</a> to transform and shape the source data into multiple normalized tables.</p>
+<p>As described in this article, you should strive to develop optimized Power BI semantic models with tables that represent normalized fact and dimension data. However, there's one exception where a <a href="#snowflake-dimensions" data-linktype="self-bookmark">snowflake dimension</a> might be denormalized in order to produce a single model table.</p>
+<h2 id="star-schema-relevance-to-power-bi-semantic-models">Star schema relevance to Power BI semantic models</h2>
+<p>Star schema design and many related concepts introduced in this article are highly relevant to developing Power BI models that are optimized for performance and usability.</p>
+<p>Consider that each Power BI report visual generates a query that's sent to the Power BI semantic model. Generally, queries filter, group, and summarize model data. A well-designed model, then, is one that provides tables for filtering and grouping, and tables for summarizing. This design fits well with star schema principles:</p>
+<ul>
+<li>Dimension tables enable <em>filtering</em> and <em>grouping</em>.</li>
+<li>Fact tables enable <em>summarization</em>.</li>
+</ul>
+<p>There's no table property that modelers set to set the table type as dimension or fact. It's in fact determined by the <a href="../transform-model/desktop-relationships-understand" data-linktype="relative-path">model relationships</a>. A model relationship establishes a filter propagation path between two tables, and it's the cardinality property of the relationship that determines the table type. A common relationship cardinality is <em>one-to-many</em> or its inverse <em>many-to-one</em>. The "one" side is always a dimension table while the "many" side is always a fact table.</p>
+<p><img src="media/star-schema/star-schema-example-2.svg" alt="Diagram showing a conceptual illustration of a star schema." data-linktype="relative-path">
+</p>
+<p>A well-structured model design includes tables that are either dimension tables or fact tables. Avoid mixing the two types together for a single table. We also recommend that you strive to deliver the right number of tables with the right relationships in place. It's also important that fact tables always load data at a consistent grain.</p>
+<p>Lastly, it's important to understand that optimal model design is part science and part art. Sometimes you can break with good guidance when it makes sense to do so.</p>
+<p>There are many concepts related to star schema design that can be applied to a Power BI semantic model. These concepts include:</p>
+<ul>
+<li><a href="#measures" data-linktype="self-bookmark">Measures</a></li>
+<li><a href="#surrogate-keys" data-linktype="self-bookmark">Surrogate keys</a></li>
+<li><a href="#snowflake-dimensions" data-linktype="self-bookmark">Snowflake dimensions</a></li>
+<li><a href="#role-playing-dimensions" data-linktype="self-bookmark">Role-playing dimensions</a></li>
+<li><a href="#slowly-changing-dimensions" data-linktype="self-bookmark">Slowly changing dimensions</a></li>
+<li><a href="#junk-dimensions" data-linktype="self-bookmark">Junk dimensions</a></li>
+<li><a href="#degenerate-dimensions" data-linktype="self-bookmark">Degenerate dimensions</a></li>
+<li><a href="#factless-fact-tables" data-linktype="self-bookmark">Factless fact tables</a></li>
+</ul>
+<h2 id="measures">Measures</h2>
+<p>In star schema design, a <em>measure</em> is a fact table column that stores values to be summarized. In a Power BI semantic model, a measure has a different—but similar—definition. A model supports both explicit and implicit measures.</p>
+<ul>
+<li><strong>Explicit measures</strong> are expressly created and they're based on a formula written in <a href="/en-us/dax/data-analysis-expressions-dax-reference" data-linktype="absolute-path">Data Analysis Expressions (DAX)</a> that achieves summarization. Measure expressions often use DAX aggregation functions like <code>SUM</code>, <code>MIN</code>, <code>MAX</code>, <code>AVERAGE</code>, and others to produce a scalar value result at query time (values are never stored in the model). Measure expression can range from simple column aggregations to more sophisticated formulas that override filter context and/or relationship propagation. For more information, read about <a href="../transform-model/desktop-quickstart-learn-dax-basics" data-linktype="relative-path">DAX Basics in Power BI Desktop</a>.</li>
+<li><strong>Implicit measures</strong> are columns that can be summarized by a report visual or <a href="../explore-reports/end-user-q-and-a" data-linktype="relative-path">Q&amp;A</a>. They offer a convenience for you as a model developer, as in many instances you don't need to create (explicit) measures. For example, the Adventure Works reseller sales <code>Sales Amount</code> column can be summarized in numerous ways (sum, count, average, median, min, max, and others), without the need to create a measure for each possible aggregation type.</li>
+</ul>
+<p>In the <strong>Data</strong> pane, explicit measures are represented by the calculator icon while implicit measures are represented by the sigma symbol (∑).</p>
+<p><img src="media/star-schema/field-list-example.svg" alt="Diagram showing icons found in the Data pane." data-linktype="relative-path">
+</p>
+<p>However, there are three compelling reasons why you might create measures, even for simple column-level summarizations:</p>
+<ul>
+<li><p>When you know your report authors will query the semantic model by using <a href="/en-us/sql/analysis-services/multidimensional-models/mdx/mdx-query-the-basic-query" data-linktype="absolute-path">Multidimensional Expressions (MDX)</a>, the model must include explicit measures. That's because MDX can't achieve summarization of column values. Notably, MDX is used when performing <a href="../collaborate-share/office-integration/service-analyze-in-excel" data-linktype="relative-path">Analyze in Excel</a> because PivotTables issue MDX queries.</p>
+</li>
+<li><p>When you know your report authors will create Power BI paginated reports by using the MDX query designer, the semantic model must include explicit measures. Only the MDX query designer supports <a href="/en-us/sql/reporting-services/report-design/report-builder-functions-aggregate-functions-reference" data-linktype="absolute-path">server aggregates</a>. So, if report authors need to have measures evaluated by Power BI (instead of by the paginated report engine), they must use the MDX query designer.</p>
+</li>
+<li><p>When you want to control how your report authors summarize columns in specific ways. For example, the reseller sales <code>Unit Price</code> column (which represents a per unit rate) can be summarized, but only by using specific aggregation functions. It should never be summed, but it's appropriate to summarize by using other aggregation functions like min, max, or average. In this instance, the modeler can hide the <code>Unit Price</code> column, and create measures for all appropriate aggregation functions.</p>
+<p>This design approach works well for reports authored in the Power BI service and for Q&amp;A. However, Power BI Desktop <a href="../connect-data/service-live-connect-dq-datasets#live-connection" data-linktype="relative-path">live connections</a> allow report authors to show hidden fields in the <strong>Data</strong> pane, which can result in circumventing this design approach.</p>
+</li>
+</ul>
+<h2 id="surrogate-keys">Surrogate keys</h2>
+<p>A <em>surrogate key</em> is a unique identifier that you add to a table to support star schema modeling. By definition, it's not defined or stored in the source data. Commonly, surrogate keys are added to relational data warehouse dimension tables to provide a unique identifier for each dimension table row.</p>
+<p>Power BI semantic model relationships are based on a single unique column in one table, which propagates filters to a single column in a different table. When a dimension table in your semantic model doesn't include a single unique column, you must add a unique identifier to become the "one" side of a relationship. In Power BI Desktop, you can achieve this requirement by adding a Power Query <a href="/en-us/powerquery-m/table-addindexcolumn" data-linktype="absolute-path">index column</a>.</p>
+<p><img src="media/star-schema/toolbar-index-column.svg" alt="Diagram showing the Create index column command in Power Query Editor." data-linktype="relative-path">
+</p>
+<p>You must merge this query with the "many"-side query so that you can add the index column to it also. When you load these queries to the semantic model, you can then create a one-to-many relationship between the model tables.</p>
+<h2 id="snowflake-dimensions">Snowflake dimensions</h2>
+<p>A <em>snowflake dimension</em> is a set of normalized tables for a single business entity. For example, Adventure Works classifies products by category and subcategory. Products are assigned to subcategories, and subcategories are in turn assigned to categories. In the Adventure Works relational data warehouse, the product dimension is normalized and stored in three related tables: <code>DimProductCategory</code>, <code>DimProductSubcategory</code>, and <code>DimProduct</code>.</p>
+<p><img src="media/star-schema/snowflake-design.svg" alt="Diagram showing an example of a snowflake diagram comprising three related tables." data-linktype="relative-path">
+</p>
+<p>If you use your imagination, you can picture the normalized tables positioned outwards from the fact table, forming a snowflake design.</p>
+<p><img src="media/star-schema/snowflake-dimension.svg" alt="Diagram showing a conceptual example of a snowflake diagram comprising three related tables." data-linktype="relative-path">
+</p>
+<p>In Power BI Desktop, you can choose to mimic a snowflake dimension design (perhaps because your source data does) or combine the source tables to form a single, denormalized model table. Generally, the benefits of a single model table outweigh the benefits of multiple model tables. The most optimal decision can depend on the volumes of data and the usability requirements for the model.</p>
+<p>When you choose to mimic a snowflake dimension design:</p>
+<ul>
+<li>Power BI loads more tables, which is less efficient from storage and performance perspectives. These tables must include columns to support model relationships, and it can result in a larger model size.</li>
+<li>Longer relationship filter propagation chains need to be traversed, which might be less efficient than filters applied to a single table.</li>
+<li>The <strong>Data</strong> pane presents more model tables to report authors, which can result in a less intuitive experience, especially when snowflake dimension tables contain only one or two columns.</li>
+<li>It's not possible to create a hierarchy that comprises columns from more than one table.</li>
+</ul>
+<p>When you choose to integrate into a single model table, you can also define a hierarchy that encompasses the highest and lowest grain of the dimension. Possibly, the storage of redundant denormalized data can result in increased model storage size, particularly for large dimension tables.</p>
+<p><img src="media/star-schema/hierarchy.svg" alt="Diagram showing an example of a hierarchy within a dimension table that has columns like Category, Subcategory, and Product." data-linktype="relative-path">
+</p>
+<h2 id="slowly-changing-dimensions">Slowly changing dimensions</h2>
+<p>A <em>slowly changing dimension</em> (or SCD) is one that appropriately manages change of dimension members over time. It applies when business entity values change <em>slowly</em> over time in an unplanned manner. A good example of an SCD is a customer dimension, because its contact detail columns like email address and phone number change infrequently. In contrast, some dimensions are considered to be <em>rapidly</em> changing when a dimension attribute changes often, like the market price of a stock. The common design approach in these instances is to store rapidly changing attribute values in a fact table measure.</p>
+<p>Star schema design theory refers to two common SCD types: Type 1 and Type 2. A dimension table could be Type 1 or Type 2, or support both types simultaneously for different columns.</p>
+<h3 id="type-1-scd">Type 1 SCD</h3>
+<p>A <em>Type 1</em> SCD always reflects the latest values, and when changes in source data are detected, the dimension table data is overwritten. This design approach is common for columns that store supplementary values, like the email address or phone number of a customer. When a customer email address or phone number changes, the dimension table updates the customer row with the new values. It's as if the customer always had this contact information.</p>
+<p><img src="media/star-schema/slowly-changing-dimension-type-1.svg" alt="Diagram showing an example of a slowly changing dimension type 1 where an employee phone number is updated." data-linktype="relative-path">
+</p>
+<p>A non-incremental refresh of a Power BI model dimension table achieves the result of a Type 1 SCD. It refreshes the table data to ensure the latest values are loaded.</p>
+<h3 id="type-2-scd">Type 2 SCD</h3>
+<p>A <em>Type 2</em> SCD supports versioning of dimension members. If the source system doesn't store versions, it's usually the data warehouse load process that detects changes and appropriately manages the change in a dimension table. In this case, the dimension table must use a surrogate key to provide a unique reference to a <em>version</em> of the dimension member. It also includes columns that define the date range validity of the version (for example, <code>StartDate</code> and <code>EndDate</code>) and possibly a flag column (for example, <code>IsCurrent</code>) to easily filter by current dimension members.</p>
+<p>For example, Adventure Works assigns every salesperson to a sales region. When a salesperson relocates region, a new version of the salesperson must be created to ensure that historical facts remain associated with the former region. To support accurate historic analysis of sales by salesperson, the dimension table must store versions of salespeople and their associated region(s). The table should also include start and end date values to define the time validity. Current versions might define an empty end date (or 12/31/9999), which indicates that the row is the current version. The table must also have a <a href="#surrogate-keys" data-linktype="self-bookmark">surrogate key</a> because the business key (in this instance, employee ID) won't be unique.</p>
+<p><img src="media/star-schema/slowly-changing-dimension-type-2.svg" alt="Diagram showing an example of a slowly changing dimension type 2 where an employee sales region is updated by creating a new version." data-linktype="relative-path">
+</p>
+<p>It's important to understand that when the source data doesn't store versions, you must use an intermediate system (like a data warehouse) to detect and store changes. The table load process must preserve existing data and detect changes. When a change is detected, the table load process must expire the current version. It records these changes by updating the <code>EndDate</code> value and inserting a new version with the <code>StartDate</code> value commencing from the previous <code>EndDate</code> value. Also, related facts must use a time-based lookup to retrieve the dimension key value relevant to the fact date. A Power BI semantic model uses Power Query, and so it can't produce this result. It can, however, load data from a pre-loaded SCD Type 2 dimension table.</p>
+<div class="TIP">
+<p>Tip</p>
+<p>To learn how to implement a Type 2 SCD dimension table in a Fabric warehouse, see <a href="/en-us/fabric/data-warehouse/dimensional-modeling-dimension-tables#manage-historical-change" data-linktype="absolute-path">Manage historical change</a>.</p>
+</div>
+<p>The Power BI semantic model should support querying historical data for a member, regardless of change, and for a version of the member, which represents a particular state of the member in time. In the context of Adventure Works, this design enables you to query the salesperson regardless of assigned sales region, or for a particular version of the salesperson.</p>
+<p>To achieve this requirement, the Power BI semantic model dimension table must include a column for filtering the salesperson, and a different column for filtering a specific version of the salesperson. It's important that the version column provides a non-ambiguous description, like <code>David Campbell (12/15/2008-06/26/2019)</code> or <code>David Campbell (06/27/2019-Current)</code>. It's also important to educate report authors and consumers about the basics of SCD Type 2, and how to achieve appropriate report designs by applying correct filters.</p>
+<p>It's a good design practice to include a hierarchy that allows visuals to drill down to the version level.</p>
+<p><img src="media/star-schema/hierarchy-drill-down.svg" alt="Diagram showing the Data pane with columns for Salesperson and Salesperson Version." data-linktype="relative-path">
+</p>
+<h2 id="role-playing-dimensions">Role-playing dimensions</h2>
+<p>A <em>role-playing dimension</em> is a dimension that can filter related facts differently. For example, at Adventure Works the date dimension table has three relationships to the reseller sales facts. The same dimension table can be used to filter the facts by order date, ship date, or delivery date.</p>
+<p><img src="media/star-schema/role-playing-dimensions.svg" alt="Diagram showing a conceptual example of a single role-playing dimension and relationships. The Date table has two relationships to the fact table." data-linktype="relative-path">
+</p>
+<p>In a data warehouse, the accepted design approach is to define a single date dimension table. At query time, the "role" of the date dimension is established by which fact column you use to join the tables. For example, when you analyze sales by order date, the table join relates to the reseller sales order date column.</p>
+<p>In a Power BI semantic model, this design can be imitated by creating multiple relationships between two tables. In the Adventure Works example, the date and reseller sales tables would have three relationships.</p>
+<p><img src="media/star-schema/relationships-single-dimension-table.svg" alt="Diagram showing an example of a single role-playing dimension and relationships. The Date table has three relationships to the fact table." data-linktype="relative-path">
+</p>
+<p>While this design is possible, there can only be one <em>active</em> relationship between two Power BI semantic model tables. All remaining relationships must be set to inactive. Having a single active relationship means there's a default filter propagation from date to reseller sales. In this instance, the active relationship is set to the most common filter that's used by reports, which at Adventure Works is the order date relationship.</p>
+<p>The only way to use an inactive relationship is to define a DAX expression that uses the <a href="/en-us/dax/userelationship-function-dax" data-linktype="absolute-path">USERELATIONSHIP</a> function. In our example, the model developer must create measures to enable analysis of reseller sales by ship date and delivery date. This work can be tedious, especially when the reseller table defines many measures. It also creates a cluttered <strong>Data</strong> pane that has an overabundance of measures. There are other limitations, too:</p>
+<ul>
+<li>When report authors rely on summarizing columns rather than defining measures, they can't achieve summarization for the inactive relationships without writing a report-level measure. Report-level measures can only be defined when authoring reports in Power BI Desktop.</li>
+<li>With only one active relationship path between date and reseller sales, it's not possible to simultaneously filter reseller sales by different types of dates. For example, you can't produce a visual that plots order date sales by shipped sales.</li>
+</ul>
+<p>To overcome these limitations, a common Power BI modeling technique is to create a dimension table for each role-playing instance. You can create each dimension table as a <a href="power-query-referenced-queries" data-linktype="relative-path">referencing query</a> using Power Query, or a <a href="/en-us/dax/calculatetable-function-dax" data-linktype="absolute-path">calculated table</a> using DAX. The model can contain a <code>Date</code> table, a <code>Ship Date</code> table and a <code>Delivery Date</code> table, each with a single and active relationship to their respective reseller sales table columns.</p>
+<p><img src="media/star-schema/relationships-multiple-dimension-tables.svg" alt="Diagram showing an example of role playing dimensions and relationships. There are three different date dimension tables related to the fact table." data-linktype="relative-path">
+</p>
+<p>This design approach doesn't require you to define multiple measures for different date roles, and it allows simultaneous filtering by different date roles. A minor price to pay with this design approach, however, is that there will be duplication of the date dimension table resulting in an increased model storage size. Because dimension tables typically store fewer rows relative to fact tables, it's rarely a concern.</p>
+<p>We recommend you follow good design practices when creating model dimension tables for each role:</p>
+<ul>
+<li>Ensure that the column names are self-describing. While it's possible to have a <code>Year</code> column in all date tables (column names are unique within their table), it's not self-describing by default visual titles. Consider renaming columns in each dimension role table so that the <code>Ship Date</code> table has a year column named <code>Ship Year</code>, and so on.</li>
+<li>When relevant, ensure that table descriptions provide feedback to report authors (through <strong>Data</strong> pane tooltips) about how filter propagation is set up. This clarity is important when the model contains a generically named table, like <code>Date</code>, which is used to filter many fact tables. In the case that this table has, for example, an active relationship to the reseller sales order date column, consider providing a table description like <code>Filters reseller sales by order date</code>.</li>
+</ul>
+<p>For more information, see <a href="relationships-active-inactive" data-linktype="relative-path">Active vs inactive relationship guidance</a>.</p>
+<h2 id="junk-dimensions">Junk dimensions</h2>
+<p>A <em>junk dimension</em> is useful when there are many dimensions, especially consisting of few attributes (perhaps one), and when these attributes have few values. Good candidates include order status columns, or customer demographic columns like gender or age group.</p>
+<p>The design objective of a junk dimension is to consolidate many <em>small</em> dimensions into a single dimension to reduce the model storage size and also reduce <strong>Data</strong> pane clutter by surfacing fewer model tables.</p>
+<p>A junk dimension table is typically the Cartesian product of all dimension attribute members, with a <a href="#surrogate-keys" data-linktype="self-bookmark">surrogate key</a> column to uniquely identify each row. You can build the dimension in a data warehouse, or by using Power Query to create a query that performs <a href="/en-us/powerquery-m/table-join" data-linktype="absolute-path">full outer query joins</a>, then adds a surrogate key (index column).</p>
+<p><img src="media/star-schema/junk-dimension.svg" alt="Diagram showing an example of a junk dimension table. Order Status has three states while Delivery Status has two states." data-linktype="relative-path">
+</p>
+<p>You load this query to the model as a dimension table. You also need to merge this query with the fact query so the index column is loaded to the model to support the creation of a "one-to-many" model relationship.</p>
+<h2 id="degenerate-dimensions">Degenerate dimensions</h2>
+<p>A <em>degenerate dimension</em> refers to an attribute of the fact table that's required for filtering. At Adventure Works, the reseller sales order number is a good example. In this instance, it doesn't make sense to create an independent table consisting of just this one column because it would increase the model storage size and result in <strong>Data</strong> pane clutter.</p>
+<p>In the Power BI semantic model, it can be appropriate to add the sales order number column to the fact table to allow filtering or grouping by sales order number. It's an exception to the formerly introduced rule that you shouldn't mix table types (generally, model tables should be either dimension or fact).</p>
+<p><img src="media/star-schema/degenerate-dimension.svg" alt="Diagram showing the Data pane and the sales fact table, which includes the Order Number field." data-linktype="relative-path">
+</p>
+<p>However, if the Adventure Works resellers sales table has order number <em>and</em> order line number columns, and they're required for filtering, creating a degenerate dimension table would be a good design. For more information, see <a href="relationships-one-to-one#degenerate-dimensions" data-linktype="relative-path">One-to-one relationship guidance (Degenerate dimensions)</a>.</p>
+<h2 id="factless-fact-tables">Factless fact tables</h2>
+<p>A <em>factless fact</em> table doesn't include any measure columns. It contains only dimension keys.</p>
+<p>A factless fact table could store observations defined by dimension keys. For example, at a particular date and time, a particular customer signed in to your web site. You could define a measure to count the rows of the factless fact table to perform analysis of when and how many customers signed in.</p>
+<p>A more compelling use of a factless fact table is to store relationships between dimensions, and it's a Power BI semantic model design approach we recommend for defining many-to-many dimension relationships. In a <a href="relationships-many-to-many#relate-many-to-many-dimensions" data-linktype="relative-path">many-to-many dimension relationship design</a>, the factless fact table is referred to as a <em>bridging table</em>.</p>
+<p>For example, consider that salespeople can be assigned to one <em>or more</em> sales regions. The bridging table would be designed as a factless fact table consisting of two columns: salesperson key and region key. Duplicate values can be stored in both columns.</p>
+<p><img src="media/star-schema/factless-fact-table.svg" alt="Diagram showing a factless fact table bridging Salesperson and Region dimensions. The factless fact table comprises two columns." data-linktype="relative-path">
+</p>
+<p>This many-to-many design approach is well documented, and it can be achieved without a bridging table. However, the bridging table approach is considered the best practice when relating two dimensions. For more information, see <a href="relationships-many-to-many#relate-many-to-many-dimensions" data-linktype="relative-path">Many-to-many relationship guidance (Relate two dimension tables)</a>.</p>
+<h2 id="related-content">Related content</h2>
+<p>For more information about star schema design or Power BI semantic model design, see the following articles:</p>
+<ul>
+<li><a href="https://go.microsoft.com/fwlink/p/?linkid=246459" data-linktype="external">Dimensional modeling Wikipedia article</a></li>
+<li><a href="../transform-model/desktop-relationships-understand" data-linktype="relative-path">Model relationships in Power BI Desktop</a></li>
+<li><a href="relationships-one-to-one" data-linktype="relative-path">One-to-one relationship guidance</a></li>
+<li><a href="relationships-many-to-many" data-linktype="relative-path">Many-to-many relationship guidance</a></li>
+<li><a href="relationships-bidirectional-filtering" data-linktype="relative-path">Bi-directional relationship guidance</a></li>
+<li><a href="relationships-active-inactive" data-linktype="relative-path">Active vs inactive relationship guidance</a></li>
+<li><a href="/en-us/fabric/data-warehouse/dimensional-modeling-overview" data-linktype="absolute-path">Dimensional modeling in Microsoft Fabric Warehouse</a></li>
+<li>Questions? <a href="https://community.fabric.microsoft.com/" data-linktype="external">Try asking the Fabric Community</a></li>
+<li>Suggestions? <a href="https://ideas.fabric.microsoft.com/" data-linktype="external">Contribute ideas to improve Fabric</a></li>
+</ul>
+</div>
+					
+		<div
+			id="ms--inline-notifications"
+			class="margin-block-xs"
+			data-bi-name="inline-notification"
+		></div>
+	 
+		<div
+			id="assertive-live-region"
+			role="alert"
+			aria-live="assertive"
+			class="visually-hidden"
+			aria-relevant="additions"
+			aria-atomic="true"
+		></div>
+		<div
+			id="polite-live-region"
+			role="status"
+			aria-live="polite"
+			class="visually-hidden"
+			aria-relevant="additions"
+			aria-atomic="true"
+		></div>
+	
+					
+		<!-- feedback section -->
+		<section
+			id="site-user-feedback-footer"
+			class="font-size-sm margin-top-md display-none-print display-none-desktop"
+			data-test-id="site-user-feedback-footer"
+			data-bi-name="site-feedback-section"
+		>
+			<hr class="hr" />
+			<h2 id="ms--feedback" class="title is-3">Feedback</h2>
+			<div class="display-flex flex-wrap-wrap align-items-center">
+				<p class="font-weight-semibold margin-xxs margin-left-none">
+					Was this page helpful?
+				</p>
+				<div class="buttons">
+					<button
+						class="thumb-rating-button like button button-primary button-sm"
+						data-test-id="footer-rating-yes"
+						data-binary-rating-response="rating-yes"
+						type="button"
+						title="This article is helpful"
+						data-bi-name="button-rating-yes"
+						aria-pressed="false"
+					>
+						<span class="icon" aria-hidden="true">
+							<span class="docon docon-like"></span>
+						</span>
+						<span>Yes</span>
+					</button>
+					<button
+						class="thumb-rating-button dislike button button-primary button-sm"
+						id="standard-rating-no-button"
+						hidden
+						data-test-id="footer-rating-no"
+						data-binary-rating-response="rating-no"
+						type="button"
+						title="This article is not helpful"
+						data-bi-name="button-rating-no"
+						aria-pressed="false"
+					>
+						<span class="icon" aria-hidden="true">
+							<span class="docon docon-dislike"></span>
+						</span>
+						<span>No</span>
+					</button>
+					<details
+						class="popover popover-top"
+						id="mobile-help-popover"
+						data-test-id="footer-feedback-popover"
+					>
+						<summary
+							class="thumb-rating-button dislike button button-primary button-sm"
+							data-test-id="details-footer-rating-no"
+							data-binary-rating-response="rating-no"
+							title="This article is not helpful"
+							data-bi-name="button-rating-no"
+							aria-pressed="false"
+							data-bi-an="feedback-unhelpful-popover"
+						>
+							<span class="icon" aria-hidden="true">
+								<span class="docon docon-dislike"></span>
+							</span>
+							<span>No</span>
+						</summary>
+						<div
+							class="popover-content width-200 width-300-tablet"
+							role="dialog"
+							aria-labelledby="popover-heading"
+							aria-describedby="popover-description"
+						>
+							<p id="popover-heading" class="font-size-lg margin-bottom-xxs font-weight-semibold">
+								Need help with this topic?
+							</p>
+							<p id="popover-description" class="font-size-sm margin-bottom-xs">
+								Want to try using Ask Learn to clarify or guide you through this topic?
+							</p>
+							
+		<div class="buttons flex-direction-row flex-wrap justify-content-center gap-xxs">
+			<div>
+		<button
+			class="button button-sm border inner-focus display-none margin-right-xxs"
+			data-bi-name="ask-learn-assistant-entry-troubleshoot"
+			data-test-id="ask-learn-assistant-modal-entry-mobile-feedback"
+			data-ask-learn-modal-entry-feedback
+			data-bi-an=feedback-unhelpful-popover
+			type="button"
+			style="min-width: max-content;"
+			aria-expanded="false"
+			aria-label="Ask Learn"
+			hidden
+		>
+			<span class="icon" aria-hidden="true">
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
+			</span>
+		</button>
+		<button
+			class="button button-sm display-inline-flex display-none-desktop flex-shrink-0 margin-right-xxs border-color-ask-learn margin-right-xxs"
+			data-bi-name="ask-learn-assistant-entry-troubleshoot"
+			data-bi-an=feedback-unhelpful-popover
+			data-test-id="ask-learn-assistant-modal-entry-tablet-feedback"
+			data-ask-learn-modal-entry-feedback
+			type="button"
+			style="min-width: max-content;"
+			aria-expanded="false"
+			hidden
+		>
+			<span class="icon font-size-lg" aria-hidden="true">
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
+			</span>
+			<span>Ask Learn</span>
+		</button>
+		<button
+			class="button button-sm display-none flex-shrink-0 display-inline-flex-desktop margin-right-xxs border-color-ask-learn margin-right-xxs"
+			data-bi-name="ask-learn-assistant-entry-troubleshoot"
+			data-bi-an=feedback-unhelpful-popover
+			data-test-id="ask-learn-assistant-flyout-entry-feedback"
+			data-ask-learn-flyout-entry-show-only
+			data-flyout-button="toggle"
+			type="button"
+			style="min-width: max-content;"
+			aria-expanded="false"
+			aria-controls="ask-learn-flyout"
+			hidden
+		>
+			<span class="icon font-size-lg" aria-hidden="true">
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
+			</span>
+			<span>Ask Learn</span>
+		</button>
+	</div>
+			<button
+				type="button"
+				class="button button-sm margin-right-xxs"
+				data-help-option="suggest-fix"
+				data-bi-name="feedback-suggest"
+				data-bi-an="feedback-unhelpful-popover"
+				data-test-id="suggest-fix"
+			>
+				<span class="icon" aria-hidden="true">
+					<span class="docon docon-feedback"></span>
+				</span>
+				<span> Suggest a fix? </span>
+			</button>
+		</div>
+	
+						</div>
+					</details>
+				</div>
+			</div>
+		</section>
+		<!-- end feedback section -->
+	
+				</div>
+				
+		<div id="ms--additional-resources-mobile" class="display-none-print">
+			<hr class="hr" hidden />
+			<h2 id="ms--additional-resources-mobile-heading" class="title is-3" hidden>
+				Additional resources
+			</h2>
+			
+		<section
+			id="right-rail-recommendations-mobile"
+			class=""
+			data-bi-name="recommendations"
+			hidden
+		></section>
+	 
+		<section
+			id="right-rail-training-mobile"
+			class=""
+			data-bi-name="learning-resource-card"
+			hidden
+		></section>
+	 
+		<section
+			id="right-rail-events-mobile"
+			class=""
+			data-bi-name="events-card"
+			hidden
+		></section>
+	
+		</div>
+	 
+		<div
+			id="article-metadata-footer"
+			data-bi-name="article-metadata-footer"
+			data-test-id="article-metadata-footer"
+			class="page-metadata-container"
+		>
+			<hr class="hr" />
+			<ul class="metadata page-metadata" data-bi-name="page info" lang="en-us" dir="ltr">
+				<li class="visibility-hidden-visual-diff">
+			<span class="badge badge-sm text-wrap-pretty">
+				<span>Last updated on <local-time format="twoDigitNumeric"
+		datetime="2024-12-30T08:00:00.000Z"
+		data-article-date-source="calculated"
+		class="is-invisible"
+	>
+		2024-12-30
+	</local-time></span>
+			</span>
+		</li>
+			</ul>
+		</div>
+	
+			</div>
+		
+				</main>
+				<aside
+					id="layout-body-aside"
+					class="layout-body-aside  "
+					data-bi-name="aside"
+					aria-label="Additional resources"
+			  >
+					
+		<div
+			id="ms--additional-resources"
+			class="right-container padding-sm display-none display-block-desktop height-full"
+			data-bi-name="pageactions"
+		>
+			<div id="affixed-right-container" data-bi-name="right-column">
+				
+		<nav
+			id="side-doc-outline"
+			class="doc-outline border-bottom padding-bottom-xs margin-bottom-xs scrollbar-width-thin"
+			data-bi-name="intopic toc"
+			aria-label="In this article"
+		>
+			<h3>In this article</h3>
+		</nav>
+	
+				<!-- Feedback -->
+				
+		<section
+			id="ms--site-user-feedback-right-rail"
+			class="font-size-sm display-none-print"
+			data-test-id="site-user-feedback-right-rail"
+			data-bi-name="site-feedback-right-rail"
+		>
+			<div class="display-flex flex-wrap-wrap align-items-center">
+				<p class="font-weight-semibold margin-xxs margin-left-none">
+					Was this page helpful?
+				</p>
+				<div class="display-flex flex-wrap-nowrap">
+					<button
+						class="thumb-rating-button like inner-focus"
+						data-test-id="right-rail-rating-yes"
+						data-binary-rating-response="rating-yes"
+						type="button"
+						title="This article is helpful"
+						aria-label="This article is helpful"
+						data-bi-name="button-rating-yes"
+						aria-pressed="false"
+					>
+						<span class="icon" aria-hidden="true">
+							<span class="docon docon-like"></span>
+						</span>
+					</button>
+					<button
+						class="thumb-rating-button dislike inner-focus"
+						id="right-rail-no-button"
+						hidden
+						data-test-id="right-rail-rating-no"
+						data-binary-rating-response="rating-no"
+						type="button"
+						title="This article is not helpful"
+						aria-label="This article is not helpful"
+						data-bi-name="button-rating-no"
+						aria-pressed="false"
+					>
+						<span class="icon" aria-hidden="true">
+							<span class="docon docon-dislike"></span>
+						</span>
+					</button>
+					<details class="popover popover-right" id="help-popover" data-test-id="feedback-popover">
+						<summary
+							tabindex="0"
+							class="thumb-rating-button dislike inner-focus"
+							data-test-id="details-right-rail-rating-no"
+							data-binary-rating-response="rating-no"
+							title="This article is not helpful"
+							aria-label="This article is not helpful"
+							data-bi-name="button-rating-no"
+							aria-pressed="false"
+							data-bi-an="feedback-unhelpful-popover"
+						>
+							<span class="icon" aria-hidden="true">
+								<span class="docon docon-dislike"></span>
+							</span>
+						</summary>
+						<div
+							class="popover-content width-200 width-300-tablet"
+							role="dialog"
+							aria-labelledby="popover-heading-right-rail"
+							aria-describedby="popover-description-right-rail"
+						>
+							<p
+								id="popover-heading-right-rail"
+								class="font-size-lg margin-bottom-xxs font-weight-semibold"
+							>
+								Need help with this topic?
+							</p>
+							<p id="popover-description-right-rail" class="font-size-sm margin-bottom-xs">
+								Want to try using Ask Learn to clarify or guide you through this topic?
+							</p>
+							
+		<div class="buttons flex-direction-row flex-wrap justify-content-center gap-xxs">
+			<div>
+		<button
+			class="button button-sm border inner-focus display-none margin-right-xxs"
+			data-bi-name="ask-learn-assistant-entry-troubleshoot"
+			data-test-id="ask-learn-assistant-modal-entry-mobile-feedback"
+			data-ask-learn-modal-entry-feedback
+			data-bi-an=feedback-unhelpful-popover
+			type="button"
+			style="min-width: max-content;"
+			aria-expanded="false"
+			aria-label="Ask Learn"
+			hidden
+		>
+			<span class="icon" aria-hidden="true">
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
+			</span>
+		</button>
+		<button
+			class="button button-sm display-inline-flex display-none-desktop flex-shrink-0 margin-right-xxs border-color-ask-learn margin-right-xxs"
+			data-bi-name="ask-learn-assistant-entry-troubleshoot"
+			data-bi-an=feedback-unhelpful-popover
+			data-test-id="ask-learn-assistant-modal-entry-tablet-feedback"
+			data-ask-learn-modal-entry-feedback
+			type="button"
+			style="min-width: max-content;"
+			aria-expanded="false"
+			hidden
+		>
+			<span class="icon font-size-lg" aria-hidden="true">
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
+			</span>
+			<span>Ask Learn</span>
+		</button>
+		<button
+			class="button button-sm display-none flex-shrink-0 display-inline-flex-desktop margin-right-xxs border-color-ask-learn margin-right-xxs"
+			data-bi-name="ask-learn-assistant-entry-troubleshoot"
+			data-bi-an=feedback-unhelpful-popover
+			data-test-id="ask-learn-assistant-flyout-entry-feedback"
+			data-ask-learn-flyout-entry-show-only
+			data-flyout-button="toggle"
+			type="button"
+			style="min-width: max-content;"
+			aria-expanded="false"
+			aria-controls="ask-learn-flyout"
+			hidden
+		>
+			<span class="icon font-size-lg" aria-hidden="true">
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
+			</span>
+			<span>Ask Learn</span>
+		</button>
+	</div>
+			<button
+				type="button"
+				class="button button-sm margin-right-xxs"
+				data-help-option="suggest-fix"
+				data-bi-name="feedback-suggest"
+				data-bi-an="feedback-unhelpful-popover"
+				data-test-id="suggest-fix"
+			>
+				<span class="icon" aria-hidden="true">
+					<span class="docon docon-feedback"></span>
+				</span>
+				<span> Suggest a fix? </span>
+			</button>
+		</div>
+	
+						</div>
+					</details>
+				</div>
+			</div>
+		</section>
+	
+			</div>
+		</div>
+	
+			  </aside> <section
+					id="layout-body-flyout"
+					class="layout-body-flyout "
+					data-bi-name="flyout"
+			  >
+					 <div
+	class="height-full border-left background-color-body-medium"
+	id="ask-learn-flyout"
+></div>
+			  </section> <div class="layout-body-footer " data-bi-name="layout-footer">
+		<footer
+			id="footer"
+			data-test-id="footer"
+			data-bi-name="footer"
+			class="footer-layout padding-xs padding-sm-desktop has-default-focus border-top"
+			role="contentinfo"
+		>
+			<div class="display-flex gap-xs flex-wrap-wrap is-full-height padding-right-lg-desktop">
+				
+		<a
+			data-mscc-ic="false"
+			href="#"
+			data-bi-name="select-locale"
+			class="locale-selector-link flex-shrink-0 button button-sm button-clear external-link-indicator"
+			id=""
+			title=""
+			><span class="icon" aria-hidden="true"
+				><span class="docon docon-world"></span></span
+			><span class="local-selector-link-text">en-us</span></a
+		>
+	 <div class="ccpa-privacy-link" data-ccpa-privacy-link hidden>
+		
+		<a
+			data-mscc-ic="false"
+			href="https://aka.ms/yourcaliforniaprivacychoices"
+			data-bi-name="your-privacy-choices"
+			class="button button-sm button-clear flex-shrink-0 external-link-indicator"
+			id=""
+			title=""
+			>
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			viewBox="0 0 30 14"
+			xml:space="preserve"
+			height="16"
+			width="43"
+			aria-hidden="true"
+			focusable="false"
+		>
+			<path
+				d="M7.4 12.8h6.8l3.1-11.6H7.4C4.2 1.2 1.6 3.8 1.6 7s2.6 5.8 5.8 5.8z"
+				style="fill-rule:evenodd;clip-rule:evenodd;fill:#fff"
+			></path>
+			<path
+				d="M22.6 0H7.4c-3.9 0-7 3.1-7 7s3.1 7 7 7h15.2c3.9 0 7-3.1 7-7s-3.2-7-7-7zm-21 7c0-3.2 2.6-5.8 5.8-5.8h9.9l-3.1 11.6H7.4c-3.2 0-5.8-2.6-5.8-5.8z"
+				style="fill-rule:evenodd;clip-rule:evenodd;fill:#06f"
+			></path>
+			<path
+				d="M24.6 4c.2.2.2.6 0 .8L22.5 7l2.2 2.2c.2.2.2.6 0 .8-.2.2-.6.2-.8 0l-2.2-2.2-2.2 2.2c-.2.2-.6.2-.8 0-.2-.2-.2-.6 0-.8L20.8 7l-2.2-2.2c-.2-.2-.2-.6 0-.8.2-.2.6-.2.8 0l2.2 2.2L23.8 4c.2-.2.6-.2.8 0z"
+				style="fill:#fff"
+			></path>
+			<path
+				d="M12.7 4.1c.2.2.3.6.1.8L8.6 9.8c-.1.1-.2.2-.3.2-.2.1-.5.1-.7-.1L5.4 7.7c-.2-.2-.2-.6 0-.8.2-.2.6-.2.8 0L8 8.6l3.8-4.5c.2-.2.6-.2.9 0z"
+				style="fill:#06f"
+			></path>
+		</svg>
+	
+			<span>Your Privacy Choices</span></a
+		>
+	
+	</div>
+				<div class="flex-shrink-0">
+		<div class="dropdown has-caret-up">
+			<button
+				data-test-id="theme-selector-button"
+				class="dropdown-trigger button button-clear button-sm inner-focus theme-dropdown-trigger"
+				aria-controls="{{ themeMenuId }}"
+				aria-haspopup="true"
+				aria-expanded="false"
+				data-bi-name="theme"
+			>
+				<span class="icon" aria-hidden="true"><span class="docon docon-sun"></span></span>
+				<span>Theme</span>
+				<span class="icon expanded-indicator" aria-hidden="true">
+					<span class="docon docon-chevron-down-light"></span>
+				</span>
+			</button>
+			<div class="dropdown-menu" id="{{ themeMenuId }}" role="menu">
+				<ul class="theme-selector padding-xxs" data-test-id="theme-dropdown-menu" role="none">
+					<li class="theme display-block" role="none">
+						<button
+							class="button button-clear button-sm theme-control button-block justify-content-flex-start text-align-left"
+							role="menuitemradio"
+							aria-checked="false"
+							data-theme-to="light"
+							tabindex="-1"
+						>
+							<span class="theme-light margin-right-xxs">
+								<span
+									class="theme-selector-icon border display-inline-block has-body-background"
+									aria-hidden="true"
+								>
+									<svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 14">
+										<rect width="22" height="14" class="has-fill-body-background" />
+										<rect x="5" y="5" width="12" height="4" class="has-fill-secondary" />
+										<rect x="5" y="2" width="2" height="1" class="has-fill-secondary" />
+										<rect x="8" y="2" width="2" height="1" class="has-fill-secondary" />
+										<rect x="11" y="2" width="3" height="1" class="has-fill-secondary" />
+										<rect x="1" y="1" width="2" height="2" class="has-fill-secondary" />
+										<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary" />
+										<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary" />
+									</svg>
+								</span>
+							</span>
+							<span> Light </span>
+						</button>
+					</li>
+					<li class="theme display-block" role="none">
+						<button
+							class="button button-clear button-sm theme-control button-block justify-content-flex-start text-align-left"
+							role="menuitemradio"
+							aria-checked="false"
+							data-theme-to="dark"
+							tabindex="-1"
+						>
+							<span class="theme-dark margin-right-xxs">
+								<span
+									class="border theme-selector-icon display-inline-block has-body-background"
+									aria-hidden="true"
+								>
+									<svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 14">
+										<rect width="22" height="14" class="has-fill-body-background" />
+										<rect x="5" y="5" width="12" height="4" class="has-fill-secondary" />
+										<rect x="5" y="2" width="2" height="1" class="has-fill-secondary" />
+										<rect x="8" y="2" width="2" height="1" class="has-fill-secondary" />
+										<rect x="11" y="2" width="3" height="1" class="has-fill-secondary" />
+										<rect x="1" y="1" width="2" height="2" class="has-fill-secondary" />
+										<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary" />
+										<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary" />
+									</svg>
+								</span>
+							</span>
+							<span> Dark </span>
+						</button>
+					</li>
+					<li class="theme display-block" role="none">
+						<button
+							class="button button-clear button-sm theme-control button-block justify-content-flex-start text-align-left"
+							role="menuitemradio"
+							aria-checked="false"
+							data-theme-to="high-contrast"
+							tabindex="-1"
+						>
+							<span class="theme-high-contrast margin-right-xxs">
+								<span
+									class="border theme-selector-icon display-inline-block has-body-background"
+									aria-hidden="true"
+								>
+									<svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 14">
+										<rect width="22" height="14" class="has-fill-body-background" />
+										<rect x="5" y="5" width="12" height="4" class="has-fill-secondary" />
+										<rect x="5" y="2" width="2" height="1" class="has-fill-secondary" />
+										<rect x="8" y="2" width="2" height="1" class="has-fill-secondary" />
+										<rect x="11" y="2" width="3" height="1" class="has-fill-secondary" />
+										<rect x="1" y="1" width="2" height="2" class="has-fill-secondary" />
+										<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary" />
+										<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary" />
+									</svg>
+								</span>
+							</span>
+							<span> High contrast </span>
+						</button>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+			</div>
+			<ul class="links" data-bi-name="footerlinks">
+				<li class="manage-cookies-holder" hidden=""></li>
+				<li>
+		
+		<a
+			data-mscc-ic="false"
+			href="https://learn.microsoft.com/en-us/principles-for-ai-generated-content"
+			data-bi-name="aiDisclaimer"
+			class=" external-link-indicator"
+			id=""
+			title=""
+			>AI Disclaimer</a
+		>
+	
+	</li><li>
+		
+		<a
+			data-mscc-ic="false"
+			href="https://learn.microsoft.com/en-us/previous-versions/"
+			data-bi-name="archivelink"
+			class=" external-link-indicator"
+			id=""
+			title=""
+			>Previous Versions</a
+		>
+	
+	</li> <li>
+		
+		<a
+			data-mscc-ic="false"
+			href="https://techcommunity.microsoft.com/t5/microsoft-learn-blog/bg-p/MicrosoftLearnBlog"
+			data-bi-name="bloglink"
+			class=" external-link-indicator"
+			id=""
+			title=""
+			>Blog</a
+		>
+	
+	</li> <li>
+		
+		<a
+			data-mscc-ic="false"
+			href="https://learn.microsoft.com/en-us/contribute"
+			data-bi-name="contributorGuide"
+			class=" external-link-indicator"
+			id=""
+			title=""
+			>Contribute</a
+		>
+	
+	</li><li>
+		
+		<a
+			data-mscc-ic="false"
+			href="https://go.microsoft.com/fwlink/?LinkId=521839"
+			data-bi-name="privacy"
+			class=" external-link-indicator"
+			id=""
+			title=""
+			>Privacy</a
+		>
+	
+	</li><li>
+		
+		<a
+			data-mscc-ic="false"
+			href="https://go.microsoft.com/fwlink/?linkid=2259814"
+			data-bi-name="consumer-health-privacy"
+			class=" external-link-indicator"
+			id=""
+			title=""
+			>Consumer Health Privacy</a
+		>
+	
+	</li><li>
+		
+		<a
+			data-mscc-ic="false"
+			href="https://learn.microsoft.com/en-us/legal/termsofuse"
+			data-bi-name="termsofuse"
+			class=" external-link-indicator"
+			id=""
+			title=""
+			>Terms of Use</a
+		>
+	
+	</li><li>
+		
+		<a
+			data-mscc-ic="false"
+			href="https://www.microsoft.com/legal/intellectualproperty/Trademarks/"
+			data-bi-name="trademarks"
+			class=" external-link-indicator"
+			id=""
+			title=""
+			>Trademarks</a
+		>
+	
+	</li>
+				<li>&copy; Microsoft 2026</li>
+			</ul>
+		</footer>
+	</footer>
+			<noscript><img src="https://learn.microsoft.com/akam/13/pixel_2825e5f1?a=dD00Y2ZlYjk4ZTNhM2JmYWMzMzFkNmMxNGQ5ZTMwNWQxOGNlMzdmY2VhJmpzPW9mZg==" style="visibility: hidden; position: absolute; left: -999px; top: -999px;" /></noscript></body>
+		</html>

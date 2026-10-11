@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bước 7 · Terraform</title>
+<style>
+  :root{
+    --bg:#f4f6fa;
+    --surface:#ffffff;
+    --ink:#1e2733;
+    --ink-soft:#66707c;
+    --accent:#2f6fed;
+    --accent-dark:#1d4fbe;
+    --accent-bg:#e8f0ff;
+    --border:#dfe4ec;
+    --code-bg:#eef1f8;
+    --code-ink:#1d4fbe;
+    --warn-bg:#fff3e6;
+    --warn-border:#e08a2b;
+    --warn-ink:#8a4b0c;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    font-size:15.5px;
+    line-height:1.65;
+  }
+  code, pre{ font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace; }
+  a{ color:var(--accent); }
+
+  .course-nav{
+    position:sticky; top:0; z-index:10;
+    display:flex; align-items:center; gap:20px;
+    background:var(--surface);
+    border-bottom:1px solid var(--border);
+    padding:12px 24px;
+  }
+  .course-nav a.home{ color:var(--ink); text-decoration:none; font-weight:600; font-size:14px; }
+  .course-nav .steps{ display:flex; flex-wrap:wrap; gap:8px; margin-left:auto; justify-content:flex-end; }
+  .course-nav .steps a{
+    text-decoration:none; font-size:13px; color:var(--ink-soft);
+    padding:6px 12px; border-radius:6px; border:1px solid transparent;
+  }
+  .course-nav .steps a.active{ background:var(--accent-bg); color:var(--accent-dark); font-weight:600; }
+  .course-nav .steps a:hover:not(.active){ border-color:var(--border); }
+
+  .layout{
+    max-width:1020px;
+    margin:0 auto;
+    padding:32px 24px 100px;
+    position:relative;
+  }
+
+  nav.toc{
+    position:fixed;
+    top:102px;
+    left:max(24px, calc((100vw - 1020px) / 2 + 24px));
+    width:240px;
+    max-height:calc(100vh - 126px);
+    overflow-y:auto;
+  }
+
+  main{ display:block; margin-left:280px; }
+
+  @media (max-width:860px){
+    nav.toc{ position:static; left:auto; top:auto; width:auto; max-height:none; margin-bottom:28px; }
+    main{ margin-left:0; }
+  }
+  nav.toc .eyebrow{ font-size:11px; letter-spacing:0.06em; text-transform:uppercase; color:var(--ink-soft); margin:0 0 8px; }
+  nav.toc ol{ list-style:none; margin:0; padding:0; counter-reset:toc; }
+  nav.toc li{ counter-increment:toc; }
+  nav.toc a{ display:flex; align-items:center; gap:8px; text-decoration:none; color:var(--ink-soft); font-size:15px; padding:6px 8px; border-radius:6px; }
+  nav.toc a:hover{ background:var(--accent-bg); color:var(--accent-dark); }
+  nav.toc a::before{ content:counter(toc,decimal-leading-zero); color:var(--accent); font-size:15px; font-weight:600; flex:none; }
+
+  header.hero{ max-width:720px; margin:0 auto 8px; padding-bottom:24px; border-bottom:1px solid var(--border); }
+  header.hero .eyebrow{ font-size:12px; letter-spacing:0.08em; text-transform:uppercase; color:var(--accent); margin:0 0 8px; font-weight:600; }
+  header.hero h1{ font-size:30px; margin:0 0 12px; }
+  header.hero p{ color:var(--ink-soft); max-width:62ch; margin:0 0 8px; }
+
+  section{ max-width:720px; margin:44px auto 0; scroll-margin-top:80px; }
+  section h2{ font-size:21px; margin:0 0 6px; display:flex; align-items:baseline; gap:10px; }
+  section h2 .n{ color:var(--accent); }
+  section > p.intro{ color:var(--ink-soft); margin:0 0 18px; max-width:65ch; }
+  section h3{ font-size:15px; margin:24px 0 8px; color:var(--accent-dark); }
+
+  .table-wrap{ overflow-x:auto; border:1px solid var(--border); border-radius:8px; margin-bottom:14px; }
+  table.cmd{ width:100%; border-collapse:collapse; background:var(--surface); font-size:13.5px; }
+  table.cmd th{ text-align:left; font-size:11px; letter-spacing:0.05em; text-transform:uppercase; color:var(--ink-soft); padding:9px 12px; border-bottom:1px solid var(--border); white-space:nowrap; }
+  table.cmd td{ padding:9px 12px; border-bottom:1px solid var(--border); vertical-align:top; }
+  table.cmd tr:last-child td{ border-bottom:none; }
+  table.cmd td:first-child{ white-space:nowrap; }
+  code{ background:var(--code-bg); color:var(--code-ink); padding:2px 6px; border-radius:4px; font-size:0.9em; font-weight:400; border:1px solid rgba(29,79,190,0.12); }
+  table.cmd code{ padding:2px 5px; font-size:13px; }
+
+  pre{ background:var(--code-bg); color:var(--ink); padding:12px 14px; border-radius:8px; overflow-x:auto; font-size:13px; border:1px solid var(--border); }
+  pre code{ background:none; padding:0; border:none; font-weight:400; color:inherit; }
+  .tok-comment{ color:#7d8590; font-style:italic; }
+  .tok-string{ color:#b45309; }
+  .tok-keyword{ color:#7c3aed; }
+  .tok-var{ color:#0f766e; }
+  .tok-section{ color:var(--accent-dark); }
+
+  .note{ background:var(--accent-bg); border-left:3px solid var(--accent); border-radius:6px; padding:10px 14px; font-size:13.5px; color:var(--ink); margin:14px 0; }
+  .warn{ background:var(--warn-bg); border-left:3px solid var(--warn-border); border-radius:6px; padding:10px 14px; font-size:13.5px; color:var(--warn-ink); margin:14px 0; }
+
+  .checklist{ list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:8px; }
+  .checklist li{ display:flex; gap:10px; align-items:flex-start; background:var(--surface); border:1px solid var(--border); border-radius:8px; padding:10px 14px; font-size:14px; }
+  .checklist li::before{ content:"✓"; color:var(--accent); font-weight:700; flex:none; }
+</style>
+</head>
+<body>
+
+<div class="course-nav">
+  <a class="home" href="index.html">← Học DevOps</a>
+  <div class="steps">
+    <a href="01-linux-devops.html">Bước 1 · Linux</a>
+    <a href="02-networking-security.html">Bước 2 · Mạng &amp; Bảo mật</a>
+    <a href="03-docker.html">Bước 3 · Docker</a>
+    <a href="04-kubernetes.html">Bước 4 · Kubernetes</a>
+    <a href="05-ci-cd.html">Bước 5 · CI/CD</a>
+    <a href="06-monitoring-observability.html">Bước 6 · Monitoring</a>
+    <a class="active" href="07-terraform.html">Bước 7 · Terraform</a>
+  </div>
+</div>
+
+<div class="layout">
+  <nav class="toc">
+    <p class="eyebrow">Mục lục</p>
+    <ol>
+      <li><a href="#t1">Terraform &amp; IaC là gì</a></li>
+      <li><a href="#t2">Workflow cơ bản</a></li>
+      <li><a href="#t3">Cú pháp HCL</a></li>
+      <li><a href="#t4">Variables &amp; Outputs</a></li>
+      <li><a href="#t5">State — file trạng thái</a></li>
+      <li><a href="#t6">Remote backend &amp; locking</a></li>
+      <li><a href="#t7">Modules</a></li>
+      <li><a href="#t8">Quản lý state qua CLI</a></li>
+      <li><a href="#t9">Nhiều môi trường</a></li>
+      <li><a href="#t10">Best practices</a></li>
+    </ol>
+  </nav>
+
+  <main>
+    <header class="hero">
+      <p class="eyebrow">Bước 07</p>
+      <h1>Terraform cho DevOps</h1>
+      <p>Định nghĩa hạ tầng bằng code thay vì thao tác tay qua console — dễ review, dễ tái lập, dễ tái sử dụng. 10 phần đi từ khái niệm IaC, cú pháp HCL, state, đến module và vận hành nhiều môi trường an toàn.</p>
+    </header>
+
+    <section id="t1">
+      <h2><span class="n">01</span> Terraform &amp; Infrastructure as Code là gì</h2>
+      <p class="intro">IaC nghĩa là khai báo hạ tầng (server, mạng, database...) bằng file cấu hình có thể versioning, review, và tái sử dụng — thay vì click tay qua console, vốn không để lại lịch sử và khó tái lập chính xác.</p>
+      <div class="table-wrap"><table class="cmd">
+        <tr><th>Khái niệm</th><th>Mô tả</th></tr>
+        <tr><td>Declarative</td><td>Bạn khai báo trạng thái hạ tầng mong muốn — Terraform tự tính toán các bước cần làm để đạt được nó, khác với cách viết tuần tự từng lệnh (imperative).</td></tr>
+        <tr><td>Provider</td><td>Plugin để Terraform giao tiếp với một nền tảng cụ thể — AWS, Google Cloud, Azure, Kubernetes, hay cả GitHub/Datadog.</td></tr>
+        <tr><td>Resource</td><td>Một đối tượng hạ tầng cụ thể được Terraform tạo và quản lý, ví dụ một máy chủ hay một bucket lưu trữ.</td></tr>
+        <tr><td>HCL (HashiCorp Configuration Language)</td><td>Ngôn ngữ cấu hình dùng để viết file <code>.tf</code> — cú pháp khai báo, dễ đọc hơn JSON/YAML thuần cho việc này.</td></tr>
+      </table></div>
+      <div class="note">Terraform khác các công cụ configuration management (Ansible, Chef) ở chỗ nó tập trung vào việc <em>tạo/xóa/thay đổi hạ tầng</em> (server, mạng, database), trong khi các công cụ kia tập trung <em>cấu hình bên trong</em> một máy đã tồn tại.</div>
+    </section>
+
+    <section id="t2">
+      <h2><span class="n">02</span> Workflow cơ bản</h2>
+      <p class="intro">Vòng lặp làm việc cốt lõi của Terraform luôn là ba bước: khởi tạo, xem trước thay đổi, rồi mới áp dụng.</p>
+      <div class="table-wrap"><table class="cmd">
+        <tr><th>Lệnh</th><th>Mô tả</th><th>Ví dụ</th></tr>
+        <tr><td><code>terraform init</code></td><td>Tải provider/module cần thiết, cấu hình backend, tạo file khóa version <code>.terraform.lock.hcl</code>.</td><td><code>terraform init</code></td></tr>
+        <tr><td><code>terraform plan</code></td><td>Xem trước những gì sẽ thay đổi (tạo/sửa/xóa) mà chưa thực sự áp dụng.</td><td><code>terraform plan -out=tfplan</code></td></tr>
+        <tr><td><code>terraform apply</code></td><td>Áp dụng thay đổi vào hạ tầng thật, hỏi xác nhận trước khi thực thi.</td><td><code>terraform apply tfplan</code></td></tr>
+        <tr><td><code>terraform destroy</code></td><td>Xóa toàn bộ resource đang được quản lý trong state hiện tại.</td><td><code>terraform destroy</code></td></tr>
+        <tr><td><code>terraform fmt</code></td><td>Tự động format lại code theo chuẩn HCL.</td><td><code>terraform fmt -recursive</code></td></tr>
+        <tr><td><code>terraform validate</code></td><td>Kiểm tra cú pháp và tính nhất quán của cấu hình trước khi plan.</td><td><code>terraform validate</code></td></tr>
+      </table></div>
+      <div class="note">Luôn chạy <code>terraform plan</code> và đọc kỹ output trước khi <code>apply</code> — đây là bước review quan trọng nhất, tương đương code review cho hạ tầng.</div>
+    </section>
+
+    <section id="t3">
+      <h2><span class="n">03</span> Cú pháp HCL cơ bản</h2>
+      <p class="intro">Một file cấu hình Terraform gồm các block khai báo lồng nhau — mỗi loại block có vai trò riêng.</p>
+      <pre><code><span class="tok-keyword">provider</span> "aws" {
+  region = <span class="tok-string">"us-east-1"</span>
+}
+
+<span class="tok-keyword">resource</span> "aws_instance" "web" {
+  ami           = data.aws_ami.ubuntu.id
+  instance_type = <span class="tok-string">"t3.micro"</span>
+
+  tags = {
+    Name = <span class="tok-string">"web-server"</span>
+  }
+}
+
+<span class="tok-keyword">data</span> "aws_ami" "ubuntu" {
+  most_recent = true
+  owners      = [<span class="tok-string">"099720109477"</span>]
+}</code></pre>
+      <div class="table-wrap"><table class="cmd">
+        <tr><th>Block</th><th>Mô tả</th></tr>
+        <tr><td><code>terraform {}</code></td><td>Cấu hình chung: version Terraform yêu cầu, khai báo backend, provider cần dùng.</td></tr>
+        <tr><td><code>provider</code></td><td>Cấu hình cho một provider cụ thể (region, credentials, alias...).</td></tr>
+        <tr><td><code>resource</code></td><td>Khai báo một resource sẽ được tạo/quản lý — cú pháp <code>resource "loại" "tên_local"</code>.</td></tr>
+        <tr><td><code>data</code></td><td>Đọc thông tin từ resource đã tồn tại sẵn (không do Terraform tạo ra) để tham chiếu.</td></tr>
+        <tr><td><code>variable</code> / <code>output</code></td><td>Đầu vào và đầu ra của cấu hình (xem mục 04).</td></tr>
+        <tr><td><code>locals</code></td><td>Đặt tên cho một biểu thức để tái sử dụng nhiều lần trong cùng module, tránh lặp lại.</td></tr>
+      </table></div>
+    </section>
+
+    <section id="t4">
+      <h2><span class="n">04</span> Variables &amp; Outputs</h2>
+      <p class="intro">Variables tham số hóa cấu hình để tái sử dụng; Outputs expose giá trị ra ngoài để dùng ở nơi khác (module cha, hoặc đọc bằng CLI).</p>
+      <pre><code><span class="tok-keyword">variable</span> "instance_type" {
+  description = <span class="tok-string">"Loại instance cho web server"</span>
+  type        = string
+  default     = <span class="tok-string">"t3.micro"</span>
+}
+
+<span class="tok-keyword">variable</span> "db_password" {
+  type      = string
+  sensitive = true
+}
+
+<span class="tok-keyword">output</span> "instance_public_ip" {
+  description = <span class="tok-string">"IP public của web server"</span>
+  value       = aws_instance.web.public_ip
+}</code></pre>
+      <div class="table-wrap"><table class="cmd">
+        <tr><th>Thuộc tính</th><th>Mô tả</th></tr>
+        <tr><td><code>type</code></td><td>Kiểu dữ liệu: <code>string</code>, <code>number</code>, <code>bool</code>, <code>list</code>, <code>map</code>, <code>object</code>.</td></tr>
+        <tr><td><code>default</code></td><td>Giá trị mặc định nếu không truyền vào — bỏ trống nghĩa là bắt buộc phải cung cấp.</td></tr>
+        <tr><td><code>sensitive</code></td><td>Ẩn giá trị khỏi output log của <code>plan</code>/<code>apply</code> — không phải mã hóa, chỉ ẩn hiển thị.</td></tr>
+        <tr><td><code>validation</code></td><td>Ràng buộc điều kiện hợp lệ cho giá trị truyền vào, báo lỗi sớm nếu sai.</td></tr>
+      </table></div>
+      <div class="note">Truyền giá trị biến qua: <code>-var="key=value"</code>, file <code>.tfvars</code> qua <code>-var-file</code>, biến môi trường <code>TF_VAR_ten_bien</code>, hoặc giá trị <code>default</code> nếu không truyền gì.</div>
+    </section>
+
+    <section id="t5">
+      <h2><span class="n">05</span> State — file trạng thái</h2>
+      <p class="intro">Terraform cần biết resource nào nó đã tạo và ánh xạ với ID thật trên hạ tầng — thông tin này lưu trong file trạng thái <code>terraform.tfstate</code>.</p>
+      <div class="table-wrap"><table class="cmd">
+        <tr><th>Khái niệm</th><th>Mô tả</th></tr>
+        <tr><td>State file</td><td>File JSON ánh xạ resource khai báo trong code với ID thực tế trên hạ tầng, cùng toàn bộ attribute hiện tại.</td></tr>
+        <tr><td>Vai trò của state</td><td>Giúp Terraform biết cái gì đã tồn tại (không tạo trùng), tính toán diff cho <code>plan</code>, và lưu cache attribute để tăng tốc.</td></tr>
+        <tr><td>Drift</td><td>Khi hạ tầng thật bị thay đổi thủ công (ngoài Terraform), state không còn khớp thực tế — <code>plan</code> sẽ phát hiện và đề xuất đưa về đúng cấu hình.</td></tr>
+      </table></div>
+      <div class="warn">Không bao giờ sửa tay file <code>.tfstate</code>, và không commit nó vào Git — state thường chứa giá trị nhạy cảm ở dạng plaintext (mật khẩu, key) do Terraform cần lưu toàn bộ attribute của resource.</div>
+    </section>
+
+    <section id="t6">
+      <h2><span class="n">06</span> Remote backend &amp; state locking</h2>
+      <p class="intro">Mặc định state nằm trên máy local — không phù hợp khi làm việc nhóm. Remote backend lưu state ở một nơi tập trung mà mọi người cùng truy cập.</p>
+      <pre><code><span class="tok-keyword">terraform</span> {
+  <span class="tok-keyword">backend</span> "s3" {
+    bucket       = <span class="tok-string">"my-terraform-state"</span>
+    key          = <span class="tok-string">"project/terraform.tfstate"</span>
+    region       = <span class="tok-string">"us-east-1"</span>
+    encrypt      = true
+    use_lockfile = true
+  }
+}</code></pre>
+      <div class="table-wrap"><table class="cmd">
+        <tr><th>Khái niệm</th><th>Mô tả</th></tr>
+        <tr><td>Local backend</td><td>Mặc định — state chỉ nằm trên máy đang chạy Terraform, không chia sẻ được.</td></tr>
+        <tr><td>Remote backend</td><td>State lưu ở nơi tập trung (S3, HCP Terraform, Azure Storage...) để cả team dùng chung một nguồn sự thật.</td></tr>
+        <tr><td>State locking</td><td>Khóa state trong lúc chạy để ngăn hai người <code>apply</code> đồng thời làm hỏng state — với backend S3, bật qua <code>use_lockfile</code> (hoặc DynamoDB table ở cấu hình cũ hơn).</td></tr>
+      </table></div>
+      <div class="note">Bất kỳ dự án nào có từ 2 người trở lên cùng chạy Terraform đều nên dùng remote backend có state locking — đây gần như là yêu cầu bắt buộc, không phải tùy chọn.</div>
+    </section>
+
+    <section id="t7">
+      <h2><span class="n">07</span> Modules — tái sử dụng cấu hình</h2>
+      <p class="intro">Module là một thư mục chứa file <code>.tf</code> đóng gói một phần hạ tầng có thể tái sử dụng, nhận đầu vào qua variables và trả đầu ra qua outputs.</p>
+      <pre><code><span class="tok-keyword">module</span> "web_server" {
+  source = <span class="tok-string">"./modules/ec2-instance"</span>
+
+  instance_type = <span class="tok-string">"t3.micro"</span>
+  environment   = <span class="tok-string">"staging"</span>
+}
+
+<span class="tok-keyword">output</span> "web_public_ip" {
+  value = module.web_server.public_ip
+}</code></pre>
+      <div class="table-wrap"><table class="cmd">
+        <tr><th>Khái niệm</th><th>Mô tả</th></tr>
+        <tr><td>Root module</td><td>Thư mục Terraform bạn chạy trực tiếp <code>terraform apply</code> — có thể gọi vào nhiều module con.</td></tr>
+        <tr><td>Child module</td><td>Module được gọi từ module khác qua block <code>module</code>, nhận input qua argument, trả output qua <code>module.tên.output</code>.</td></tr>
+        <tr><td>Module Registry</td><td><code>registry.terraform.io</code> — kho module công khai đã kiểm định, có thể dùng ngay thay vì viết lại từ đầu.</td></tr>
+      </table></div>
+      <div class="note">Module giúp tránh lặp code khi cùng một loại hạ tầng (ví dụ một cụm máy chủ web) cần tạo nhiều lần cho nhiều môi trường khác nhau.</div>
+    </section>
+
+    <section id="t8">
+      <h2><span class="n">08</span> Quản lý state qua CLI</h2>
+      <p class="intro">Đôi khi cần thao tác trực tiếp lên state mà không sửa hạ tầng thật — Terraform cung cấp lệnh riêng cho việc này thay vì sửa tay file JSON.</p>
+      <div class="table-wrap"><table class="cmd">
+        <tr><th>Lệnh</th><th>Mô tả</th><th>Ví dụ</th></tr>
+        <tr><td><code>terraform state list</code></td><td>Liệt kê toàn bộ resource đang được quản lý trong state.</td><td><code>terraform state list</code></td></tr>
+        <tr><td><code>terraform state show</code></td><td>Xem chi tiết attribute hiện tại của một resource trong state.</td><td><code>terraform state show aws_instance.web</code></td></tr>
+        <tr><td><code>terraform state mv</code></td><td>Đổi tên resource trong state mà không xóa/tạo lại hạ tầng thật.</td><td><code>terraform state mv aws_instance.old aws_instance.new</code></td></tr>
+        <tr><td><code>terraform state rm</code></td><td>Gỡ một resource khỏi state (Terraform ngừng quản lý) mà không xóa hạ tầng thật.</td><td><code>terraform state rm aws_instance.web</code></td></tr>
+        <tr><td><code>terraform import</code></td><td>Đưa một resource đã tồn tại sẵn (tạo thủ công trước đó) vào state để Terraform quản lý.</td><td><code>terraform import aws_instance.web i-0123456789</code></td></tr>
+        <tr><td><code>terraform apply -replace</code></td><td>Buộc hủy và tạo lại một resource cụ thể, có hiển thị trong plan để review trước.</td><td><code>terraform apply -replace="aws_instance.web"</code></td></tr>
+      </table></div>
+      <div class="note"><code>terraform taint</code> đã deprecated — dùng <code>apply -replace</code> thay thế vì thay đổi sẽ hiện rõ trong plan trước khi thực thi, thay vì âm thầm đánh dấu.</div>
+    </section>
+
+    <section id="t9">
+      <h2><span class="n">09</span> Quản lý nhiều môi trường</h2>
+      <p class="intro">Hầu hết dự án cần tách biệt ít nhất hai môi trường (ví dụ staging và production) — có vài cách phổ biến để làm việc này.</p>
+      <div class="table-wrap"><table class="cmd">
+        <tr><th>Cách tiếp cận</th><th>Mô tả</th></tr>
+        <tr><td>Terraform workspaces</td><td><code>terraform workspace new/select</code> — nhiều state độc lập trong cùng một backend config, phân biệt qua biến <code>terraform.workspace</code>.</td></tr>
+        <tr><td>Thư mục riêng theo môi trường</td><td>Mỗi môi trường một thư mục cấu hình + backend key riêng — cách ly rõ ràng nhất, khuyến nghị khi dev và production khác biệt lớn (region, quy mô, quyền truy cập).</td></tr>
+        <tr><td><code>-var-file</code> theo môi trường</td><td>Dùng chung code, chỉ đổi file giá trị biến (<code>dev.tfvars</code>, <code>prod.tfvars</code>) khi apply.</td></tr>
+      </table></div>
+      <div class="note">Workspaces tiện cho các biến thể nhỏ (ví dụ nhiều bản demo tạm), nhưng vì chúng share chung backend configuration, tách thư mục/state riêng vẫn là lựa chọn an toàn hơn giữa staging và production.</div>
+    </section>
+
+    <section id="t10">
+      <h2><span class="n">10</span> Best practices</h2>
+      <ul class="checklist">
+        <li>Luôn chạy và đọc kỹ <code>terraform plan</code> trước khi <code>apply</code>, đặc biệt trên production.</li>
+        <li>Commit file <code>.terraform.lock.hcl</code> vào Git để khóa version provider nhất quán giữa mọi người.</li>
+        <li>Không commit <code>.tfstate</code> hay thư mục <code>.terraform/</code> vào Git — thêm vào <code>.gitignore</code>, dùng remote backend thay thế.</li>
+        <li>Luôn dùng remote backend có state locking khi có từ 2 người trở lên cùng chạy Terraform.</li>
+        <li>Pin version cụ thể cho provider/module, tránh version range quá rộng gây thay đổi bất ngờ giữa các lần chạy.</li>
+        <li>Dùng <code>apply -replace</code> thay vì lệnh <code>taint</code> đã deprecated.</li>
+        <li>Tách state theo môi trường hoặc theo mức độ ảnh hưởng (blast radius) — không gộp toàn bộ hạ tầng vào một state duy nhất.</li>
+        <li>Không hard-code secret trong file <code>.tf</code> — dùng biến <code>sensitive</code> kết hợp secrets manager của cloud provider.</li>
+      </ul>
+    </section>
+
+  </main>
+</div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+{
+  "scope": "Design fixture only, not applied grants; group/SP creation unavailable in Free Edition is pending production",
+  "catalogs": [
+    "roas_dev",
+    "roas_staging",
+    "roas_prod"
+  ],
+  "schemas": [
+    "bronze",
+    "silver",
+    "gold",
+    "restricted"
+  ],
+  "owners": {
+    "catalog": "platform_stewards",
+    "schemas": "domain_stewards"
+  },
+  "access": [
+    {
+      "principal": "data_engineers",
+      "catalogs": [
+        "roas_dev",
+        "roas_staging"
+      ],
+      "schemas": [
+        "bronze",
+        "silver",
+        "gold"
+      ],
+      "actions": [
+        "SELECT",
+        "MODIFY",
+        "CREATE TABLE"
+      ]
+    },
+    {
+      "principal": "marketing_analysts",
+      "catalogs": [
+        "roas_prod"
+      ],
+      "schemas": [
+        "gold"
+      ],
+      "actions": [
+        "SELECT"
+      ]
+    },
+    {
+      "principal": "finance",
+      "catalogs": [
+        "roas_prod"
+      ],
+      "schemas": [
+        "gold"
+      ],
+      "actions": [
+        "SELECT"
+      ]
+    },
+    {
+      "principal": "roas_service_principal",
+      "catalogs": [
+        "roas_prod"
+      ],
+      "schemas": [
+        "bronze",
+        "silver",
+        "gold"
+      ],
+      "actions": [
+        "SELECT",
+        "MODIFY",
+        "CREATE TABLE"
+      ]
+    }
+  ],
+  "piiReaders": [
+    "pii_stewards"
+  ],
+  "notes": "Traversal USE CATALOG/USE SCHEMA required. Finance sees an approved aggregate; no raw PII. Production writers remain table-scoped where possible."
+}

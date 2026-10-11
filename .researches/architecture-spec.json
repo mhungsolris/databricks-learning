@@ -1,0 +1,37 @@
+{
+  "session": ".researches/2026-10-11-architecture",
+  "metadata": {
+    "query": "Architecture judgment: Iceberg runtime and current platform interoperability",
+    "known": "Spark4.0.4 Delta4.0.1 local only",
+    "stoppingRule": "Version-qualified official semantics and each platform ownership boundary",
+    "date": "2026-10-11",
+    "timezone": "Asia/Saigon",
+    "publication": "disabled"
+  },
+  "urls": {
+    "releases": "https://iceberg.apache.org/releases/",
+    "spark": "https://iceberg.apache.org/docs/1.12.0/spark-getting-started/",
+    "spec": "https://iceberg.apache.org/spec/",
+    "queries": "https://iceberg.apache.org/docs/1.12.0/spark-queries/",
+    "ddl": "https://iceberg.apache.org/docs/1.12.0/spark-ddl/",
+    "writes": "https://iceberg.apache.org/docs/1.12.0/spark-writes/",
+    "evolution": "https://iceberg.apache.org/docs/1.12.0/evolution/",
+    "partition": "https://iceberg.apache.org/docs/1.12.0/partitioning/",
+    "rest": "https://iceberg.apache.org/rest-catalog-spec/",
+    "hadoop": "https://iceberg.apache.org/docs/1.12.0/hadoop/",
+    "databricks": "https://docs.databricks.com/aws/en/iceberg/",
+    "uniform": "https://docs.databricks.com/aws/en/delta/uniform",
+    "ucRest": "https://docs.databricks.com/aws/en/external-access/iceberg",
+    "v3": "https://docs.databricks.com/aws/en/iceberg/iceberg-v3",
+    "bigquery": "https://docs.cloud.google.com/bigquery/docs/introduction",
+    "bqIceberg": "https://docs.cloud.google.com/bigquery/docs/biglake-iceberg-tables-in-bigquery",
+    "googleLakehouse": "https://docs.cloud.google.com/lakehouse/docs/manage-tables",
+    "snowflake": "https://docs.snowflake.com/en/user-guide/tables-iceberg",
+    "snowArchitecture": "https://docs.snowflake.com/en/user-guide/intro-key-concepts",
+    "horizon": "https://docs.snowflake.com/en/user-guide/tables-iceberg-access-iceberg-tables",
+    "fabric": "https://learn.microsoft.com/en-us/fabric/onelake/onelake-overview",
+    "fabricIceberg": "https://learn.microsoft.com/en-us/fabric/onelake/onelake-iceberg-tables",
+    "fabricDelta": "https://learn.microsoft.com/en-us/fabric/fundamentals/delta-lake-interoperability",
+    "delta": "https://docs.delta.io/latest/delta-intro.html"
+  }
+}

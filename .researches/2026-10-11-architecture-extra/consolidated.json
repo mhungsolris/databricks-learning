@@ -1,0 +1,40 @@
+{
+  "format": "source-based",
+  "query": "Catalog and streaming boundaries",
+  "results": [
+    {
+      "title": "openCatalog",
+      "url": "https://docs.snowflake.com/en/user-guide/opencatalog/overview",
+      "content": "Snowflake Open Catalog overview | Snowflake Documentation DOCUMENTATION / EN Language English Français Deutsch 日本語 한국어 Português Get started Guides Developer Reference Release notes Tutorials Status For AI agents: documentation index at /llms.txt — fetch to discover all Snowflake documentation pages. Markdown version of this page: /en/user-guide/opencatalog/overview.md \nOverview \nSnowflake Horizon Catalog \n\nApplications and tools for connecting to Snowflake \n\nVirtual warehouses \nDatabases, Tables, & Views \nData types \n\nData Integration \nSnowflake Openflow \nApache Iceberg™ \nApache Iceberg™ Tables \nSnowflake Open Catalog \nGetting started \nTutorial: Get Started \nCreate an additional Open Catalog account \nSign in \nAccess control \nSecuring Snowflake Open Catalog \nEnroll in MFA \nUse network policies to restrict access to Snowflake Open Catalog \nSSO \nExternal OAuth \nKey pair authentication \nInbound private connectivity \nOutbound private connectivity \nAccounts \nManage users \nFind the account name \nSetting up catalogs \nCreate external cloud storage for a catalog \nCreate a catalog \nEnable credential vending for an external catalog \nCreate a catalog role \nCreate a principal role \nConfigure and remove a service connection \nRegister a service connection \nConnect with External OAuth \nConnect with key pair authentication \nManaging catalogs \nOrganize catalog content \nSecure catalogs \nView the schema for a table in Snowflake Open Catalog \nQuerying data in catalogs \nQuery a table in Snowflake Open Catalog using Snowflake \nSync a Snowflake-managed table with Snowflake Open Catalog \nQuery a table in Snowflake Open Catalog using a third-party engine \nCode examples: Apache Spark \nRelease notes \nZero-Copy Connectors \nAbout SAP® and Snowflake \nAbout Salesforce Data Cloud and Snowflake \nAbout Workday Live Data Query for Snowflake \nAbout Workday Data Cloud and Snowflake \nData engineering \nData loading \nDynamic tables \nStreams and tasks \nRow timestamps \nDCM Projects \ndbt Projects on Snowflake",
+      "retrieved": "2026-10-11",
+      "status": "fetched",
+      "source": "2026-10-11-architecture-extra-search-results"
+    },
+    {
+      "title": "hadoop",
+      "url": "https://iceberg.apache.org/javadoc/nightly/org/apache/iceberg/hadoop/HadoopCatalog.html",
+      "content": "HadoopCatalog JavaScript is disabled on your browser. Skip navigation links \nOverview \nPackage \nClass \nTree \nDeprecated \nIndex \nHelp \nSummary: \nNested | \nField | \nConstr | \nMethod \nDetail: \nField | \nConstr | \nMethod SEARCH: Package org.apache.iceberg.hadoop \nClass HadoopCatalog java.lang.Object org.apache.iceberg.BaseMetastoreCatalog org.apache.iceberg.hadoop.HadoopCatalog All Implemented Interfaces: Closeable , AutoCloseable , org.apache.hadoop.conf.Configurable , Catalog , SupportsNamespaces public class HadoopCatalog extends BaseMetastoreCatalog implements SupportsNamespaces , org.apache.hadoop.conf.Configurable HadoopCatalog provides a way to use table names like db.table to work with path-based tables\n under a common location. It uses a specified directory under a specified filesystem as the\n warehouse directory, and organizes multiple levels directories that mapped to the database,\n namespace and the table respectively. The HadoopCatalog takes a location as the warehouse\n directory. When creating a table such as $db.$tbl, it creates $db/$tbl directory under the\n warehouse directory, and put the table metadata into that directory. \nThe HadoopCatalog now supports Catalog.createTable(org.apache.iceberg.catalog.TableIdentifier, org.apache.iceberg.Schema, org.apache.iceberg.PartitionSpec, java.lang.String, java.util.Map<java.lang.String, java.lang.String>) , Catalog.dropTable(org.apache.iceberg.catalog.TableIdentifier) , the Catalog.renameTable(org.apache.iceberg.catalog.TableIdentifier, org.apache.iceberg.catalog.TableIdentifier) is not supported yet. \nNote: The HadoopCatalog requires that the underlying file system supports atomic rename. \n\nNested Class Summary \nNested classes/interfaces inherited from class org.apache.iceberg. BaseMetastoreCatalog BaseMetastoreCatalog.BaseMetastoreCatalogTableBuilder \nNested classes/interfaces inherited from interface org.apache.iceberg.catalog. Catalog Catalog.TableBuilder \n\nConstructor Summary Constructors Constructor Descript",
+      "retrieved": "2026-10-11",
+      "status": "fetched",
+      "source": "2026-10-11-architecture-extra-search-results"
+    },
+    {
+      "title": "icebergStreaming",
+      "url": "https://iceberg.apache.org/docs/latest/spark-structured-streaming/",
+      "content": "Structured Streaming - Apache Iceberg™ Skip to content Apache Iceberg™ Apache Iceberg™ Initializing search \nHome \nQuickstart \nDocs \nReleases \nProject \nCommunity \nBlog \nSpecification Apache Iceberg™ \nHome \nQuickstart Quickstart \nSpark \nFlink \nHive \nDocs Docs \nJava Java \nLatest (1.12.0) Latest (1.12.0) \nIntroduction \nConcepts Concepts \nTables Tables \nBranching and Tagging \nConfiguration \nEncryption \nEvolution \nMaintenance \nMetrics Reporting \nPartitioning \nPerformance \nReliability \nSchemas \nViews Views \nConfiguration \nCatalogs Catalogs \nREST Catalog Protocol \nAPI API \nQuickstart \nAPI \nFile I/O \nJavadoc \nIntegrations Integrations \nApache Spark Apache Spark \nGetting Started \nConfiguration \nDDL \nProcedures \nQueries \nStructured Streaming Structured Streaming Table of contents \nStreaming Reads \nLimit input rate \nAsynchronous Micro-Batch Planning \nStreaming Writes \nPartitioned table \nMaintenance for streaming tables \nTune the rate of commits \nExpire old snapshots \nCompacting data files \nRewrite manifests \nWrites \nApache Flink Apache Flink \nGetting Started \nFlink Connector \nFlink DDL \nFlink Queries \nFlink Writes \nFlink TableMaintenance \nFlink Configuration \nKafka Connect \nApache Hive \nMigration Migration \nOverview \nHive Migration \nDelta Lake Migration \nCatalogs Catalogs \nCatalog properties \nREST Compatible Catalog \nAWS Glue \nAWS DynamoDB \nHadoopCatalog \nHiveCatalog \nJDBC \nJava Custom Catalog \nNessie \nStorage Storage \nAWS S3 \nDell ECS \nNightly Nightly \nIntroduction \nConcepts Concepts \nTables Tables \nBranching and Tagging \nConfiguration \nEncryption \nEvolution \nMaintenance \nMetrics Reporting \nPartitioning \nPerformance \nReliability \nSchemas \nViews Views \nConfiguration \nCatalogs Catalogs \nREST Catalog Protocol \nAPI API \nQuickstart \nAPI \nFile I/O \nJavadoc \nIntegrations Integrations \nApache Spark Apache Spark \nGetting Started \nConfiguration \nDDL \nProcedures \nQueries \nStructured Streaming \nWrites \nApache Flink Apache Flink \nGetting Started \nFlink Connector \nFlink DDL \nFlink Queries \n",
+      "retrieved": "2026-10-11",
+      "status": "fetched",
+      "source": "2026-10-11-architecture-extra-search-results"
+    }
+  ],
+  "sources": [
+    "2026-10-11-architecture-extra-search-results"
+  ],
+  "totalResults": 3,
+  "cleaningStats": {
+    "originalChars": 6000,
+    "cleanedChars": 5795,
+    "removedChars": 205,
+    "reductionPercent": 3.4
+  }
+}

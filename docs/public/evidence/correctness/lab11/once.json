@@ -1,0 +1,58 @@
+{
+  "rows": [
+    {
+      "source_system": "adjust",
+      "app_id": "appA",
+      "event_id": "E123",
+      "revision": 1,
+      "revenue": 100,
+      "event_time": "2026-10-01T10:00:00Z",
+      "updated_at": "2026-10-01T10:01:00Z",
+      "platform": "google",
+      "account_id": "account-1",
+      "campaign_id": "C1",
+      "currency": "USD",
+      "is_deleted": false
+    }
+  ],
+  "hash": "43ae02345adb272dba6a5349f9a1ca7372966344f98de9961a58b9756d30aa8b",
+  "history": [
+    {
+      "version": 1,
+      "operation": "MERGE",
+      "operationMetrics": {
+        "numOutputRows": "1",
+        "numTargetBytesAdded": "4778",
+        "numTargetRowsInserted": "1",
+        "numTargetRowsMatchedDeleted": "0",
+        "numTargetFilesAdded": "1",
+        "materializeSourceTimeMs": "1749",
+        "numTargetFilesRemoved": "0",
+        "numTargetRowsMatchedUpdated": "0",
+        "executionTimeMs": "9330",
+        "numTargetDeletionVectorsUpdated": "0",
+        "numTargetRowsCopied": "0",
+        "rewriteTimeMs": "2520",
+        "numTargetRowsUpdated": "0",
+        "numTargetDeletionVectorsRemoved": "0",
+        "numTargetRowsDeleted": "0",
+        "scanTimeMs": "4918",
+        "numSourceRows": "1",
+        "numTargetDeletionVectorsAdded": "0",
+        "numTargetChangeFilesAdded": "0",
+        "numTargetRowsNotMatchedBySourceUpdated": "0",
+        "numTargetRowsNotMatchedBySourceDeleted": "0",
+        "numTargetBytesRemoved": "0"
+      }
+    },
+    {
+      "version": 0,
+      "operation": "WRITE",
+      "operationMetrics": {
+        "numOutputRows": "0",
+        "numOutputBytes": "1596",
+        "numFiles": "1"
+      }
+    }
+  ]
+}

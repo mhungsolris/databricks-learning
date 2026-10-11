@@ -1,0 +1,21 @@
+Show the deployment plan for the current bundle configuration.
+
+This command builds the bundle and displays the actions which will be done on resources that would be deployed, without making any changes.
+It is useful for previewing changes before running 'bundle deploy'.
+
+Usage:
+  databricks bundle plan [flags]
+
+Flags:
+  -c, --cluster-id string   Override cluster in the deployment with the given cluster ID.
+      --force               Force-override Git branch validation.
+  -h, --help                help for plan
+  -q, --quiet count         Reduce output: -q prints only the summary, -qq prints nothing on success.
+      --select strings      Plan only the specified resource (e.g. 'my_job' or 'jobs.my_job'). Can be repeated or comma-separated.
+
+Global Flags:
+      --debug            enable debug logging
+  -o, --output type      output type: text or json (default text)
+  -p, --profile string   ~/.databrickscfg profile
+  -t, --target string    bundle target to use (if applicable)
+      --var strings      set values for variables defined in bundle config. Example: --var="foo=bar"

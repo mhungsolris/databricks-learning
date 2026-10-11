@@ -1,0 +1,26 @@
+== Parsed Logical Plan ==
+'Aggregate ['campaign], ['campaign, 'count(1) AS count#42]
++- RepartitionByExpression [campaign#33], 4
+   +- Project [id#32L, CASE WHEN (id#32L < cast(9000 as bigint)) THEN UNKNOWN ELSE concat(C, cast((id#32L % cast(20 as bigint)) as string)) END AS campaign#33]
+      +- Range (0, 10000, step=1, splits=Some(8))
+
+== Analyzed Logical Plan ==
+campaign: string, count: bigint
+Aggregate [campaign#33], [campaign#33, count(1) AS count#42L]
++- RepartitionByExpression [campaign#33], 4
+   +- Project [id#32L, CASE WHEN (id#32L < cast(9000 as bigint)) THEN UNKNOWN ELSE concat(C, cast((id#32L % cast(20 as bigint)) as string)) END AS campaign#33]
+      +- Range (0, 10000, step=1, splits=Some(8))
+
+== Optimized Logical Plan ==
+Aggregate [campaign#33], [campaign#33, count(1) AS count#42L]
++- RepartitionByExpression [campaign#33], 4
+   +- Project [CASE WHEN (id#32L < 9000) THEN UNKNOWN ELSE concat(C, cast((id#32L % 20) as string)) END AS campaign#33]
+      +- Range (0, 10000, step=1, splits=Some(8))
+
+== Physical Plan ==
+*(2) HashAggregate(keys=[campaign#33], functions=[count(1)], output=[campaign#33, count#42L])
++- *(2) HashAggregate(keys=[campaign#33], functions=[partial_count(1)], output=[campaign#33, count#47L])
+   +- Exchange hashpartitioning(campaign#33, 4), REPARTITION_BY_NUM, [plan_id=246]
+      +- *(1) Project [CASE WHEN (id#32L < 9000) THEN UNKNOWN ELSE concat(C, cast((id#32L % 20) as string)) END AS campaign#33]
+         +- *(1) Range (0, 10000, step=1, splits=8)
+

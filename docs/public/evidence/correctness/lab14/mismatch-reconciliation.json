@@ -1,0 +1,25 @@
+{
+  "missing": [],
+  "extra": [],
+  "duplicates": [],
+  "mismatched": [
+    [
+      "adjust",
+      "appA",
+      "E1"
+    ]
+  ],
+  "nullKeys": 0,
+  "expectedRows": 1,
+  "actualRows": 1,
+  "expectedRevenue": 120,
+  "actualRevenue": 220,
+  "tolerance": 0,
+  "expectedByDay": {
+    "2026-10-01": 120
+  },
+  "actualByDay": {
+    "2026-10-01": 220
+  },
+  "pass": false
+}

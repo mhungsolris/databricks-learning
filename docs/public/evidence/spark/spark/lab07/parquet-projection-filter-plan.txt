@@ -1,0 +1,22 @@
+== Parsed Logical Plan ==
+'Project ['campaign_id, 'revenue]
++- Filter (date#146 = 2026-10-01)
+   +- Relation [id#143L,campaign_id#144,revenue#145L,date#146,payload#147] parquet
+
+== Analyzed Logical Plan ==
+campaign_id: string, revenue: bigint
+Project [campaign_id#144, revenue#145L]
++- Filter (date#146 = 2026-10-01)
+   +- Relation [id#143L,campaign_id#144,revenue#145L,date#146,payload#147] parquet
+
+== Optimized Logical Plan ==
+Project [campaign_id#144, revenue#145L]
++- Filter (isnotnull(date#146) AND (date#146 = 2026-10-01))
+   +- Relation [id#143L,campaign_id#144,revenue#145L,date#146,payload#147] parquet
+
+== Physical Plan ==
+*(1) Project [campaign_id#144, revenue#145L]
++- *(1) Filter (isnotnull(date#146) AND (date#146 = 2026-10-01))
+   +- *(1) ColumnarToRow
+      +- FileScan parquet [campaign_id#144,revenue#145L,date#146] Batched: true, DataFilters: [isnotnull(date#146), (date#146 = 2026-10-01)], Format: Parquet, Location: InMemoryFileIndex(1 paths)[file:/evidence/labs-all/20261010T094510Z-a7bea9dd/lab07/parquet], PartitionFilters: [], PushedFilters: [IsNotNull(date), EqualTo(date,2026-10-01)], ReadSchema: struct<campaign_id:string,revenue:bigint,date:string>
+

@@ -1,0 +1,13 @@
+{
+  "query": "Spark partitions shuffle joins Parquet and Delta protocol",
+  "known": "Docker official Spark image runs local[*]; no native host JDK/PySpark",
+  "stoppingRule": "Versioned primary reference for core claims plus executed bounded examples",
+  "date": "2026-10-10",
+  "timezone": "Asia/Saigon",
+  "publication": "disabled",
+  "source": "search",
+  "tool": "web-tools",
+  "timestamp": "2026-10-10T090000Z",
+  "timestampIso": "2026-10-10T09:52:02.015Z",
+  "createdAt": "2026-10-10T09:52:02.015Z"
+}

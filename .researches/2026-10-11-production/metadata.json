@@ -1,0 +1,13 @@
+{
+  "query": "Databricks production hardening official sources",
+  "known": "Spark 4.0.4 Delta 4.0.1 local baseline; no cloud",
+  "stoppingRule": "Official version-qualified source for each product behavior",
+  "date": "2026-10-11",
+  "timezone": "Asia/Saigon",
+  "publication": "disabled",
+  "source": "search",
+  "tool": "web-tools",
+  "timestamp": "2026-10-11-production",
+  "timestampIso": "2026-10-11T06:15:26.510Z",
+  "createdAt": "2026-10-11T06:15:26.510Z"
+}

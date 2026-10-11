@@ -1,0 +1,711 @@
+{
+  "phases": [
+    {
+      "queryId": "4c16b38b-84d3-4df8-a847-f58de7a5cdb7",
+      "runId": "0d30f039-2044-45e6-8697-6bdc18f3a750",
+      "active": true,
+      "progress": [
+        {
+          "id": "4c16b38b-84d3-4df8-a847-f58de7a5cdb7",
+          "runId": "0d30f039-2044-45e6-8697-6bdc18f3a750",
+          "name": null,
+          "timestamp": "2026-10-11T04:09:07.200Z",
+          "batchId": 0,
+          "batchDuration": 18459,
+          "numInputRows": 3,
+          "inputRowsPerSecond": 0.0,
+          "processedRowsPerSecond": 0.16252234682268812,
+          "durationMs": {
+            "addBatch": 16388,
+            "commitOffsets": 567,
+            "getBatch": 154,
+            "latestOffset": 314,
+            "queryPlanning": 673,
+            "triggerExecution": 18455,
+            "walCommit": 326
+          },
+          "stateOperators": [],
+          "sources": [
+            {
+              "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab16/input]",
+              "startOffset": null,
+              "endOffset": {
+                "logOffset": 0
+              },
+              "latestOffset": null,
+              "numInputRows": 3,
+              "inputRowsPerSecond": 0.0,
+              "processedRowsPerSecond": 0.16252234682268812
+            }
+          ],
+          "sink": {
+            "description": "DeltaSink[/evidence/tests-streaming/20261011T040856Z-6f8487be/lab16/target]",
+            "numOutputRows": -1
+          }
+        },
+        {
+          "id": "4c16b38b-84d3-4df8-a847-f58de7a5cdb7",
+          "runId": "0d30f039-2044-45e6-8697-6bdc18f3a750",
+          "name": null,
+          "timestamp": "2026-10-11T04:09:36.003Z",
+          "batchId": 1,
+          "batchDuration": 583,
+          "numInputRows": 0,
+          "inputRowsPerSecond": 0.0,
+          "processedRowsPerSecond": 0.0,
+          "durationMs": {
+            "latestOffset": 581,
+            "triggerExecution": 583
+          },
+          "stateOperators": [],
+          "sources": [
+            {
+              "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab16/input]",
+              "startOffset": {
+                "logOffset": 0
+              },
+              "endOffset": {
+                "logOffset": 0
+              },
+              "latestOffset": null,
+              "numInputRows": 0,
+              "inputRowsPerSecond": 0.0,
+              "processedRowsPerSecond": 0.0
+            }
+          ],
+          "sink": {
+            "description": "DeltaSink[/evidence/tests-streaming/20261011T040856Z-6f8487be/lab16/target]",
+            "numOutputRows": -1
+          }
+        },
+        {
+          "id": "4c16b38b-84d3-4df8-a847-f58de7a5cdb7",
+          "runId": "0d30f039-2044-45e6-8697-6bdc18f3a750",
+          "name": null,
+          "timestamp": "2026-10-11T04:09:47.000Z",
+          "batchId": 1,
+          "batchDuration": 107,
+          "numInputRows": 0,
+          "inputRowsPerSecond": 0.0,
+          "processedRowsPerSecond": 0.0,
+          "durationMs": {
+            "latestOffset": 100,
+            "triggerExecution": 107
+          },
+          "stateOperators": [],
+          "sources": [
+            {
+              "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab16/input]",
+              "startOffset": {
+                "logOffset": 0
+              },
+              "endOffset": {
+                "logOffset": 0
+              },
+              "latestOffset": null,
+              "numInputRows": 0,
+              "inputRowsPerSecond": 0.0,
+              "processedRowsPerSecond": 0.0
+            }
+          ],
+          "sink": {
+            "description": "DeltaSink[/evidence/tests-streaming/20261011T040856Z-6f8487be/lab16/target]",
+            "numOutputRows": -1
+          }
+        }
+      ],
+      "target": [
+        {
+          "source_system": "callback",
+          "app_id": "app1",
+          "event_id": "E1",
+          "user_id": "U1",
+          "event_time": "2026-10-01T10:00:00Z",
+          "amount": 100,
+          "status": "COMPLETED",
+          "platform": "google"
+        },
+        {
+          "source_system": "callback",
+          "app_id": "app1",
+          "event_id": "E2",
+          "user_id": "U1",
+          "event_time": "2026-10-01T10:00:00Z",
+          "amount": 100,
+          "status": "COMPLETED",
+          "platform": "google"
+        },
+        {
+          "source_system": "callback",
+          "app_id": "app1",
+          "event_id": "E3",
+          "user_id": "U1",
+          "event_time": "2026-10-01T10:00:00Z",
+          "amount": 100,
+          "status": "COMPLETED",
+          "platform": "google"
+        }
+      ],
+      "targetHash": "282ab5c4f568ccdad8a83ce88069f79b26cd9eba144f51aa89fb09a8c985f7a2"
+    },
+    {
+      "queryId": "4c16b38b-84d3-4df8-a847-f58de7a5cdb7",
+      "runId": "0d30f039-2044-45e6-8697-6bdc18f3a750",
+      "active": true,
+      "progress": [
+        {
+          "id": "4c16b38b-84d3-4df8-a847-f58de7a5cdb7",
+          "runId": "0d30f039-2044-45e6-8697-6bdc18f3a750",
+          "name": null,
+          "timestamp": "2026-10-11T04:09:07.200Z",
+          "batchId": 0,
+          "batchDuration": 18459,
+          "numInputRows": 3,
+          "inputRowsPerSecond": 0.0,
+          "processedRowsPerSecond": 0.16252234682268812,
+          "durationMs": {
+            "addBatch": 16388,
+            "commitOffsets": 567,
+            "getBatch": 154,
+            "latestOffset": 314,
+            "queryPlanning": 673,
+            "triggerExecution": 18455,
+            "walCommit": 326
+          },
+          "stateOperators": [],
+          "sources": [
+            {
+              "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab16/input]",
+              "startOffset": null,
+              "endOffset": {
+                "logOffset": 0
+              },
+              "latestOffset": null,
+              "numInputRows": 3,
+              "inputRowsPerSecond": 0.0,
+              "processedRowsPerSecond": 0.16252234682268812
+            }
+          ],
+          "sink": {
+            "description": "DeltaSink[/evidence/tests-streaming/20261011T040856Z-6f8487be/lab16/target]",
+            "numOutputRows": -1
+          }
+        },
+        {
+          "id": "4c16b38b-84d3-4df8-a847-f58de7a5cdb7",
+          "runId": "0d30f039-2044-45e6-8697-6bdc18f3a750",
+          "name": null,
+          "timestamp": "2026-10-11T04:09:36.003Z",
+          "batchId": 1,
+          "batchDuration": 583,
+          "numInputRows": 0,
+          "inputRowsPerSecond": 0.0,
+          "processedRowsPerSecond": 0.0,
+          "durationMs": {
+            "latestOffset": 581,
+            "triggerExecution": 583
+          },
+          "stateOperators": [],
+          "sources": [
+            {
+              "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab16/input]",
+              "startOffset": {
+                "logOffset": 0
+              },
+              "endOffset": {
+                "logOffset": 0
+              },
+              "latestOffset": null,
+              "numInputRows": 0,
+              "inputRowsPerSecond": 0.0,
+              "processedRowsPerSecond": 0.0
+            }
+          ],
+          "sink": {
+            "description": "DeltaSink[/evidence/tests-streaming/20261011T040856Z-6f8487be/lab16/target]",
+            "numOutputRows": -1
+          }
+        },
+        {
+          "id": "4c16b38b-84d3-4df8-a847-f58de7a5cdb7",
+          "runId": "0d30f039-2044-45e6-8697-6bdc18f3a750",
+          "name": null,
+          "timestamp": "2026-10-11T04:09:47.000Z",
+          "batchId": 1,
+          "batchDuration": 107,
+          "numInputRows": 0,
+          "inputRowsPerSecond": 0.0,
+          "processedRowsPerSecond": 0.0,
+          "durationMs": {
+            "latestOffset": 100,
+            "triggerExecution": 107
+          },
+          "stateOperators": [],
+          "sources": [
+            {
+              "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab16/input]",
+              "startOffset": {
+                "logOffset": 0
+              },
+              "endOffset": {
+                "logOffset": 0
+              },
+              "latestOffset": null,
+              "numInputRows": 0,
+              "inputRowsPerSecond": 0.0,
+              "processedRowsPerSecond": 0.0
+            }
+          ],
+          "sink": {
+            "description": "DeltaSink[/evidence/tests-streaming/20261011T040856Z-6f8487be/lab16/target]",
+            "numOutputRows": -1
+          }
+        },
+        {
+          "id": "4c16b38b-84d3-4df8-a847-f58de7a5cdb7",
+          "runId": "0d30f039-2044-45e6-8697-6bdc18f3a750",
+          "name": null,
+          "timestamp": "2026-10-11T04:09:52.000Z",
+          "batchId": 1,
+          "batchDuration": 1701,
+          "numInputRows": 2,
+          "inputRowsPerSecond": 2.002002002002002,
+          "processedRowsPerSecond": 1.1757789535567313,
+          "durationMs": {
+            "addBatch": 1083,
+            "commitOffsets": 198,
+            "getBatch": 51,
+            "latestOffset": 215,
+            "queryPlanning": 9,
+            "triggerExecution": 1701,
+            "walCommit": 139
+          },
+          "stateOperators": [],
+          "sources": [
+            {
+              "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab16/input]",
+              "startOffset": {
+                "logOffset": 0
+              },
+              "endOffset": {
+                "logOffset": 1
+              },
+              "latestOffset": null,
+              "numInputRows": 2,
+              "inputRowsPerSecond": 2.002002002002002,
+              "processedRowsPerSecond": 1.1757789535567313
+            }
+          ],
+          "sink": {
+            "description": "DeltaSink[/evidence/tests-streaming/20261011T040856Z-6f8487be/lab16/target]",
+            "numOutputRows": -1
+          }
+        },
+        {
+          "id": "4c16b38b-84d3-4df8-a847-f58de7a5cdb7",
+          "runId": "0d30f039-2044-45e6-8697-6bdc18f3a750",
+          "name": null,
+          "timestamp": "2026-10-11T04:10:03.094Z",
+          "batchId": 2,
+          "batchDuration": 598,
+          "numInputRows": 0,
+          "inputRowsPerSecond": 0.0,
+          "processedRowsPerSecond": 0.0,
+          "durationMs": {
+            "latestOffset": 591,
+            "triggerExecution": 598
+          },
+          "stateOperators": [],
+          "sources": [
+            {
+              "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab16/input]",
+              "startOffset": {
+                "logOffset": 1
+              },
+              "endOffset": {
+                "logOffset": 1
+              },
+              "latestOffset": null,
+              "numInputRows": 0,
+              "inputRowsPerSecond": 0.0,
+              "processedRowsPerSecond": 0.0
+            }
+          ],
+          "sink": {
+            "description": "DeltaSink[/evidence/tests-streaming/20261011T040856Z-6f8487be/lab16/target]",
+            "numOutputRows": -1
+          }
+        }
+      ],
+      "target": [
+        {
+          "source_system": "callback",
+          "app_id": "app1",
+          "event_id": "E1",
+          "user_id": "U1",
+          "event_time": "2026-10-01T10:00:00Z",
+          "amount": 100,
+          "status": "COMPLETED",
+          "platform": "google"
+        },
+        {
+          "source_system": "callback",
+          "app_id": "app1",
+          "event_id": "E2",
+          "user_id": "U1",
+          "event_time": "2026-10-01T10:00:00Z",
+          "amount": 100,
+          "status": "COMPLETED",
+          "platform": "google"
+        },
+        {
+          "source_system": "callback",
+          "app_id": "app1",
+          "event_id": "E3",
+          "user_id": "U1",
+          "event_time": "2026-10-01T10:00:00Z",
+          "amount": 100,
+          "status": "COMPLETED",
+          "platform": "google"
+        },
+        {
+          "source_system": "callback",
+          "app_id": "app1",
+          "event_id": "E4",
+          "user_id": "U1",
+          "event_time": "2026-10-01T10:00:00Z",
+          "amount": 100,
+          "status": "COMPLETED",
+          "platform": "google"
+        },
+        {
+          "source_system": "callback",
+          "app_id": "app1",
+          "event_id": "E5",
+          "user_id": "U1",
+          "event_time": "2026-10-01T10:00:00Z",
+          "amount": 100,
+          "status": "COMPLETED",
+          "platform": "google"
+        }
+      ],
+      "targetHash": "efa1f63a529503a11a9b0e229dd2fd5c0b04ec1aa83193bcb03cd59f6d1f3bc6"
+    },
+    {
+      "queryId": "4c16b38b-84d3-4df8-a847-f58de7a5cdb7",
+      "runId": "0d30f039-2044-45e6-8697-6bdc18f3a750",
+      "active": true,
+      "progress": [
+        {
+          "id": "4c16b38b-84d3-4df8-a847-f58de7a5cdb7",
+          "runId": "0d30f039-2044-45e6-8697-6bdc18f3a750",
+          "name": null,
+          "timestamp": "2026-10-11T04:09:07.200Z",
+          "batchId": 0,
+          "batchDuration": 18459,
+          "numInputRows": 3,
+          "inputRowsPerSecond": 0.0,
+          "processedRowsPerSecond": 0.16252234682268812,
+          "durationMs": {
+            "addBatch": 16388,
+            "commitOffsets": 567,
+            "getBatch": 154,
+            "latestOffset": 314,
+            "queryPlanning": 673,
+            "triggerExecution": 18455,
+            "walCommit": 326
+          },
+          "stateOperators": [],
+          "sources": [
+            {
+              "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab16/input]",
+              "startOffset": null,
+              "endOffset": {
+                "logOffset": 0
+              },
+              "latestOffset": null,
+              "numInputRows": 3,
+              "inputRowsPerSecond": 0.0,
+              "processedRowsPerSecond": 0.16252234682268812
+            }
+          ],
+          "sink": {
+            "description": "DeltaSink[/evidence/tests-streaming/20261011T040856Z-6f8487be/lab16/target]",
+            "numOutputRows": -1
+          }
+        },
+        {
+          "id": "4c16b38b-84d3-4df8-a847-f58de7a5cdb7",
+          "runId": "0d30f039-2044-45e6-8697-6bdc18f3a750",
+          "name": null,
+          "timestamp": "2026-10-11T04:09:36.003Z",
+          "batchId": 1,
+          "batchDuration": 583,
+          "numInputRows": 0,
+          "inputRowsPerSecond": 0.0,
+          "processedRowsPerSecond": 0.0,
+          "durationMs": {
+            "latestOffset": 581,
+            "triggerExecution": 583
+          },
+          "stateOperators": [],
+          "sources": [
+            {
+              "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab16/input]",
+              "startOffset": {
+                "logOffset": 0
+              },
+              "endOffset": {
+                "logOffset": 0
+              },
+              "latestOffset": null,
+              "numInputRows": 0,
+              "inputRowsPerSecond": 0.0,
+              "processedRowsPerSecond": 0.0
+            }
+          ],
+          "sink": {
+            "description": "DeltaSink[/evidence/tests-streaming/20261011T040856Z-6f8487be/lab16/target]",
+            "numOutputRows": -1
+          }
+        },
+        {
+          "id": "4c16b38b-84d3-4df8-a847-f58de7a5cdb7",
+          "runId": "0d30f039-2044-45e6-8697-6bdc18f3a750",
+          "name": null,
+          "timestamp": "2026-10-11T04:09:47.000Z",
+          "batchId": 1,
+          "batchDuration": 107,
+          "numInputRows": 0,
+          "inputRowsPerSecond": 0.0,
+          "processedRowsPerSecond": 0.0,
+          "durationMs": {
+            "latestOffset": 100,
+            "triggerExecution": 107
+          },
+          "stateOperators": [],
+          "sources": [
+            {
+              "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab16/input]",
+              "startOffset": {
+                "logOffset": 0
+              },
+              "endOffset": {
+                "logOffset": 0
+              },
+              "latestOffset": null,
+              "numInputRows": 0,
+              "inputRowsPerSecond": 0.0,
+              "processedRowsPerSecond": 0.0
+            }
+          ],
+          "sink": {
+            "description": "DeltaSink[/evidence/tests-streaming/20261011T040856Z-6f8487be/lab16/target]",
+            "numOutputRows": -1
+          }
+        },
+        {
+          "id": "4c16b38b-84d3-4df8-a847-f58de7a5cdb7",
+          "runId": "0d30f039-2044-45e6-8697-6bdc18f3a750",
+          "name": null,
+          "timestamp": "2026-10-11T04:09:52.000Z",
+          "batchId": 1,
+          "batchDuration": 1701,
+          "numInputRows": 2,
+          "inputRowsPerSecond": 2.002002002002002,
+          "processedRowsPerSecond": 1.1757789535567313,
+          "durationMs": {
+            "addBatch": 1083,
+            "commitOffsets": 198,
+            "getBatch": 51,
+            "latestOffset": 215,
+            "queryPlanning": 9,
+            "triggerExecution": 1701,
+            "walCommit": 139
+          },
+          "stateOperators": [],
+          "sources": [
+            {
+              "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab16/input]",
+              "startOffset": {
+                "logOffset": 0
+              },
+              "endOffset": {
+                "logOffset": 1
+              },
+              "latestOffset": null,
+              "numInputRows": 2,
+              "inputRowsPerSecond": 2.002002002002002,
+              "processedRowsPerSecond": 1.1757789535567313
+            }
+          ],
+          "sink": {
+            "description": "DeltaSink[/evidence/tests-streaming/20261011T040856Z-6f8487be/lab16/target]",
+            "numOutputRows": -1
+          }
+        },
+        {
+          "id": "4c16b38b-84d3-4df8-a847-f58de7a5cdb7",
+          "runId": "0d30f039-2044-45e6-8697-6bdc18f3a750",
+          "name": null,
+          "timestamp": "2026-10-11T04:10:03.094Z",
+          "batchId": 2,
+          "batchDuration": 598,
+          "numInputRows": 0,
+          "inputRowsPerSecond": 0.0,
+          "processedRowsPerSecond": 0.0,
+          "durationMs": {
+            "latestOffset": 591,
+            "triggerExecution": 598
+          },
+          "stateOperators": [],
+          "sources": [
+            {
+              "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab16/input]",
+              "startOffset": {
+                "logOffset": 1
+              },
+              "endOffset": {
+                "logOffset": 1
+              },
+              "latestOffset": null,
+              "numInputRows": 0,
+              "inputRowsPerSecond": 0.0,
+              "processedRowsPerSecond": 0.0
+            }
+          ],
+          "sink": {
+            "description": "DeltaSink[/evidence/tests-streaming/20261011T040856Z-6f8487be/lab16/target]",
+            "numOutputRows": -1
+          }
+        },
+        {
+          "id": "4c16b38b-84d3-4df8-a847-f58de7a5cdb7",
+          "runId": "0d30f039-2044-45e6-8697-6bdc18f3a750",
+          "name": null,
+          "timestamp": "2026-10-11T04:10:06.001Z",
+          "batchId": 2,
+          "batchDuration": 1383,
+          "numInputRows": 1,
+          "inputRowsPerSecond": 0.9990009990009991,
+          "processedRowsPerSecond": 0.7230657989877078,
+          "durationMs": {
+            "addBatch": 820,
+            "commitOffsets": 161,
+            "getBatch": 47,
+            "latestOffset": 194,
+            "queryPlanning": 13,
+            "triggerExecution": 1383,
+            "walCommit": 145
+          },
+          "stateOperators": [],
+          "sources": [
+            {
+              "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab16/input]",
+              "startOffset": {
+                "logOffset": 1
+              },
+              "endOffset": {
+                "logOffset": 2
+              },
+              "latestOffset": null,
+              "numInputRows": 1,
+              "inputRowsPerSecond": 0.9990009990009991,
+              "processedRowsPerSecond": 0.7230657989877078
+            }
+          ],
+          "sink": {
+            "description": "DeltaSink[/evidence/tests-streaming/20261011T040856Z-6f8487be/lab16/target]",
+            "numOutputRows": -1
+          }
+        }
+      ],
+      "target": [
+        {
+          "source_system": "callback",
+          "app_id": "app1",
+          "event_id": "E1",
+          "user_id": "U1",
+          "event_time": "2026-10-01T10:00:00Z",
+          "amount": 100,
+          "status": "COMPLETED",
+          "platform": "google"
+        },
+        {
+          "source_system": "callback",
+          "app_id": "app1",
+          "event_id": "E2",
+          "user_id": "U1",
+          "event_time": "2026-10-01T10:00:00Z",
+          "amount": 100,
+          "status": "COMPLETED",
+          "platform": "google"
+        },
+        {
+          "source_system": "callback",
+          "app_id": "app1",
+          "event_id": "E3",
+          "user_id": "U1",
+          "event_time": "2026-10-01T10:00:00Z",
+          "amount": 100,
+          "status": "COMPLETED",
+          "platform": "google"
+        },
+        {
+          "source_system": "callback",
+          "app_id": "app1",
+          "event_id": "E4",
+          "user_id": "U1",
+          "event_time": "2026-10-01T10:00:00Z",
+          "amount": 100,
+          "status": "COMPLETED",
+          "platform": "google"
+        },
+        {
+          "source_system": "callback",
+          "app_id": "app1",
+          "event_id": "E5",
+          "user_id": "U1",
+          "event_time": "2026-10-01T10:00:00Z",
+          "amount": 100,
+          "status": "COMPLETED",
+          "platform": "google"
+        },
+        {
+          "source_system": "callback",
+          "app_id": "app1",
+          "event_id": "E6",
+          "user_id": "U1",
+          "event_time": "2026-10-01T10:00:00Z",
+          "amount": 100,
+          "status": "COMPLETED",
+          "platform": "google"
+        }
+      ],
+      "targetHash": "269ba74e9ab1c343aabbe8bbfb4269c9eab5d4be7fe0a0228c98a264b0d71ed5"
+    }
+  ],
+  "stopped": true,
+  "checkpoint": [
+    ".metadata.crc",
+    "commits/.0.crc",
+    "commits/.1.crc",
+    "commits/.2.crc",
+    "commits/0",
+    "commits/1",
+    "commits/2",
+    "metadata",
+    "offsets/.0.crc",
+    "offsets/.1.crc",
+    "offsets/.2.crc",
+    "offsets/0",
+    "offsets/1",
+    "offsets/2",
+    "sources/0/.0.crc",
+    "sources/0/.1.crc",
+    "sources/0/.2.crc",
+    "sources/0/0",
+    "sources/0/1",
+    "sources/0/2"
+  ]
+}

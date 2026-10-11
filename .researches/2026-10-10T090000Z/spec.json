@@ -1,0 +1,36 @@
+{
+  "session": ".researches/2026-10-10T090000Z",
+  "metadata": {
+    "query": "Spark 4.0.4 partition/shuffle/join/Parquet behavior and Delta 4.0.1 snapshot protocol",
+    "known": "Docker official Spark image runs local[*]; no native host JDK/PySpark",
+    "stoppingRule": "Versioned primary reference for core claims plus executed bounded examples",
+    "date": "2026-10-10",
+    "timezone": "Asia/Saigon",
+    "publication": "disabled"
+  },
+  "urls": {
+    "spark-runtime": "https://spark.apache.org/docs/4.0.4/",
+    "spark-install": "https://spark.apache.org/docs/4.0.4/api/python/getting_started/install.html",
+    "spark-tuning": "https://spark.apache.org/docs/4.0.4/sql-performance-tuning.html",
+    "spark-shuffle": "https://spark.apache.org/docs/4.0.4/rdd-programming-guide.html",
+    "spark-coalesce": "https://spark.apache.org/docs/4.0.4/api/python/reference/pyspark.sql/api/pyspark.sql.DataFrame.coalesce.html",
+    "spark-repartition": "https://spark.apache.org/docs/4.0.4/api/python/reference/pyspark.sql/api/pyspark.sql.DataFrame.repartition.html",
+    "spark-parquet": "https://spark.apache.org/docs/4.0.4/sql-data-sources-parquet.html",
+    "spark-monitoring": "https://spark.apache.org/docs/4.0.4/monitoring.html",
+    "parquet-format": "https://parquet.apache.org/docs/file-format/",
+    "parquet-concepts": "https://parquet.apache.org/docs/concepts/",
+    "delta-releases": "https://docs.delta.io/releases/",
+    "delta-quickstart": "https://docs.delta.io/quick-start/",
+    "delta-batch": "https://docs.delta.io/delta-batch/",
+    "delta-concurrency": "https://docs.delta.io/concurrency-control/",
+    "delta-protocol": "https://github.com/delta-io/delta/blob/v4.0.1/PROTOCOL.md",
+    "databricks-delta": "https://docs.databricks.com/aws/en/delta/",
+    "databricks-aqe": "https://docs.databricks.com/aws/en/optimizations/aqe",
+    "spark-image": "https://github.com/apache/spark-docker",
+    "docker-cli": "https://docs.docker.com/desktop/features/desktop-cli/",
+    "spark-null": "https://spark.apache.org/docs/4.0.4/sql-ref-null-semantics.html",
+    "databricks-feature-compatibility": "https://docs.databricks.com/aws/en/tables/features/feature-compatibility",
+    "spark-webui-source": "https://raw.githubusercontent.com/apache/spark/v4.0.4/core/src/main/scala/org/apache/spark/ui/WebUI.scala",
+    "delta-protocol-source": "https://raw.githubusercontent.com/delta-io/delta/v4.0.1/PROTOCOL.md"
+  }
+}

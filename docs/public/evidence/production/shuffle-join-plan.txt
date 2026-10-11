@@ -1,0 +1,38 @@
+== Parsed Logical Plan ==
+'Join UsingJoin(Inner, [campaign])
+:- Project [id#15L, cast((id#15L % cast(20 as bigint)) as int) AS campaign#16]
+:  +- Range (0, 4000, step=1, splits=Some(4))
++- Project [cast(id#17L as int) AS campaign#18, name AS label#19]
+   +- Range (0, 20, step=1, splits=Some(8))
+
+== Analyzed Logical Plan ==
+campaign: int, id: bigint, label: string
+Project [campaign#16, id#15L, label#19]
++- Join Inner, (campaign#16 = campaign#18)
+   :- Project [id#15L, cast((id#15L % cast(20 as bigint)) as int) AS campaign#16]
+   :  +- Range (0, 4000, step=1, splits=Some(4))
+   +- Project [cast(id#17L as int) AS campaign#18, name AS label#19]
+      +- Range (0, 20, step=1, splits=Some(8))
+
+== Optimized Logical Plan ==
+Project [campaign#16, id#15L, name AS label#19]
++- Join Inner, (campaign#16 = campaign#18)
+   :- Project [id#15L, cast((id#15L % 20) as int) AS campaign#16]
+   :  +- Filter isnotnull(cast((id#15L % 20) as int))
+   :     +- Range (0, 4000, step=1, splits=Some(4))
+   +- Project [cast(id#17L as int) AS campaign#18]
+      +- Range (0, 20, step=1, splits=Some(8))
+
+== Physical Plan ==
+*(5) Project [campaign#16, id#15L, name AS label#19]
++- *(5) SortMergeJoin [campaign#16], [campaign#18], Inner
+   :- *(2) Sort [campaign#16 ASC NULLS FIRST], false, 0
+   :  +- Exchange hashpartitioning(campaign#16, 4), ENSURE_REQUIREMENTS, [plan_id=72]
+   :     +- *(1) Project [id#15L, cast((id#15L % 20) as int) AS campaign#16]
+   :        +- *(1) Filter isnotnull(cast((id#15L % 20) as int))
+   :           +- *(1) Range (0, 4000, step=1, splits=4)
+   +- *(4) Sort [campaign#18 ASC NULLS FIRST], false, 0
+      +- Exchange hashpartitioning(campaign#18, 4), ENSURE_REQUIREMENTS, [plan_id=78]
+         +- *(3) Project [cast(id#17L as int) AS campaign#18]
+            +- *(3) Range (0, 20, step=1, splits=8)
+

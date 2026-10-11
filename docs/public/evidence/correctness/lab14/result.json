@@ -1,0 +1,106 @@
+{
+  "timeline": [
+    {
+      "revision": 1,
+      "revenue": 0,
+      "hash": "c9cb211e0354ba431ea022676c699e657a9fefd998858cc13224bc35bb264699",
+      "reconciliation": {
+        "missing": [],
+        "extra": [],
+        "duplicates": [],
+        "mismatched": [],
+        "nullKeys": 0,
+        "expectedRows": 1,
+        "actualRows": 1,
+        "expectedRevenue": 0,
+        "actualRevenue": 0,
+        "tolerance": 0,
+        "expectedByDay": {
+          "2026-10-01": 0
+        },
+        "actualByDay": {
+          "2026-10-01": 0
+        },
+        "pass": true
+      }
+    },
+    {
+      "revision": 2,
+      "revenue": 100,
+      "hash": "e86c49f1cc03fa324d79fb2860e1ae0bf7cdd102425b7e525304446b666b8eac",
+      "reconciliation": {
+        "missing": [],
+        "extra": [],
+        "duplicates": [],
+        "mismatched": [],
+        "nullKeys": 0,
+        "expectedRows": 1,
+        "actualRows": 1,
+        "expectedRevenue": 100,
+        "actualRevenue": 100,
+        "tolerance": 0,
+        "expectedByDay": {
+          "2026-10-01": 100
+        },
+        "actualByDay": {
+          "2026-10-01": 100
+        },
+        "pass": true
+      }
+    },
+    {
+      "revision": 3,
+      "revenue": 120,
+      "hash": "2d0aad4da2ad827a0000ae229600869bd4e6aa72a58c86a1694af5b1bc71b6b9",
+      "reconciliation": {
+        "missing": [],
+        "extra": [],
+        "duplicates": [],
+        "mismatched": [],
+        "nullKeys": 0,
+        "expectedRows": 1,
+        "actualRows": 1,
+        "expectedRevenue": 120,
+        "actualRevenue": 120,
+        "tolerance": 0,
+        "expectedByDay": {
+          "2026-10-01": 120
+        },
+        "actualByDay": {
+          "2026-10-01": 120
+        },
+        "pass": true
+      }
+    }
+  ],
+  "finalRevenue": 120,
+  "naiveMissesCorrections": true,
+  "lookbackHours": 72,
+  "recoveredRevisions": 3,
+  "replayHash": "2d0aad4da2ad827a0000ae229600869bd4e6aa72a58c86a1694af5b1bc71b6b9",
+  "mismatchDetected": {
+    "missing": [],
+    "extra": [],
+    "duplicates": [],
+    "mismatched": [
+      [
+        "adjust",
+        "appA",
+        "E1"
+      ]
+    ],
+    "nullKeys": 0,
+    "expectedRows": 1,
+    "actualRows": 1,
+    "expectedRevenue": 120,
+    "actualRevenue": 220,
+    "tolerance": 0,
+    "expectedByDay": {
+      "2026-10-01": 120
+    },
+    "actualByDay": {
+      "2026-10-01": 220
+    },
+    "pass": false
+  }
+}

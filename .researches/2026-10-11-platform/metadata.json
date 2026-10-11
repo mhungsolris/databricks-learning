@@ -1,0 +1,13 @@
+{
+  "query": "Current Databricks platform terminology and Free Edition lab boundaries",
+  "known": "Spark 4.0.4/Delta 4.0.1 local baseline; no selected workspace or CLI",
+  "stoppingRule": "Official source for each product boundary, limit, syntax and comparison",
+  "date": "2026-10-11",
+  "timezone": "Asia/Saigon",
+  "publication": "disabled",
+  "source": "search",
+  "tool": "web-tools",
+  "timestamp": "2026-10-11-platform",
+  "timestampIso": "2026-10-11T05:05:36.015Z",
+  "createdAt": "2026-10-11T05:05:36.015Z"
+}

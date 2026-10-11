@@ -1,0 +1,216 @@
+{
+  "unsafe": {
+    "failure": "[STREAM_FAILED] Query [id = 3bcbf861-6bf7-4342-b63f-8e9c0a6ead4f, runId = bbb49794-5409-4bbb-b180-c4c13c844375] terminated with exception: [FOREACH_BATCH_USER_FUNCTION_ERROR] An error occurred in the user provided function in foreach batch sink. Reason: An exception was raised by the Python Proxy. Return Message: Traceback (most recent call last):\n  File \"/opt/spark/python/lib/py4j-0.10.9.9-src.zip/py4j/clientserver.py\", line 644, in _call_proxy\n    return_value = getattr(self.pool[obj_id], method)(*params)\n  File \"/opt/spark/python/lib/pyspark.zip/pyspark/sql/utils.py\", line 165, in call\n    raise e\n  File \"/opt/spark/python/lib/pyspark.zip/pyspark/sql/utils.py\", line 162, in call\n    self.func(DataFrame(jdf, wrapped_session_jdf), batch_id)\n  File \"/workspace/labs/streaming/experiments.py\", line 210, in consume\n    raise RuntimeError('SIMULATED_AFTER_SINK_COMMIT')\nRuntimeError: SIMULATED_AFTER_SINK_COMMIT\n SQLSTATE: 39000 SQLSTATE: XXKST\n=== Streaming Query ===\nIdentifier: [id = 3bcbf861-6bf7-4342-b63f-8e9c0a6ead4f, runId = bbb49794-5409-4bbb-b180-c4c13c844375]\nCurrent Committed Offsets: {}\nCurrent Available Offsets: {FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab23/unsafe/input]: {\"logOffset\":0}}\n\nCurrent State: ACTIVE\nThread State: RUNNABLE\n\nLogical Plan:\n~WriteToMicroBatchDataSourceV1 ForeachBatchSink, 3bcbf861-6bf7-4342-b63f-8e9c0a6ead4f, [checkpointLocation=/evidence/tests-streaming/20261011T040856Z-6f8487be/lab23/unsafe/checkpoint], Append\n+- ~StreamingExecutionRelation FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab23/unsafe/input], [source_system#41513, app_id#41514, event_id#41515, user_id#41516, event_time#41517, amount#41518L, status#41519, platform#41520]\n",
+    "attempts": [
+      {
+        "batchId": 0,
+        "rows": 1,
+        "failAfterSinkCommit": true
+      },
+      {
+        "batchId": 0,
+        "rows": 1,
+        "failAfterSinkCommit": false
+      }
+    ],
+    "beforeTarget": [
+      {
+        "source_system": "callback",
+        "app_id": "app1",
+        "event_id": "E123",
+        "user_id": "U1",
+        "event_time": "2026-10-01T10:00:00Z",
+        "amount": 100,
+        "status": "COMPLETED",
+        "platform": "google"
+      }
+    ],
+    "after": {
+      "queryId": "3bcbf861-6bf7-4342-b63f-8e9c0a6ead4f",
+      "runId": "c5b83672-549d-4704-965c-1b22f70be016",
+      "active": true,
+      "progress": [
+        {
+          "id": "3bcbf861-6bf7-4342-b63f-8e9c0a6ead4f",
+          "runId": "c5b83672-549d-4704-965c-1b22f70be016",
+          "name": null,
+          "timestamp": "2026-10-11T04:15:15.677Z",
+          "batchId": 0,
+          "batchDuration": 905,
+          "numInputRows": 1,
+          "inputRowsPerSecond": 0.0,
+          "processedRowsPerSecond": 1.1049723756906078,
+          "durationMs": {
+            "addBatch": 674,
+            "commitOffsets": 165,
+            "getBatch": 61,
+            "queryPlanning": 4,
+            "triggerExecution": 905
+          },
+          "stateOperators": [],
+          "sources": [
+            {
+              "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab23/unsafe/input]",
+              "startOffset": null,
+              "endOffset": {
+                "logOffset": 0
+              },
+              "latestOffset": null,
+              "numInputRows": 1,
+              "inputRowsPerSecond": 0.0,
+              "processedRowsPerSecond": 1.1049723756906078
+            }
+          ],
+          "sink": {
+            "description": "ForeachBatchSink",
+            "numOutputRows": -1
+          }
+        }
+      ],
+      "target": [
+        {
+          "source_system": "callback",
+          "app_id": "app1",
+          "event_id": "E123",
+          "user_id": "U1",
+          "event_time": "2026-10-01T10:00:00Z",
+          "amount": 100,
+          "status": "COMPLETED",
+          "platform": "google"
+        },
+        {
+          "source_system": "callback",
+          "app_id": "app1",
+          "event_id": "E123",
+          "user_id": "U1",
+          "event_time": "2026-10-01T10:00:00Z",
+          "amount": 100,
+          "status": "COMPLETED",
+          "platform": "google"
+        }
+      ],
+      "targetHash": "3982a0e7c4f96ce7e4724eb4c73689ee32cd9bc6da5ee782c6d2173fef240140"
+    },
+    "failedCheckpoint": [
+      ".metadata.crc",
+      "metadata",
+      "offsets/.0.crc",
+      "offsets/0",
+      "sources/0/.0.crc",
+      "sources/0/0"
+    ],
+    "checkpoint": [
+      ".metadata.crc",
+      "commits/.0.crc",
+      "commits/0",
+      "metadata",
+      "offsets/.0.crc",
+      "offsets/0",
+      "sources/0/.0.crc",
+      "sources/0/0"
+    ],
+    "txnAppId": "/evidence/tests-streaming/20261011T040856Z-6f8487be/lab23/unsafe-checkpoint-generation-1"
+  },
+  "transactional": {
+    "failure": "[STREAM_FAILED] Query [id = 85fa7073-cc95-4682-b5a3-bdafb9987214, runId = e05120bd-af24-4898-800d-5ee2a6cd995e] terminated with exception: [FOREACH_BATCH_USER_FUNCTION_ERROR] An error occurred in the user provided function in foreach batch sink. Reason: An exception was raised by the Python Proxy. Return Message: Traceback (most recent call last):\n  File \"/opt/spark/python/lib/py4j-0.10.9.9-src.zip/py4j/clientserver.py\", line 644, in _call_proxy\n    return_value = getattr(self.pool[obj_id], method)(*params)\n  File \"/opt/spark/python/lib/pyspark.zip/pyspark/sql/utils.py\", line 165, in call\n    raise e\n  File \"/opt/spark/python/lib/pyspark.zip/pyspark/sql/utils.py\", line 162, in call\n    self.func(DataFrame(jdf, wrapped_session_jdf), batch_id)\n  File \"/workspace/labs/streaming/experiments.py\", line 210, in consume\n    raise RuntimeError('SIMULATED_AFTER_SINK_COMMIT')\nRuntimeError: SIMULATED_AFTER_SINK_COMMIT\n SQLSTATE: 39000 SQLSTATE: XXKST\n=== Streaming Query ===\nIdentifier: [id = 85fa7073-cc95-4682-b5a3-bdafb9987214, runId = e05120bd-af24-4898-800d-5ee2a6cd995e]\nCurrent Committed Offsets: {}\nCurrent Available Offsets: {FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab23/transactional/input]: {\"logOffset\":0}}\n\nCurrent State: ACTIVE\nThread State: RUNNABLE\n\nLogical Plan:\n~WriteToMicroBatchDataSourceV1 ForeachBatchSink, 85fa7073-cc95-4682-b5a3-bdafb9987214, [checkpointLocation=/evidence/tests-streaming/20261011T040856Z-6f8487be/lab23/transactional/checkpoint], Append\n+- ~StreamingExecutionRelation FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab23/transactional/input], [source_system#44208, app_id#44209, event_id#44210, user_id#44211, event_time#44212, amount#44213L, status#44214, platform#44215]\n",
+    "attempts": [
+      {
+        "batchId": 0,
+        "rows": 1,
+        "failAfterSinkCommit": true
+      },
+      {
+        "batchId": 0,
+        "rows": 1,
+        "failAfterSinkCommit": false
+      }
+    ],
+    "beforeTarget": [
+      {
+        "source_system": "callback",
+        "app_id": "app1",
+        "event_id": "E123",
+        "user_id": "U1",
+        "event_time": "2026-10-01T10:00:00Z",
+        "amount": 100,
+        "status": "COMPLETED",
+        "platform": "google"
+      }
+    ],
+    "after": {
+      "queryId": "85fa7073-cc95-4682-b5a3-bdafb9987214",
+      "runId": "454025e2-f713-439a-b3fe-605f43b5428e",
+      "active": true,
+      "progress": [
+        {
+          "id": "85fa7073-cc95-4682-b5a3-bdafb9987214",
+          "runId": "454025e2-f713-439a-b3fe-605f43b5428e",
+          "name": null,
+          "timestamp": "2026-10-11T04:15:26.616Z",
+          "batchId": 0,
+          "batchDuration": 396,
+          "numInputRows": 1,
+          "inputRowsPerSecond": 0.0,
+          "processedRowsPerSecond": 2.525252525252525,
+          "durationMs": {
+            "addBatch": 162,
+            "commitOffsets": 174,
+            "getBatch": 54,
+            "queryPlanning": 6,
+            "triggerExecution": 396
+          },
+          "stateOperators": [],
+          "sources": [
+            {
+              "description": "FileStreamSource[file:/evidence/tests-streaming/20261011T040856Z-6f8487be/lab23/transactional/input]",
+              "startOffset": null,
+              "endOffset": {
+                "logOffset": 0
+              },
+              "latestOffset": null,
+              "numInputRows": 1,
+              "inputRowsPerSecond": 0.0,
+              "processedRowsPerSecond": 2.525252525252525
+            }
+          ],
+          "sink": {
+            "description": "ForeachBatchSink",
+            "numOutputRows": -1
+          }
+        }
+      ],
+      "target": [
+        {
+          "source_system": "callback",
+          "app_id": "app1",
+          "event_id": "E123",
+          "user_id": "U1",
+          "event_time": "2026-10-01T10:00:00Z",
+          "amount": 100,
+          "status": "COMPLETED",
+          "platform": "google"
+        }
+      ],
+      "targetHash": "a21f12febca7d1834c3b15ecdd7d3617c3bdd0527dc556e8e5c9051c58846918"
+    },
+    "failedCheckpoint": [
+      ".metadata.crc",
+      "metadata",
+      "offsets/.0.crc",
+      "offsets/0",
+      "sources/0/.0.crc",
+      "sources/0/0"
+    ],
+    "checkpoint": [
+      ".metadata.crc",
+      "commits/.0.crc",
+      "commits/0",
+      "metadata",
+      "offsets/.0.crc",
+      "offsets/0",
+      "sources/0/.0.crc",
+      "sources/0/0"
+    ],
+    "txnAppId": "/evidence/tests-streaming/20261011T040856Z-6f8487be/lab23/transactional-checkpoint-generation-1"
+  }
+}

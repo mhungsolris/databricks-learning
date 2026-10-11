@@ -1,0 +1,86 @@
+{
+  "rows": [
+    {
+      "source_system": "adjust",
+      "app_id": "appA",
+      "event_id": "E123",
+      "revision": 1,
+      "revenue": 300,
+      "event_time": "2026-10-01T10:00:00Z",
+      "updated_at": "2026-10-01T10:01:00Z",
+      "platform": "google",
+      "account_id": "account-1",
+      "campaign_id": "C1",
+      "currency": "USD",
+      "is_deleted": false
+    }
+  ],
+  "hash": "481479739139ca482328d5deb463064cf65351f46ed02b07e2b8bcc7e7ee5453",
+  "history": [
+    {
+      "version": 2,
+      "operation": "MERGE",
+      "operationMetrics": {
+        "numOutputRows": "1",
+        "numTargetBytesAdded": "4778",
+        "numTargetRowsInserted": "0",
+        "numTargetRowsMatchedDeleted": "0",
+        "numTargetFilesAdded": "1",
+        "materializeSourceTimeMs": "974",
+        "numTargetFilesRemoved": "1",
+        "numTargetRowsMatchedUpdated": "1",
+        "executionTimeMs": "2400",
+        "numTargetDeletionVectorsUpdated": "0",
+        "numTargetRowsCopied": "0",
+        "rewriteTimeMs": "434",
+        "numTargetRowsUpdated": "1",
+        "numTargetDeletionVectorsRemoved": "0",
+        "numTargetRowsDeleted": "0",
+        "scanTimeMs": "916",
+        "numSourceRows": "1",
+        "numTargetDeletionVectorsAdded": "0",
+        "numTargetChangeFilesAdded": "0",
+        "numTargetRowsNotMatchedBySourceUpdated": "0",
+        "numTargetRowsNotMatchedBySourceDeleted": "0",
+        "numTargetBytesRemoved": "4778"
+      }
+    },
+    {
+      "version": 1,
+      "operation": "MERGE",
+      "operationMetrics": {
+        "numOutputRows": "1",
+        "numTargetBytesAdded": "4778",
+        "numTargetRowsInserted": "0",
+        "numTargetRowsMatchedDeleted": "0",
+        "numTargetFilesAdded": "1",
+        "materializeSourceTimeMs": "968",
+        "numTargetFilesRemoved": "1",
+        "numTargetRowsMatchedUpdated": "1",
+        "executionTimeMs": "6053",
+        "numTargetDeletionVectorsUpdated": "0",
+        "numTargetRowsCopied": "0",
+        "rewriteTimeMs": "1307",
+        "numTargetRowsUpdated": "1",
+        "numTargetDeletionVectorsRemoved": "0",
+        "numTargetRowsDeleted": "0",
+        "scanTimeMs": "3721",
+        "numSourceRows": "1",
+        "numTargetDeletionVectorsAdded": "0",
+        "numTargetChangeFilesAdded": "0",
+        "numTargetRowsNotMatchedBySourceUpdated": "0",
+        "numTargetRowsNotMatchedBySourceDeleted": "0",
+        "numTargetBytesRemoved": "4778"
+      }
+    },
+    {
+      "version": 0,
+      "operation": "WRITE",
+      "operationMetrics": {
+        "numOutputRows": "1",
+        "numOutputBytes": "4778",
+        "numFiles": "1"
+      }
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "resources": {
+    "pipelines": {
+      "medallion": {
+        "name": "ROAS declarative learning pipeline",
+        "catalog": "${var.catalog}",
+        "schema": "${var.schema}",
+        "serverless": true,
+        "continuous": false,
+        "development": true,
+        "edition": "ADVANCED",
+        "libraries": [
+          {
+            "file": {
+              "path": "../src/medallion.py"
+            }
+          }
+        ],
+        "configuration": {
+          "course.source_catalog": "${var.catalog}",
+          "course.source_schema": "${var.schema}"
+        }
+      }
+    }
+  }
+}

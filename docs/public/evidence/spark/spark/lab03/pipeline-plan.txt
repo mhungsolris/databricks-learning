@@ -1,0 +1,42 @@
+== Parsed Logical Plan ==
+'Aggregate ['campaign_id, 'country], ['campaign_id, 'country, unresolvedalias('sum(revenue#2L))]
++- Project [campaign_id#1, id#0, revenue#2L, status#3, country#5]
+   +- Join Inner, (campaign_id#1 = campaign_id#4)
+      :- Filter (status#3 = paid)
+      :  +- LogicalRDD [id#0, campaign_id#1, revenue#2L, status#3], false
+      +- LogicalRDD [campaign_id#4, country#5], false
+
+== Analyzed Logical Plan ==
+campaign_id: string, country: string, sum(revenue): bigint
+Aggregate [campaign_id#1, country#5], [campaign_id#1, country#5, sum(revenue#2L) AS sum(revenue)#12L]
++- Project [campaign_id#1, id#0, revenue#2L, status#3, country#5]
+   +- Join Inner, (campaign_id#1 = campaign_id#4)
+      :- Filter (status#3 = paid)
+      :  +- LogicalRDD [id#0, campaign_id#1, revenue#2L, status#3], false
+      +- LogicalRDD [campaign_id#4, country#5], false
+
+== Optimized Logical Plan ==
+Aggregate [campaign_id#1, country#5], [campaign_id#1, country#5, sum(revenue#2L) AS sum(revenue)#12L]
++- Project [campaign_id#1, revenue#2L, country#5]
+   +- Join Inner, (campaign_id#1 = campaign_id#4)
+      :- Project [campaign_id#1, revenue#2L]
+      :  +- Filter ((isnotnull(status#3) AND (status#3 = paid)) AND isnotnull(campaign_id#1))
+      :     +- LogicalRDD [id#0, campaign_id#1, revenue#2L, status#3], false
+      +- Filter isnotnull(campaign_id#4)
+         +- LogicalRDD [campaign_id#4, country#5], false
+
+== Physical Plan ==
+*(5) HashAggregate(keys=[campaign_id#1, country#5], functions=[sum(revenue#2L)], output=[campaign_id#1, country#5, sum(revenue)#12L])
++- *(5) HashAggregate(keys=[campaign_id#1, country#5], functions=[partial_sum(revenue#2L)], output=[campaign_id#1, country#5, sum#14L])
+   +- *(5) Project [campaign_id#1, revenue#2L, country#5]
+      +- *(5) SortMergeJoin [campaign_id#1], [campaign_id#4], Inner
+         :- *(2) Sort [campaign_id#1 ASC NULLS FIRST], false, 0
+         :  +- Exchange hashpartitioning(campaign_id#1, 4), ENSURE_REQUIREMENTS, [plan_id=44]
+         :     +- *(1) Project [campaign_id#1, revenue#2L]
+         :        +- *(1) Filter ((isnotnull(status#3) AND (status#3 = paid)) AND isnotnull(campaign_id#1))
+         :           +- *(1) Scan ExistingRDD[id#0,campaign_id#1,revenue#2L,status#3]
+         +- *(4) Sort [campaign_id#4 ASC NULLS FIRST], false, 0
+            +- Exchange hashpartitioning(campaign_id#4, 4), ENSURE_REQUIREMENTS, [plan_id=50]
+               +- *(3) Filter isnotnull(campaign_id#4)
+                  +- *(3) Scan ExistingRDD[campaign_id#4,country#5]
+
