@@ -1,0 +1,77 @@
+{
+  "date": "2026-10-11",
+  "files": [
+    {
+      "path": ".researches/2026-10-10T010000Z/documentation/html/bigquery-storage.html",
+      "replacements": 9,
+      "originalSHA256": "3db20d3ba2a32ebfe337e48d386ed0074591875fd43779b3eb0d190bc4d1a5c1",
+      "sanitizedSHA256": "84a377ddbbf2ad31021f19bd85ea927f839b6b2dac3eb75752d27ef8a1365885"
+    },
+    {
+      "path": ".researches/2026-10-10T010000Z/documentation/html/bigquery.html",
+      "replacements": 9,
+      "originalSHA256": "d9ad3a04d5e86f9352964dadbf08b874c949173a029b6c91b5aadf4dddd16c52",
+      "sanitizedSHA256": "a5f251eddb43bf92dc690f237985c2537d8c4cbefa3b04a7f80d9832834c7257"
+    },
+    {
+      "path": ".researches/2026-10-10T020000Z/documentation/html/bq-external.html",
+      "replacements": 9,
+      "originalSHA256": "3cd226859c5c4e62534bfbb7a8fd3723e91789ace3ffb9a5c217413de1fc75e3",
+      "sanitizedSHA256": "25226ad8945a7a54361872783dfa365f01289f55c0a0793e773d583ca765c622"
+    },
+    {
+      "path": ".researches/2026-10-10T020000Z/documentation/html/bq-keys.html",
+      "replacements": 9,
+      "originalSHA256": "08af273bd4ecfda21578c7a9ab847d47ba5cc3e1da71fe2f8f10dea717a8f1ea",
+      "sanitizedSHA256": "e711e4b08ca1a36d1b5e32cd9211a6e3d25d15fbaf7eb4acbc792bc09656d3d8"
+    },
+    {
+      "path": ".researches/2026-10-10T020000Z/documentation/html/bq-overview.html",
+      "replacements": 9,
+      "originalSHA256": "9ff21b6d4429f95b155a69de0b162a9171568d6da5c6abbb713debdd53e7f31d",
+      "sanitizedSHA256": "efc9ac43ede1aeec044db55d677490fde25dc5f211bfa287843c3a3bfac85793"
+    },
+    {
+      "path": ".researches/2026-10-10T020000Z/documentation/html/bq-pricing.html",
+      "replacements": 3,
+      "originalSHA256": "0ae4f137e1e9b676baf91978fe87527e07105f6c40b0d8a9f005d4fc8c3d0274",
+      "sanitizedSHA256": "b14b88ceba01b55c0b45440a9c77820be1b432927afa4ebacaca4c7717306a25"
+    },
+    {
+      "path": ".researches/2026-10-10T020000Z/documentation/html/bq-storage.html",
+      "replacements": 9,
+      "originalSHA256": "4af9a10c91b599cea6c21cdf74b2c4c8aabaec9b538b228be010c103919a8ec1",
+      "sanitizedSHA256": "c763212e28abaf8ef2c1eb53e93c8bc865e7ba2f78b7452fd5e1c9bbbcba5903"
+    },
+    {
+      "path": ".researches/2026-10-11-architecture/documentation/html/bigquery.html",
+      "replacements": 9,
+      "originalSHA256": "1447567bc96d3f653705ade3c5156718a29fb579926042c209a7a51f8fdc2699",
+      "sanitizedSHA256": "adfd9e1a480dce897da45805bea008897e3a6fe315a9411ef90305553074bab6"
+    },
+    {
+      "path": ".researches/2026-10-11-architecture/documentation/html/bqIceberg.html",
+      "replacements": 9,
+      "originalSHA256": "d61e7833ce613c140d32e8906facbc010361706f7dab7fa1ecd77612a849c5ce",
+      "sanitizedSHA256": "06c85c7ae7fb47b85eb249d2f12886a8fbe4d00ea69af8208243f60e3c60c56a"
+    },
+    {
+      "path": ".researches/2026-10-11-architecture/documentation/html/googleLakehouse.html",
+      "replacements": 9,
+      "originalSHA256": "7dbc78b70d7fc07bafecd75e12c3cdb7fff9355316f550d6caffe1a31b5bc169",
+      "sanitizedSHA256": "add293bff5f242d016305a48e460c0092fafa8e5a56b6053b01fdafe38f853ef"
+    },
+    {
+      "path": ".researches/2026-10-11-platform/documentation/html/bigquery-capacity.html",
+      "replacements": 9,
+      "originalSHA256": "70c5c5d85eac60cd78dde036d7f821b41dde60616dd29b20306ac5a82939c118",
+      "sanitizedSHA256": "4db84c902fe0acd8eecf8bcbb91537ad3db65ebe3a8f2900d8afacc4da8b5637"
+    },
+    {
+      "path": ".researches/2026-10-11-platform/documentation/html/bigquery.html",
+      "replacements": 9,
+      "originalSHA256": "025713abc2c471bdab0ce01a35fad83cba6eb90d2c698493e921fae0b759cbb8",
+      "sanitizedSHA256": "671ec18dd2fa8336720aa4ee6f3b50493f1529f6f036137e9ce599dcc612e244"
+    }
+  ]
+}

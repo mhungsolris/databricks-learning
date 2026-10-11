@@ -4,6 +4,7 @@ from concurrent.futures import ThreadPoolExecutor
 from html.parser import HTMLParser
 from pathlib import Path
 import json
+import re
 from urllib.request import Request, urlopen
 
 SESSION = Path('.researches/2026-10-10T010000Z')
@@ -52,13 +53,15 @@ def fetch(entry):
         with urlopen(Request(url, headers={'User-Agent': 'DatabricksLearningResearch/1.0'}), timeout=40) as response:
             html = response.read().decode('utf-8', errors='replace')
             resolved = response.url
+        # Public documentation embeds site keys; exclude them from research archives.
+        html = re.sub(r'AIza[0-9A-Za-z_-]{35}', '[REDACTED_GOOGLE_API_KEY]', html)
         (SESSION / 'documentation/html' / (name + '.html')).write_text(html, encoding='utf-8')
         parser = TextCapture(); parser.feed(html)
         text = ''.join(parser.parts)
         (SESSION / 'documentation/markdown' / (name + '.md')).write_text(
             f'# {name}\n\nSource: {resolved}\nRetrieved: {RETRIEVED}\n\n{text}', encoding='utf-8')
         print(f'OK {name}: {len(html)} bytes')
-        return {'title': name, 'url': resolved, 'content': text[:2000], 'retrieved': RETRIEVED, 'status': 'fetched'}
+        return {'title': name, 'url': resolved, 'content': text[:2000], 'retrieved': RETRIEVED, 'status': 'fetched', 'archivePolicy': 'Google API key patterns redacted from public HTML'}
     except Exception as exc:
         print(f'UNAVAILABLE {name}: {exc}')
         return {'title': name, 'url': url, 'status': 'unavailable', 'error': str(exc)}
